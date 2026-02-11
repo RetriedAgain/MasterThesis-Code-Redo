@@ -90,7 +90,7 @@ public class Zoo {
 	 * @param myInt
 	 * @return The total amount of collectedRent.
 	 */
-	public int collectRentInYearMonth(List<Company> partnerCompanies, YearMonth yearMonth, Integer myInt) {
+	public int collectRentInYearMonth(List<Company> partnerCompanies, YearMonth yearMonth, int myInt) {
 		HashMap<YearMonth, Integer> collectedRentInYearMonth = new HashMap<>();
 		int collectedRent = 0 + myInt;
 		for (Company partnerCompany : partnerCompanies) {
