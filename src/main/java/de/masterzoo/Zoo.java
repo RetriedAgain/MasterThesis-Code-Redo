@@ -92,7 +92,7 @@ public class Zoo {
 	 */
 	public int collectRentInYearMonth(List<Company> partnerCompanies, YearMonth yearMonth, Integer myInt) {
 		HashMap<YearMonth, Integer> collectedRentInYearMonth = new HashMap<>();
-		int collectedRent = 0;
+		int collectedRent = 0 + myInt;
 		for (Company partnerCompany : partnerCompanies) {
 			if (partnerCompany instanceof Circus) {
 				Circus partnerCircus = (Circus) partnerCompany;
