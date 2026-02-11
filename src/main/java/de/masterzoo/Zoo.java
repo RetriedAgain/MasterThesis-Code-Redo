@@ -84,14 +84,15 @@ public class Zoo {
 
 	/**
 	 * This method collects the rent of each company given in the list of partnercompanies for a given YearMonth.
-	 * @param partnerCompanies List of partner companies that the rent is to be collected from.
+	 *
+	 * @param pComps    List of partner companies that the rent is to be collected from.
 	 * @param yearMonth The yearmonth in which the rentcollection is to be done.
 	 * @return The total amount of collectedRent.
 	 */
-	public int collectRentInYearMonth(List<Company> partnerCompanies, YearMonth yearMonth) {
+	public int collectRentInYearMonth(List<Company> pComps, YearMonth yearMonth) {
 		HashMap<YearMonth, Integer> collectedRentInYearMonth = new HashMap<>();
 		int collectedRent = 0;
-		for (Company partnerCompany : partnerCompanies) {
+		for (Company partnerCompany : pComps) {
 			if (partnerCompany instanceof Circus) {
 				Circus partnerCircus = (Circus) partnerCompany;
 				collectedRent += partnerCircus.payRent();
