@@ -92,7 +92,7 @@ public class Zoo {
 	 * @param yearMonth The yearmonth in which the rentcollection is to be done.
 	 * @return The total amount of collectedRent.
 	 */
-	public int collectRentInYearMonth(List<Company> partnerCompanies, YearMonth yearMonth) throws Exception {
+	public int collectRentInYearMonth(List<Company> partnerCompanies, YearMonth yearMonth) {
 		HashMap<YearMonth, Integer> collectedRentInYearMonth = new HashMap<>();
 		int collectedRent = 0;
 		for (Company partnerCompany : partnerCompanies) {
