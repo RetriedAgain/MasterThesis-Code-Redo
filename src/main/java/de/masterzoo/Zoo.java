@@ -79,7 +79,11 @@ public class Zoo {
 	 * @param yearMonth The YearMonth that the rent was collected in.
 	 */
 	public void addRentOfMonthToBudget(List<Company> partnerCompanies, YearMonth yearMonth) {
-		this.accountingBudget += collectRentInYearMonth(partnerCompanies, yearMonth);
+		try {
+			this.accountingBudget += collectRentInYearMonth(partnerCompanies, yearMonth);
+		} catch (Exception e) {
+			throw new RuntimeException(e);
+		}
 	}
 
 	/**
@@ -88,7 +92,7 @@ public class Zoo {
 	 * @param yearMonth The yearmonth in which the rentcollection is to be done.
 	 * @return The total amount of collectedRent.
 	 */
-	public int collectRentInYearMonth(List<Company> partnerCompanies, YearMonth yearMonth) {
+	public int collectRentInYearMonth(List<Company> partnerCompanies, YearMonth yearMonth) throws Exception, NullPointerException {
 		HashMap<YearMonth, Integer> collectedRentInYearMonth = new HashMap<>();
 		int collectedRent = 0;
 		for (Company partnerCompany : partnerCompanies) {
@@ -96,6 +100,12 @@ public class Zoo {
 				Circus partnerCircus = (Circus) partnerCompany;
 				collectedRent += partnerCircus.payRent();
 			}
+		}
+
+		if (collectedRent < 0) {
+			throw new Exception("Collected rent is negative");
+		} else if (partnerCompanies.equals(null)) {
+			throw new NullPointerException("partnerCompanies is null");
 		}
 		collectedRentInYearMonth.put(yearMonth, collectedRent);
 		return collectedRent;
