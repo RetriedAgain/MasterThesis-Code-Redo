@@ -1,0 +1,51 @@
+{
+"commits": [
+{
+	"repository": "https://github.com/RetriedAgain/MasterThesis-Code-Redo.git",
+	"sha1": "12575915da1987b612ae4be44ac02fe9315b94a7",
+	"url": "https://github.com/RetriedAgain/MasterThesis-Code-Redo/commit/12575915da1987b612ae4be44ac02fe9315b94a7",
+	"refactorings": [{
+	"type": "Rename Parameter",
+	"description": "Rename Parameter partnerCompanies : List<Company> to pComps : List<Company> in method public collectRentInYearMonth(pComps List<Company>, yearMonth YearMonth) : int from class de.masterzoo.Zoo",
+	"leftSideLocations": [{
+		"filePath": "src/main/java/de/masterzoo/Zoo.java",
+		"startLine": 91,
+		"endLine": 91,
+		"startColumn": 36,
+		"endColumn": 66,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "original variable declaration",
+		"codeElement": "partnerCompanies : List<Company>"
+}, {
+		"filePath": "src/main/java/de/masterzoo/Zoo.java",
+		"startLine": 94,
+		"endLine": 99,
+		"startColumn": 3,
+		"endColumn": 4,
+		"codeElementType": "ENHANCED_FOR_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "src/main/java/de/masterzoo/Zoo.java",
+		"startLine": 92,
+		"endLine": 92,
+		"startColumn": 36,
+		"endColumn": 56,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "renamed variable declaration",
+		"codeElement": "pComps : List<Company>"
+}, {
+		"filePath": "src/main/java/de/masterzoo/Zoo.java",
+		"startLine": 95,
+		"endLine": 100,
+		"startColumn": 3,
+		"endColumn": 4,
+		"codeElementType": "ENHANCED_FOR_STATEMENT",
+		"description": "statement referencing the renamed variable",
+		"codeElement": null
+}]
+}
+]
+}]
+}

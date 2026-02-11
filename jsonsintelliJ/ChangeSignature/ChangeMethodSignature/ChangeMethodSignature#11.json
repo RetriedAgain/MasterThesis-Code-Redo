@@ -1,0 +1,42 @@
+{
+"commits": [
+{
+	"repository": "https://github.com/RetriedAgain/MasterThesis-Code-Redo.git",
+	"sha1": "6ad7ecc82109f3a8ceebc11d81c4c66b8b28e556",
+	"url": "https://github.com/RetriedAgain/MasterThesis-Code-Redo/commit/6ad7ecc82109f3a8ceebc11d81c4c66b8b28e556",
+	"refactorings": [{
+	"type": "Remove Thrown Exception Type",
+	"description": "Remove Thrown Exception Type Exception in method public collectRentInYearMonth(partnerCompanies List<Company>, yearMonth YearMonth) : int from class de.masterzoo.Zoo",
+	"leftSideLocations": [{
+		"filePath": "src/main/java/de/masterzoo/Zoo.java",
+		"startLine": 95,
+		"endLine": 95,
+		"startColumn": 96,
+		"endColumn": 105,
+		"codeElementType": "TYPE",
+		"description": "removed thrown exception type",
+		"codeElement": "Exception"
+}, {
+		"filePath": "src/main/java/de/masterzoo/Zoo.java",
+		"startLine": 89,
+		"endLine": 106,
+		"startColumn": 2,
+		"endColumn": 3,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "public collectRentInYearMonth(partnerCompanies List<Company>, yearMonth YearMonth) : int"
+}],
+	"rightSideLocations": [{
+		"filePath": "src/main/java/de/masterzoo/Zoo.java",
+		"startLine": 89,
+		"endLine": 106,
+		"startColumn": 2,
+		"endColumn": 3,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "method declaration with removed thrown exception type",
+		"codeElement": "public collectRentInYearMonth(partnerCompanies List<Company>, yearMonth YearMonth) : int"
+}]
+}
+]
+}]
+}

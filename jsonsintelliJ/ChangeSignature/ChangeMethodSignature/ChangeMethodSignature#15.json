@@ -1,0 +1,231 @@
+{
+"commits": [
+{
+	"repository": "https://github.com/RetriedAgain/MasterThesis-Code-Redo.git",
+	"sha1": "99de704e60ffc0913ed7db0ec8d11d3cf4e6b64c",
+	"url": "https://github.com/RetriedAgain/MasterThesis-Code-Redo/commit/99de704e60ffc0913ed7db0ec8d11d3cf4e6b64c",
+	"refactorings": [{
+	"type": "Extract Method",
+	"description": "Extract Method public collectRentDelegate(partnerCompanies List<Company>, yearMonth YearMonth) : int extracted from public collectRentInYearMonth(partnerCompanies List<Company>, yearMonth YearMonth) : int in class de.masterzoo.Zoo",
+	"leftSideLocations": [{
+		"filePath": "src/main/java/de/masterzoo/Zoo.java",
+		"startLine": 85,
+		"endLine": 102,
+		"startColumn": 2,
+		"endColumn": 3,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "source method declaration before extraction",
+		"codeElement": "public collectRentInYearMonth(partnerCompanies List<Company>, yearMonth YearMonth) : int"
+}, {
+		"filePath": "src/main/java/de/masterzoo/Zoo.java",
+		"startLine": 92,
+		"endLine": 92,
+		"startColumn": 3,
+		"endColumn": 74,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "extracted code from source method declaration",
+		"codeElement": null
+}, {
+		"filePath": "src/main/java/de/masterzoo/Zoo.java",
+		"startLine": 93,
+		"endLine": 93,
+		"startColumn": 3,
+		"endColumn": 25,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "extracted code from source method declaration",
+		"codeElement": null
+}, {
+		"filePath": "src/main/java/de/masterzoo/Zoo.java",
+		"startLine": 96,
+		"endLine": 96,
+		"startColumn": 5,
+		"endColumn": 52,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "extracted code from source method declaration",
+		"codeElement": null
+}, {
+		"filePath": "src/main/java/de/masterzoo/Zoo.java",
+		"startLine": 97,
+		"endLine": 97,
+		"startColumn": 5,
+		"endColumn": 46,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "extracted code from source method declaration",
+		"codeElement": null
+}, {
+		"filePath": "src/main/java/de/masterzoo/Zoo.java",
+		"startLine": 100,
+		"endLine": 100,
+		"startColumn": 3,
+		"endColumn": 58,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "extracted code from source method declaration",
+		"codeElement": null
+}, {
+		"filePath": "src/main/java/de/masterzoo/Zoo.java",
+		"startLine": 101,
+		"endLine": 101,
+		"startColumn": 3,
+		"endColumn": 24,
+		"codeElementType": "RETURN_STATEMENT",
+		"description": "extracted code from source method declaration",
+		"codeElement": null
+}, {
+		"filePath": "src/main/java/de/masterzoo/Zoo.java",
+		"startLine": 94,
+		"endLine": 99,
+		"startColumn": 3,
+		"endColumn": 4,
+		"codeElementType": "ENHANCED_FOR_STATEMENT",
+		"description": "extracted code from source method declaration",
+		"codeElement": null
+}, {
+		"filePath": "src/main/java/de/masterzoo/Zoo.java",
+		"startLine": 95,
+		"endLine": 98,
+		"startColumn": 4,
+		"endColumn": 5,
+		"codeElementType": "IF_STATEMENT",
+		"description": "extracted code from source method declaration",
+		"codeElement": null
+}, {
+		"filePath": "src/main/java/de/masterzoo/Zoo.java",
+		"startLine": 94,
+		"endLine": 99,
+		"startColumn": 51,
+		"endColumn": 4,
+		"codeElementType": "BLOCK",
+		"description": "extracted code from source method declaration",
+		"codeElement": null
+}, {
+		"filePath": "src/main/java/de/masterzoo/Zoo.java",
+		"startLine": 95,
+		"endLine": 98,
+		"startColumn": 42,
+		"endColumn": 5,
+		"codeElementType": "BLOCK",
+		"description": "extracted code from source method declaration",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "src/main/java/de/masterzoo/Zoo.java",
+		"startLine": 95,
+		"endLine": 112,
+		"startColumn": 2,
+		"endColumn": 3,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "extracted method declaration",
+		"codeElement": "public collectRentDelegate(partnerCompanies List<Company>, yearMonth YearMonth) : int"
+}, {
+		"filePath": "src/main/java/de/masterzoo/Zoo.java",
+		"startLine": 102,
+		"endLine": 102,
+		"startColumn": 3,
+		"endColumn": 74,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "extracted code to extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "src/main/java/de/masterzoo/Zoo.java",
+		"startLine": 103,
+		"endLine": 103,
+		"startColumn": 3,
+		"endColumn": 25,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "extracted code to extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "src/main/java/de/masterzoo/Zoo.java",
+		"startLine": 106,
+		"endLine": 106,
+		"startColumn": 5,
+		"endColumn": 52,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "extracted code to extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "src/main/java/de/masterzoo/Zoo.java",
+		"startLine": 107,
+		"endLine": 107,
+		"startColumn": 5,
+		"endColumn": 46,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "extracted code to extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "src/main/java/de/masterzoo/Zoo.java",
+		"startLine": 110,
+		"endLine": 110,
+		"startColumn": 3,
+		"endColumn": 58,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "extracted code to extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "src/main/java/de/masterzoo/Zoo.java",
+		"startLine": 111,
+		"endLine": 111,
+		"startColumn": 3,
+		"endColumn": 24,
+		"codeElementType": "RETURN_STATEMENT",
+		"description": "extracted code to extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "src/main/java/de/masterzoo/Zoo.java",
+		"startLine": 104,
+		"endLine": 109,
+		"startColumn": 3,
+		"endColumn": 4,
+		"codeElementType": "ENHANCED_FOR_STATEMENT",
+		"description": "extracted code to extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "src/main/java/de/masterzoo/Zoo.java",
+		"startLine": 105,
+		"endLine": 108,
+		"startColumn": 4,
+		"endColumn": 5,
+		"codeElementType": "IF_STATEMENT",
+		"description": "extracted code to extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "src/main/java/de/masterzoo/Zoo.java",
+		"startLine": 104,
+		"endLine": 109,
+		"startColumn": 51,
+		"endColumn": 4,
+		"codeElementType": "BLOCK",
+		"description": "extracted code to extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "src/main/java/de/masterzoo/Zoo.java",
+		"startLine": 105,
+		"endLine": 108,
+		"startColumn": 42,
+		"endColumn": 5,
+		"codeElementType": "BLOCK",
+		"description": "extracted code to extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "src/main/java/de/masterzoo/Zoo.java",
+		"startLine": 85,
+		"endLine": 93,
+		"startColumn": 2,
+		"endColumn": 3,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "source method declaration after extraction",
+		"codeElement": "public collectRentInYearMonth(partnerCompanies List<Company>, yearMonth YearMonth) : int"
+}, {
+		"filePath": "src/main/java/de/masterzoo/Zoo.java",
+		"startLine": 92,
+		"endLine": 92,
+		"startColumn": 10,
+		"endColumn": 58,
+		"codeElementType": "METHOD_INVOCATION",
+		"description": "extracted method invocation",
+		"codeElement": "collectRentDelegate(partnerCompanies,yearMonth)"
+}]
+}
+]
+}]
+}

@@ -1,0 +1,33 @@
+{
+"commits": [
+{
+	"repository": "https://github.com/RetriedAgain/MasterThesis-Code-Redo.git",
+	"sha1": "2aee862ae740a05c29c5171d3c529957f9a6caf1",
+	"url": "https://github.com/RetriedAgain/MasterThesis-Code-Redo/commit/2aee862ae740a05c29c5171d3c529957f9a6caf1",
+	"refactorings": [{
+	"type": "Rename Method",
+	"description": "Rename Method public collectRentInYearMonth(partnerCompanies List<Company>, yearMonth YearMonth) : int renamed to public collectRentInTime(partnerCompanies List<Company>, yearMonth YearMonth) : int in class de.masterzoo.Zoo",
+	"leftSideLocations": [{
+		"filePath": "src/main/java/de/masterzoo/Zoo.java",
+		"startLine": 85,
+		"endLine": 102,
+		"startColumn": 2,
+		"endColumn": 3,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "public collectRentInYearMonth(partnerCompanies List<Company>, yearMonth YearMonth) : int"
+}],
+	"rightSideLocations": [{
+		"filePath": "src/main/java/de/masterzoo/Zoo.java",
+		"startLine": 85,
+		"endLine": 102,
+		"startColumn": 2,
+		"endColumn": 3,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "renamed method declaration",
+		"codeElement": "public collectRentInTime(partnerCompanies List<Company>, yearMonth YearMonth) : int"
+}]
+}
+]
+}]
+}

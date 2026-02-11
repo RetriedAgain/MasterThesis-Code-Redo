@@ -1,0 +1,42 @@
+{
+"commits": [
+{
+	"repository": "https://github.com/RetriedAgain/MasterThesis-Code-Redo.git",
+	"sha1": "0372b4c81fa53e15ced118c98f44ec401f42ba51",
+	"url": "https://github.com/RetriedAgain/MasterThesis-Code-Redo/commit/0372b4c81fa53e15ced118c98f44ec401f42ba51",
+	"refactorings": [{
+	"type": "Remove Parameter",
+	"description": "Remove Parameter myInt : Integer in method public collectRentInYearMonth(partnerCompanies List<Company>, yearMonth YearMonth, myInt Integer) : int from class de.masterzoo.Zoo",
+	"leftSideLocations": [{
+		"filePath": "src/main/java/de/masterzoo/Zoo.java",
+		"startLine": 93,
+		"endLine": 93,
+		"startColumn": 89,
+		"endColumn": 102,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "removed parameter",
+		"codeElement": "myInt : Integer"
+}, {
+		"filePath": "src/main/java/de/masterzoo/Zoo.java",
+		"startLine": 85,
+		"endLine": 104,
+		"startColumn": 2,
+		"endColumn": 3,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "public collectRentInYearMonth(partnerCompanies List<Company>, yearMonth YearMonth, myInt Integer) : int"
+}],
+	"rightSideLocations": [{
+		"filePath": "src/main/java/de/masterzoo/Zoo.java",
+		"startLine": 85,
+		"endLine": 103,
+		"startColumn": 2,
+		"endColumn": 3,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "method declaration with removed parameter",
+		"codeElement": "public collectRentInYearMonth(partnerCompanies List<Company>, yearMonth YearMonth) : int"
+}]
+}
+]
+}]
+}

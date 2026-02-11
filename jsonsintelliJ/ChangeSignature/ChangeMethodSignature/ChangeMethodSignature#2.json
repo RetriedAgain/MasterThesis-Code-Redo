@@ -1,0 +1,51 @@
+{
+"commits": [
+{
+	"repository": "https://github.com/RetriedAgain/MasterThesis-Code-Redo.git",
+	"sha1": "93c3b60f41d7222b758880506138614efd78758c",
+	"url": "https://github.com/RetriedAgain/MasterThesis-Code-Redo/commit/93c3b60f41d7222b758880506138614efd78758c",
+	"refactorings": [{
+	"type": "Change Return Type",
+	"description": "Change Return Type int to Integer in method public collectRentInYearMonth(partnerCompanies List<Company>, yearMonth YearMonth) : Integer from class de.masterzoo.Zoo",
+	"leftSideLocations": [{
+		"filePath": "src/main/java/de/masterzoo/Zoo.java",
+		"startLine": 91,
+		"endLine": 91,
+		"startColumn": 9,
+		"endColumn": 12,
+		"codeElementType": "TYPE",
+		"description": "original return type",
+		"codeElement": "int"
+}, {
+		"filePath": "src/main/java/de/masterzoo/Zoo.java",
+		"startLine": 85,
+		"endLine": 102,
+		"startColumn": 2,
+		"endColumn": 3,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "public collectRentInYearMonth(partnerCompanies List<Company>, yearMonth YearMonth) : int"
+}],
+	"rightSideLocations": [{
+		"filePath": "src/main/java/de/masterzoo/Zoo.java",
+		"startLine": 92,
+		"endLine": 92,
+		"startColumn": 9,
+		"endColumn": 16,
+		"codeElementType": "TYPE",
+		"description": "changed return type",
+		"codeElement": "Integer"
+}, {
+		"filePath": "src/main/java/de/masterzoo/Zoo.java",
+		"startLine": 85,
+		"endLine": 103,
+		"startColumn": 2,
+		"endColumn": 3,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "method declaration with changed return type",
+		"codeElement": "public collectRentInYearMonth(partnerCompanies List<Company>, yearMonth YearMonth) : Integer"
+}]
+}
+]
+}]
+}

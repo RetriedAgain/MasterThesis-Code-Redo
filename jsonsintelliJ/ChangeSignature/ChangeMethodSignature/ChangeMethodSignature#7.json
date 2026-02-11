@@ -1,0 +1,51 @@
+{
+"commits": [
+{
+	"repository": "https://github.com/RetriedAgain/MasterThesis-Code-Redo.git",
+	"sha1": "e97936a977e151dbf48c66afcb1f57f5a1175556",
+	"url": "https://github.com/RetriedAgain/MasterThesis-Code-Redo/commit/e97936a977e151dbf48c66afcb1f57f5a1175556",
+	"refactorings": [{
+	"type": "Change Parameter Type",
+	"description": "Change Parameter Type myInt : Integer to myInt : int in method public collectRentInYearMonth(partnerCompanies List<Company>, yearMonth YearMonth, myInt int) : int from class de.masterzoo.Zoo",
+	"leftSideLocations": [{
+		"filePath": "src/main/java/de/masterzoo/Zoo.java",
+		"startLine": 93,
+		"endLine": 93,
+		"startColumn": 89,
+		"endColumn": 102,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "original variable declaration",
+		"codeElement": "myInt : Integer"
+}, {
+		"filePath": "src/main/java/de/masterzoo/Zoo.java",
+		"startLine": 95,
+		"endLine": 95,
+		"startColumn": 3,
+		"endColumn": 33,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "src/main/java/de/masterzoo/Zoo.java",
+		"startLine": 93,
+		"endLine": 93,
+		"startColumn": 89,
+		"endColumn": 98,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "changed-type variable declaration",
+		"codeElement": "myInt : int"
+}, {
+		"filePath": "src/main/java/de/masterzoo/Zoo.java",
+		"startLine": 95,
+		"endLine": 95,
+		"startColumn": 3,
+		"endColumn": 33,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "statement referencing the variable with changed type",
+		"codeElement": null
+}]
+}
+]
+}]
+}

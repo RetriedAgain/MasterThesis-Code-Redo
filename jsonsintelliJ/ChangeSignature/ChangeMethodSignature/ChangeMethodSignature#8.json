@@ -1,0 +1,69 @@
+{
+"commits": [
+{
+	"repository": "https://github.com/RetriedAgain/MasterThesis-Code-Redo.git",
+	"sha1": "1e8cff8b74d76a8b399728dd7cafd7a0fcb02bed",
+	"url": "https://github.com/RetriedAgain/MasterThesis-Code-Redo/commit/1e8cff8b74d76a8b399728dd7cafd7a0fcb02bed",
+	"refactorings": [{
+	"type": "Reorder Parameter",
+	"description": "Reorder Parameter [partnerCompanies : List<Company>, yearMonth : YearMonth] to [yearMonth : YearMonth, partnerCompanies : List<Company>] in method public collectRentInYearMonth(yearMonth YearMonth, partnerCompanies List<Company>) : int from class de.masterzoo.Zoo",
+	"leftSideLocations": [{
+		"filePath": "src/main/java/de/masterzoo/Zoo.java",
+		"startLine": 91,
+		"endLine": 91,
+		"startColumn": 36,
+		"endColumn": 66,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "original parameter declaration",
+		"codeElement": "partnerCompanies : List<Company>"
+}, {
+		"filePath": "src/main/java/de/masterzoo/Zoo.java",
+		"startLine": 91,
+		"endLine": 91,
+		"startColumn": 68,
+		"endColumn": 87,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "original parameter declaration",
+		"codeElement": "yearMonth : YearMonth"
+}, {
+		"filePath": "src/main/java/de/masterzoo/Zoo.java",
+		"startLine": 85,
+		"endLine": 102,
+		"startColumn": 2,
+		"endColumn": 3,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "public collectRentInYearMonth(partnerCompanies List<Company>, yearMonth YearMonth) : int"
+}],
+	"rightSideLocations": [{
+		"filePath": "src/main/java/de/masterzoo/Zoo.java",
+		"startLine": 92,
+		"endLine": 92,
+		"startColumn": 36,
+		"endColumn": 55,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "reordered parameter declaration",
+		"codeElement": "yearMonth : YearMonth"
+}, {
+		"filePath": "src/main/java/de/masterzoo/Zoo.java",
+		"startLine": 92,
+		"endLine": 92,
+		"startColumn": 57,
+		"endColumn": 87,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "reordered parameter declaration",
+		"codeElement": "partnerCompanies : List<Company>"
+}, {
+		"filePath": "src/main/java/de/masterzoo/Zoo.java",
+		"startLine": 85,
+		"endLine": 103,
+		"startColumn": 2,
+		"endColumn": 3,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "method declaration with reordered parameters",
+		"codeElement": "public collectRentInYearMonth(yearMonth YearMonth, partnerCompanies List<Company>) : int"
+}]
+}
+]
+}]
+}

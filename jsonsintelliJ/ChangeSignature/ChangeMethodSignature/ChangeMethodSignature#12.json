@@ -1,0 +1,51 @@
+{
+"commits": [
+{
+	"repository": "https://github.com/RetriedAgain/MasterThesis-Code-Redo.git",
+	"sha1": "6d3280df01f4f7f645a387ae5cc2f0cb08fe4220",
+	"url": "https://github.com/RetriedAgain/MasterThesis-Code-Redo/commit/6d3280df01f4f7f645a387ae5cc2f0cb08fe4220",
+	"refactorings": [{
+	"type": "Change Thrown Exception Type",
+	"description": "Change Thrown Exception Type Exception to NullPointerException in method public collectRentInYearMonth(partnerCompanies List<Company>, yearMonth YearMonth) : int from class de.masterzoo.Zoo",
+	"leftSideLocations": [{
+		"filePath": "src/main/java/de/masterzoo/Zoo.java",
+		"startLine": 95,
+		"endLine": 95,
+		"startColumn": 96,
+		"endColumn": 105,
+		"codeElementType": "TYPE",
+		"description": "original exception type",
+		"codeElement": "Exception"
+}, {
+		"filePath": "src/main/java/de/masterzoo/Zoo.java",
+		"startLine": 89,
+		"endLine": 106,
+		"startColumn": 2,
+		"endColumn": 3,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "public collectRentInYearMonth(partnerCompanies List<Company>, yearMonth YearMonth) : int"
+}],
+	"rightSideLocations": [{
+		"filePath": "src/main/java/de/masterzoo/Zoo.java",
+		"startLine": 95,
+		"endLine": 95,
+		"startColumn": 96,
+		"endColumn": 116,
+		"codeElementType": "TYPE",
+		"description": "changed exception type",
+		"codeElement": "NullPointerException"
+}, {
+		"filePath": "src/main/java/de/masterzoo/Zoo.java",
+		"startLine": 89,
+		"endLine": 106,
+		"startColumn": 2,
+		"endColumn": 3,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "method declaration with changed thrown exception type",
+		"codeElement": "public collectRentInYearMonth(partnerCompanies List<Company>, yearMonth YearMonth) : int"
+}]
+}
+]
+}]
+}
