@@ -1,0 +1,105 @@
+{
+"commits": [
+{
+	"repository": "https://github.com/RetriedAgain/MasterThesis-Code.git",
+	"sha1": "5c8f374269a847540a509eb339322617b693ea97",
+	"url": "https://github.com/RetriedAgain/MasterThesis-Code/commit/5c8f374269a847540a509eb339322617b693ea97",
+	"refactorings": [{
+	"type": "Extract Method",
+	"description": "Extract Method private Mayor(age int) extracted from private Mayor(age int, city City<Integer>) in class Mayor",
+	"leftSideLocations": [{
+		"filePath": "src/main/java/Mayor.java",
+		"startLine": 7,
+		"endLine": 11,
+		"startColumn": 2,
+		"endColumn": 3,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "source method declaration before extraction",
+		"codeElement": "private Mayor(age int, city City<Integer>)"
+}, {
+		"filePath": "src/main/java/Mayor.java",
+		"startLine": 8,
+		"endLine": 8,
+		"startColumn": 3,
+		"endColumn": 20,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "extracted code from source method declaration",
+		"codeElement": null
+}, {
+		"filePath": "src/main/java/Mayor.java",
+		"startLine": 9,
+		"endLine": 9,
+		"startColumn": 3,
+		"endColumn": 18,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "extracted code from source method declaration",
+		"codeElement": null
+}, {
+		"filePath": "src/main/java/Mayor.java",
+		"startLine": 10,
+		"endLine": 10,
+		"startColumn": 3,
+		"endColumn": 20,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "extracted code from source method declaration",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "src/main/java/Mayor.java",
+		"startLine": 11,
+		"endLine": 15,
+		"startColumn": 2,
+		"endColumn": 3,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "extracted method declaration",
+		"codeElement": "private Mayor(age int)"
+}, {
+		"filePath": "src/main/java/Mayor.java",
+		"startLine": 12,
+		"endLine": 12,
+		"startColumn": 3,
+		"endColumn": 20,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "extracted code to extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "src/main/java/Mayor.java",
+		"startLine": 13,
+		"endLine": 13,
+		"startColumn": 3,
+		"endColumn": 18,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "extracted code to extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "src/main/java/Mayor.java",
+		"startLine": 14,
+		"endLine": 14,
+		"startColumn": 3,
+		"endColumn": 20,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "extracted code to extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "src/main/java/Mayor.java",
+		"startLine": 7,
+		"endLine": 9,
+		"startColumn": 2,
+		"endColumn": 3,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "source method declaration after extraction",
+		"codeElement": "private Mayor(age int, city City<Integer>)"
+}, {
+		"filePath": "src/main/java/Mayor.java",
+		"startLine": 8,
+		"endLine": 8,
+		"startColumn": 3,
+		"endColumn": 13,
+		"codeElementType": "CONSTRUCTOR_INVOCATION",
+		"description": "extracted method invocation",
+		"codeElement": "this(age)"
+}]
+}
+]
+}]
+}

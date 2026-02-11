@@ -1,0 +1,42 @@
+{
+"commits": [
+{
+	"repository": "https://github.com/RetriedAgain/MasterThesis-Code.git",
+	"sha1": "f3bc42d2616d6b380e632af0a4595774ed586ce5",
+	"url": "https://github.com/RetriedAgain/MasterThesis-Code/commit/f3bc42d2616d6b380e632af0a4595774ed586ce5",
+	"refactorings": [{
+	"type": "Add Parameter",
+	"description": "Add Parameter d : double in method public makeSpeechToPopulation(typeOfSpeech String, d double) : void from class Mayor",
+	"leftSideLocations": [{
+		"filePath": "src/main/java/Mayor.java",
+		"startLine": 33,
+		"endLine": 39,
+		"startColumn": 2,
+		"endColumn": 3,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "public makeSpeechToPopulation(typeOfSpeech String) : void"
+}],
+	"rightSideLocations": [{
+		"filePath": "src/main/java/Mayor.java",
+		"startLine": 33,
+		"endLine": 33,
+		"startColumn": 58,
+		"endColumn": 66,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "added parameter",
+		"codeElement": "d : double"
+}, {
+		"filePath": "src/main/java/Mayor.java",
+		"startLine": 33,
+		"endLine": 39,
+		"startColumn": 2,
+		"endColumn": 3,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "method declaration with added parameter",
+		"codeElement": "public makeSpeechToPopulation(typeOfSpeech String, d double) : void"
+}]
+}
+]
+}]
+}

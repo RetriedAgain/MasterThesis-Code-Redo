@@ -1,0 +1,33 @@
+{
+"commits": [
+{
+	"repository": "https://github.com/RetriedAgain/MasterThesis-Code.git",
+	"sha1": "65d7464863a020004fdd04aea192d4e6c2558f47",
+	"url": "https://github.com/RetriedAgain/MasterThesis-Code/commit/65d7464863a020004fdd04aea192d4e6c2558f47",
+	"refactorings": [{
+	"type": "Replace Anonymous With Class",
+	"description": "Replace Anonymous With Class de.Main.createTempAnimal.new Animal with de.Main.MyAnimal",
+	"leftSideLocations": [{
+		"filePath": "src/main/java/de/Main.java",
+		"startLine": 18,
+		"endLine": 26,
+		"startColumn": 68,
+		"endColumn": 4,
+		"codeElementType": "ANONYMOUS_CLASS_DECLARATION",
+		"description": "anonymous class declaration",
+		"codeElement": "de.Main.1"
+}],
+	"rightSideLocations": [{
+		"filePath": "src/main/java/de/Main.java",
+		"startLine": 21,
+		"endLine": 33,
+		"startColumn": 2,
+		"endColumn": 3,
+		"codeElementType": "TYPE_DECLARATION",
+		"description": "added type declaration",
+		"codeElement": "de.Main.MyAnimal"
+}]
+}
+]
+}]
+}

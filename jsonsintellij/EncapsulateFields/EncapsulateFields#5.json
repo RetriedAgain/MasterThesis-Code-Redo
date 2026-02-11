@@ -1,0 +1,51 @@
+{
+"commits": [
+{
+	"repository": "https://github.com/RetriedAgain/MasterThesis-Code.git",
+	"sha1": "5c1e0291874f304d053a491202bb89eae8003641",
+	"url": "https://github.com/RetriedAgain/MasterThesis-Code/commit/5c1e0291874f304d053a491202bb89eae8003641",
+	"refactorings": [{
+	"type": "Encapsulate Attribute",
+	"description": "Encapsulate Attribute public movementStrategies : List<MovementStrategy> from class de.interimzoo.kingdoms.animals.Animal",
+	"leftSideLocations": [{
+		"filePath": "src/main/java/de/interimzoo/kingdoms/animals/Animal.java",
+		"startLine": 22,
+		"endLine": 22,
+		"startColumn": 32,
+		"endColumn": 50,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "original attribute declaration",
+		"codeElement": "public movementStrategies : List<MovementStrategy>"
+}],
+	"rightSideLocations": [{
+		"filePath": "src/main/java/de/interimzoo/kingdoms/animals/Animal.java",
+		"startLine": 22,
+		"endLine": 22,
+		"startColumn": 32,
+		"endColumn": 50,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "encapsulated attribute declaration",
+		"codeElement": "public movementStrategies : List<MovementStrategy>"
+}, {
+		"filePath": "src/main/java/de/interimzoo/kingdoms/animals/Animal.java",
+		"startLine": 122,
+		"endLine": 124,
+		"startColumn": 2,
+		"endColumn": 3,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "added getter method",
+		"codeElement": "public getMovementStrategies() : List<MovementStrategy>"
+}, {
+		"filePath": "src/main/java/de/interimzoo/kingdoms/animals/Animal.java",
+		"startLine": 126,
+		"endLine": 128,
+		"startColumn": 2,
+		"endColumn": 3,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "added setter method",
+		"codeElement": "public setMovementStrategies(movementStrategies List<MovementStrategy>) : void"
+}]
+}
+]
+}]
+}

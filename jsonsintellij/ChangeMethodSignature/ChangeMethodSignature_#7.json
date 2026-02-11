@@ -1,0 +1,33 @@
+{
+"commits": [
+{
+	"repository": "https://github.com/RetriedAgain/MasterThesis-Code.git",
+	"sha1": "8c3c91a716061c722f5dd0c3bd368afef22b071a",
+	"url": "https://github.com/RetriedAgain/MasterThesis-Code/commit/8c3c91a716061c722f5dd0c3bd368afef22b071a",
+	"refactorings": [{
+	"type": "Change Method Access Modifier",
+	"description": "Change Method Access Modifier public to private in method private Mayor(age int, city City<Integer>) from class Mayor",
+	"leftSideLocations": [{
+		"filePath": "src/main/java/Mayor.java",
+		"startLine": 7,
+		"endLine": 11,
+		"startColumn": 2,
+		"endColumn": 3,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "public Mayor(age int, city City<Integer>)"
+}],
+	"rightSideLocations": [{
+		"filePath": "src/main/java/Mayor.java",
+		"startLine": 7,
+		"endLine": 11,
+		"startColumn": 2,
+		"endColumn": 3,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "method declaration with changed access modifier",
+		"codeElement": "private Mayor(age int, city City<Integer>)"
+}]
+}
+]
+}]
+}

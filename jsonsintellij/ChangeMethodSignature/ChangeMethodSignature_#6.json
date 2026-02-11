@@ -1,0 +1,69 @@
+{
+"commits": [
+{
+	"repository": "https://github.com/RetriedAgain/MasterThesis-Code.git",
+	"sha1": "dfb694bd910710c4114ec56f610a4cf4ae6ce02e",
+	"url": "https://github.com/RetriedAgain/MasterThesis-Code/commit/dfb694bd910710c4114ec56f610a4cf4ae6ce02e",
+	"refactorings": [{
+	"type": "Reorder Parameter",
+	"description": "Reorder Parameter [changedName : String, population : int] to [population : int, changedName : String] in method public City(population int, changedName String) from class City",
+	"leftSideLocations": [{
+		"filePath": "src/main/java/City.java",
+		"startLine": 6,
+		"endLine": 6,
+		"startColumn": 14,
+		"endColumn": 32,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "original parameter declaration",
+		"codeElement": "changedName : String"
+}, {
+		"filePath": "src/main/java/City.java",
+		"startLine": 6,
+		"endLine": 6,
+		"startColumn": 34,
+		"endColumn": 48,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "original parameter declaration",
+		"codeElement": "population : int"
+}, {
+		"filePath": "src/main/java/City.java",
+		"startLine": 6,
+		"endLine": 9,
+		"startColumn": 2,
+		"endColumn": 3,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "public City(changedName String, population int)"
+}],
+	"rightSideLocations": [{
+		"filePath": "src/main/java/City.java",
+		"startLine": 6,
+		"endLine": 6,
+		"startColumn": 14,
+		"endColumn": 28,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "reordered parameter declaration",
+		"codeElement": "population : int"
+}, {
+		"filePath": "src/main/java/City.java",
+		"startLine": 6,
+		"endLine": 6,
+		"startColumn": 30,
+		"endColumn": 48,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "reordered parameter declaration",
+		"codeElement": "changedName : String"
+}, {
+		"filePath": "src/main/java/City.java",
+		"startLine": 6,
+		"endLine": 9,
+		"startColumn": 2,
+		"endColumn": 3,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "method declaration with reordered parameters",
+		"codeElement": "public City(population int, changedName String)"
+}]
+}
+]
+}]
+}

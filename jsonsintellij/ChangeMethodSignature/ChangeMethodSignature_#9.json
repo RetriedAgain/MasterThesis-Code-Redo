@@ -1,0 +1,108 @@
+{
+"commits": [
+{
+	"repository": "https://github.com/RetriedAgain/MasterThesis-Code.git",
+	"sha1": "c9b380c0f5f9b07b4138ebf378565686fb208edb",
+	"url": "https://github.com/RetriedAgain/MasterThesis-Code/commit/c9b380c0f5f9b07b4138ebf378565686fb208edb",
+	"refactorings": [{
+	"type": "Add Parameter",
+	"description": "Add Parameter popAmount : int in method private Mayor(age int, city City<Integer>, popAmount int) from class Mayor",
+	"leftSideLocations": [{
+		"filePath": "src/main/java/Mayor.java",
+		"startLine": 7,
+		"endLine": 9,
+		"startColumn": 2,
+		"endColumn": 3,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "private Mayor(age int, city City<Integer>)"
+}],
+	"rightSideLocations": [{
+		"filePath": "src/main/java/Mayor.java",
+		"startLine": 7,
+		"endLine": 7,
+		"startColumn": 45,
+		"endColumn": 58,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "added parameter",
+		"codeElement": "popAmount : int"
+}, {
+		"filePath": "src/main/java/Mayor.java",
+		"startLine": 7,
+		"endLine": 9,
+		"startColumn": 2,
+		"endColumn": 3,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "method declaration with added parameter",
+		"codeElement": "private Mayor(age int, city City<Integer>, popAmount int)"
+}]
+},
+{
+	"type": "Add Parameter",
+	"description": "Add Parameter popAmount : int in method private Mayor(age int, addedString String, popAmount int) from class Mayor",
+	"leftSideLocations": [{
+		"filePath": "src/main/java/Mayor.java",
+		"startLine": 11,
+		"endLine": 18,
+		"startColumn": 2,
+		"endColumn": 3,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "private Mayor(age int, addedString String)"
+}],
+	"rightSideLocations": [{
+		"filePath": "src/main/java/Mayor.java",
+		"startLine": 11,
+		"endLine": 11,
+		"startColumn": 45,
+		"endColumn": 58,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "added parameter",
+		"codeElement": "popAmount : int"
+}, {
+		"filePath": "src/main/java/Mayor.java",
+		"startLine": 11,
+		"endLine": 18,
+		"startColumn": 2,
+		"endColumn": 3,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "method declaration with added parameter",
+		"codeElement": "private Mayor(age int, addedString String, popAmount int)"
+}]
+},
+{
+	"type": "Add Parameter",
+	"description": "Add Parameter popAmount : int in method public makeSpeechToPopulation(typeOfSpeech String, d double, popAmount int) : void from class Mayor",
+	"leftSideLocations": [{
+		"filePath": "src/main/java/Mayor.java",
+		"startLine": 33,
+		"endLine": 39,
+		"startColumn": 2,
+		"endColumn": 3,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "public makeSpeechToPopulation(typeOfSpeech String, d double) : void"
+}],
+	"rightSideLocations": [{
+		"filePath": "src/main/java/Mayor.java",
+		"startLine": 33,
+		"endLine": 33,
+		"startColumn": 68,
+		"endColumn": 81,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "added parameter",
+		"codeElement": "popAmount : int"
+}, {
+		"filePath": "src/main/java/Mayor.java",
+		"startLine": 33,
+		"endLine": 39,
+		"startColumn": 2,
+		"endColumn": 3,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "method declaration with added parameter",
+		"codeElement": "public makeSpeechToPopulation(typeOfSpeech String, d double, popAmount int) : void"
+}]
+}
+]
+}]
+}

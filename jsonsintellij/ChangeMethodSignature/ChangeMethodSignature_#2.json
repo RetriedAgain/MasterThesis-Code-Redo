@@ -1,0 +1,42 @@
+{
+"commits": [
+{
+	"repository": "https://github.com/RetriedAgain/MasterThesis-Code.git",
+	"sha1": "0e7312b17b12b0e667cdce820d83f60b38ab81b8",
+	"url": "https://github.com/RetriedAgain/MasterThesis-Code/commit/0e7312b17b12b0e667cdce820d83f60b38ab81b8",
+	"refactorings": [{
+	"type": "Add Thrown Exception Type",
+	"description": "Add Thrown Exception Type Exception in method public Mayor(name String, age int, city City) from class Mayor",
+	"leftSideLocations": [{
+		"filePath": "src/main/java/Mayor.java",
+		"startLine": 7,
+		"endLine": 11,
+		"startColumn": 2,
+		"endColumn": 3,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "public Mayor(name String, age int, city City)"
+}],
+	"rightSideLocations": [{
+		"filePath": "src/main/java/Mayor.java",
+		"startLine": 7,
+		"endLine": 7,
+		"startColumn": 55,
+		"endColumn": 64,
+		"codeElementType": "TYPE",
+		"description": "added thrown exception type",
+		"codeElement": "Exception"
+}, {
+		"filePath": "src/main/java/Mayor.java",
+		"startLine": 7,
+		"endLine": 11,
+		"startColumn": 2,
+		"endColumn": 3,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "method declaration with added thrown exception type",
+		"codeElement": "public Mayor(name String, age int, city City)"
+}]
+}
+]
+}]
+}
