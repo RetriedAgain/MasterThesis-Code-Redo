@@ -78,7 +78,7 @@ public class Zoo {
 	 * @param partnerCompanies The companies that the rent was collected from in the specific YearMonth.
 	 * @param yearMonth The YearMonth that the rent was collected in.
 	 */
-	public void addRentOfMonthToBudget(List<Company> partnerCompanies, YearMonth yearMonth) {
+	public void addRentOfMonthToBudget(List<Company> partnerCompanies, YearMonth yearMonth) throws Exception {
 		this.accountingBudget += collectRentInYearMonth(partnerCompanies, yearMonth);
 	}
 
@@ -88,7 +88,7 @@ public class Zoo {
 	 * @param yearMonth The yearmonth in which the rentcollection is to be done.
 	 * @return The total amount of collectedRent.
 	 */
-	public int collectRentInYearMonth(List<Company> partnerCompanies, YearMonth yearMonth) {
+	public int collectRentInYearMonth(List<Company> partnerCompanies, YearMonth yearMonth) throws Exception {
 		HashMap<YearMonth, Integer> collectedRentInYearMonth = new HashMap<>();
 		int collectedRent = 0;
 		for (Company partnerCompany : partnerCompanies) {
