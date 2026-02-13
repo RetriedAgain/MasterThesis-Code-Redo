@@ -26,7 +26,7 @@ public class Main {
 
 		List<Company> partnerCompanies = new ArrayList<>();
 
-		Zoo myZoo = new Zoo(10000, 12000, animalsInZoo, propsInZoo, partnerCompanies);
+		Zoo<String, Integer> myZoo = new Zoo<String, Integer>(10000, 12000, animalsInZoo, propsInZoo, partnerCompanies);
 	}
 
 }
