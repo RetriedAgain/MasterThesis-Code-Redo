@@ -20,8 +20,8 @@ if [ $START_I -gt $END_I ]; then
   exit 1
 fi
 
-for i in $(seq $START_I $END_I); do 
-    git branch "$BRANCH_NAME$i"; 
+for i in $(seq $START_I $END_I); do
+    git branch "$BRANCH_NAME#$i";
 done
 
 echo "Done!"
