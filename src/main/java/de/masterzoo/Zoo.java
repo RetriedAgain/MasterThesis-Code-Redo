@@ -15,7 +15,7 @@ import java.util.List;
 /**
  * A big zoo. A big company.
  */
-public class Zoo {
+public class Zoo<X> {
 
 	/**
 	 * The first day that the zoo paid all of its bills.
