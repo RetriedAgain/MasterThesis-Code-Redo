@@ -15,7 +15,7 @@ import java.util.List;
 /**
  * A big zoo. A big company.
  */
-public class Zoo<X extends String, Y extends Integer> {
+public class Zoo<X extends String, Y extends Integer, Z extends String> {
 
 	/**
 	 * The first day that the zoo paid all of its bills.
