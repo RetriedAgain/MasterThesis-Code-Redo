@@ -74,4 +74,11 @@ public class Circus extends Company {
 		this.debtLeft = debtLeft;
 	}
 
+	public int getNumberOfEmployees() {
+		return numberOfEmployees;
+	}
+
+	public void setNumberOfEmployees(int numberOfEmployees) {
+		this.numberOfEmployees = numberOfEmployees;
+	}
 }
