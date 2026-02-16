@@ -18,8 +18,8 @@ import java.util.List;
  */
 public class Main {
 	public static void main(String[] args) {
-		Animal myTempAnimal = new Animal().createTempAnimal();
-		Animal myTempAnimal2 = new Animal().createTempAnimal();
+		Animal myTempAnimal = Animal.createTempAnimal();
+		Animal myTempAnimal2 = Animal.createTempAnimal();
 		List<Animal> animalsInZoo = new ArrayList<>();
 		animalsInZoo.add(myTempAnimal);
 		animalsInZoo.add(myTempAnimal2);
