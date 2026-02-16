@@ -1,0 +1,33 @@
+{
+"commits": [
+{
+	"repository": "https://github.com/RetriedAgain/MasterThesis-Code-Redo.git",
+	"sha1": "2db521d0f231df1081fa86bdf36f214d5c34584b",
+	"url": "https://github.com/RetriedAgain/MasterThesis-Code-Redo/commit/2db521d0f231df1081fa86bdf36f214d5c34584b",
+	"refactorings": [{
+	"type": "Change Variable Type",
+	"description": "Change Variable Type myZoo : Zoo<String,Integer> to myZoo : Zoo<Integer,String> in method public main(args String[]) : void from class de.Main",
+	"leftSideLocations": [{
+		"filePath": "src/main/java/de/Main.java",
+		"startLine": 29,
+		"endLine": 29,
+		"startColumn": 24,
+		"endColumn": 114,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "original variable declaration",
+		"codeElement": "myZoo : Zoo<String,Integer>"
+}],
+	"rightSideLocations": [{
+		"filePath": "src/main/java/de/Main.java",
+		"startLine": 29,
+		"endLine": 29,
+		"startColumn": 24,
+		"endColumn": 114,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "changed-type variable declaration",
+		"codeElement": "myZoo : Zoo<Integer,String>"
+}]
+}
+]
+}]
+}
