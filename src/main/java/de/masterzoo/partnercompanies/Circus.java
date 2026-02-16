@@ -24,7 +24,7 @@ public class Circus extends Company {
 
 	public int payRent() {
 
-		int monthlyRentToPay = 100;
+		int monthlyRentToPay = 100 * this.numberOfEmployees;
 		int monthlyRentPaid = 0;
 
 		if (this.budget >= monthlyRentToPay) {
@@ -48,14 +48,6 @@ public class Circus extends Company {
 
 	private void endCircus() {
 		System.out.println("Circus is over!");
-	}
-
-	public int getNumberOfEmployees() {
-		return numberOfEmployees;
-	}
-
-	public void setNumberOfEmployees(int numberOfEmployees) {
-		this.numberOfEmployees = numberOfEmployees;
 	}
 
 	public int getBudget() {
