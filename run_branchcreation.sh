@@ -21,7 +21,7 @@ if [ $START_I -gt $END_I ]; then
 fi
 
 for i in $(seq $START_I $END_I); do
-    git branch "$BRANCH_NAME#$i";
+    git branch "$BRANCH_NAME/$BRANCH_NAME#$i";
 done
 
 echo "Done!"
