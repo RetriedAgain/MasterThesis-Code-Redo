@@ -1,0 +1,33 @@
+{
+"commits": [
+{
+	"repository": "https://github.com/RetriedAgain/MasterThesis-Code-Redo.git",
+	"sha1": "fc49882462a59aabebede8bfc8199bcaad1419b8",
+	"url": "https://github.com/RetriedAgain/MasterThesis-Code-Redo/commit/fc49882462a59aabebede8bfc8199bcaad1419b8",
+	"refactorings": [{
+	"type": "Replace Anonymous With Class",
+	"description": "Replace Anonymous With Class de.Main.main.superPup.new Labrador with de.Main.MyLabrador",
+	"leftSideLocations": [{
+		"filePath": "src/main/java/de/Main.java",
+		"startLine": 42,
+		"endLine": 51,
+		"startColumn": 44,
+		"endColumn": 4,
+		"codeElementType": "ANONYMOUS_CLASS_DECLARATION",
+		"description": "anonymous class declaration",
+		"codeElement": "de.Main.1"
+}],
+	"rightSideLocations": [{
+		"filePath": "src/main/java/de/Main.java",
+		"startLine": 42,
+		"endLine": 55,
+		"startColumn": 2,
+		"endColumn": 3,
+		"codeElementType": "TYPE_DECLARATION",
+		"description": "added type declaration",
+		"codeElement": "de.Main.MyLabrador"
+}]
+}
+]
+}]
+}
