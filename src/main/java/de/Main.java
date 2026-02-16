@@ -33,25 +33,24 @@ public class Main {
 		Zoo myZoo = new Zoo(10000, 12000, animalsInZoo, propsInZoo, partnerCompanies);
 
 		// A pup that can also fly
-		Labrador superPup = new Labrador(
-			myTempAnimal.getGENDER(),
-			myTempAnimal.getName(),
-			myTempAnimal.getAge(),
-			myTempAnimal.getSpeed(),
-			myTempAnimal2.getWeight(),
-			myTempAnimal.getReproductionStrategy()) {
-
-			@Override
-			public void setMovementStrategies(List<MovementStrategy> movementStrategies) {
-				super.setMovementStrategies(new ArrayList<>() {{
-						add(new Walk());
-						add(new Fly());
-					}});
-			}
-		};
+		Labrador superPup = new MyLabrador(myTempAnimal2, myTempAnimal);
 
 		System.out.println(superPup.getMovementStrategies());
 
 	}
 
+	private static class MyLabrador extends Labrador {
+
+		public MyLabrador(Animal animal2, Animal animal1) {
+			super(animal1.getGENDER(), animal1.getName(), animal1.getAge(), animal1.getSpeed(), animal2.getWeight(), animal1.getReproductionStrategy());
+		}
+
+		@Override
+		public void setMovementStrategies(List<MovementStrategy> movementStrategies) {
+			super.setMovementStrategies(new ArrayList<>() {{
+					add(new Walk());
+					add(new Fly());
+				}});
+		}
+	}
 }
