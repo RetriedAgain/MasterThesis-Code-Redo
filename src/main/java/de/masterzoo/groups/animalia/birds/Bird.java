@@ -14,9 +14,9 @@ public abstract class Bird extends Animal {
 	public Bird() {
 		super();
 
-		this.movementStrategies = new ArrayList<>() {{new Walk(); new Fly();}};
-		this.reproductionStrategy = new Oviparity();
-		Oviparity oviparityStrategy = (Oviparity) reproductionStrategy;
+		this.setMovementStrategies(new ArrayList<>() {{new Walk(); new Fly();}});
+		this.setReproductionStrategy(new Oviparity());
+		Oviparity oviparityStrategy = (Oviparity) getReproductionStrategy();
 		oviparityStrategy.eggsPerWeek = 1;
 	}
 

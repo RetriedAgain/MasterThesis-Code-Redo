@@ -9,7 +9,7 @@ public class Penguin extends Bird {
 
 	public Penguin() {
 		super();
-		this.movementStrategies = new ArrayList<>() {{new Walk(); new Swim();}};
+		this.setMovementStrategies(new ArrayList<>() {{new Walk(); new Swim();}});
 	}
 
 }

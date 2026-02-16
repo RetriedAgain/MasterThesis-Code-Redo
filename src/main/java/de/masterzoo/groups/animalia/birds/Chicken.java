@@ -5,7 +5,7 @@ public class Chicken extends Bird {
 	public Chicken() {
 		super();
 		chickenDefaultHatchText();
-		reproductionStrategy.handleReproduction();
+		getReproductionStrategy().handleReproduction();
 	}
 
 	static void chickenDefaultHatchText() {

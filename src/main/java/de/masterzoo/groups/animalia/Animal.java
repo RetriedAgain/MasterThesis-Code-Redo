@@ -20,8 +20,8 @@ public class Animal {
 
 	public int numOfLegs;
 	protected Gender GENDER;
-	public List<MovementStrategy> movementStrategies;
-	public ReproductionStrategy reproductionStrategy;
+	private List<MovementStrategy> movementStrategies;
+	private ReproductionStrategy reproductionStrategy;
 
 
 	public Animal() {
@@ -29,14 +29,14 @@ public class Animal {
 	}
 
 	public Animal(int numOfLegs, Gender GENDER, String name, int age, int speed, int weight, ReproductionStrategy reproductionStrategy, ArrayList<MovementStrategy> movementStrategies) {
-		this.numOfLegs = numOfLegs;
-		this.GENDER = GENDER;
-		this.name = name;
-		this.age = age;
-		this.speed = speed;
-		this.weight = weight;
-		this.movementStrategies = movementStrategies;
-		this.reproductionStrategy = reproductionStrategy;
+		this.setNumOfLegs(numOfLegs);
+		this.setGENDER(GENDER);
+		this.setName(name);
+		this.setAge(age);
+		this.setSpeed(speed);
+		this.setWeight(weight);
+		this.setMovementStrategies(movementStrategies);
+		this.setReproductionStrategy(reproductionStrategy);
 
 		AnimalBookkeeping.getAllAnimals().add(this);
 	}
@@ -126,5 +126,21 @@ public class Animal {
 
 	public void setCostPerMonth(int costPerMonth) {
 		this.costPerMonth = costPerMonth;
+	}
+
+	public List<MovementStrategy> getMovementStrategies() {
+		return movementStrategies;
+	}
+
+	public void setMovementStrategies(List<MovementStrategy> movementStrategies) {
+		this.movementStrategies = movementStrategies;
+	}
+
+	public ReproductionStrategy getReproductionStrategy() {
+		return reproductionStrategy;
+	}
+
+	public void setReproductionStrategy(ReproductionStrategy reproductionStrategy) {
+		this.reproductionStrategy = reproductionStrategy;
 	}
 }

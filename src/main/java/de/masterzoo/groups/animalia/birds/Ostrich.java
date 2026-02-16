@@ -8,7 +8,7 @@ public class Ostrich extends Bird {
 
 	public Ostrich() {
 		super();
-		this.movementStrategies = new ArrayList<>() {{new Walk();}};
+		this.setMovementStrategies(new ArrayList<>() {{new Walk();}});
 	}
 
 }
