@@ -11,13 +11,13 @@ public class Circus extends Company {
 	private final static LocalDate firstDayOfBilling = LocalDate.of(2025, Month.JANUARY, 31);
 
 
-	int numberOfEmployees;
+	private int numberOfEmployees;
 	int budget;
 	int startingBudget;
 	int debtLeft;
 
 	public Circus(int numberOfEmployees, int budget) {
-		this.numberOfEmployees = numberOfEmployees;
+		this.setNumberOfEmployees(numberOfEmployees);
 		this.budget = budget;
 		this.startingBudget = budget;
 	}
@@ -74,4 +74,7 @@ public class Circus extends Company {
 		this.debtLeft = debtLeft;
 	}
 
+	public void setNumberOfEmployees(int numberOfEmployees) {
+		this.numberOfEmployees = numberOfEmployees;
+	}
 }
