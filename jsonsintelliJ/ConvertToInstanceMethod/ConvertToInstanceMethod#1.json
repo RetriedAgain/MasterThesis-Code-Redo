@@ -1,0 +1,33 @@
+{
+"commits": [
+{
+	"repository": "https://github.com/RetriedAgain/MasterThesis-Code-Redo.git",
+	"sha1": "801be78b1f2ca6d1d7c07b6eb951d67e760241d3",
+	"url": "https://github.com/RetriedAgain/MasterThesis-Code-Redo/commit/801be78b1f2ca6d1d7c07b6eb951d67e760241d3",
+	"refactorings": [{
+	"type": "Remove Method Modifier",
+	"description": "Remove Method Modifier static in method public createTempAnimal() : Animal from class de.masterzoo.groups.animalia.Animal",
+	"leftSideLocations": [{
+		"filePath": "src/main/java/de/masterzoo/groups/animalia/Animal.java",
+		"startLine": 44,
+		"endLine": 61,
+		"startColumn": 2,
+		"endColumn": 3,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "public createTempAnimal() : Animal"
+}],
+	"rightSideLocations": [{
+		"filePath": "src/main/java/de/masterzoo/groups/animalia/Animal.java",
+		"startLine": 44,
+		"endLine": 61,
+		"startColumn": 2,
+		"endColumn": 3,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "method declaration with removed modifier",
+		"codeElement": "public createTempAnimal() : Animal"
+}]
+}
+]
+}]
+}

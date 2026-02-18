@@ -1,0 +1,57 @@
+{
+"commits": [
+{
+	"repository": "https://github.com/RetriedAgain/MasterThesis-Code-Redo.git",
+	"sha1": "d7e36c92870eaf0672893b391dbac384c938d9c5",
+	"url": "https://github.com/RetriedAgain/MasterThesis-Code-Redo/commit/d7e36c92870eaf0672893b391dbac384c938d9c5",
+	"refactorings": [{
+	"type": "Change Method Access Modifier",
+	"description": "Change Method Access Modifier public to protected in method protected createTempAnimal() : Animal from class de.masterzoo.groups.animalia.Animal",
+	"leftSideLocations": [{
+		"filePath": "src/main/java/de/masterzoo/groups/animalia/Animal.java",
+		"startLine": 44,
+		"endLine": 61,
+		"startColumn": 2,
+		"endColumn": 3,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "public createTempAnimal() : Animal"
+}],
+	"rightSideLocations": [{
+		"filePath": "src/main/java/de/masterzoo/groups/animalia/Animal.java",
+		"startLine": 44,
+		"endLine": 61,
+		"startColumn": 2,
+		"endColumn": 3,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "method declaration with changed access modifier",
+		"codeElement": "protected createTempAnimal() : Animal"
+}]
+},
+{
+	"type": "Remove Method Modifier",
+	"description": "Remove Method Modifier static in method public createTempAnimal() : Animal from class de.masterzoo.groups.animalia.Animal",
+	"leftSideLocations": [{
+		"filePath": "src/main/java/de/masterzoo/groups/animalia/Animal.java",
+		"startLine": 44,
+		"endLine": 61,
+		"startColumn": 2,
+		"endColumn": 3,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "public createTempAnimal() : Animal"
+}],
+	"rightSideLocations": [{
+		"filePath": "src/main/java/de/masterzoo/groups/animalia/Animal.java",
+		"startLine": 44,
+		"endLine": 61,
+		"startColumn": 2,
+		"endColumn": 3,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "method declaration with removed modifier",
+		"codeElement": "protected createTempAnimal() : Animal"
+}]
+}
+]
+}]
+}
