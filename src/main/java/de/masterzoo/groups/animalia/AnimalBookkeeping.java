@@ -18,9 +18,9 @@ public final class AnimalBookkeeping {
 	private static Map<Animal, Animal> polyamorousGroups = new HashMap<>();
 
 	public static void equalOutStatsForBookkeeping() {
-		Animal.createTempAnimal();
-		Animal.createTempAnimal();
-		Animal.createTempAnimal();
+		new Animal().createTempAnimal();
+		new Animal().createTempAnimal();
+		new Animal().createTempAnimal();
 	}
 
 	public static List<Animal> getAllAnimals() {
