@@ -1,0 +1,51 @@
+{
+"commits": [
+{
+	"repository": "https://github.com/RetriedAgain/MasterThesis-Code-Redo.git",
+	"sha1": "6298410ce84a729a74f3f472e498f2c1ac07c522",
+	"url": "https://github.com/RetriedAgain/MasterThesis-Code-Redo/commit/6298410ce84a729a74f3f472e498f2c1ac07c522",
+	"refactorings": [{
+	"type": "Encapsulate Attribute",
+	"description": "Encapsulate Attribute package numberOfEmployees : int from class de.masterzoo.partnercompanies.Circus",
+	"leftSideLocations": [{
+		"filePath": "src/main/java/de/masterzoo/partnercompanies/Circus.java",
+		"startLine": 14,
+		"endLine": 14,
+		"startColumn": 6,
+		"endColumn": 23,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "original attribute declaration",
+		"codeElement": "package numberOfEmployees : int"
+}],
+	"rightSideLocations": [{
+		"filePath": "src/main/java/de/masterzoo/partnercompanies/Circus.java",
+		"startLine": 14,
+		"endLine": 14,
+		"startColumn": 6,
+		"endColumn": 23,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "encapsulated attribute declaration",
+		"codeElement": "package numberOfEmployees : int"
+}, {
+		"filePath": "src/main/java/de/masterzoo/partnercompanies/Circus.java",
+		"startLine": 77,
+		"endLine": 79,
+		"startColumn": 2,
+		"endColumn": 3,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "added getter method",
+		"codeElement": "public getNumberOfEmployees() : int"
+}, {
+		"filePath": "src/main/java/de/masterzoo/partnercompanies/Circus.java",
+		"startLine": 81,
+		"endLine": 83,
+		"startColumn": 2,
+		"endColumn": 3,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "added setter method",
+		"codeElement": "public setNumberOfEmployees(numberOfEmployees int) : void"
+}]
+}
+]
+}]
+}

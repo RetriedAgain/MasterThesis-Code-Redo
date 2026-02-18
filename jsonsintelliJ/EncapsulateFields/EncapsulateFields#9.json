@@ -1,0 +1,33 @@
+{
+"commits": [
+{
+	"repository": "https://github.com/RetriedAgain/MasterThesis-Code-Redo.git",
+	"sha1": "471a98dd594b98eb6d0c1a84e9b0b5cc4a1cf216",
+	"url": "https://github.com/RetriedAgain/MasterThesis-Code-Redo/commit/471a98dd594b98eb6d0c1a84e9b0b5cc4a1cf216",
+	"refactorings": [{
+	"type": "Change Attribute Access Modifier",
+	"description": "Change Attribute Access Modifier package to private in attribute private numberOfEmployees : int from class de.masterzoo.partnercompanies.Circus",
+	"leftSideLocations": [{
+		"filePath": "src/main/java/de/masterzoo/partnercompanies/Circus.java",
+		"startLine": 14,
+		"endLine": 14,
+		"startColumn": 6,
+		"endColumn": 23,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "original attribute declaration",
+		"codeElement": "package numberOfEmployees : int"
+}],
+	"rightSideLocations": [{
+		"filePath": "src/main/java/de/masterzoo/partnercompanies/Circus.java",
+		"startLine": 14,
+		"endLine": 14,
+		"startColumn": 14,
+		"endColumn": 31,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "attribute declaration with changed access modifier",
+		"codeElement": "private numberOfEmployees : int"
+}]
+}
+]
+}]
+}

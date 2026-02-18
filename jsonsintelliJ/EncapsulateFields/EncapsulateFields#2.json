@@ -1,0 +1,135 @@
+{
+"commits": [
+{
+	"repository": "https://github.com/RetriedAgain/MasterThesis-Code-Redo.git",
+	"sha1": "eca5dd560ae5deec11bcd00471a92a5b0e362a37",
+	"url": "https://github.com/RetriedAgain/MasterThesis-Code-Redo/commit/eca5dd560ae5deec11bcd00471a92a5b0e362a37",
+	"refactorings": [{
+	"type": "Change Attribute Access Modifier",
+	"description": "Change Attribute Access Modifier package to private in attribute private numberOfEmployees : int from class de.masterzoo.partnercompanies.Circus",
+	"leftSideLocations": [{
+		"filePath": "src/main/java/de/masterzoo/partnercompanies/Circus.java",
+		"startLine": 14,
+		"endLine": 14,
+		"startColumn": 6,
+		"endColumn": 23,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "original attribute declaration",
+		"codeElement": "package numberOfEmployees : int"
+}],
+	"rightSideLocations": [{
+		"filePath": "src/main/java/de/masterzoo/partnercompanies/Circus.java",
+		"startLine": 14,
+		"endLine": 14,
+		"startColumn": 14,
+		"endColumn": 31,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "attribute declaration with changed access modifier",
+		"codeElement": "private numberOfEmployees : int"
+}]
+},
+{
+	"type": "Encapsulate Attribute",
+	"description": "Encapsulate Attribute private numberOfEmployees : int from class de.masterzoo.partnercompanies.Circus",
+	"leftSideLocations": [{
+		"filePath": "src/main/java/de/masterzoo/partnercompanies/Circus.java",
+		"startLine": 14,
+		"endLine": 14,
+		"startColumn": 6,
+		"endColumn": 23,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "original attribute declaration",
+		"codeElement": "package numberOfEmployees : int"
+}],
+	"rightSideLocations": [{
+		"filePath": "src/main/java/de/masterzoo/partnercompanies/Circus.java",
+		"startLine": 14,
+		"endLine": 14,
+		"startColumn": 14,
+		"endColumn": 31,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "encapsulated attribute declaration",
+		"codeElement": "private numberOfEmployees : int"
+}, {
+		"filePath": "src/main/java/de/masterzoo/partnercompanies/Circus.java",
+		"startLine": 77,
+		"endLine": 79,
+		"startColumn": 2,
+		"endColumn": 3,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "added getter method",
+		"codeElement": "public does() : int"
+}, {
+		"filePath": "src/main/java/de/masterzoo/partnercompanies/Circus.java",
+		"startLine": 81,
+		"endLine": 83,
+		"startColumn": 2,
+		"endColumn": 3,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "added setter method",
+		"codeElement": "public doeser(numberOfEmployees int) : void"
+}]
+},
+{
+	"type": "Extract Method",
+	"description": "Extract Method public doeser(numberOfEmployees int) : void extracted from public Circus(numberOfEmployees int, budget int) in class de.masterzoo.partnercompanies.Circus",
+	"leftSideLocations": [{
+		"filePath": "src/main/java/de/masterzoo/partnercompanies/Circus.java",
+		"startLine": 19,
+		"endLine": 23,
+		"startColumn": 2,
+		"endColumn": 3,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "source method declaration before extraction",
+		"codeElement": "public Circus(numberOfEmployees int, budget int)"
+}, {
+		"filePath": "src/main/java/de/masterzoo/partnercompanies/Circus.java",
+		"startLine": 20,
+		"endLine": 20,
+		"startColumn": 3,
+		"endColumn": 46,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "extracted code from source method declaration",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "src/main/java/de/masterzoo/partnercompanies/Circus.java",
+		"startLine": 81,
+		"endLine": 83,
+		"startColumn": 2,
+		"endColumn": 3,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "extracted method declaration",
+		"codeElement": "public doeser(numberOfEmployees int) : void"
+}, {
+		"filePath": "src/main/java/de/masterzoo/partnercompanies/Circus.java",
+		"startLine": 82,
+		"endLine": 82,
+		"startColumn": 3,
+		"endColumn": 46,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "extracted code to extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "src/main/java/de/masterzoo/partnercompanies/Circus.java",
+		"startLine": 19,
+		"endLine": 23,
+		"startColumn": 2,
+		"endColumn": 3,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "source method declaration after extraction",
+		"codeElement": "public Circus(numberOfEmployees int, budget int)"
+}, {
+		"filePath": "src/main/java/de/masterzoo/partnercompanies/Circus.java",
+		"startLine": 20,
+		"endLine": 20,
+		"startColumn": 3,
+		"endColumn": 33,
+		"codeElementType": "METHOD_INVOCATION",
+		"description": "extracted method invocation",
+		"codeElement": "this.doeser(numberOfEmployees)"
+}]
+}
+]
+}]
+}
