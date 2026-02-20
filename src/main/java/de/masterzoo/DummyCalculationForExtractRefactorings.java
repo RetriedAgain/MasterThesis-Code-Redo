@@ -8,11 +8,12 @@ public class DummyCalculationForExtractRefactorings {
 	 */
 	public int dummy() {
 		int i = 0;
-		while (i < 10) {
+		final var i1 = 10;
+		while (i < i1) {
 			i++;
-			i *= 10;
+			i *= i1;
 		}
-		i += 10;
+		i += i1;
 		return i;
 	}
 }
