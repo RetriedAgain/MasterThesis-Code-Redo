@@ -8,7 +8,8 @@ public class DummyCalculationForExtractRefactorings {
 	 */
 	public int dummy() {
 		int i = 0;
-		while (i < 10) {
+		final int i1 = 10;
+		while (i < i1) {
 			i++;
 			i *= 10;
 		}
