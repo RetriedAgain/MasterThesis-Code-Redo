@@ -2,8 +2,17 @@ package de.masterzoo;
 
 public class DummyCalculationForExtractRefactorings {
 
-	public void dummy() {
-
-
+	/**
+	 * Dummy method for extract/introduce Variable
+	 * @return the dummy value i
+	 */
+	public int dummy() {
+		int i = 0;
+		while (i < 10) {
+			i++;
+			i *= 10;
+		}
+		i += 10;
+		return i;
 	}
 }
