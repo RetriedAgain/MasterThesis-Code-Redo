@@ -1,0 +1,42 @@
+{
+"commits": [
+{
+	"repository": "https://github.com/RetriedAgain/MasterThesis-Code-Redo.git",
+	"sha1": "c258a52f72c385e37362eece0528cf0535e3b0e9",
+	"url": "https://github.com/RetriedAgain/MasterThesis-Code-Redo/commit/c258a52f72c385e37362eece0528cf0535e3b0e9",
+	"refactorings": [{
+	"type": "Extract Variable",
+	"description": "Extract Variable i1 : int in method public dummy() : int from class de.masterzoo.DummyCalculationForExtractRefactorings",
+	"leftSideLocations": [{
+		"filePath": "src/main/java/de/masterzoo/DummyCalculationForExtractRefactorings.java",
+		"startLine": 11,
+		"endLine": 14,
+		"startColumn": 3,
+		"endColumn": 4,
+		"codeElementType": "WHILE_STATEMENT",
+		"description": "statement with the initializer of the extracted variable",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "src/main/java/de/masterzoo/DummyCalculationForExtractRefactorings.java",
+		"startLine": 11,
+		"endLine": 11,
+		"startColumn": 13,
+		"endColumn": 20,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "extracted variable declaration",
+		"codeElement": "i1 : int"
+}, {
+		"filePath": "src/main/java/de/masterzoo/DummyCalculationForExtractRefactorings.java",
+		"startLine": 12,
+		"endLine": 15,
+		"startColumn": 3,
+		"endColumn": 4,
+		"codeElementType": "WHILE_STATEMENT",
+		"description": "statement with the name of the extracted variable",
+		"codeElement": null
+}]
+}
+]
+}]
+}
