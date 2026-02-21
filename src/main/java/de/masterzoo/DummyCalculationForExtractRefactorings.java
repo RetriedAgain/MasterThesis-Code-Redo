@@ -1,12 +1,11 @@
 package de.masterzoo;
 
-import java.util.ArrayList;
 import java.util.HashMap;
-import java.util.function.BiConsumer;
 
 public class DummyCalculationForExtractRefactorings {
 
 	String prefixString;
+	int constantField = 10;
 
 	public DummyCalculationForExtractRefactorings(String prefixString) {
 		this.prefixString = prefixString;
@@ -18,21 +17,23 @@ public class DummyCalculationForExtractRefactorings {
 	 */
 	public int dummy() {
 		int i = 0;
-		while (i < 10) {
+		int constant = 10;
+		while (i < constant) {
 			i++;
-			i *= 10;
+			i *= constant;
 		}
-		i += 10;
+		i += constant;
 		return i;
 	}
 
 	public int dummy2() {
 		int j = 200;
-		while (j > 10) {
-			j /= 10;
+		int constantLocalDummy2 = 10;
+		while (j > constantLocalDummy2) {
+			j /= constantLocalDummy2;
 			j--;
 		}
-		j %= 10;
+		j %= constantLocalDummy2;
 		return j;
 	}
 
