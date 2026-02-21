@@ -5,6 +5,7 @@ import java.util.HashMap;
 public class DummyCalculationForExtractRefactorings {
 
 	String prefixString;
+	private int anInt;
 
 	public DummyCalculationForExtractRefactorings(String prefixString) {
 		this.prefixString = prefixString;
@@ -16,7 +17,8 @@ public class DummyCalculationForExtractRefactorings {
 	 */
 	public int dummy() {
 		int i = 0;
-		while (i < 10) {
+		anInt = 10;
+		while (i < anInt) {
 			i++;
 			i *= 10;
 		}
