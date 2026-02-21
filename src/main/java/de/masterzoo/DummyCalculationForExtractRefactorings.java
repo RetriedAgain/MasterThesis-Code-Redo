@@ -47,6 +47,9 @@ public class DummyCalculationForExtractRefactorings {
 		map.put(3, 3);
 		String suffixString = " end of pair.";
 
-		map.forEach((n, m) -> { System.out.println(prefixString + n + m + suffixString); });
+		Runnable runnable = () -> map.forEach((n, m) -> {
+			System.out.println(prefixString + n + m + suffixString);
+		});
+		runnable.run();
 	}
 }
