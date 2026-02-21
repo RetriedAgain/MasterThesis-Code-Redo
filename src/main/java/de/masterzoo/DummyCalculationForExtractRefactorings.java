@@ -47,6 +47,9 @@ public class DummyCalculationForExtractRefactorings {
 		map.put(3, 3);
 		String suffixString = " end of pair.";
 
-		map.forEach((n, m) -> { System.out.println(prefixString + n + m + suffixString); });
+		BiConsumer<String, HashMap<Integer, Integer>> stringHashMapBiConsumer = (suffixString1, map1) -> map1.forEach((n, m) -> {
+			System.out.println(prefixString + n + m + suffixString1);
+		});
+		stringHashMapBiConsumer.accept(suffixString, map);
 	}
 }
