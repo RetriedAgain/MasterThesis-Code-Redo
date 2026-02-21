@@ -1,11 +1,13 @@
 package de.masterzoo;
 
+import de.masterzoo.accounting.AccountingNumbers;
+
 import java.util.HashMap;
 
 public class DummyCalculationForExtractRefactorings {
 
 	String prefixString;
-	int constantField = 10;
+	int constantField = AccountingNumbers.CONSTANT_LOCAL_DUMMY_2;
 
 	public DummyCalculationForExtractRefactorings(String prefixString) {
 		this.prefixString = prefixString;
@@ -17,7 +19,7 @@ public class DummyCalculationForExtractRefactorings {
 	 */
 	public int dummy() {
 		int i = 0;
-		int constant = 10;
+		int constant = AccountingNumbers.CONSTANT_LOCAL_DUMMY_2;
 		while (i < constant) {
 			i++;
 			i *= constant;
@@ -28,7 +30,7 @@ public class DummyCalculationForExtractRefactorings {
 
 	public int dummy2() {
 		int j = 200;
-		int constantLocalDummy2 = 10;
+		int constantLocalDummy2 = AccountingNumbers.CONSTANT_LOCAL_DUMMY_2;
 		while (j > constantLocalDummy2) {
 			j /= constantLocalDummy2;
 			j--;

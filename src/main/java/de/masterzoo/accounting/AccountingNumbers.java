@@ -11,6 +11,7 @@ public class AccountingNumbers {
 
 	private final static LocalDate firstDayOfBilling = LocalDate.of(2025, Month.JANUARY, 31);
 	private final static LocalDate firstDayOpening = LocalDate.of(2025, Month.JANUARY, 1);
+	public static final int CONSTANT_LOCAL_DUMMY_2 = 10;
 
 
 	private int calcFreeNumOfEmployeeRetirementBudget() {
