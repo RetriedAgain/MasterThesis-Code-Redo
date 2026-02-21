@@ -4,8 +4,9 @@ import java.util.HashMap;
 
 public class DummyCalculationForExtractRefactorings {
 
+	public static final int secret = 10;
 	String prefixString;
-	int constantField = 10;
+	int constantField = secret;
 
 	public DummyCalculationForExtractRefactorings(String prefixString) {
 		this.prefixString = prefixString;
@@ -17,7 +18,7 @@ public class DummyCalculationForExtractRefactorings {
 	 */
 	public int dummy() {
 		int i = 0;
-		int constant = 10;
+		int constant = secret;
 		while (i < constant) {
 			i++;
 			i *= constant;
@@ -28,7 +29,7 @@ public class DummyCalculationForExtractRefactorings {
 
 	public int dummy2() {
 		int j = 200;
-		int constantLocalDummy2 = 10;
+		int constantLocalDummy2 = secret;
 		while (j > constantLocalDummy2) {
 			j /= constantLocalDummy2;
 			j--;
