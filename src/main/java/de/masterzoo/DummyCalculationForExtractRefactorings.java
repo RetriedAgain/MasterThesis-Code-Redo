@@ -1,6 +1,16 @@
 package de.masterzoo;
 
+import java.util.ArrayList;
+import java.util.HashMap;
+import java.util.function.BiConsumer;
+
 public class DummyCalculationForExtractRefactorings {
+
+	String prefixString;
+
+	public DummyCalculationForExtractRefactorings(String prefixString) {
+		this.prefixString = prefixString;
+	}
 
 	/**
 	 * Dummy method for extract/introduce Variable
@@ -24,5 +34,19 @@ public class DummyCalculationForExtractRefactorings {
 		}
 		j %= 10;
 		return j;
+	}
+
+	/**
+	 * To extract a Functional Variable.
+	 * Inspired by URL: <a href="https://www.w3schools.com/java/java_lambda.asp">w3schools</a>
+	 */
+	public void dummy3() {
+		HashMap<Integer, Integer> map = new HashMap<>();
+		map.put(1, 1);
+		map.put(2, 2);
+		map.put(3, 3);
+		String suffixString = " end of pair.";
+
+		map.forEach((n, m) -> { System.out.println(prefixString + n + m + suffixString); });
 	}
 }
