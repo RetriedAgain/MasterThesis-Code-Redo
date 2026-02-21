@@ -5,7 +5,6 @@ import java.util.HashMap;
 public class DummyCalculationForExtractRefactorings {
 
 	String prefixString;
-	int constantField = 10;
 
 	public DummyCalculationForExtractRefactorings(String prefixString) {
 		this.prefixString = prefixString;
@@ -17,23 +16,21 @@ public class DummyCalculationForExtractRefactorings {
 	 */
 	public int dummy() {
 		int i = 0;
-		int constant = 10;
-		while (i < constant) {
+		while (i < 10) {
 			i++;
-			i *= constant;
+			i *= 10;
 		}
-		i += constant;
+		i += 10;
 		return i;
 	}
 
 	public int dummy2() {
 		int j = 200;
-		int constantLocalDummy2 = 10;
-		while (j > constantLocalDummy2) {
-			j /= constantLocalDummy2;
+		while (j > 10) {
+			j /= 10;
 			j--;
 		}
-		j %= constantLocalDummy2;
+		j %= 10;
 		return j;
 	}
 
