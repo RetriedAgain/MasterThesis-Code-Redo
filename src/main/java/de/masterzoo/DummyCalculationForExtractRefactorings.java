@@ -5,6 +5,7 @@ import java.util.HashMap;
 public class DummyCalculationForExtractRefactorings {
 
 	String prefixString;
+	private int anInt;
 
 	public DummyCalculationForExtractRefactorings(String prefixString) {
 		this.prefixString = prefixString;
