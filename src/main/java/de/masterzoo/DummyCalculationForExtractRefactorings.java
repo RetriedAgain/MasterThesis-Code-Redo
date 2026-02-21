@@ -6,6 +6,7 @@ public class DummyCalculationForExtractRefactorings {
 
 	String prefixString;
 	private int anInt;
+	private int anInt = 10;
 
 	public DummyCalculationForExtractRefactorings(String prefixString) {
 		this.prefixString = prefixString;
@@ -17,21 +18,21 @@ public class DummyCalculationForExtractRefactorings {
 	 */
 	public int dummy() {
 		int i = 0;
-		while (i < 10) {
+		while (i < this.anInt) {
 			i++;
-			i *= 10;
+			i *= this.anInt;
 		}
-		i += 10;
+		i += this.anInt;
 		return i;
 	}
 
 	public int dummy2() {
 		int j = 200;
-		while (j > 10) {
-			j /= 10;
+		while (j > this.anInt) {
+			j /= this.anInt;
 			j--;
 		}
-		j %= 10;
+		j %= this.anInt;
 		return j;
 	}
 
