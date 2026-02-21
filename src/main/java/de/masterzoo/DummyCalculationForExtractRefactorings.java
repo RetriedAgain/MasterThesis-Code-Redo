@@ -4,6 +4,7 @@ import java.util.HashMap;
 
 public class DummyCalculationForExtractRefactorings {
 
+	public static final int INT = 10;
 	String prefixString;
 
 	public DummyCalculationForExtractRefactorings(String prefixString) {
@@ -16,21 +17,21 @@ public class DummyCalculationForExtractRefactorings {
 	 */
 	public int dummy() {
 		int i = 0;
-		while (i < 10) {
+		while (i < INT) {
 			i++;
-			i *= 10;
+			i *= INT;
 		}
-		i += 10;
+		i += INT;
 		return i;
 	}
 
 	public int dummy2() {
 		int j = 200;
-		while (j > 10) {
-			j /= 10;
+		while (j > INT) {
+			j /= INT;
 			j--;
 		}
-		j %= 10;
+		j %= INT;
 		return j;
 	}
 
