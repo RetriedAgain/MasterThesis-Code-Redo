@@ -65,7 +65,7 @@ public class DummyCalculationForExtractRefactorings {
 									  int[] someArray,
 									  int ... specialValues) {
 
-		// This works great to extract already. No need for more besides still figuring out the fold parameters thing.
+		// This works great to extract already. Only other things needed: Chain constructors and fold param. thing
 		for (int t : someArray) {
 			someValue += t;
 		}
