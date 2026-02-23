@@ -1,6 +1,7 @@
 package de.masterzoo.humanresources;
 
 import de.masterzoo.groups.animalia.canines.Labrador;
+import de.masterzoo.groups.animalia.canines.T;
 
 /**
  * A singular employee who works at the Zoo or one of its partner companies.
@@ -10,7 +11,7 @@ public class Employee {
 	private final String name;
 	private int age;
 
-	private Labrador companionLabrador;
+	private T secret;
 
 	public Employee(String name, int age) {
 		this.name = name;
@@ -28,13 +29,13 @@ public class Employee {
 		this.age = age;
 	}
 
-	public Labrador getCompanionLabrador() {
-		return companionLabrador;
+	public T getCompanionLabrador() {
+		return secret;
 	}
 
 	public void setCompanionLabrador(Labrador companionLabrador) {
 		if (companionLabrador.getHumanCompanion() != null) {
-			this.companionLabrador = companionLabrador;
+			this.secret = companionLabrador;
 		} else {
 			System.out.println("Labby already has a human companion!");
 		}
