@@ -1,0 +1,75 @@
+{
+"commits": [
+{
+	"repository": "https://github.com/RetriedAgain/MasterThesis-Code-Redo.git",
+	"sha1": "c1e0f2c852d66061c590e4013952aaae8749f74e",
+	"url": "https://github.com/RetriedAgain/MasterThesis-Code-Redo/commit/c1e0f2c852d66061c590e4013952aaae8749f74e",
+	"refactorings": [{
+	"type": "Add Method Annotation",
+	"description": "Add Method Annotation @Override in method public doPuppyEyes() : void from class de.masterzoo.groups.animalia.canines.Labrador",
+	"leftSideLocations": [{
+		"filePath": "src/main/java/de/masterzoo/groups/animalia/canines/Labrador.java",
+		"startLine": 60,
+		"endLine": 65,
+		"startColumn": 2,
+		"endColumn": 3,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "public doPuppyEyes() : void"
+}],
+	"rightSideLocations": [{
+		"filePath": "src/main/java/de/masterzoo/groups/animalia/canines/Labrador.java",
+		"startLine": 63,
+		"endLine": 63,
+		"startColumn": 2,
+		"endColumn": 11,
+		"codeElementType": "ANNOTATION",
+		"description": "added annotation",
+		"codeElement": "@Override"
+}, {
+		"filePath": "src/main/java/de/masterzoo/groups/animalia/canines/Labrador.java",
+		"startLine": 60,
+		"endLine": 66,
+		"startColumn": 2,
+		"endColumn": 3,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "method declaration with added annotation",
+		"codeElement": "public doPuppyEyes() : void"
+}]
+},
+{
+	"type": "Extract Interface",
+	"description": "Extract Interface de.masterzoo.groups.animalia.Labrador from classes [de.masterzoo.groups.animalia.canines.Labrador]",
+	"leftSideLocations": [{
+		"filePath": "src/main/java/de/masterzoo/groups/animalia/canines/Labrador.java",
+		"startLine": 10,
+		"endLine": 74,
+		"startColumn": 0,
+		"endColumn": 2,
+		"codeElementType": "TYPE_DECLARATION",
+		"description": "original sub-type declaration",
+		"codeElement": "de.masterzoo.groups.animalia.canines.Labrador"
+}],
+	"rightSideLocations": [{
+		"filePath": "src/main/java/de/masterzoo/groups/animalia/canines/Labrador.java",
+		"startLine": 10,
+		"endLine": 75,
+		"startColumn": 0,
+		"endColumn": 2,
+		"codeElementType": "TYPE_DECLARATION",
+		"description": "sub-type declaration after extraction",
+		"codeElement": "de.masterzoo.groups.animalia.canines.Labrador"
+}, {
+		"filePath": "src/main/java/de/masterzoo/groups/animalia/Labrador.java",
+		"startLine": 3,
+		"endLine": 8,
+		"startColumn": 0,
+		"endColumn": 2,
+		"codeElementType": "TYPE_DECLARATION",
+		"description": "extracted super-type declaration",
+		"codeElement": "de.masterzoo.groups.animalia.Labrador"
+}]
+}
+]
+}]
+}
