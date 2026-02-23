@@ -10,8 +10,6 @@ public class Employee {
 	private final String name;
 	private int age;
 
-	private Labrador companionLabrador;
-
 	public Employee(String name, int age) {
 		this.name = name;
 	}
@@ -26,18 +24,6 @@ public class Employee {
 
 	public void setAge(int age) {
 		this.age = age;
-	}
-
-	public Labrador getCompanionLabrador() {
-		return companionLabrador;
-	}
-
-	public void setCompanionLabrador(Labrador companionLabrador) {
-		if (companionLabrador.getHumanCompanion() != null) {
-			this.companionLabrador = companionLabrador;
-		} else {
-			System.out.println("Labby already has a human companion!");
-		}
 	}
 
 

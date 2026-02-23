@@ -32,7 +32,7 @@ public class Main {
 
 		Zoo myZoo = new Zoo(10000, 12000, animalsInZoo, propsInZoo, partnerCompanies);
 
-		// A pup that can also fly
+		/*// A pup that can also fly
 		Labrador superPup = new Labrador(
 			myTempAnimal.getGENDER(),
 			myTempAnimal.getName(),
@@ -50,7 +50,7 @@ public class Main {
 			}
 		};
 
-		System.out.println(superPup.getMovementStrategies());
+		System.out.println(superPup.getMovementStrategies());*/
 
 	}
 
