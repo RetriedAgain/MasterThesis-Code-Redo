@@ -1,6 +1,6 @@
 package de.masterzoo.partnercompanies.shows;
 
-import de.masterzoo.groups.animalia.canines.Labrador;
+import de.masterzoo.groups.animalia.canines.T;
 
 import java.util.List;
 
@@ -9,9 +9,9 @@ import java.util.List;
  */
 public class DogShow {
 
-	List<Labrador> labradors;
+	List<T> labradors;
 
-	DogShow(List<Labrador> labradors) {
+	DogShow(List<T> labradors) {
 		this.labradors = labradors;
 	}
 
@@ -19,7 +19,7 @@ public class DogShow {
 	 * Every dog gets to perform the trick they know when this method is called.
 	 */
 	public void performTricks() {
-		for (Labrador labrador : labradors) {
+		for (T labrador : labradors) {
 			labrador.doTrick();
 		}
 	}
