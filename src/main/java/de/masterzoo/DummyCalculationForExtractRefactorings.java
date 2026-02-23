@@ -1,12 +1,18 @@
 package de.masterzoo;
 
+import org.jetbrains.annotations.Nullable;
+
 import java.util.HashMap;
+import java.util.Random;
 
 public class DummyCalculationForExtractRefactorings {
 
 	String prefixString;
 
-	public DummyCalculationForExtractRefactorings(String prefixString) {
+	public DummyCalculationForExtractRefactorings(String prefixString, Integer someValue, String[] args, int f, double anotherValue,
+												  int[] someArray,
+												  int ... specialValues) {
+		// Can be extracted to chained constructor
 		this.prefixString = prefixString;
 	}
 
@@ -47,4 +53,64 @@ public class DummyCalculationForExtractRefactorings {
 
 		map.forEach((n, m) -> { System.out.println(prefixString + n + m + suffixString); });
 	}
+
+	/**
+	 * First test with some values like an array to figure out how to check all cases for this refactoring type.
+	 * @param someValue
+	 * @param anotherValue
+	 * @param someArray
+	 * @return
+	 */
+	public double extractMethodDummy1(@Nullable Integer someValue, String[] args, int f, double anotherValue,
+									  int[] someArray,
+									  int ... specialValues) {
+
+		// This works great to extract already. No need for more besides still figuring out the fold parameters thing.
+		for (int t : someArray) {
+			someValue += t;
+		}
+
+		// Test to check folding according to documentation: https://www.jetbrains.com/help/idea/2025.3/extract-method-dialog.html?refactoring.extractInterface&keymap=macOS&utm_source=product&utm_medium=link&utm_campaign=IU&utm_content=2025.3
+		int i = 5;
+		int[] a = new int[i];
+
+		// Another test like above, but with parameter from method as array-size
+		int[] b = new int[f];
+
+
+
+		// A few tests to try and get folding to work
+		int[] values = {1, 2, 3, 4};
+		int[] toBeFolded = new int[values.length];
+		for (int value : values) {
+			someValue += value;
+		}
+
+		// Inspired by URL regarding bug report around folding parameters when extracting method: https://youtrack.jetbrains.com/issue/IDEA-156818/Extract-method-on-array-swap-incorrect-with-fold-parameters
+		// Still doesn't work though to fold parameters
+		Random random = new Random();
+		int size = 20;
+		for (int l = 0; l < size; l++) {
+			int x = random.nextInt(size);
+			// start snip
+			int tmp = values[l];
+			values[l] = values[x];
+			values[x] = tmp;
+			// end snip
+		}
+
+		return someValue + anotherValue;
+	}
+
+	public double extractMethodDummy2(int someValue, double anotherValue, int[] someArray) {
+		// Copy of to-be-extracted code from extractMethodDummy1 for IJ to try and recognize duplicate
+		for (int t : someArray) {
+			someValue += t;
+		}
+
+		return someValue + anotherValue;
+	}
+
+
+
 }

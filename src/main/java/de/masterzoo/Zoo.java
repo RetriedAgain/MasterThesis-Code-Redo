@@ -27,15 +27,15 @@ public class Zoo {
 	private final static LocalDate firstDayOpening = LocalDate.of(2025, Month.JANUARY, 1);
 
 	// Accounting
-	private int averageMonthlyCostsByYear;
-	private int averageMonthlyRevenueByYear;
+	private double averageMonthlyCostsByYear;
+	private double averageMonthlyRevenueByYear;
 	private double accountingBudget;
 	private double hrBudget;
 	private double legalBudget;
 	private double zookeepingBudget;
 	private double securityBudget;
 
-	private HashMap<YearMonth, Integer> collectedRentInYearMonth = new HashMap<>();
+	private HashMap<YearMonth, Double> collectedRentInYearMonth = new HashMap<YearMonth, Double>();
 
 	// HR
 	private int numberOfEmployees;
@@ -56,7 +56,8 @@ public class Zoo {
 	private List<Company> partnerCompanies;
 
 
-	public Zoo(int averageMonthlyCostsByYear, int averageMonthlyRevenueByYear, List<Animal> animalsInZoo, List<Prop> propsInZoo,  List<Company> partnerCompanies) {
+	public Zoo(double averageMonthlyCostsByYear, double averageMonthlyRevenueByYear, List<Animal> animalsInZoo,
+			   List<Prop> propsInZoo,  List<Company> partnerCompanies) {
 		this.averageMonthlyCostsByYear = averageMonthlyCostsByYear;
 		this.averageMonthlyRevenueByYear = averageMonthlyRevenueByYear;
 		this.animalsInZoo = animalsInZoo;
@@ -69,7 +70,7 @@ public class Zoo {
 	 */
 	public void enableAndCreateCircus() {
 		int freeNumOfEmployees = calcFreeNumOfEmployees();
-		int freeNumOfCircusBudget = calcFreeNumOfCircusBudget();
+		double freeNumOfCircusBudget = calcFreeNumOfCircusBudget();
 		this.partnerCompanies.add(new Circus(freeNumOfEmployees, freeNumOfCircusBudget));
 	}
 
@@ -88,9 +89,9 @@ public class Zoo {
 	 * @param yearMonth The yearmonth in which the rentcollection is to be done.
 	 * @return The total amount of collectedRent.
 	 */
-	public int collectRentInYearMonth(List<Company> partnerCompanies, YearMonth yearMonth) {
-		HashMap<YearMonth, Integer> collectedRentInYearMonth = new HashMap<>();
-		int collectedRent = 0;
+	public double collectRentInYearMonth(List<Company> partnerCompanies, YearMonth yearMonth) {
+		HashMap<YearMonth, Double> collectedRentInYearMonth = new HashMap<>();
+		double collectedRent = 0;
 		for (Company partnerCompany : partnerCompanies) {
 			if (partnerCompany instanceof Circus) {
 				Circus partnerCircus = (Circus) partnerCompany;
@@ -101,19 +102,19 @@ public class Zoo {
 		return collectedRent;
 	}
 
-	private int calcFreeNumOfCircusBudget() {
+	private double calcFreeNumOfCircusBudget() {
 		return 10_000;
 	}
 
-	private int calcFreeNumOfWildLifeProtectionBudget() {
+	private double calcFreeNumOfWildLifeProtectionBudget() {
 		return 10_000;
 	}
 
-	private int calcFreeNumOfSavingsBudget() {
+	private double calcFreeNumOfSavingsBudget() {
 		return 10_000;
 	}
 
-	private int calcFreeNumOfEmployeeETFBudget() {
+	private double calcFreeNumOfEmployeeETFBudget() {
 		return 10_000;
 	}
 
@@ -137,19 +138,19 @@ public class Zoo {
 			|| this.securityBudget > 200_000;
 	}
 
-	public int calculateAverageMonthlyCostsByYear(Year year) {
+	public double calculateAverageMonthlyCostsByYear(Year year) {
 		//TODO: Add calculation here
 		this.averageMonthlyCostsByYear = 0;
 		return this.averageMonthlyCostsByYear;
 	}
 
-	public int calculateAverageMonthlyRevenueByYear(Year year) {
+	public double calculateAverageMonthlyRevenueByYear(Year year) {
 		//TODO: Add calculation here
 		this.averageMonthlyRevenueByYear = 0;
 		return this.averageMonthlyRevenueByYear;
 	}
 
-	public int dummCalculateSomethingAboutProfitLater(Year year) {
+	public double dummCalculateSomethingAboutProfitLater(Year year) {
 		Month[] months = Month.values();
 		/*listOfProfits //TODO: Possibly make this more complicated
 		for (Month month : Month.values()) {
@@ -175,19 +176,19 @@ public class Zoo {
 		return false;
 	}
 
-	public int getAverageMonthlyCostsByYear() {
+	public double getAverageMonthlyCostsByYear() {
 		return averageMonthlyCostsByYear;
 	}
 
-	public void setAverageMonthlyCostsByYear(int averageMonthlyCostsByYear) {
+	public void setAverageMonthlyCostsByYear(double averageMonthlyCostsByYear) {
 		this.averageMonthlyCostsByYear = averageMonthlyCostsByYear;
 	}
 
-	public int getAverageMonthlyRevenueByYear() {
+	public double getAverageMonthlyRevenueByYear() {
 		return averageMonthlyRevenueByYear;
 	}
 
-	public void setAverageMonthlyRevenueByYear(int averageMonthlyRevenueByYear) {
+	public void setAverageMonthlyRevenueByYear(double averageMonthlyRevenueByYear) {
 		this.averageMonthlyRevenueByYear = averageMonthlyRevenueByYear;
 	}
 
@@ -215,11 +216,11 @@ public class Zoo {
 		this.propsInZoo = propsInZoo;
 	}
 
-	public HashMap<YearMonth, Integer> getCollectedRentInYearMonth() {
+	public HashMap<YearMonth, Double> getCollectedRentInYearMonth() {
 		return collectedRentInYearMonth;
 	}
 
-	public void setCollectedRentInYearMonth(HashMap<YearMonth, Integer> collectedRentInYearMonth) {
+	public void setCollectedRentInYearMonth(HashMap<YearMonth, Double> collectedRentInYearMonth) {
 		this.collectedRentInYearMonth = collectedRentInYearMonth;
 	}
 }

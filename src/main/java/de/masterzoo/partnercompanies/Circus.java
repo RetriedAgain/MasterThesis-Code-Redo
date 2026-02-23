@@ -12,20 +12,20 @@ public class Circus extends Company {
 
 
 	int numberOfEmployees;
-	int budget;
-	int startingBudget;
-	int debtLeft;
+	double budget;
+	double startingBudget;
+	double debtLeft;
 
-	public Circus(int numberOfEmployees, int budget) {
+	public Circus(int numberOfEmployees, double budget) {
 		this.numberOfEmployees = numberOfEmployees;
 		this.budget = budget;
 		this.startingBudget = budget;
 	}
 
-	public int payRent() {
+	public double payRent() {
 
-		int monthlyRentToPay = 100 * this.numberOfEmployees;
-		int monthlyRentPaid = 0;
+		double monthlyRentToPay = 100 * this.numberOfEmployees;
+		double monthlyRentPaid = 0;
 
 		if (this.budget >= monthlyRentToPay) {
 			this.budget -= monthlyRentToPay;
@@ -50,27 +50,27 @@ public class Circus extends Company {
 		System.out.println("Circus is over!");
 	}
 
-	public int getBudget() {
+	public double getBudget() {
 		return budget;
 	}
 
-	public void setBudget(int budget) {
+	public void setBudget(double budget) {
 		this.budget = budget;
 	}
 
-	public int getStartingBudget() {
+	public double getStartingBudget() {
 		return startingBudget;
 	}
 
-	public void setStartingBudget(int startingBudget) {
+	public void setStartingBudget(double startingBudget) {
 		this.startingBudget = startingBudget;
 	}
 
-	public int getDebtLeft() {
+	public double getDebtLeft() {
 		return debtLeft;
 	}
 
-	public void setDebtLeft(int debtLeft) {
+	public void setDebtLeft(double debtLeft) {
 		this.debtLeft = debtLeft;
 	}
 
