@@ -10,7 +10,7 @@ import java.util.ArrayList;
 /**
  * It's a labrador. They are very cute.
  */
-public class Labrador extends Canine {
+public class Labrador extends Canine implements T {
 	/**
 	 * Judges if this Labrador can actually be trained.
 	 */
