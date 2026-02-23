@@ -1,6 +1,7 @@
 package de.masterzoo.humanresources;
 
 import de.masterzoo.groups.animalia.canines.Labrador;
+import de.masterzoo.groups.animalia.canines.T;
 
 /**
  * A singular employee who works at the Zoo or one of its partner companies.
@@ -10,7 +11,7 @@ public class Employee {
 	private final String name;
 	private int age;
 
-	private Labrador companionLabrador;
+	private T companionLabrador;
 
 	public Employee(String name, int age) {
 		this.name = name;
@@ -28,7 +29,7 @@ public class Employee {
 		this.age = age;
 	}
 
-	public Labrador getCompanionLabrador() {
+	public T getCompanionLabrador() {
 		return companionLabrador;
 	}
 
