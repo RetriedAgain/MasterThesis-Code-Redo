@@ -10,7 +10,7 @@ import java.util.ArrayList;
 /**
  * It's a labrador. They are very cute.
  */
-public class Labrador extends Canine {
+public class Labrador extends Canine implements de.masterzoo.groups.animalia.T {
 	/**
 	 * Judges if this Labrador can actually be trained.
 	 */
@@ -55,13 +55,6 @@ public class Labrador extends Canine {
 	 */
 	public void doTrick() {
 		System.out.println("Flips thanks to " + humanCompanion.getName() + "!");
-	}
-
-	/**
-	 * A natural talent of labradors.
-	 */
-	public void doPuppyEyes() {
-		System.out.println("*blink*");
 	}
 
 	public Employee getHumanCompanion() {
