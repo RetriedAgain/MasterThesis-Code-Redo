@@ -15,12 +15,4 @@ public class DogShow {
 		this.labradors = labradors;
 	}
 
-	/**
-	 * Every dog gets to perform the trick they know when this method is called.
-	 */
-	public void performTricks() {
-		for (Labrador labrador : labradors) {
-			labrador.doTrick();
-		}
-	}
 }
