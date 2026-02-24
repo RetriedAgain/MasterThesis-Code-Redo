@@ -66,9 +66,7 @@ public class DummyCalculationForExtractRefactorings {
 									  int ... specialValues) {
 
 		// This works great to extract already. Only other things needed: Chain constructors and fold param. thing
-		for (int t : someArray) {
-			someValue += t;
-		}
+		someValue = getInteger(someArray, someValue);
 
 		// Test to check folding according to documentation: https://www.jetbrains.com/help/idea/2025.3/extract-method-dialog.html?refactoring.extractInterface&keymap=macOS&utm_source=product&utm_medium=link&utm_campaign=IU&utm_content=2025.3
 		int i = 5;
@@ -82,9 +80,7 @@ public class DummyCalculationForExtractRefactorings {
 		// A few tests to try and get folding to work
 		int[] values = {1, 2, 3, 4};
 		int[] toBeFolded = new int[values.length];
-		for (int value : values) {
-			someValue += value;
-		}
+		someValue = getInteger(values, someValue);
 
 		// Inspired by URL regarding bug report around folding parameters when extracting method: https://youtrack.jetbrains.com/issue/IDEA-156818/Extract-method-on-array-swap-incorrect-with-fold-parameters
 		// Still doesn't work though to fold parameters
@@ -102,11 +98,16 @@ public class DummyCalculationForExtractRefactorings {
 		return someValue + anotherValue;
 	}
 
-	public double extractMethodDummy2(int someValue, double anotherValue, int[] someArray) {
-		// Copy of to-be-extracted code from extractMethodDummy1 for IJ to try and recognize duplicate
+	public Integer getInteger(int[] someArray, Integer someValue) {
 		for (int t : someArray) {
 			someValue += t;
 		}
+		return someValue;
+	}
+
+	public double extractMethodDummy2(int someValue, double anotherValue, int[] someArray) {
+		// Copy of to-be-extracted code from extractMethodDummy1 for IJ to try and recognize duplicate
+		someValue = getInteger(someArray, someValue);
 
 		return someValue + anotherValue;
 	}
