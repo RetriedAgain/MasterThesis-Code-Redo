@@ -1,0 +1,114 @@
+{
+"commits": [
+{
+	"repository": "https://github.com/RetriedAgain/MasterThesis-Code-Redo.git",
+	"sha1": "3a5f287e51919cc6009e1dfc45109696d22af3be",
+	"url": "https://github.com/RetriedAgain/MasterThesis-Code-Redo/commit/3a5f287e51919cc6009e1dfc45109696d22af3be",
+	"refactorings": [{
+	"type": "Extract Method",
+	"description": "Extract Method public getInteger(someValue Integer, someArray int[]) : Integer extracted from public extractMethodDummy1(someValue Integer, args String[], f int, anotherValue double, someArray int[], specialValues int...) : double in class de.masterzoo.DummyCalculationForExtractRefactorings",
+	"leftSideLocations": [{
+		"filePath": "src/main/java/de/masterzoo/DummyCalculationForExtractRefactorings.java",
+		"startLine": 57,
+		"endLine": 103,
+		"startColumn": 2,
+		"endColumn": 3,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "source method declaration before extraction",
+		"codeElement": "public extractMethodDummy1(someValue Integer, args String[], f int, anotherValue double, someArray int[], specialValues int...) : double"
+}, {
+		"filePath": "src/main/java/de/masterzoo/DummyCalculationForExtractRefactorings.java",
+		"startLine": 70,
+		"endLine": 70,
+		"startColumn": 4,
+		"endColumn": 19,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "extracted code from source method declaration",
+		"codeElement": null
+}, {
+		"filePath": "src/main/java/de/masterzoo/DummyCalculationForExtractRefactorings.java",
+		"startLine": 69,
+		"endLine": 71,
+		"startColumn": 3,
+		"endColumn": 4,
+		"codeElementType": "ENHANCED_FOR_STATEMENT",
+		"description": "extracted code from source method declaration",
+		"codeElement": null
+}, {
+		"filePath": "src/main/java/de/masterzoo/DummyCalculationForExtractRefactorings.java",
+		"startLine": 69,
+		"endLine": 71,
+		"startColumn": 27,
+		"endColumn": 4,
+		"codeElementType": "BLOCK",
+		"description": "extracted code from source method declaration",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "src/main/java/de/masterzoo/DummyCalculationForExtractRefactorings.java",
+		"startLine": 103,
+		"endLine": 108,
+		"startColumn": 2,
+		"endColumn": 3,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "extracted method declaration",
+		"codeElement": "public getInteger(someValue Integer, someArray int[]) : Integer"
+}, {
+		"filePath": "src/main/java/de/masterzoo/DummyCalculationForExtractRefactorings.java",
+		"startLine": 105,
+		"endLine": 105,
+		"startColumn": 4,
+		"endColumn": 19,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "extracted code to extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "src/main/java/de/masterzoo/DummyCalculationForExtractRefactorings.java",
+		"startLine": 104,
+		"endLine": 106,
+		"startColumn": 3,
+		"endColumn": 4,
+		"codeElementType": "ENHANCED_FOR_STATEMENT",
+		"description": "extracted code to extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "src/main/java/de/masterzoo/DummyCalculationForExtractRefactorings.java",
+		"startLine": 104,
+		"endLine": 106,
+		"startColumn": 27,
+		"endColumn": 4,
+		"codeElementType": "BLOCK",
+		"description": "extracted code to extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "src/main/java/de/masterzoo/DummyCalculationForExtractRefactorings.java",
+		"startLine": 57,
+		"endLine": 101,
+		"startColumn": 2,
+		"endColumn": 3,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "source method declaration after extraction",
+		"codeElement": "public extractMethodDummy1(someValue Integer, args String[], f int, anotherValue double, someArray int[], specialValues int...) : double"
+}, {
+		"filePath": "src/main/java/de/masterzoo/DummyCalculationForExtractRefactorings.java",
+		"startLine": 69,
+		"endLine": 69,
+		"startColumn": 15,
+		"endColumn": 47,
+		"codeElementType": "METHOD_INVOCATION",
+		"description": "extracted method invocation",
+		"codeElement": "getInteger(someValue,someArray)"
+}, {
+		"filePath": "src/main/java/de/masterzoo/DummyCalculationForExtractRefactorings.java",
+		"startLine": 107,
+		"endLine": 107,
+		"startColumn": 3,
+		"endColumn": 20,
+		"codeElementType": "RETURN_STATEMENT",
+		"description": "added statement in extracted method declaration",
+		"codeElement": null
+}]
+}
+]
+}]
+}

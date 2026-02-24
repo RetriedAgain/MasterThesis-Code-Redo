@@ -1,0 +1,105 @@
+{
+"commits": [
+{
+	"repository": "https://github.com/RetriedAgain/MasterThesis-Code-Redo.git",
+	"sha1": "b28ab43afa1ccf1c26536be583fa224ecf1e8857",
+	"url": "https://github.com/RetriedAgain/MasterThesis-Code-Redo/commit/b28ab43afa1ccf1c26536be583fa224ecf1e8857",
+	"refactorings": [{
+	"type": "Extract Method",
+	"description": "Extract Method public DummyCalculationForExtractRefactorings(prefixString String, someValue Integer, args String[]) extracted from public DummyCalculationForExtractRefactorings(prefixString String, someValue Integer, args String[], f int, anotherValue double, someArray int[], specialValues int...) in class de.masterzoo.DummyCalculationForExtractRefactorings",
+	"leftSideLocations": [{
+		"filePath": "src/main/java/de/masterzoo/DummyCalculationForExtractRefactorings.java",
+		"startLine": 18,
+		"endLine": 29,
+		"startColumn": 2,
+		"endColumn": 3,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "source method declaration before extraction",
+		"codeElement": "public DummyCalculationForExtractRefactorings(prefixString String, someValue Integer, args String[], f int, anotherValue double, someArray int[], specialValues int...)"
+}, {
+		"filePath": "src/main/java/de/masterzoo/DummyCalculationForExtractRefactorings.java",
+		"startLine": 22,
+		"endLine": 22,
+		"startColumn": 3,
+		"endColumn": 36,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "extracted code from source method declaration",
+		"codeElement": null
+}, {
+		"filePath": "src/main/java/de/masterzoo/DummyCalculationForExtractRefactorings.java",
+		"startLine": 23,
+		"endLine": 23,
+		"startColumn": 3,
+		"endColumn": 30,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "extracted code from source method declaration",
+		"codeElement": null
+}, {
+		"filePath": "src/main/java/de/masterzoo/DummyCalculationForExtractRefactorings.java",
+		"startLine": 24,
+		"endLine": 24,
+		"startColumn": 3,
+		"endColumn": 20,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "extracted code from source method declaration",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "src/main/java/de/masterzoo/DummyCalculationForExtractRefactorings.java",
+		"startLine": 29,
+		"endLine": 33,
+		"startColumn": 2,
+		"endColumn": 3,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "extracted method declaration",
+		"codeElement": "public DummyCalculationForExtractRefactorings(prefixString String, someValue Integer, args String[])"
+}, {
+		"filePath": "src/main/java/de/masterzoo/DummyCalculationForExtractRefactorings.java",
+		"startLine": 30,
+		"endLine": 30,
+		"startColumn": 3,
+		"endColumn": 36,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "extracted code to extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "src/main/java/de/masterzoo/DummyCalculationForExtractRefactorings.java",
+		"startLine": 31,
+		"endLine": 31,
+		"startColumn": 3,
+		"endColumn": 30,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "extracted code to extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "src/main/java/de/masterzoo/DummyCalculationForExtractRefactorings.java",
+		"startLine": 32,
+		"endLine": 32,
+		"startColumn": 3,
+		"endColumn": 20,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "extracted code to extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "src/main/java/de/masterzoo/DummyCalculationForExtractRefactorings.java",
+		"startLine": 18,
+		"endLine": 27,
+		"startColumn": 2,
+		"endColumn": 3,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "source method declaration after extraction",
+		"codeElement": "public DummyCalculationForExtractRefactorings(prefixString String, someValue Integer, args String[], f int, anotherValue double, someArray int[], specialValues int...)"
+}, {
+		"filePath": "src/main/java/de/masterzoo/DummyCalculationForExtractRefactorings.java",
+		"startLine": 22,
+		"endLine": 22,
+		"startColumn": 3,
+		"endColumn": 39,
+		"codeElementType": "CONSTRUCTOR_INVOCATION",
+		"description": "extracted method invocation",
+		"codeElement": "this(prefixString,someValue,args)"
+}]
+}
+]
+}]
+}
