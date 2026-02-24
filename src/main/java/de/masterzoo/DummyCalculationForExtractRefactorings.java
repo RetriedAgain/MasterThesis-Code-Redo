@@ -8,12 +8,24 @@ import java.util.Random;
 public class DummyCalculationForExtractRefactorings {
 
 	String prefixString;
+	Integer someValue;
+	String[] args;
+	int f;
+	double anotherValue;
+	int[] someArray;
+	int[] specialValues;
 
 	public DummyCalculationForExtractRefactorings(String prefixString, Integer someValue, String[] args, int f, double anotherValue,
 												  int[] someArray,
 												  int ... specialValues) {
 		// Can be extracted to chained constructor
 		this.prefixString = prefixString;
+		this.someValue = someValue;
+		this.args = args;
+		this.f = f;
+		this.anotherValue = anotherValue;
+		this.someArray = someArray;
+		this.specialValues = specialValues;
 	}
 
 	/**
