@@ -19,13 +19,17 @@ public class DummyCalculationForExtractRefactorings {
 												  int[] someArray,
 												  int ... specialValues) {
 		// Can be extracted to chained constructor
-		this.prefixString = prefixString;
-		this.someValue = someValue;
-		this.args = args;
+		this(prefixString, someValue, args);
 		this.f = f;
 		this.anotherValue = anotherValue;
 		this.someArray = someArray;
 		this.specialValues = specialValues;
+	}
+
+	public DummyCalculationForExtractRefactorings(String prefixString, Integer someValue, String[] args) {
+		this.prefixString = prefixString;
+		this.someValue = someValue;
+		this.args = args;
 	}
 
 	/**
