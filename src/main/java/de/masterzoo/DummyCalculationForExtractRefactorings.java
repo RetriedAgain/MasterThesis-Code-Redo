@@ -66,9 +66,7 @@ public class DummyCalculationForExtractRefactorings {
 									  int ... specialValues) {
 
 		// This works great to extract already. Only other things needed: Chain constructors and fold param. thing
-		for (int t : someArray) {
-			someValue += t;
-		}
+		someValue = getInteger(someValue, someArray);
 
 		// Test to check folding according to documentation: https://www.jetbrains.com/help/idea/2025.3/extract-method-dialog.html?refactoring.extractInterface&keymap=macOS&utm_source=product&utm_medium=link&utm_campaign=IU&utm_content=2025.3
 		int i = 5;
@@ -100,6 +98,13 @@ public class DummyCalculationForExtractRefactorings {
 		}
 
 		return someValue + anotherValue;
+	}
+
+	public Integer getInteger(Integer someValue, int[] someArray) {
+		for (int t : someArray) {
+			someValue += t;
+		}
+		return someValue;
 	}
 
 	public double extractMethodDummy2(int someValue, double anotherValue, int[] someArray) {
