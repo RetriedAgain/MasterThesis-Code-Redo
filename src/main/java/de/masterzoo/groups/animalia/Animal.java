@@ -61,7 +61,7 @@ public class Animal {
 	}
 
 	public boolean isItFat(int weightInKG) {
-		return weightInKG * weight >= 500;
+		return weightInKG * getWeight() >= 500;
 	}
 
 	public void eat() {
