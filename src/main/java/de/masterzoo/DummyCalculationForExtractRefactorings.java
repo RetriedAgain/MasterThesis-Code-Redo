@@ -6,7 +6,6 @@ import java.util.HashMap;
 
 public class DummyCalculationForExtractRefactorings {
 
-	@NonNls
 	public static final String HALLO_TEST = "HalloTest";
 	String prefixString;
 	int constantField = 10;
