@@ -18,6 +18,7 @@ public class DummyCalculationForExtractRefactorings {
 	public int dummy() {
 		int i = 0;
 		int constant = 10;
+		String testString = "HalloTest";
 		while (i < constant) {
 			i++;
 			i *= constant;
