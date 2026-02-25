@@ -41,7 +41,7 @@ public class Animal {
 		AnimalBookkeeping.getAllAnimals().add(this);
 	}
 
-	public Animal createTempAnimal() {
+	public static Animal createTempAnimal() {
 		int numOfLegs = new Random().nextInt(1306);
 		int age = new Random().nextInt(150);
 		int speed = new Random().nextInt(389);
