@@ -1,9 +1,13 @@
 package de.masterzoo;
 
+import org.jetbrains.annotations.NonNls;
+
 import java.util.HashMap;
 
 public class DummyCalculationForExtractRefactorings {
 
+	@NonNls
+	public static final String HALLO_TEST = "HalloTest";
 	String prefixString;
 	int constantField = 10;
 
@@ -18,7 +22,7 @@ public class DummyCalculationForExtractRefactorings {
 	public int dummy() {
 		int i = 0;
 		int constant = 10;
-		String testString = "HalloTest";
+		String testString = HALLO_TEST;
 		while (i < constant) {
 			i++;
 			i *= constant;
