@@ -1,11 +1,13 @@
 package de.masterzoo;
 
+import de.masterzoo.accounting.ImportantEnum;
+
 import java.util.HashMap;
 
 public class DummyCalculationForExtractRefactorings {
 
 	String prefixString;
-	int constantField = 10;
+	int constantField = ImportantEnum.INT;
 
 	public DummyCalculationForExtractRefactorings(String prefixString) {
 		this.prefixString = prefixString;
@@ -17,21 +19,21 @@ public class DummyCalculationForExtractRefactorings {
 	 */
 	public int dummy() {
 		int i = 0;
-		while (i < 10) {
+		while (i < ImportantEnum.INT) {
 			i++;
-			i *= 10;
+			i *= ImportantEnum.INT;
 		}
-		i += 10;
+		i += ImportantEnum.INT;
 		return i;
 	}
 
 	public int dummy2() {
 		int j = 200;
-		while (j > 10) {
-			j /= 10;
+		while (j > ImportantEnum.INT) {
+			j /= ImportantEnum.INT;
 			j--;
 		}
-		j %= 10;
+		j %= ImportantEnum.INT;
 		return j;
 	}
 
