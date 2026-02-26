@@ -10,11 +10,7 @@ import java.util.ArrayList;
 /**
  * It's a labrador. They are very cute.
  */
-public class Labrador extends Canine {
-	/**
-	 * Judges if this Labrador can actually be trained.
-	 */
-	final static boolean TRAINABLE = true;
+public class Labrador extends D {
 
 	/**
 	 * The human companion of the Labrador. This is intended to be the most sociable person for this dog, to which
