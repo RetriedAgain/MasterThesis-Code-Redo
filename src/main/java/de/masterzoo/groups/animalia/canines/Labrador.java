@@ -10,17 +10,7 @@ import java.util.ArrayList;
 /**
  * It's a labrador. They are very cute.
  */
-public class Labrador extends Canine {
-	/**
-	 * Judges if this Labrador can actually be trained.
-	 */
-	public final static boolean TRAINABLE = true;
-
-	/**
-	 * The human companion of the Labrador. This is intended to be the most sociable person for this dog, to which
-	 * this dog connects the most.
-	 */
-	public Employee humanCompanion;
+public class Labrador extends de.masterzoo.groups.animalia.D {
 
 	/**
 	 * Chained constructor for when there is no human companion.
@@ -46,8 +36,7 @@ public class Labrador extends Canine {
 	 * @param humanCompanion Human Companion of the Labrador
 	 */
 	public Labrador(Gender GENDER, String name, int age, int speed, int weight, ReproductionStrategy reproductionStrategy, Employee humanCompanion) {
-		super(GENDER, name, age, speed, weight, reproductionStrategy);
-		this.humanCompanion = humanCompanion;
+		super(GENDER, name, age, speed, weight, reproductionStrategy, humanCompanion);
 	}
 
 	/**
@@ -65,6 +54,7 @@ public class Labrador extends Canine {
 	/**
 	 * A natural talent of labradors.
 	 */
+	@Override
 	public void doPuppyEyes() {
 		System.out.println("*blink*");
 	}
