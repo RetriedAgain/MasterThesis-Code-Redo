@@ -14,13 +14,13 @@ public class Labrador extends Canine {
 	/**
 	 * Judges if this Labrador can actually be trained.
 	 */
-	final static boolean TRAINABLE = true;
+	public final static boolean TRAINABLE = true;
 
 	/**
 	 * The human companion of the Labrador. This is intended to be the most sociable person for this dog, to which
 	 * this dog connects the most.
 	 */
-	Employee humanCompanion;
+	public Employee humanCompanion;
 
 	/**
 	 * Chained constructor for when there is no human companion.
