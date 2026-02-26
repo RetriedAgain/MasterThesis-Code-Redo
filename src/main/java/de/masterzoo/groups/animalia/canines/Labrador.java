@@ -10,17 +10,11 @@ import java.util.ArrayList;
 /**
  * It's a labrador. They are very cute.
  */
-public class Labrador extends Canine {
+public class Labrador extends D {
 	/**
 	 * Judges if this Labrador can actually be trained.
 	 */
 	final static boolean TRAINABLE = true;
-
-	/**
-	 * The human companion of the Labrador. This is intended to be the most sociable person for this dog, to which
-	 * this dog connects the most.
-	 */
-	Employee humanCompanion;
 
 	/**
 	 * Chained constructor for when there is no human companion.
@@ -46,8 +40,7 @@ public class Labrador extends Canine {
 	 * @param humanCompanion Human Companion of the Labrador
 	 */
 	public Labrador(Gender GENDER, String name, int age, int speed, int weight, ReproductionStrategy reproductionStrategy, Employee humanCompanion) {
-		super(GENDER, name, age, speed, weight, reproductionStrategy);
-		this.humanCompanion = humanCompanion;
+		super(GENDER, name, age, speed, weight, reproductionStrategy, humanCompanion);
 	}
 
 	/**
