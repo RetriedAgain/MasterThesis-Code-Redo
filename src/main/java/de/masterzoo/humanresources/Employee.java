@@ -1,5 +1,6 @@
 package de.masterzoo.humanresources;
 
+import de.masterzoo.groups.animalia.canines.D;
 import de.masterzoo.groups.animalia.canines.Labrador;
 
 /**
@@ -32,7 +33,7 @@ public class Employee {
 		return companionLabrador;
 	}
 
-	public void setCompanionLabrador(Labrador companionLabrador) {
+	public void setCompanionLabrador(D companionLabrador) {
 		if (companionLabrador.getHumanCompanion() != null) {
 			this.companionLabrador = companionLabrador;
 		} else {

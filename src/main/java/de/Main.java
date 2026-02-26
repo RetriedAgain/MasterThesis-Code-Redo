@@ -2,6 +2,7 @@ package de;
 
 import de.masterzoo.Zoo;
 import de.masterzoo.groups.animalia.Animal;
+import de.masterzoo.groups.animalia.canines.D;
 import de.masterzoo.groups.animalia.canines.Labrador;
 import de.masterzoo.groups.animalia.movement.Fly;
 import de.masterzoo.groups.animalia.movement.MovementStrategy;
@@ -33,7 +34,7 @@ public class Main {
 		Zoo myZoo = new Zoo(10000, 12000, animalsInZoo, propsInZoo, partnerCompanies);
 
 		// A pup that can also fly
-		Labrador superPup = new Labrador(
+		Labrador superPup = new D(
 			myTempAnimal.getGENDER(),
 			myTempAnimal.getName(),
 			myTempAnimal.getAge(),
