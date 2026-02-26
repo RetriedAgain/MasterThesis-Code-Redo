@@ -1,0 +1,66 @@
+{
+"commits": [
+{
+	"repository": "https://github.com/RetriedAgain/MasterThesis-Code-Redo.git",
+	"sha1": "269878b9c70977057aff009162f91b2a99ed22e6",
+	"url": "https://github.com/RetriedAgain/MasterThesis-Code-Redo/commit/269878b9c70977057aff009162f91b2a99ed22e6",
+	"refactorings": [{
+	"type": "Pull Up Attribute",
+	"description": "Pull Up Attribute package TRAINABLE : boolean from class de.masterzoo.groups.animalia.canines.Labrador to package TRAINABLE : boolean from class de.masterzoo.groups.animalia.canines.D",
+	"leftSideLocations": [{
+		"filePath": "src/main/java/de/masterzoo/groups/animalia/canines/Labrador.java",
+		"startLine": 17,
+		"endLine": 17,
+		"startColumn": 23,
+		"endColumn": 39,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "original attribute declaration",
+		"codeElement": "package TRAINABLE : boolean"
+}],
+	"rightSideLocations": [{
+		"filePath": "src/main/java/de/masterzoo/groups/animalia/canines/D.java",
+		"startLine": 10,
+		"endLine": 10,
+		"startColumn": 23,
+		"endColumn": 39,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "pulled up attribute declaration",
+		"codeElement": "package TRAINABLE : boolean"
+}]
+},
+{
+	"type": "Extract Superclass",
+	"description": "Extract Superclass de.masterzoo.groups.animalia.canines.D from classes [de.masterzoo.groups.animalia.canines.Labrador]",
+	"leftSideLocations": [{
+		"filePath": "src/main/java/de/masterzoo/groups/animalia/canines/Labrador.java",
+		"startLine": 10,
+		"endLine": 79,
+		"startColumn": 0,
+		"endColumn": 2,
+		"codeElementType": "TYPE_DECLARATION",
+		"description": "original sub-type declaration",
+		"codeElement": "de.masterzoo.groups.animalia.canines.Labrador"
+}],
+	"rightSideLocations": [{
+		"filePath": "src/main/java/de/masterzoo/groups/animalia/canines/Labrador.java",
+		"startLine": 10,
+		"endLine": 75,
+		"startColumn": 0,
+		"endColumn": 2,
+		"codeElementType": "TYPE_DECLARATION",
+		"description": "sub-type declaration after extraction",
+		"codeElement": "de.masterzoo.groups.animalia.canines.Labrador"
+}, {
+		"filePath": "src/main/java/de/masterzoo/groups/animalia/canines/D.java",
+		"startLine": 6,
+		"endLine": 15,
+		"startColumn": 0,
+		"endColumn": 2,
+		"codeElementType": "TYPE_DECLARATION",
+		"description": "extracted super-type declaration",
+		"codeElement": "de.masterzoo.groups.animalia.canines.D"
+}]
+}
+]
+}]
+}
