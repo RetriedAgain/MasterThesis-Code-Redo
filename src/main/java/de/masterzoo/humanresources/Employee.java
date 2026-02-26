@@ -1,5 +1,6 @@
 package de.masterzoo.humanresources;
 
+import de.masterzoo.groups.animalia.canines.D;
 import de.masterzoo.groups.animalia.canines.Labrador;
 
 /**
@@ -10,7 +11,7 @@ public class Employee {
 	private final String name;
 	private int age;
 
-	private Labrador companionLabrador;
+	private D secret1;
 
 	public Employee(String name, int age) {
 		this.name = name;
@@ -28,13 +29,13 @@ public class Employee {
 		this.age = age;
 	}
 
-	public Labrador getCompanionLabrador() {
-		return companionLabrador;
+	public D getCompanionLabrador() {
+		return secret1;
 	}
 
 	public void setCompanionLabrador(Labrador companionLabrador) {
 		if (companionLabrador.getHumanCompanion() != null) {
-			this.companionLabrador = companionLabrador;
+			this.secret1 = companionLabrador;
 		} else {
 			System.out.println("Labby already has a human companion!");
 		}
