@@ -1,6 +1,6 @@
 package de.masterzoo.partnercompanies.shows;
 
-import de.masterzoo.groups.animalia.canines.Labrador;
+import de.masterzoo.groups.animalia.canines.D;
 
 import java.util.List;
 
@@ -9,10 +9,10 @@ import java.util.List;
  */
 public class DogShow {
 
-	List<Labrador> labradors;
+	List<D> ds;
 
-	DogShow(List<Labrador> labradors) {
-		this.labradors = labradors;
+	DogShow(List<D> ds) {
+		this.ds = ds;
 	}
 
 }
