@@ -54,7 +54,12 @@ public class Labrador extends Canine {
 	 * If trained, a labrador can even do a trick.
 	 */
 	public void doTrick() {
-		System.out.println("Flips thanks to " + humanCompanion.getName() + "!");
+		if (TRAINABLE) {
+			System.out.println("Flips thanks to " + humanCompanion.getName() + "!");
+		} else {
+			System.out.println("Sadly, " + this.getName() + " is not trained yet!");
+		}
+
 	}
 
 	/**
