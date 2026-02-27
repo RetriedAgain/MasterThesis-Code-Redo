@@ -126,14 +126,14 @@ public class Zoo {
 		return 10;
 	}
 
-	public void calculateInitialBudgetDistribution() {
+	public void calculateInitialBudgetDistribution(int test1) {
 		// Here extract this.hrBudget for more options
 		this.accountingBudget = this.hrBudget = this.legalBudget = this.zookeepingBudget = this.securityBudget = 0;
 
 		//For local variable options
 		int test = 200_000;
 		// Here extract test for the local variable options
-		this.accountingBudget = test * 0.2;
+		this.accountingBudget = test1 * 0.2;
 
 		// Extract 200_000 for normal cases
 		this.setHrBudget(200_000 * 0.2);
