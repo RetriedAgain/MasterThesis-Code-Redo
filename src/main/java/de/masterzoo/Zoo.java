@@ -123,6 +123,10 @@ public class Zoo {
 	}
 
 	public void calculateInitialBudgetDistribution() {
+		calculateInitialBudgetDistribution(200_000);
+	}
+
+	public void calculateInitialBudgetDistribution(int i) {
 		// Here extract this.hrBudget for more options
 		this.accountingBudget = this.hrBudget = this.legalBudget = this.zookeepingBudget = this.securityBudget = 0;
 
@@ -132,7 +136,7 @@ public class Zoo {
 		this.accountingBudget = test * 0.2;
 
 		// Extract 200_000 for normal cases
-		this.setHrBudget(200_000 * 0.2);
+		this.setHrBudget(i * 0.2);
 		this.legalBudget = 200_000 * 0.2;
 		this.zookeepingBudget = 200_000 * 0.2;
 		this.securityBudget = 200_000 * 0.2;
