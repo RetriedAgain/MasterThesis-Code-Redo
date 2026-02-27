@@ -1,0 +1,51 @@
+{
+"commits": [
+{
+	"repository": "https://github.com/RetriedAgain/MasterThesis-Code-Redo.git",
+	"sha1": "5cedea4aa2076e9be10906c0d872f5731a79fe15",
+	"url": "https://github.com/RetriedAgain/MasterThesis-Code-Redo/commit/5cedea4aa2076e9be10906c0d872f5731a79fe15",
+	"refactorings": [{
+	"type": "Parameterize Variable",
+	"description": "Parameterize Variable test : int to test1 : int in method public calculateInitialBudgetDistribution(test1 int) : void from class de.masterzoo.Zoo",
+	"leftSideLocations": [{
+		"filePath": "src/main/java/de/masterzoo/Zoo.java",
+		"startLine": 130,
+		"endLine": 130,
+		"startColumn": 7,
+		"endColumn": 21,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "original variable declaration",
+		"codeElement": "test : int"
+}, {
+		"filePath": "src/main/java/de/masterzoo/Zoo.java",
+		"startLine": 132,
+		"endLine": 132,
+		"startColumn": 3,
+		"endColumn": 38,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "src/main/java/de/masterzoo/Zoo.java",
+		"startLine": 125,
+		"endLine": 125,
+		"startColumn": 49,
+		"endColumn": 58,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "renamed variable declaration",
+		"codeElement": "test1 : int"
+}, {
+		"filePath": "src/main/java/de/masterzoo/Zoo.java",
+		"startLine": 131,
+		"endLine": 131,
+		"startColumn": 3,
+		"endColumn": 39,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the renamed variable",
+		"codeElement": null
+}]
+}
+]
+}]
+}

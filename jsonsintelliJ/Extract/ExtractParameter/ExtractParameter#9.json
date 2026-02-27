@@ -1,0 +1,42 @@
+{
+"commits": [
+{
+	"repository": "https://github.com/RetriedAgain/MasterThesis-Code-Redo.git",
+	"sha1": "af5fc77a5ae2a1b84f813cd37ff7419bcee08430",
+	"url": "https://github.com/RetriedAgain/MasterThesis-Code-Redo/commit/af5fc77a5ae2a1b84f813cd37ff7419bcee08430",
+	"refactorings": [{
+	"type": "Add Parameter",
+	"description": "Add Parameter test1 : int in method public calculateInitialBudgetDistribution(test1 int) : void from class de.masterzoo.Zoo",
+	"leftSideLocations": [{
+		"filePath": "src/main/java/de/masterzoo/Zoo.java",
+		"startLine": 129,
+		"endLine": 143,
+		"startColumn": 2,
+		"endColumn": 3,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "public calculateInitialBudgetDistribution() : void"
+}],
+	"rightSideLocations": [{
+		"filePath": "src/main/java/de/masterzoo/Zoo.java",
+		"startLine": 129,
+		"endLine": 129,
+		"startColumn": 49,
+		"endColumn": 58,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "added parameter",
+		"codeElement": "test1 : int"
+}, {
+		"filePath": "src/main/java/de/masterzoo/Zoo.java",
+		"startLine": 129,
+		"endLine": 143,
+		"startColumn": 2,
+		"endColumn": 3,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "method declaration with added parameter",
+		"codeElement": "public calculateInitialBudgetDistribution(test1 int) : void"
+}]
+}
+]
+}]
+}
