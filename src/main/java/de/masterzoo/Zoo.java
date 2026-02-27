@@ -55,6 +55,9 @@ public class Zoo {
 	// Partner-Companies
 	private List<Company> partnerCompanies;
 
+	public Zoo() {
+
+	}
 
 	public Zoo(double averageMonthlyCostsByYear, double averageMonthlyRevenueByYear, List<Animal> animalsInZoo,
 			   List<Prop> propsInZoo,  List<Company> partnerCompanies) {
@@ -132,7 +135,7 @@ public class Zoo {
 		this.accountingBudget = test * 0.2;
 
 		// Extract 200_000 for normal cases
-		this.setHrBudget(200_000 * 0.2);
+		this.setHrBudget(Math.min(200_000 * 0.2, this.hrBudget * 5));
 		this.legalBudget = 200_000 * 0.2;
 		this.zookeepingBudget = 200_000 * 0.2;
 		this.securityBudget = 200_000 * 0.2;
