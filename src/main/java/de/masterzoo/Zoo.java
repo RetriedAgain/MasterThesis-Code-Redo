@@ -123,9 +123,9 @@ public class Zoo {
 	}
 
 	public void calculateInitialBudgetDistribution() {
-		this.accountingBudget = this.hrBudget = this.legalBudget = this.zookeepingBudget = this.securityBudget = 0;
+		this.accountingBudget = this.setHrBudget(this.legalBudget = this.zookeepingBudget = this.securityBudget = 0);
 		this.accountingBudget = 200_000 * 0.2;
-		this.hrBudget = 200_000 * 0.2;
+		this.setHrBudget(200_000 * 0.2);
 		this.legalBudget = 200_000 * 0.2;
 		this.zookeepingBudget = 200_000 * 0.2;
 		this.securityBudget = 200_000 * 0.2;
@@ -133,7 +133,7 @@ public class Zoo {
 
 	public boolean didSomeoneBlowBudget() {
 		return this.accountingBudget > 200_000
-			|| this.hrBudget > 200_000
+			|| this.getHrBudget() > 200_000
 			|| this.legalBudget > 200_000
 			|| this.zookeepingBudget > 200_000
 			|| this.securityBudget > 200_000;
@@ -223,5 +223,13 @@ public class Zoo {
 
 	public void setCollectedRentInYearMonth(HashMap<YearMonth, Double> collectedRentInYearMonth) {
 		this.collectedRentInYearMonth = collectedRentInYearMonth;
+	}
+
+	public double getHrBudget() {
+		return hrBudget;
+	}
+
+	public void setHrBudget(double hrBudget) {
+		this.hrBudget = hrBudget;
 	}
 }
