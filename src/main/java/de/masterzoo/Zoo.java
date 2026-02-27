@@ -65,6 +65,10 @@ public class Zoo {
 		this.partnerCompanies = partnerCompanies;
 	}
 
+	public Zoo() {
+
+	}
+
 	/**
 	 * Creates circus as of now.
 	 */
