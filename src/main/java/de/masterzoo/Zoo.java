@@ -123,6 +123,7 @@ public class Zoo {
 	}
 
 	public void calculateInitialBudgetDistribution() {
+		this.accountingBudget = this.hrBudget = this.legalBudget = this.zookeepingBudget = this.securityBudget = 0;
 		this.accountingBudget = 200_000 * 0.2;
 		this.hrBudget = 200_000 * 0.2;
 		this.legalBudget = 200_000 * 0.2;
