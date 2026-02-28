@@ -1,0 +1,42 @@
+{
+"commits": [
+{
+	"repository": "https://github.com/RetriedAgain/MasterThesis-Code-Redo.git",
+	"sha1": "7ed248a0e01ae601336952a94fac339fefadc489",
+	"url": "https://github.com/RetriedAgain/MasterThesis-Code-Redo/commit/7ed248a0e01ae601336952a94fac339fefadc489",
+	"refactorings": [{
+	"type": "Add Parameter",
+	"description": "Add Parameter privilegedAction : PrivilegedAction<Integer> in method public calculateInitialBudgetDistribution(privilegedAction PrivilegedAction<Integer>) : void from class de.masterzoo.Zoo",
+	"leftSideLocations": [{
+		"filePath": "src/main/java/de/masterzoo/Zoo.java",
+		"startLine": 129,
+		"endLine": 140,
+		"startColumn": 2,
+		"endColumn": 3,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "public calculateInitialBudgetDistribution() : void"
+}],
+	"rightSideLocations": [{
+		"filePath": "src/main/java/de/masterzoo/Zoo.java",
+		"startLine": 129,
+		"endLine": 129,
+		"startColumn": 49,
+		"endColumn": 91,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "added parameter",
+		"codeElement": "privilegedAction : PrivilegedAction<Integer>"
+}, {
+		"filePath": "src/main/java/de/masterzoo/Zoo.java",
+		"startLine": 129,
+		"endLine": 140,
+		"startColumn": 2,
+		"endColumn": 3,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "method declaration with added parameter",
+		"codeElement": "public calculateInitialBudgetDistribution(privilegedAction PrivilegedAction<Integer>) : void"
+}]
+}
+]
+}]
+}
