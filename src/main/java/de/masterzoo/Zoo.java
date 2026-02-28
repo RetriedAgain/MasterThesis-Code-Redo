@@ -55,6 +55,9 @@ public class Zoo {
 	// Partner-Companies
 	private List<Company> partnerCompanies;
 
+	public Zoo() {
+
+	}
 
 	public Zoo(int averageMonthlyCostsByYear, int averageMonthlyRevenueByYear, List<Animal> animalsInZoo, List<Prop> propsInZoo,  List<Company> partnerCompanies) {
 		this.averageMonthlyCostsByYear = averageMonthlyCostsByYear;
