@@ -127,13 +127,17 @@ public class Zoo {
 	}
 
 	public void calculateInitialBudgetDistribution() {
+		calculateInitialBudgetDistribution(() -> 200_000);
+	}
+
+	public void calculateInitialBudgetDistribution(final PrivilegedAction<Integer> secret) {
 		this.accountingBudget = this.hrBudget = this.legalBudget = this.zookeepingBudget = this.securityBudget = 0;
 
 		int test = 200_000;
 		this.accountingBudget = test * 0.2;
 
 		// Extract 200_000
-		this.setHrBudget(200_000 * 0.2);
+		this.setHrBudget(secret.run() * 0.2);
 		this.legalBudget = 200_000 * 0.2;
 		this.zookeepingBudget = 200_000 * 0.2;
 		this.securityBudget = 200_000 * 0.2;
