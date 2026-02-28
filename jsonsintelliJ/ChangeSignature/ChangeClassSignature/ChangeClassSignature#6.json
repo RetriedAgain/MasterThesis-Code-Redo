@@ -1,0 +1,81 @@
+{
+"commits": [
+{
+	"repository": "https://github.com/RetriedAgain/MasterThesis-Code-Redo.git",
+	"sha1": "045939479284f47526e792168780360f0f42f0f8",
+	"url": "https://github.com/RetriedAgain/MasterThesis-Code-Redo/commit/045939479284f47526e792168780360f0f42f0f8",
+	"refactorings": [{
+	"type": "Change Variable Type",
+	"description": "Change Variable Type myZoo : Zoo to myZoo : Zoo<String> in method public main(args String[]) : void from class de.Main",
+	"leftSideLocations": [{
+		"filePath": "src/main/java/de/Main.java",
+		"startLine": 30,
+		"endLine": 30,
+		"startColumn": 7,
+		"endColumn": 80,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "original variable declaration",
+		"codeElement": "myZoo : Zoo"
+}],
+	"rightSideLocations": [{
+		"filePath": "src/main/java/de/Main.java",
+		"startLine": 30,
+		"endLine": 30,
+		"startColumn": 15,
+		"endColumn": 96,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "changed-type variable declaration",
+		"codeElement": "myZoo : Zoo<String>"
+}]
+},
+{
+	"type": "Change Variable Type",
+	"description": "Change Variable Type secondZoo : Zoo to secondZoo : Zoo<String> in method public main(args String[]) : void from class de.Main",
+	"leftSideLocations": [{
+		"filePath": "src/main/java/de/Main.java",
+		"startLine": 32,
+		"endLine": 32,
+		"startColumn": 7,
+		"endColumn": 28,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "original variable declaration",
+		"codeElement": "secondZoo : Zoo"
+}],
+	"rightSideLocations": [{
+		"filePath": "src/main/java/de/Main.java",
+		"startLine": 32,
+		"endLine": 32,
+		"startColumn": 15,
+		"endColumn": 44,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "changed-type variable declaration",
+		"codeElement": "secondZoo : Zoo<String>"
+}]
+},
+{
+	"type": "Change Variable Type",
+	"description": "Change Variable Type thirdZoo : Zoo to thirdZoo : Zoo<String> in method public main(args String[]) : void from class de.Main",
+	"leftSideLocations": [{
+		"filePath": "src/main/java/de/Main.java",
+		"startLine": 34,
+		"endLine": 34,
+		"startColumn": 7,
+		"endColumn": 27,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "original variable declaration",
+		"codeElement": "thirdZoo : Zoo"
+}],
+	"rightSideLocations": [{
+		"filePath": "src/main/java/de/Main.java",
+		"startLine": 34,
+		"endLine": 34,
+		"startColumn": 15,
+		"endColumn": 43,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "changed-type variable declaration",
+		"codeElement": "thirdZoo : Zoo<String>"
+}]
+}
+]
+}]
+}
