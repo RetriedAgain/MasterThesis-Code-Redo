@@ -8,6 +8,6 @@ public class BudgetDummy {
 
 	public BudgetDummy(String name, YearMonth yearMonth, double moneyAllocated) {
 		Zoo zoo = new Zoo();
-		zoo.calculateInitialBudgetDistribution();
+		zoo.calculateInitialBudgetDistribution(() -> 200_000);
 	}
 }
