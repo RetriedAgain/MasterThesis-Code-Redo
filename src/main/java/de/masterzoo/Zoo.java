@@ -12,6 +12,7 @@ import java.time.Year;
 import java.time.YearMonth;
 import java.util.HashMap;
 import java.util.List;
+import java.util.function.IntSupplier;
 
 /**
  * A big zoo. A big company.
@@ -126,14 +127,14 @@ public class Zoo {
 		return 10;
 	}
 
-	public void calculateInitialBudgetDistribution() {
+	public void calculateInitialBudgetDistribution(IntSupplier intSupplier) {
 		this.accountingBudget = this.hrBudget = this.legalBudget = this.zookeepingBudget = this.securityBudget = 0;
 
 		int test = 200_000;
 		this.accountingBudget = test * 0.2;
 
 		// Extract 200_000
-		this.setHrBudget(200_000 * 0.2);
+		this.setHrBudget(intSupplier.getAsInt() * 0.2);
 		this.legalBudget = 200_000 * 0.2;
 		this.zookeepingBudget = 200_000 * 0.2;
 		this.securityBudget = 200_000 * 0.2;
