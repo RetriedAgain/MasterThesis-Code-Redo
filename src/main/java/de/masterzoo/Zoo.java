@@ -5,6 +5,7 @@ import de.masterzoo.groups.animalia.Animal;
 import de.masterzoo.partnercompanies.Circus;
 import de.masterzoo.partnercompanies.Company;
 
+import java.security.PrivilegedAction;
 import java.time.LocalDate;
 import java.time.Month;
 import java.time.Year;
@@ -55,6 +56,9 @@ public class Zoo {
 	// Partner-Companies
 	private List<Company> partnerCompanies;
 
+	public Zoo() {
+
+	}
 
 	public Zoo(double averageMonthlyCostsByYear, double averageMonthlyRevenueByYear, List<Animal> animalsInZoo,
 			   List<Prop> propsInZoo,  List<Company> partnerCompanies) {
@@ -123,15 +127,12 @@ public class Zoo {
 	}
 
 	public void calculateInitialBudgetDistribution() {
-		// Here extract this.hrBudget for more options
 		this.accountingBudget = this.hrBudget = this.legalBudget = this.zookeepingBudget = this.securityBudget = 0;
 
-		//For local variable options
 		int test = 200_000;
-		// Here extract test for the local variable options
 		this.accountingBudget = test * 0.2;
 
-		// Extract 200_000 for normal cases
+		// Extract 200_000
 		this.setHrBudget(200_000 * 0.2);
 		this.legalBudget = 200_000 * 0.2;
 		this.zookeepingBudget = 200_000 * 0.2;
