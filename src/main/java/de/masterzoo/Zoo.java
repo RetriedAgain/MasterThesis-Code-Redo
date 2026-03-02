@@ -4,6 +4,7 @@ import de.masterzoo.infrastructure.props.Prop;
 import de.masterzoo.groups.animalia.Animal;
 import de.masterzoo.partnercompanies.Circus;
 import de.masterzoo.partnercompanies.Company;
+import org.jetbrains.annotations.NonNls;
 
 import java.security.PrivilegedAction;
 import java.time.LocalDate;
@@ -26,6 +27,9 @@ public class Zoo {
 	 * The first day that the zoo was open to the public. Not the day that it was open to private investors.
 	 */
 	private final static LocalDate firstDayOpening = LocalDate.of(2025, Month.JANUARY, 1);
+
+	@NonNls
+	private static final String WELCOME_GREETING = "Welcome to the Zoo!";
 
 	// Accounting
 	private double averageMonthlyCostsByYear;
@@ -67,6 +71,15 @@ public class Zoo {
 		this.animalsInZoo = animalsInZoo;
 		this.propsInZoo = propsInZoo;
 		this.partnerCompanies = partnerCompanies;
+	}
+
+	private static void welcomeCustomers() {
+		System.out.println(WELCOME_GREETING);
+	}
+
+	private static void useWelcomeCustomers() {
+		welcomeCustomers();
+		System.out.println("That was our greeting message!");
 	}
 
 	/**
