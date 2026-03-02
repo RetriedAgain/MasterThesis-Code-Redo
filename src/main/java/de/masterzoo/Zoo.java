@@ -29,7 +29,7 @@ public class Zoo {
 	private final static LocalDate firstDayOpening = LocalDate.of(2025, Month.JANUARY, 1);
 
 	@NonNls
-	private static final String WELCOME_GREETING = "Welcome to the Zoo!";
+	public static final String WELCOME_GREETING = "Welcome to the Zoo!";
 
 	// Accounting
 	private double averageMonthlyCostsByYear;
