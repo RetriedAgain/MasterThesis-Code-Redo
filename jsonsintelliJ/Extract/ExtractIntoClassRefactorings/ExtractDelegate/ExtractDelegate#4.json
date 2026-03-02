@@ -1,0 +1,174 @@
+{
+"commits": [
+{
+	"repository": "https://github.com/RetriedAgain/MasterThesis-Code-Redo.git",
+	"sha1": "aa184df1e3ef9abc9c19f4bc07b29c94784c8732",
+	"url": "https://github.com/RetriedAgain/MasterThesis-Code-Redo/commit/aa184df1e3ef9abc9c19f4bc07b29c94784c8732",
+	"refactorings": [{
+	"type": "Move Method",
+	"description": "Move Method private welcomeCustomers() : void from class de.masterzoo.Zoo to public welcomeCustomers() : void from class de.masterzoo.accounting.secret",
+	"leftSideLocations": [{
+		"filePath": "src/main/java/de/masterzoo/Zoo.java",
+		"startLine": 76,
+		"endLine": 78,
+		"startColumn": 2,
+		"endColumn": 3,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "private welcomeCustomers() : void"
+}],
+	"rightSideLocations": [{
+		"filePath": "src/main/java/de/masterzoo/accounting/secret.java",
+		"startLine": 9,
+		"endLine": 11,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "moved method declaration",
+		"codeElement": "public welcomeCustomers() : void"
+}]
+},
+{
+	"type": "Change Method Access Modifier",
+	"description": "Change Method Access Modifier private to public in method public welcomeCustomers() : void from class de.masterzoo.accounting.secret",
+	"leftSideLocations": [{
+		"filePath": "src/main/java/de/masterzoo/Zoo.java",
+		"startLine": 76,
+		"endLine": 78,
+		"startColumn": 2,
+		"endColumn": 3,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "private welcomeCustomers() : void"
+}],
+	"rightSideLocations": [{
+		"filePath": "src/main/java/de/masterzoo/accounting/secret.java",
+		"startLine": 9,
+		"endLine": 11,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "method declaration with changed access modifier",
+		"codeElement": "public welcomeCustomers() : void"
+}]
+},
+{
+	"type": "Move Attribute",
+	"description": "Move Attribute private WELCOME_GREETING : String from class de.masterzoo.Zoo to public WELCOME_GREETING : String from class de.masterzoo.accounting.secret",
+	"leftSideLocations": [{
+		"filePath": "src/main/java/de/masterzoo/Zoo.java",
+		"startLine": 32,
+		"endLine": 32,
+		"startColumn": 30,
+		"endColumn": 70,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "original attribute declaration",
+		"codeElement": "private WELCOME_GREETING : String"
+}],
+	"rightSideLocations": [{
+		"filePath": "src/main/java/de/masterzoo/accounting/secret.java",
+		"startLine": 7,
+		"endLine": 7,
+		"startColumn": 32,
+		"endColumn": 72,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "moved attribute declaration",
+		"codeElement": "public WELCOME_GREETING : String"
+}]
+},
+{
+	"type": "Change Attribute Access Modifier",
+	"description": "Change Attribute Access Modifier private to public in attribute public WELCOME_GREETING : String from class de.masterzoo.accounting.secret",
+	"leftSideLocations": [{
+		"filePath": "src/main/java/de/masterzoo/Zoo.java",
+		"startLine": 32,
+		"endLine": 32,
+		"startColumn": 30,
+		"endColumn": 70,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "original attribute declaration",
+		"codeElement": "private WELCOME_GREETING : String"
+}],
+	"rightSideLocations": [{
+		"filePath": "src/main/java/de/masterzoo/accounting/secret.java",
+		"startLine": 7,
+		"endLine": 7,
+		"startColumn": 32,
+		"endColumn": 72,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "attribute declaration with changed access modifier",
+		"codeElement": "public WELCOME_GREETING : String"
+}]
+},
+{
+	"type": "Extract Class",
+	"description": "Extract Class de.masterzoo.accounting.secret from class de.masterzoo.Zoo",
+	"leftSideLocations": [{
+		"filePath": "src/main/java/de/masterzoo/Zoo.java",
+		"startLine": 17,
+		"endLine": 256,
+		"startColumn": 0,
+		"endColumn": 2,
+		"codeElementType": "TYPE_DECLARATION",
+		"description": "original type declaration",
+		"codeElement": "de.masterzoo.Zoo"
+}, {
+		"filePath": "src/main/java/de/masterzoo/Zoo.java",
+		"startLine": 76,
+		"endLine": 78,
+		"startColumn": 2,
+		"endColumn": 3,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "private welcomeCustomers() : void"
+}, {
+		"filePath": "src/main/java/de/masterzoo/Zoo.java",
+		"startLine": 32,
+		"endLine": 32,
+		"startColumn": 30,
+		"endColumn": 70,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "original attribute declaration",
+		"codeElement": "private WELCOME_GREETING : String"
+}],
+	"rightSideLocations": [{
+		"filePath": "src/main/java/de/masterzoo/Zoo.java",
+		"startLine": 16,
+		"endLine": 248,
+		"startColumn": 0,
+		"endColumn": 2,
+		"codeElementType": "TYPE_DECLARATION",
+		"description": "type declaration after extraction",
+		"codeElement": "de.masterzoo.Zoo"
+}, {
+		"filePath": "src/main/java/de/masterzoo/accounting/secret.java",
+		"startLine": 5,
+		"endLine": 12,
+		"startColumn": 0,
+		"endColumn": 2,
+		"codeElementType": "TYPE_DECLARATION",
+		"description": "extracted type declaration",
+		"codeElement": "de.masterzoo.accounting.secret"
+}, {
+		"filePath": "src/main/java/de/masterzoo/accounting/secret.java",
+		"startLine": 9,
+		"endLine": 11,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "extracted method declaration",
+		"codeElement": "public welcomeCustomers() : void"
+}, {
+		"filePath": "src/main/java/de/masterzoo/accounting/secret.java",
+		"startLine": 7,
+		"endLine": 7,
+		"startColumn": 32,
+		"endColumn": 72,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "extracted attribute declaration",
+		"codeElement": "public WELCOME_GREETING : String"
+}]
+}
+]
+}]
+}

@@ -1,0 +1,105 @@
+{
+"commits": [
+{
+	"repository": "https://github.com/RetriedAgain/MasterThesis-Code-Redo.git",
+	"sha1": "e5d69a278b659cedec07751d0dde1c340e7e80fd",
+	"url": "https://github.com/RetriedAgain/MasterThesis-Code-Redo/commit/e5d69a278b659cedec07751d0dde1c340e7e80fd",
+	"refactorings": [{
+	"type": "Change Method Access Modifier",
+	"description": "Change Method Access Modifier private to package in method package welcomeCustomers() : void from class de.masterzoo.secret",
+	"leftSideLocations": [{
+		"filePath": "src/main/java/de/masterzoo/Zoo.java",
+		"startLine": 76,
+		"endLine": 78,
+		"startColumn": 2,
+		"endColumn": 3,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "private welcomeCustomers() : void"
+}],
+	"rightSideLocations": [{
+		"filePath": "src/main/another-src/de/masterzoo/secret.java",
+		"startLine": 9,
+		"endLine": 11,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "method declaration with changed access modifier",
+		"codeElement": "package welcomeCustomers() : void"
+}]
+},
+{
+	"type": "Move Method",
+	"description": "Move Method private welcomeCustomers() : void from class de.masterzoo.Zoo to package welcomeCustomers() : void from class de.masterzoo.secret",
+	"leftSideLocations": [{
+		"filePath": "src/main/java/de/masterzoo/Zoo.java",
+		"startLine": 76,
+		"endLine": 78,
+		"startColumn": 2,
+		"endColumn": 3,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "private welcomeCustomers() : void"
+}],
+	"rightSideLocations": [{
+		"filePath": "src/main/another-src/de/masterzoo/secret.java",
+		"startLine": 9,
+		"endLine": 11,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "moved method declaration",
+		"codeElement": "package welcomeCustomers() : void"
+}]
+},
+{
+	"type": "Change Attribute Access Modifier",
+	"description": "Change Attribute Access Modifier private to package in attribute package WELCOME_GREETING : String from class de.masterzoo.secret",
+	"leftSideLocations": [{
+		"filePath": "src/main/java/de/masterzoo/Zoo.java",
+		"startLine": 32,
+		"endLine": 32,
+		"startColumn": 30,
+		"endColumn": 70,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "original attribute declaration",
+		"codeElement": "private WELCOME_GREETING : String"
+}],
+	"rightSideLocations": [{
+		"filePath": "src/main/another-src/de/masterzoo/secret.java",
+		"startLine": 7,
+		"endLine": 7,
+		"startColumn": 25,
+		"endColumn": 65,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "attribute declaration with changed access modifier",
+		"codeElement": "package WELCOME_GREETING : String"
+}]
+},
+{
+	"type": "Move Attribute",
+	"description": "Move Attribute private WELCOME_GREETING : String from class de.masterzoo.Zoo to package WELCOME_GREETING : String from class de.masterzoo.secret",
+	"leftSideLocations": [{
+		"filePath": "src/main/java/de/masterzoo/Zoo.java",
+		"startLine": 32,
+		"endLine": 32,
+		"startColumn": 30,
+		"endColumn": 70,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "original attribute declaration",
+		"codeElement": "private WELCOME_GREETING : String"
+}],
+	"rightSideLocations": [{
+		"filePath": "src/main/another-src/de/masterzoo/secret.java",
+		"startLine": 7,
+		"endLine": 7,
+		"startColumn": 25,
+		"endColumn": 65,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "moved attribute declaration",
+		"codeElement": "package WELCOME_GREETING : String"
+}]
+}
+]
+}]
+}

@@ -1,0 +1,60 @@
+{
+"commits": [
+{
+	"repository": "https://github.com/RetriedAgain/MasterThesis-Code-Redo.git",
+	"sha1": "c37e881ce0c9bb435315b483cb77556da606f55c",
+	"url": "https://github.com/RetriedAgain/MasterThesis-Code-Redo/commit/c37e881ce0c9bb435315b483cb77556da606f55c",
+	"refactorings": [{
+	"type": "Extract Class",
+	"description": "Extract Class de.masterzoo.Zoo.secret from class de.masterzoo.Zoo",
+	"leftSideLocations": [{
+		"filePath": "src/main/java/de/masterzoo/Zoo.java",
+		"startLine": 17,
+		"endLine": 262,
+		"startColumn": 0,
+		"endColumn": 2,
+		"codeElementType": "TYPE_DECLARATION",
+		"description": "original type declaration",
+		"codeElement": "de.masterzoo.Zoo"
+}, {
+		"filePath": "src/main/java/de/masterzoo/Zoo.java",
+		"startLine": 25,
+		"endLine": 25,
+		"startColumn": 33,
+		"endColumn": 90,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "original attribute declaration",
+		"codeElement": "private firstDayOfBilling : LocalDate"
+}],
+	"rightSideLocations": [{
+		"filePath": "src/main/java/de/masterzoo/Zoo.java",
+		"startLine": 16,
+		"endLine": 270,
+		"startColumn": 0,
+		"endColumn": 2,
+		"codeElementType": "TYPE_DECLARATION",
+		"description": "type declaration after extraction",
+		"codeElement": "de.masterzoo.Zoo"
+}, {
+		"filePath": "src/main/java/de/masterzoo/Zoo.java",
+		"startLine": 258,
+		"endLine": 269,
+		"startColumn": 2,
+		"endColumn": 3,
+		"codeElementType": "ENUM_DECLARATION",
+		"description": "extracted type declaration",
+		"codeElement": "de.masterzoo.Zoo.secret"
+}, {
+		"filePath": "src/main/java/de/masterzoo/Zoo.java",
+		"startLine": 259,
+		"endLine": 259,
+		"startColumn": 3,
+		"endColumn": 59,
+		"codeElementType": "ENUM_CONSTANT_DECLARATION",
+		"description": "extracted attribute declaration",
+		"codeElement": "firstDayOfBilling(LocalDate.of(2025,Month.JANUARY,31))"
+}]
+}
+]
+}]
+}

@@ -1,0 +1,57 @@
+{
+"commits": [
+{
+	"repository": "https://github.com/RetriedAgain/MasterThesis-Code-Redo.git",
+	"sha1": "3e1ed3c6ae636ec81979db86d638ab11ce681095",
+	"url": "https://github.com/RetriedAgain/MasterThesis-Code-Redo/commit/3e1ed3c6ae636ec81979db86d638ab11ce681095",
+	"refactorings": [{
+	"type": "Change Method Access Modifier",
+	"description": "Change Method Access Modifier private to package in method package welcomeCustomers() : void from class de.masterzoo.secret",
+	"leftSideLocations": [{
+		"filePath": "src/main/java/de/masterzoo/Zoo.java",
+		"startLine": 76,
+		"endLine": 78,
+		"startColumn": 2,
+		"endColumn": 3,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "private welcomeCustomers() : void"
+}],
+	"rightSideLocations": [{
+		"filePath": "src/main/java/de/masterzoo/secret.java",
+		"startLine": 4,
+		"endLine": 6,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "method declaration with changed access modifier",
+		"codeElement": "package welcomeCustomers() : void"
+}]
+},
+{
+	"type": "Move Method",
+	"description": "Move Method private welcomeCustomers() : void from class de.masterzoo.Zoo to package welcomeCustomers() : void from class de.masterzoo.secret",
+	"leftSideLocations": [{
+		"filePath": "src/main/java/de/masterzoo/Zoo.java",
+		"startLine": 76,
+		"endLine": 78,
+		"startColumn": 2,
+		"endColumn": 3,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "private welcomeCustomers() : void"
+}],
+	"rightSideLocations": [{
+		"filePath": "src/main/java/de/masterzoo/secret.java",
+		"startLine": 4,
+		"endLine": 6,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "moved method declaration",
+		"codeElement": "package welcomeCustomers() : void"
+}]
+}
+]
+}]
+}

@@ -1,0 +1,57 @@
+{
+"commits": [
+{
+	"repository": "https://github.com/RetriedAgain/MasterThesis-Code-Redo.git",
+	"sha1": "73af654e178e767ba7e5d0ec5c4d63fb42bd35dc",
+	"url": "https://github.com/RetriedAgain/MasterThesis-Code-Redo/commit/73af654e178e767ba7e5d0ec5c4d63fb42bd35dc",
+	"refactorings": [{
+	"type": "Change Attribute Access Modifier",
+	"description": "Change Attribute Access Modifier private to package in attribute package WELCOME_GREETING : String from class de.masterzoo.secret",
+	"leftSideLocations": [{
+		"filePath": "src/main/java/de/masterzoo/Zoo.java",
+		"startLine": 32,
+		"endLine": 32,
+		"startColumn": 30,
+		"endColumn": 70,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "original attribute declaration",
+		"codeElement": "private WELCOME_GREETING : String"
+}],
+	"rightSideLocations": [{
+		"filePath": "src/main/java/de/masterzoo/secret.java",
+		"startLine": 7,
+		"endLine": 7,
+		"startColumn": 25,
+		"endColumn": 65,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "attribute declaration with changed access modifier",
+		"codeElement": "package WELCOME_GREETING : String"
+}]
+},
+{
+	"type": "Move Attribute",
+	"description": "Move Attribute private WELCOME_GREETING : String from class de.masterzoo.Zoo to package WELCOME_GREETING : String from class de.masterzoo.secret",
+	"leftSideLocations": [{
+		"filePath": "src/main/java/de/masterzoo/Zoo.java",
+		"startLine": 32,
+		"endLine": 32,
+		"startColumn": 30,
+		"endColumn": 70,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "original attribute declaration",
+		"codeElement": "private WELCOME_GREETING : String"
+}],
+	"rightSideLocations": [{
+		"filePath": "src/main/java/de/masterzoo/secret.java",
+		"startLine": 7,
+		"endLine": 7,
+		"startColumn": 25,
+		"endColumn": 65,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "moved attribute declaration",
+		"codeElement": "package WELCOME_GREETING : String"
+}]
+}
+]
+}]
+}

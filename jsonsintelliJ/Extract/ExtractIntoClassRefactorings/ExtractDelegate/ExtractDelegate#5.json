@@ -1,0 +1,108 @@
+{
+"commits": [
+{
+	"repository": "https://github.com/RetriedAgain/MasterThesis-Code-Redo.git",
+	"sha1": "15709a2f7ffb20aaa9d79dfb43a01f71fcb250ed",
+	"url": "https://github.com/RetriedAgain/MasterThesis-Code-Redo/commit/15709a2f7ffb20aaa9d79dfb43a01f71fcb250ed",
+	"refactorings": [{
+	"type": "Move Attribute",
+	"description": "Move Attribute private hrBudget : double from class de.masterzoo.Zoo to package hrBudget : double from class de.masterzoo.secret",
+	"leftSideLocations": [{
+		"filePath": "src/main/java/de/masterzoo/Zoo.java",
+		"startLine": 38,
+		"endLine": 38,
+		"startColumn": 17,
+		"endColumn": 25,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "original attribute declaration",
+		"codeElement": "private hrBudget : double"
+}],
+	"rightSideLocations": [{
+		"filePath": "src/main/java/de/masterzoo/secret.java",
+		"startLine": 4,
+		"endLine": 4,
+		"startColumn": 12,
+		"endColumn": 20,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "moved attribute declaration",
+		"codeElement": "package hrBudget : double"
+}]
+},
+{
+	"type": "Change Attribute Access Modifier",
+	"description": "Change Attribute Access Modifier private to package in attribute package hrBudget : double from class de.masterzoo.secret",
+	"leftSideLocations": [{
+		"filePath": "src/main/java/de/masterzoo/Zoo.java",
+		"startLine": 38,
+		"endLine": 38,
+		"startColumn": 17,
+		"endColumn": 25,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "original attribute declaration",
+		"codeElement": "private hrBudget : double"
+}],
+	"rightSideLocations": [{
+		"filePath": "src/main/java/de/masterzoo/secret.java",
+		"startLine": 4,
+		"endLine": 4,
+		"startColumn": 12,
+		"endColumn": 20,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "attribute declaration with changed access modifier",
+		"codeElement": "package hrBudget : double"
+}]
+},
+{
+	"type": "Extract Class",
+	"description": "Extract Class de.masterzoo.secret from class de.masterzoo.Zoo",
+	"leftSideLocations": [{
+		"filePath": "src/main/java/de/masterzoo/Zoo.java",
+		"startLine": 17,
+		"endLine": 256,
+		"startColumn": 0,
+		"endColumn": 2,
+		"codeElementType": "TYPE_DECLARATION",
+		"description": "original type declaration",
+		"codeElement": "de.masterzoo.Zoo"
+}, {
+		"filePath": "src/main/java/de/masterzoo/Zoo.java",
+		"startLine": 38,
+		"endLine": 38,
+		"startColumn": 17,
+		"endColumn": 25,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "original attribute declaration",
+		"codeElement": "private hrBudget : double"
+}],
+	"rightSideLocations": [{
+		"filePath": "src/main/java/de/masterzoo/Zoo.java",
+		"startLine": 16,
+		"endLine": 255,
+		"startColumn": 0,
+		"endColumn": 2,
+		"codeElementType": "TYPE_DECLARATION",
+		"description": "type declaration after extraction",
+		"codeElement": "de.masterzoo.Zoo"
+}, {
+		"filePath": "src/main/java/de/masterzoo/secret.java",
+		"startLine": 3,
+		"endLine": 8,
+		"startColumn": 0,
+		"endColumn": 2,
+		"codeElementType": "TYPE_DECLARATION",
+		"description": "extracted type declaration",
+		"codeElement": "de.masterzoo.secret"
+}, {
+		"filePath": "src/main/java/de/masterzoo/secret.java",
+		"startLine": 4,
+		"endLine": 4,
+		"startColumn": 12,
+		"endColumn": 20,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "extracted attribute declaration",
+		"codeElement": "package hrBudget : double"
+}]
+}
+]
+}]
+}

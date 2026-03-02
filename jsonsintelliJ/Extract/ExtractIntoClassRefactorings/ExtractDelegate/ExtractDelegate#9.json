@@ -1,0 +1,177 @@
+{
+"commits": [
+{
+	"repository": "https://github.com/RetriedAgain/MasterThesis-Code-Redo.git",
+	"sha1": "d468b0de61391b69d1a67f2713780b0c2854fc07",
+	"url": "https://github.com/RetriedAgain/MasterThesis-Code-Redo/commit/d468b0de61391b69d1a67f2713780b0c2854fc07",
+	"refactorings": [{
+	"type": "Move Attribute",
+	"description": "Move Attribute private toUse_ThenExtractionCanWork : String from class de.masterzoo.Zoo to private toUse_ThenExtractionCanWork : String from class de.masterzoo.secret",
+	"leftSideLocations": [{
+		"filePath": "src/main/java/de/masterzoo/Zoo.java",
+		"startLine": 33,
+		"endLine": 33,
+		"startColumn": 17,
+		"endColumn": 53,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "original attribute declaration",
+		"codeElement": "private toUse_ThenExtractionCanWork : String"
+}],
+	"rightSideLocations": [{
+		"filePath": "src/main/java/de/masterzoo/secret.java",
+		"startLine": 4,
+		"endLine": 4,
+		"startColumn": 20,
+		"endColumn": 56,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "moved attribute declaration",
+		"codeElement": "private toUse_ThenExtractionCanWork : String"
+}]
+},
+{
+	"type": "Extract Class",
+	"description": "Extract Class de.masterzoo.secret from class de.masterzoo.Zoo",
+	"leftSideLocations": [{
+		"filePath": "src/main/java/de/masterzoo/Zoo.java",
+		"startLine": 17,
+		"endLine": 262,
+		"startColumn": 0,
+		"endColumn": 2,
+		"codeElementType": "TYPE_DECLARATION",
+		"description": "original type declaration",
+		"codeElement": "de.masterzoo.Zoo"
+}, {
+		"filePath": "src/main/java/de/masterzoo/Zoo.java",
+		"startLine": 33,
+		"endLine": 33,
+		"startColumn": 17,
+		"endColumn": 53,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "original attribute declaration",
+		"codeElement": "private toUse_ThenExtractionCanWork : String"
+}],
+	"rightSideLocations": [{
+		"filePath": "src/main/java/de/masterzoo/Zoo.java",
+		"startLine": 16,
+		"endLine": 261,
+		"startColumn": 0,
+		"endColumn": 2,
+		"codeElementType": "TYPE_DECLARATION",
+		"description": "type declaration after extraction",
+		"codeElement": "de.masterzoo.Zoo"
+}, {
+		"filePath": "src/main/java/de/masterzoo/secret.java",
+		"startLine": 3,
+		"endLine": 12,
+		"startColumn": 0,
+		"endColumn": 2,
+		"codeElementType": "TYPE_DECLARATION",
+		"description": "extracted type declaration",
+		"codeElement": "de.masterzoo.secret"
+}, {
+		"filePath": "src/main/java/de/masterzoo/secret.java",
+		"startLine": 4,
+		"endLine": 4,
+		"startColumn": 20,
+		"endColumn": 56,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "extracted attribute declaration",
+		"codeElement": "private toUse_ThenExtractionCanWork : String"
+}]
+},
+{
+	"type": "Extract Class",
+	"description": "Extract Class de.masterzoo.secret from class de.masterzoo.Zoo",
+	"leftSideLocations": [{
+		"filePath": "src/main/java/de/masterzoo/Zoo.java",
+		"startLine": 17,
+		"endLine": 262,
+		"startColumn": 0,
+		"endColumn": 2,
+		"codeElementType": "TYPE_DECLARATION",
+		"description": "original type declaration",
+		"codeElement": "de.masterzoo.Zoo"
+}],
+	"rightSideLocations": [{
+		"filePath": "src/main/java/de/masterzoo/Zoo.java",
+		"startLine": 16,
+		"endLine": 261,
+		"startColumn": 0,
+		"endColumn": 2,
+		"codeElementType": "TYPE_DECLARATION",
+		"description": "type declaration after extraction",
+		"codeElement": "de.masterzoo.Zoo"
+}, {
+		"filePath": "src/main/java/de/masterzoo/secret.java",
+		"startLine": 3,
+		"endLine": 12,
+		"startColumn": 0,
+		"endColumn": 2,
+		"codeElementType": "TYPE_DECLARATION",
+		"description": "extracted type declaration",
+		"codeElement": "de.masterzoo.secret"
+}]
+},
+{
+	"type": "Extract And Move Method",
+	"description": "Extract And Move Method public getToUse_ThenExtractionCanWork() : String extracted from private welcomeCustomers2() : void in class de.masterzoo.Zoo & moved to class de.masterzoo.secret",
+	"leftSideLocations": [{
+		"filePath": "src/main/java/de/masterzoo/Zoo.java",
+		"startLine": 81,
+		"endLine": 83,
+		"startColumn": 2,
+		"endColumn": 3,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "source method declaration before extraction",
+		"codeElement": "private welcomeCustomers2() : void"
+}, {
+		"filePath": "src/main/java/de/masterzoo/Zoo.java",
+		"startLine": 82,
+		"endLine": 82,
+		"startColumn": 3,
+		"endColumn": 51,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "extracted code from source method declaration",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "src/main/java/de/masterzoo/secret.java",
+		"startLine": 6,
+		"endLine": 8,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "extracted method declaration",
+		"codeElement": "public getToUse_ThenExtractionCanWork() : String"
+}, {
+		"filePath": "src/main/java/de/masterzoo/secret.java",
+		"startLine": 7,
+		"endLine": 7,
+		"startColumn": 9,
+		"endColumn": 44,
+		"codeElementType": "RETURN_STATEMENT",
+		"description": "extracted code to extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "src/main/java/de/masterzoo/Zoo.java",
+		"startLine": 80,
+		"endLine": 82,
+		"startColumn": 2,
+		"endColumn": 3,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "source method declaration after extraction",
+		"codeElement": "private welcomeCustomers2() : void"
+}, {
+		"filePath": "src/main/java/de/masterzoo/Zoo.java",
+		"startLine": 81,
+		"endLine": 81,
+		"startColumn": 22,
+		"endColumn": 61,
+		"codeElementType": "METHOD_INVOCATION",
+		"description": "extracted method invocation",
+		"codeElement": "secret.getToUse_ThenExtractionCanWork()"
+}]
+}
+]
+}]
+}
