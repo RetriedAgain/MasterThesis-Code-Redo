@@ -6,7 +6,6 @@ import de.masterzoo.partnercompanies.Circus;
 import de.masterzoo.partnercompanies.Company;
 import org.jetbrains.annotations.NonNls;
 
-import java.security.PrivilegedAction;
 import java.time.LocalDate;
 import java.time.Month;
 import java.time.Year;
@@ -73,12 +72,8 @@ public class Zoo {
 		this.partnerCompanies = partnerCompanies;
 	}
 
-	private static void welcomeCustomers() {
-		System.out.println(WELCOME_GREETING);
-	}
-
 	private static void useWelcomeCustomers() {
-		welcomeCustomers();
+		secret.welcomeCustomers();
 		System.out.println("That was our greeting message!");
 	}
 
