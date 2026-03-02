@@ -6,7 +6,6 @@ import de.masterzoo.partnercompanies.Circus;
 import de.masterzoo.partnercompanies.Company;
 import org.jetbrains.annotations.NonNls;
 
-import java.security.PrivilegedAction;
 import java.time.LocalDate;
 import java.time.Month;
 import java.time.Year;
@@ -30,12 +29,12 @@ public class Zoo {
 
 	@NonNls
 	private static final String WELCOME_GREETING = "Welcome to the Zoo!";
+	private final secret secret = new secret();
 
 	// Accounting
 	private double averageMonthlyCostsByYear;
 	private double averageMonthlyRevenueByYear;
 	private double accountingBudget;
-	private double hrBudget;
 	private double legalBudget;
 	private double zookeepingBudget;
 	private double securityBudget;
@@ -140,7 +139,7 @@ public class Zoo {
 	}
 
 	public void calculateInitialBudgetDistribution() {
-		this.accountingBudget = this.hrBudget = this.legalBudget = this.zookeepingBudget = this.securityBudget = 0;
+		this.accountingBudget = this.secret.hrBudget = this.legalBudget = this.zookeepingBudget = this.securityBudget = 0;
 
 		int test = 200_000;
 		this.accountingBudget = test * 0.2;
@@ -247,10 +246,10 @@ public class Zoo {
 	}
 
 	public double getHrBudget() {
-		return hrBudget;
+		return secret.hrBudget;
 	}
 
 	public void setHrBudget(double hrBudget) {
-		this.hrBudget = hrBudget;
+		this.secret.hrBudget = hrBudget;
 	}
 }
