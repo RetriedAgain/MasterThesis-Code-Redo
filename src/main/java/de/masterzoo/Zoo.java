@@ -30,6 +30,7 @@ public class Zoo {
 
 	@NonNls
 	private static final String WELCOME_GREETING = "Welcome to the Zoo!";
+	private String toUse_ThenExtractionCanWork = "Test";
 
 	// Accounting
 	private double averageMonthlyCostsByYear;
@@ -76,6 +77,11 @@ public class Zoo {
 	private static void welcomeCustomers() {
 		System.out.println(WELCOME_GREETING);
 	}
+
+	private void welcomeCustomers2() {
+		System.out.println(toUse_ThenExtractionCanWork);
+	}
+
 
 	private static void useWelcomeCustomers() {
 		welcomeCustomers();
