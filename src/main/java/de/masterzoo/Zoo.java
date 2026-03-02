@@ -6,7 +6,6 @@ import de.masterzoo.partnercompanies.Circus;
 import de.masterzoo.partnercompanies.Company;
 import org.jetbrains.annotations.NonNls;
 
-import java.security.PrivilegedAction;
 import java.time.LocalDate;
 import java.time.Month;
 import java.time.Year;
@@ -19,10 +18,6 @@ import java.util.List;
  */
 public class Zoo {
 
-	/**
-	 * The first day that the zoo paid all of its bills.
-	 */
-	private final static LocalDate firstDayOfBilling = LocalDate.of(2025, Month.JANUARY, 31);
 	/**
 	 * The first day that the zoo was open to the public. Not the day that it was open to private investors.
 	 */
@@ -258,5 +253,18 @@ public class Zoo {
 
 	public void setHrBudget(double hrBudget) {
 		this.hrBudget = hrBudget;
+	}
+
+	public enum secret {
+		firstDayOfBilling(LocalDate.of(2025, Month.JANUARY, 31));
+		private final LocalDate value;
+
+		secret(LocalDate value) {
+			this.value = value;
+		}
+
+		public LocalDate getValue() {
+			return value;
+		}
 	}
 }
