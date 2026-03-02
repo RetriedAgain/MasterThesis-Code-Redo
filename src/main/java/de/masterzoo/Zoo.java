@@ -6,7 +6,6 @@ import de.masterzoo.partnercompanies.Circus;
 import de.masterzoo.partnercompanies.Company;
 import org.jetbrains.annotations.NonNls;
 
-import java.security.PrivilegedAction;
 import java.time.LocalDate;
 import java.time.Month;
 import java.time.Year;
@@ -30,7 +29,7 @@ public class Zoo {
 
 	@NonNls
 	private static final String WELCOME_GREETING = "Welcome to the Zoo!";
-	private String toUse_ThenExtractionCanWork = "Test";
+	private final secret secret = new secret();
 
 	// Accounting
 	private double averageMonthlyCostsByYear;
@@ -79,7 +78,7 @@ public class Zoo {
 	}
 
 	private void welcomeCustomers2() {
-		System.out.println(toUse_ThenExtractionCanWork);
+		System.out.println(secret.getToUse_ThenExtractionCanWork());
 	}
 
 
