@@ -1,0 +1,246 @@
+{
+"commits": [
+{
+	"repository": "https://github.com/RetriedAgain/MasterThesis-Code-Redo.git",
+	"sha1": "cf4e503133c5dabec7046fc64e74e0de9f90ec84",
+	"url": "https://github.com/RetriedAgain/MasterThesis-Code-Redo/commit/cf4e503133c5dabec7046fc64e74e0de9f90ec84",
+	"refactorings": [{
+	"type": "Merge Parameter",
+	"description": "Merge Parameter [name : String, age : int] to person : Person in method public Employee(person Person, department Department) from class de.masterzoo.humanresources.Employee",
+	"leftSideLocations": [{
+		"filePath": "src/main/java/de/masterzoo/humanresources/Employee.java",
+		"startLine": 19,
+		"endLine": 19,
+		"startColumn": 18,
+		"endColumn": 29,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "merged variable declaration",
+		"codeElement": "name : String"
+}, {
+		"filePath": "src/main/java/de/masterzoo/humanresources/Employee.java",
+		"startLine": 19,
+		"endLine": 19,
+		"startColumn": 31,
+		"endColumn": 38,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "merged variable declaration",
+		"codeElement": "age : int"
+}, {
+		"filePath": "src/main/java/de/masterzoo/humanresources/Employee.java",
+		"startLine": 19,
+		"endLine": 23,
+		"startColumn": 2,
+		"endColumn": 3,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "public Employee(name String, age int, department Department)"
+}],
+	"rightSideLocations": [{
+		"filePath": "src/main/java/de/masterzoo/humanresources/Employee.java",
+		"startLine": 19,
+		"endLine": 19,
+		"startColumn": 18,
+		"endColumn": 31,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "new variable declaration",
+		"codeElement": "person : Person"
+}, {
+		"filePath": "src/main/java/de/masterzoo/humanresources/Employee.java",
+		"startLine": 19,
+		"endLine": 23,
+		"startColumn": 2,
+		"endColumn": 3,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "method declaration with merged variables",
+		"codeElement": "public Employee(person Person, department Department)"
+}]
+},
+{
+	"type": "Encapsulate Attribute",
+	"description": "Encapsulate Attribute public name : String from class de.masterzoo.humanresources.Person",
+	"leftSideLocations": [{
+		"filePath": "src/main/java/de/masterzoo/humanresources/Person.java",
+		"startLine": 6,
+		"endLine": 6,
+		"startColumn": 16,
+		"endColumn": 20,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "original attribute declaration",
+		"codeElement": "public name : String"
+}],
+	"rightSideLocations": [{
+		"filePath": "src/main/java/de/masterzoo/humanresources/Person.java",
+		"startLine": 4,
+		"endLine": 4,
+		"startColumn": 16,
+		"endColumn": 20,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "encapsulated attribute declaration",
+		"codeElement": "public name : String"
+}, {
+		"filePath": "src/main/java/de/masterzoo/humanresources/Person.java",
+		"startLine": 11,
+		"endLine": 13,
+		"startColumn": 2,
+		"endColumn": 3,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "added getter method",
+		"codeElement": "public getName() : String"
+}]
+},
+{
+	"type": "Encapsulate Attribute",
+	"description": "Encapsulate Attribute public age : int from class de.masterzoo.humanresources.Person",
+	"leftSideLocations": [{
+		"filePath": "src/main/java/de/masterzoo/humanresources/Person.java",
+		"startLine": 7,
+		"endLine": 7,
+		"startColumn": 13,
+		"endColumn": 16,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "original attribute declaration",
+		"codeElement": "public age : int"
+}],
+	"rightSideLocations": [{
+		"filePath": "src/main/java/de/masterzoo/humanresources/Person.java",
+		"startLine": 5,
+		"endLine": 5,
+		"startColumn": 13,
+		"endColumn": 16,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "encapsulated attribute declaration",
+		"codeElement": "public age : int"
+}, {
+		"filePath": "src/main/java/de/masterzoo/humanresources/Person.java",
+		"startLine": 7,
+		"endLine": 9,
+		"startColumn": 2,
+		"endColumn": 3,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "added getter method",
+		"codeElement": "public getAge() : int"
+}]
+},
+{
+	"type": "Extract And Move Method",
+	"description": "Extract And Move Method public getAge() : int extracted from public Employee(name String, age int, department Department) in class de.masterzoo.humanresources.Employee & moved to class de.masterzoo.humanresources.Person",
+	"leftSideLocations": [{
+		"filePath": "src/main/java/de/masterzoo/humanresources/Employee.java",
+		"startLine": 19,
+		"endLine": 23,
+		"startColumn": 2,
+		"endColumn": 3,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "source method declaration before extraction",
+		"codeElement": "public Employee(name String, age int, department Department)"
+}, {
+		"filePath": "src/main/java/de/masterzoo/humanresources/Employee.java",
+		"startLine": 21,
+		"endLine": 21,
+		"startColumn": 3,
+		"endColumn": 18,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "extracted code from source method declaration",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "src/main/java/de/masterzoo/humanresources/Person.java",
+		"startLine": 7,
+		"endLine": 9,
+		"startColumn": 2,
+		"endColumn": 3,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "extracted method declaration",
+		"codeElement": "public getAge() : int"
+}, {
+		"filePath": "src/main/java/de/masterzoo/humanresources/Person.java",
+		"startLine": 8,
+		"endLine": 8,
+		"startColumn": 3,
+		"endColumn": 14,
+		"codeElementType": "RETURN_STATEMENT",
+		"description": "extracted code to extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "src/main/java/de/masterzoo/humanresources/Employee.java",
+		"startLine": 19,
+		"endLine": 23,
+		"startColumn": 2,
+		"endColumn": 3,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "source method declaration after extraction",
+		"codeElement": "public Employee(person Person, department Department)"
+}, {
+		"filePath": "src/main/java/de/masterzoo/humanresources/Employee.java",
+		"startLine": 21,
+		"endLine": 21,
+		"startColumn": 14,
+		"endColumn": 29,
+		"codeElementType": "METHOD_INVOCATION",
+		"description": "extracted method invocation",
+		"codeElement": "person.getAge()"
+}]
+},
+{
+	"type": "Extract And Move Method",
+	"description": "Extract And Move Method public getName() : String extracted from public Employee(name String, age int, department Department) in class de.masterzoo.humanresources.Employee & moved to class de.masterzoo.humanresources.Person",
+	"leftSideLocations": [{
+		"filePath": "src/main/java/de/masterzoo/humanresources/Employee.java",
+		"startLine": 19,
+		"endLine": 23,
+		"startColumn": 2,
+		"endColumn": 3,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "source method declaration before extraction",
+		"codeElement": "public Employee(name String, age int, department Department)"
+}, {
+		"filePath": "src/main/java/de/masterzoo/humanresources/Employee.java",
+		"startLine": 20,
+		"endLine": 20,
+		"startColumn": 3,
+		"endColumn": 20,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "extracted code from source method declaration",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "src/main/java/de/masterzoo/humanresources/Person.java",
+		"startLine": 11,
+		"endLine": 13,
+		"startColumn": 2,
+		"endColumn": 3,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "extracted method declaration",
+		"codeElement": "public getName() : String"
+}, {
+		"filePath": "src/main/java/de/masterzoo/humanresources/Person.java",
+		"startLine": 12,
+		"endLine": 12,
+		"startColumn": 3,
+		"endColumn": 15,
+		"codeElementType": "RETURN_STATEMENT",
+		"description": "extracted code to extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "src/main/java/de/masterzoo/humanresources/Employee.java",
+		"startLine": 19,
+		"endLine": 23,
+		"startColumn": 2,
+		"endColumn": 3,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "source method declaration after extraction",
+		"codeElement": "public Employee(person Person, department Department)"
+}, {
+		"filePath": "src/main/java/de/masterzoo/humanresources/Employee.java",
+		"startLine": 20,
+		"endLine": 20,
+		"startColumn": 15,
+		"endColumn": 31,
+		"codeElementType": "METHOD_INVOCATION",
+		"description": "extracted method invocation",
+		"codeElement": "person.getName()"
+}]
+}
+]
+}]
+}

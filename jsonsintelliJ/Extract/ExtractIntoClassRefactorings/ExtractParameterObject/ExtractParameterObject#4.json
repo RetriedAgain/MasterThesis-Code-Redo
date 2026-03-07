@@ -1,0 +1,60 @@
+{
+"commits": [
+{
+	"repository": "https://github.com/RetriedAgain/MasterThesis-Code-Redo.git",
+	"sha1": "3f7ce8e85abfe2f30405b7bbd6a633d58c0cf5c2",
+	"url": "https://github.com/RetriedAgain/MasterThesis-Code-Redo/commit/3f7ce8e85abfe2f30405b7bbd6a633d58c0cf5c2",
+	"refactorings": [{
+	"type": "Merge Parameter",
+	"description": "Merge Parameter [name : String, age : int] to personalInfo : PersonalInfo in method public Employee(personalInfo PersonalInfo, department Department) from class de.masterzoo.humanresources.Employee",
+	"leftSideLocations": [{
+		"filePath": "src/main/java/de/masterzoo/humanresources/Employee.java",
+		"startLine": 19,
+		"endLine": 19,
+		"startColumn": 18,
+		"endColumn": 29,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "merged variable declaration",
+		"codeElement": "name : String"
+}, {
+		"filePath": "src/main/java/de/masterzoo/humanresources/Employee.java",
+		"startLine": 19,
+		"endLine": 19,
+		"startColumn": 31,
+		"endColumn": 38,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "merged variable declaration",
+		"codeElement": "age : int"
+}, {
+		"filePath": "src/main/java/de/masterzoo/humanresources/Employee.java",
+		"startLine": 19,
+		"endLine": 23,
+		"startColumn": 2,
+		"endColumn": 3,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "public Employee(name String, age int, department Department)"
+}],
+	"rightSideLocations": [{
+		"filePath": "src/main/java/de/masterzoo/humanresources/Employee.java",
+		"startLine": 19,
+		"endLine": 19,
+		"startColumn": 18,
+		"endColumn": 43,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "new variable declaration",
+		"codeElement": "personalInfo : PersonalInfo"
+}, {
+		"filePath": "src/main/java/de/masterzoo/humanresources/Employee.java",
+		"startLine": 19,
+		"endLine": 23,
+		"startColumn": 2,
+		"endColumn": 3,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "method declaration with merged variables",
+		"codeElement": "public Employee(personalInfo PersonalInfo, department Department)"
+}]
+}
+]
+}]
+}

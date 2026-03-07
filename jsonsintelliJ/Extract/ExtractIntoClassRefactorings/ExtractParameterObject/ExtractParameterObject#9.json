@@ -1,0 +1,105 @@
+{
+"commits": [
+{
+	"repository": "https://github.com/RetriedAgain/MasterThesis-Code-Redo.git",
+	"sha1": "ce88d016edb08c53944e0fae07d04ef8b7d17ce8",
+	"url": "https://github.com/RetriedAgain/MasterThesis-Code-Redo/commit/ce88d016edb08c53944e0fae07d04ef8b7d17ce8",
+	"refactorings": [{
+	"type": "Extract Method",
+	"description": "Extract Method public Employee(personalInfo PersonalInfo, department Department) extracted from public Employee(name String, age int, department Department) in class de.masterzoo.humanresources.Employee",
+	"leftSideLocations": [{
+		"filePath": "src/main/java/de/masterzoo/humanresources/Employee.java",
+		"startLine": 19,
+		"endLine": 23,
+		"startColumn": 2,
+		"endColumn": 3,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "source method declaration before extraction",
+		"codeElement": "public Employee(name String, age int, department Department)"
+}, {
+		"filePath": "src/main/java/de/masterzoo/humanresources/Employee.java",
+		"startLine": 22,
+		"endLine": 22,
+		"startColumn": 3,
+		"endColumn": 32,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "extracted code from source method declaration",
+		"codeElement": null
+}, {
+		"filePath": "src/main/java/de/masterzoo/humanresources/Employee.java",
+		"startLine": 20,
+		"endLine": 20,
+		"startColumn": 3,
+		"endColumn": 20,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "extracted code from source method declaration",
+		"codeElement": null
+}, {
+		"filePath": "src/main/java/de/masterzoo/humanresources/Employee.java",
+		"startLine": 21,
+		"endLine": 21,
+		"startColumn": 3,
+		"endColumn": 18,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "extracted code from source method declaration",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "src/main/java/de/masterzoo/humanresources/Employee.java",
+		"startLine": 26,
+		"endLine": 30,
+		"startColumn": 2,
+		"endColumn": 3,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "extracted method declaration",
+		"codeElement": "public Employee(personalInfo PersonalInfo, department Department)"
+}, {
+		"filePath": "src/main/java/de/masterzoo/humanresources/Employee.java",
+		"startLine": 29,
+		"endLine": 29,
+		"startColumn": 3,
+		"endColumn": 32,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "extracted code to extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "src/main/java/de/masterzoo/humanresources/Employee.java",
+		"startLine": 27,
+		"endLine": 27,
+		"startColumn": 3,
+		"endColumn": 35,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "extracted code to extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "src/main/java/de/masterzoo/humanresources/Employee.java",
+		"startLine": 28,
+		"endLine": 28,
+		"startColumn": 3,
+		"endColumn": 36,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "extracted code to extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "src/main/java/de/masterzoo/humanresources/Employee.java",
+		"startLine": 20,
+		"endLine": 22,
+		"startColumn": 2,
+		"endColumn": 3,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "source method declaration after extraction",
+		"codeElement": "public Employee(name String, age int, department Department)"
+}, {
+		"filePath": "src/main/java/de/masterzoo/humanresources/Employee.java",
+		"startLine": 21,
+		"endLine": 21,
+		"startColumn": 3,
+		"endColumn": 49,
+		"codeElementType": "CONSTRUCTOR_INVOCATION",
+		"description": "extracted method invocation",
+		"codeElement": "this(new PersonalInfo(age,name),department)"
+}]
+}
+]
+}]
+}
