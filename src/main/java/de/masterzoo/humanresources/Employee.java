@@ -16,9 +16,9 @@ public class Employee {
 
 	// For Extract Parameter Object:
 	// Extract the two parameters name and age to the parameter object PersonalInfo
-	public Employee(String name, int age, Department department) {
-		this.name = name;
-		this.age = age;
+	public Employee(PersonalInfo personalInfo, Department department) {
+		this.name = personalInfo.name();
+		this.age = personalInfo.age();
 		this.department = department;
 	}
 
@@ -47,4 +47,6 @@ public class Employee {
 	}
 
 
+	private static record PersonalInfo(String name, int age) {
+	}
 }
