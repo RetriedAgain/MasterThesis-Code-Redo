@@ -141,7 +141,7 @@ public class DummyCalculationForExtractRefactorings {
 		}
 		i += 10;
 
-		if (i > 10 && j < 50) {
+		if (secret.getI() > 10 && secret.j() < 50) {
 			return 10;
 		} else {
 			return 1;
