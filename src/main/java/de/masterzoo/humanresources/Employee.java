@@ -16,10 +16,10 @@ public class Employee {
 
 	// For Extract Parameter Object:
 	// Extract the two parameters name and age to the parameter object PersonalInfo
-	public Employee(String name, int age, Department department) {
-		this.name = name;
-		this.age = age;
-		this.department = department;
+	public Employee(PersonalInfo personalInfo) {
+		this.name = personalInfo.name();
+		this.age = personalInfo.age();
+		this.department = personalInfo.department();
 	}
 
 	public String getName() {
