@@ -133,5 +133,27 @@ public class DummyCalculationForExtractRefactorings {
 		// Extract end
 	}
 
+	// Extract up here with caret on method-name
+	public int extractParameterObject(int i, int j) {
+		while (i < 10) {
+			i++;
+			i *= 10;
+		}
+		i += 10;
+
+		if (i > 10 && j < 50) {
+			return 10;
+		} else {
+			return 1;
+		}
+	}
+
+	public int useExtractParameterObject() {
+		int i = 50;
+		i += extractParameterObject(5, 3);
+		return i;
+	}
+
+
 
 }
