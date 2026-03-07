@@ -1,6 +1,7 @@
 package de.masterzoo.humanresources;
 
 import de.masterzoo.Department;
+import de.masterzoo.PersonalInfo;
 import de.masterzoo.groups.animalia.canines.Labrador;
 
 /**
@@ -17,8 +18,14 @@ public class Employee {
 	// For Extract Parameter Object:
 	// Extract the two parameters name and age to the parameter object PersonalInfo
 	public Employee(String name, int age, Department department) {
-		this.name = name;
-		this.age = age;
+		this(new PersonalInfo(age, name), department);
+	}
+
+	// For Extract Parameter Object:
+	// Extract the two parameters name and age to the parameter object PersonalInfo
+	public Employee(PersonalInfo personalInfo, Department department) {
+		this.name = personalInfo.name();
+		this.age = personalInfo.secret();
 		this.department = department;
 	}
 
