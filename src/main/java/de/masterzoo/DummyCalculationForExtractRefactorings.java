@@ -125,7 +125,7 @@ public class DummyCalculationForExtractRefactorings {
 		i += 10;
 
 		// Extract start
-		return new Secret(i > 10 && j < 50).invoke();
+		return new SuperSecret(new Secret(i > 10 && j < 50).invoke()).invoke();
 		// Extract end
 	}
 
@@ -143,6 +143,18 @@ public class DummyCalculationForExtractRefactorings {
 			} else {
 				return 1;
 			}
+		}
+	}
+
+	private static class SuperSecret {
+		private int invoke;
+
+		public SuperSecret(int invoke) {
+			this.invoke = invoke;
+		}
+
+		public int invoke() {
+			return invoke;
 		}
 	}
 }
