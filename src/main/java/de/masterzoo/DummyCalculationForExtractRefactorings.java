@@ -125,13 +125,26 @@ public class DummyCalculationForExtractRefactorings {
 		i += 10;
 
 		// Extract start
-		if (i > 10 && j < 50) {
-			return 10;
-		} else {
-			return 1;
-		}
+		return new Secret(j, i).invoke();
 		// Extract end
 	}
 
 
+	private class Secret {
+		private int j;
+		private int i;
+
+		public Secret(int j, int i) {
+			this.j = j;
+			this.i = i;
+		}
+
+		public int invoke() {
+			if (i > 10 && j < 50) {
+				return 10;
+			} else {
+				return 1;
+			}
+		}
+	}
 }
