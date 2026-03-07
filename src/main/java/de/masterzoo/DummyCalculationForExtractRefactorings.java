@@ -111,6 +111,27 @@ public class DummyCalculationForExtractRefactorings {
 		return someValue + anotherValue;
 	}
 
+	/**
+	 * Dummy for extractMethodObject
+	 * @param i
+	 * @param j
+	 * @return
+	 */
+	public int extractMethodObject(int i, int j) {
+		while (i < 10) {
+			i++;
+			i *= 10;
+		}
+		i += 10;
+
+		// Extract start
+		if (i > 10 && j < 50) {
+			return 10;
+		} else {
+			return 1;
+		}
+		// Extract end
+	}
 
 
 }
