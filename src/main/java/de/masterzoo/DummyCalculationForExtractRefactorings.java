@@ -125,11 +125,15 @@ public class DummyCalculationForExtractRefactorings {
 		i += 10;
 
 		// Extract start
-		if (i > 10 && j < 50) {
-			return 10;
-		} else {
-			return 1;
-		}
+		return new Object() {
+			private int Secret(int i, int j) {
+				if (i > 10 && j < 50) {
+					return 10;
+				} else {
+					return 1;
+				}
+			}
+		}.Secret(i, j);
 		// Extract end
 	}
 
