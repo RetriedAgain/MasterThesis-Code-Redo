@@ -1,0 +1,78 @@
+{
+"commits": [
+{
+	"repository": "https://github.com/RetriedAgain/MasterThesis-Code-Redo.git",
+	"sha1": "b0ea7837cc1489ee446adc17546301980ce64731",
+	"url": "https://github.com/RetriedAgain/MasterThesis-Code-Redo/commit/b0ea7837cc1489ee446adc17546301980ce64731",
+	"refactorings": [{
+	"type": "Extract And Move Method",
+	"description": "Extract And Move Method public invoke() : int extracted from public extractMethodObject(i int, j int) : int in class de.masterzoo.DummyCalculationForExtractRefactorings & moved to class de.masterzoo.DummyCalculationForExtractRefactorings.SuperSecret",
+	"leftSideLocations": [{
+		"filePath": "src/main/java/de/masterzoo/DummyCalculationForExtractRefactorings.java",
+		"startLine": 114,
+		"endLine": 130,
+		"startColumn": 2,
+		"endColumn": 3,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "source method declaration before extraction",
+		"codeElement": "public extractMethodObject(i int, j int) : int"
+}, {
+		"filePath": "src/main/java/de/masterzoo/DummyCalculationForExtractRefactorings.java",
+		"startLine": 128,
+		"endLine": 128,
+		"startColumn": 3,
+		"endColumn": 48,
+		"codeElementType": "RETURN_STATEMENT",
+		"description": "extracted code from source method declaration",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "src/main/java/de/masterzoo/DummyCalculationForExtractRefactorings.java",
+		"startLine": 156,
+		"endLine": 158,
+		"startColumn": 3,
+		"endColumn": 4,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "extracted method declaration",
+		"codeElement": "public invoke() : int"
+}, {
+		"filePath": "src/main/java/de/masterzoo/DummyCalculationForExtractRefactorings.java",
+		"startLine": 157,
+		"endLine": 157,
+		"startColumn": 4,
+		"endColumn": 18,
+		"codeElementType": "RETURN_STATEMENT",
+		"description": "extracted code to extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "src/main/java/de/masterzoo/DummyCalculationForExtractRefactorings.java",
+		"startLine": 114,
+		"endLine": 130,
+		"startColumn": 2,
+		"endColumn": 3,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "source method declaration after extraction",
+		"codeElement": "public extractMethodObject(i int, j int) : int"
+}, {
+		"filePath": "src/main/java/de/masterzoo/DummyCalculationForExtractRefactorings.java",
+		"startLine": 128,
+		"endLine": 128,
+		"startColumn": 26,
+		"endColumn": 63,
+		"codeElementType": "METHOD_INVOCATION",
+		"description": "extracted method invocation",
+		"codeElement": "new Secret(i > 10 && j < 50).invoke()"
+}, {
+		"filePath": "src/main/java/de/masterzoo/DummyCalculationForExtractRefactorings.java",
+		"startLine": 128,
+		"endLine": 128,
+		"startColumn": 10,
+		"endColumn": 73,
+		"codeElementType": "METHOD_INVOCATION",
+		"description": "extracted method invocation",
+		"codeElement": "new SuperSecret(new Secret(i > 10 && j < 50).invoke()).invoke()"
+}]
+}
+]
+}]
+}
