@@ -1,0 +1,33 @@
+{
+"commits": [
+{
+	"repository": "https://github.com/RetriedAgain/MasterThesis-Code-Redo.git",
+	"sha1": "b55ac5705090ba4e762a32edef9cacc794afc587",
+	"url": "https://github.com/RetriedAgain/MasterThesis-Code-Redo/commit/b55ac5705090ba4e762a32edef9cacc794afc587",
+	"refactorings": [{
+	"type": "Inline Variable",
+	"description": "Inline Variable importantVariable : int in method public switch_case_cond(paramVariable int) : void from class InlineVariable",
+	"leftSideLocations": [{
+		"filePath": "src/main/java/InlineVariable.java",
+		"startLine": 94,
+		"endLine": 94,
+		"startColumn": 13,
+		"endColumn": 34,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "inlined variable declaration",
+		"codeElement": "importantVariable : int"
+}],
+	"rightSideLocations": [{
+		"filePath": "src/main/java/InlineVariable.java",
+		"startLine": 96,
+		"endLine": 96,
+		"startColumn": 4,
+		"endColumn": 11,
+		"codeElementType": "SWITCH_CASE",
+		"description": "statement with the initializer of the inlined variable",
+		"codeElement": null
+}]
+}
+]
+}]
+}

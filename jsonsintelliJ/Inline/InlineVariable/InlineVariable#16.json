@@ -1,0 +1,42 @@
+{
+"commits": [
+{
+	"repository": "https://github.com/RetriedAgain/MasterThesis-Code-Redo.git",
+	"sha1": "157e0fffe23d815b2c34cdb4b7a54b5756d9267d",
+	"url": "https://github.com/RetriedAgain/MasterThesis-Code-Redo/commit/157e0fffe23d815b2c34cdb4b7a54b5756d9267d",
+	"refactorings": [{
+	"type": "Inline Variable",
+	"description": "Inline Variable importantVariable : int in method public for_under() : void from class InlineVariable",
+	"leftSideLocations": [{
+		"filePath": "src/main/java/InlineVariable.java",
+		"startLine": 140,
+		"endLine": 140,
+		"startColumn": 7,
+		"endColumn": 28,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "inlined variable declaration",
+		"codeElement": "importantVariable : int"
+}, {
+		"filePath": "src/main/java/InlineVariable.java",
+		"startLine": 143,
+		"endLine": 143,
+		"startColumn": 4,
+		"endColumn": 42,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement with the name of the inlined variable",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "src/main/java/InlineVariable.java",
+		"startLine": 142,
+		"endLine": 142,
+		"startColumn": 4,
+		"endColumn": 26,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement with the initializer of the inlined variable",
+		"codeElement": null
+}]
+}
+]
+}]
+}
