@@ -145,8 +145,7 @@ public class InlineVariable {
 	}
 
 	public static void for_each_cond() {
-		int[] intArray = new int[5];
-		for (int i : intArray) {
+		for (int i : new int[5]) {
 			System.out.println("Good job");
 		}
 	}
