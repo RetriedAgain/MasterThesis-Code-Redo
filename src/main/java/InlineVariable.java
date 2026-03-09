@@ -129,9 +129,8 @@ public class InlineVariable {
 	}
 
 	public static void for_cond() {
-		int importantVariable = 5;
 
-		for (int i = 0; i < importantVariable; i++) {
+		for (int i = 0; i < 5; i++) {
 			System.out.println("Good job");
 		}
 	}
