@@ -19,7 +19,7 @@ import java.util.List;
  */
 public class Zoo {
 
-	private final static int CONSTANT = 10000;
+	public final static int CONSTANT = 10000;
 
 	/**
 	 * The first day that the zoo paid all of its bills.
