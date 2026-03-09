@@ -3,8 +3,7 @@ import java.lang.reflect.Array;
 public class InlineVariable {
 
 	public static void min() {
-		int importantVariable = 5;
-		System.out.println(importantVariable);
+		System.out.println(5);
 	}
 
 	public static void ifCond() {
