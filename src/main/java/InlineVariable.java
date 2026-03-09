@@ -73,10 +73,9 @@ public class InlineVariable {
 	}
 
 	public static void while_under() {
-		int importantVariable = 5;
 
 		while (true) {
-			System.out.println(importantVariable);
+			System.out.println(5);
 			break;
 		}
 	}
