@@ -82,9 +82,8 @@ public class InlineVariable {
 	}
 
 	public static void switch_cond() {
-		int importantVariable = 5;
 
-		switch (importantVariable) {
+		switch (5) {
 			case 5:
 				System.out.println("Good job");
 		}
