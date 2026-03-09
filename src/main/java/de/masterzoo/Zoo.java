@@ -124,7 +124,7 @@ public class Zoo {
 	}
 
 	private double calcFreeNumOfWildLifeProtectionBudget() {
-		return 10000;
+		return calcFreeNumOfCircusBudget();
 	}
 
 	private double calcFreeNumOfSavingsBudget() {
