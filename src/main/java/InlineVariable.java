@@ -109,10 +109,9 @@ public class InlineVariable {
 	}
 
 	public static void do_while_do() {
-		int importantVariable = 5;
 
 		do {
-			System.out.println(importantVariable);
+			System.out.println(5);
 			break;
 		}
 		while (true);
