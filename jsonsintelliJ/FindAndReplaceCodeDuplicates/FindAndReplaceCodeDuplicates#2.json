@@ -1,0 +1,57 @@
+{
+"commits": [
+{
+	"repository": "https://github.com/RetriedAgain/MasterThesis-Code-Redo.git",
+	"sha1": "c55dc6a084cf5731476ac2398c68aa49f75586e6",
+	"url": "https://github.com/RetriedAgain/MasterThesis-Code-Redo/commit/c55dc6a084cf5731476ac2398c68aa49f75586e6",
+	"refactorings": [{
+	"type": "Change Method Access Modifier",
+	"description": "Change Method Access Modifier private to public in method public calcFreeNumOfCircusBudget() : double from class de.masterzoo.Zoo",
+	"leftSideLocations": [{
+		"filePath": "src/main/java/de/masterzoo/Zoo.java",
+		"startLine": 122,
+		"endLine": 124,
+		"startColumn": 2,
+		"endColumn": 3,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "private calcFreeNumOfCircusBudget() : double"
+}],
+	"rightSideLocations": [{
+		"filePath": "src/main/java/de/masterzoo/Zoo.java",
+		"startLine": 122,
+		"endLine": 124,
+		"startColumn": 2,
+		"endColumn": 3,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "method declaration with changed access modifier",
+		"codeElement": "public calcFreeNumOfCircusBudget() : double"
+}]
+},
+{
+	"type": "Add Method Modifier",
+	"description": "Add Method Modifier static in method public calcFreeNumOfCircusBudget() : double from class de.masterzoo.Zoo",
+	"leftSideLocations": [{
+		"filePath": "src/main/java/de/masterzoo/Zoo.java",
+		"startLine": 122,
+		"endLine": 124,
+		"startColumn": 2,
+		"endColumn": 3,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "private calcFreeNumOfCircusBudget() : double"
+}],
+	"rightSideLocations": [{
+		"filePath": "src/main/java/de/masterzoo/Zoo.java",
+		"startLine": 122,
+		"endLine": 124,
+		"startColumn": 2,
+		"endColumn": 3,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "method declaration with added modifier",
+		"codeElement": "public calcFreeNumOfCircusBudget() : double"
+}]
+}
+]
+}]
+}
