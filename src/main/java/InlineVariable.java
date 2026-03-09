@@ -8,9 +8,8 @@ public class InlineVariable {
 	}
 
 	public static void ifCond() {
-		int importantVariable = 5;
 
-		if (importantVariable == 5) {
+		if (5 == 5) {
 			System.out.println("Good job");
 		}
 	}
