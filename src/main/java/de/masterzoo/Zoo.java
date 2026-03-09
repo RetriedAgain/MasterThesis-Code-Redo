@@ -122,7 +122,7 @@ public class Zoo {
 	}
 
 	private double calcFreeNumOfCircusBudget() {
-		return 10000;
+		return CONSTANT;
 	}
 
 	private double calcFreeNumOfWildLifeProtectionBudget() {
