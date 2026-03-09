@@ -120,12 +120,11 @@ public class InlineVariable {
 	}
 
 	public static void do_while_cond() {
-		int importantVariable = 5;
 
 		do {
 			System.out.println("Good job");
 		}
-		while (importantVariable == 5);
+		while (5 == 5);
 	}
 
 	public static void for_cond() {
