@@ -45,9 +45,8 @@ public class InlineVariable {
 	}
 
 	public static void if_else_cond(int paramVariable) {
-		int importantVariable = 5;
 
-		if (importantVariable == 5) {
+		if (5 == 5) {
 			System.out.println("Good job");
 		} else {
 			System.out.println("Bad job");
