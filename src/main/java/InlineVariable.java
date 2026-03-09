@@ -113,7 +113,6 @@ public class InlineVariable {
 
 		do {
 			System.out.println(importantVariable);
-			importantVariable++;
 			break;
 		}
 		while (true);
