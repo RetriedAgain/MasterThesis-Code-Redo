@@ -16,10 +16,9 @@ public class InlineVariable {
 	}
 
 	public static void ifCondUnder() {
-		int importantVariable = 5;
 
 		if (true) {
-			System.out.println(importantVariable);
+			System.out.println(5);
 		}
 	}
 
