@@ -30,7 +30,7 @@ public class Main {
 
 		List<Company> partnerCompanies = new ArrayList<>();
 
-		Zoo myZoo = new Zoo(10000, 12000, animalsInZoo, propsInZoo, partnerCompanies);
+		Zoo myZoo = new Zoo(Zoo.CONSTANT, 12000, animalsInZoo, propsInZoo, partnerCompanies);
 
 		// A pup that can also fly
 		Labrador superPup = new Labrador(
