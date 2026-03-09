@@ -52,7 +52,7 @@ public class Main {
 
 		System.out.println(superPup.getMovementStrategies());
 
-		System.out.println("This is the secret outside instance to be replaced with call: " + 10000);
+		System.out.println("This is the secret outside instance to be replaced with call: " + Zoo.calcFreeNumOfCircusBudget());
 
 		System.out.println("This is the secret outside instance to be replaced with call: " + 10_000);
 

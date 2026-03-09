@@ -121,7 +121,7 @@ public class Zoo {
 		return collectedRent;
 	}
 
-	private double calcFreeNumOfCircusBudget() {
+	public static double calcFreeNumOfCircusBudget() {
 		return 10000;
 	}
 
