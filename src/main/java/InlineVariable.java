@@ -161,13 +161,12 @@ public class InlineVariable {
 	}
 
 	public static void nested_loop() {
-		int importantVariable = 5;
 		int[] intArray = new int[5];
 
 		for (int i : intArray) {
-			while(importantVariable == 5) {
-				for (int j = 0; j < importantVariable; j++) {
-					if (j == importantVariable) {
+			while(5 == 5) {
+				for (int j = 0; j < 5; j++) {
+					if (j == 5) {
 						System.out.println("Good job");
 					}
 				}
