@@ -55,12 +55,11 @@ public class InlineVariable {
 	}
 
 	public static void if_else_under(int paramVariable) {
-		int importantVariable = 5;
 
 		if (false) {
 			System.out.println("Good job");
 		} else {
-			System.out.println(importantVariable);
+			System.out.println(5);
 		}
 	}
 
