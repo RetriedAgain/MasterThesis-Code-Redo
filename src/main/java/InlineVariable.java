@@ -65,9 +65,8 @@ public class InlineVariable {
 	}
 
 	public static void while_cond() {
-		int importantVariable = 5;
 
-		while (importantVariable == 5) {
+		while (5 == 5) {
 			System.out.println("Good job");
 		}
 	}
