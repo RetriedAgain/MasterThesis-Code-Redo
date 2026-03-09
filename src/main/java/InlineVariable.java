@@ -176,10 +176,10 @@ public class InlineVariable {
 	}
 
 	public static void redeclaration() {
-		int importantVariable = 5;
+		int importantVariable;
 
-		System.out.println(importantVariable);
-		importantVariable = importantVariable + 10;
+		System.out.println(5);
+		importantVariable = 5 + 10;
 
 		System.out.println(importantVariable);
 	}
