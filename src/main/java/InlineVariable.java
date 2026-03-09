@@ -35,12 +35,11 @@ public class InlineVariable {
 	}
 
 	public static void if_else_if_under(int paramVariable) {
-		int importantVariable = 5;
 
-		if ((importantVariable + paramVariable) == 5) {
+		if ((5 + paramVariable) == 5) {
 			System.out.println("Good job");
 		} else if(true) {
-			System.out.println(importantVariable);
+			System.out.println(5);
 		}
 	}
 
