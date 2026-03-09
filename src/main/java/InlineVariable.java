@@ -91,10 +91,9 @@ public class InlineVariable {
 	}
 
 	public static void switch_case_cond(int paramVariable) {
-		final int importantVariable = 5;
 
 		switch (paramVariable) {
-			case importantVariable:
+			case 5:
 				System.out.println("Good job");
 		}
 	}
