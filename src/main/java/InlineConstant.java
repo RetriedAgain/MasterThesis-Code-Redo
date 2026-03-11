@@ -114,7 +114,7 @@ public class InlineConstant {
 	}
 
 	public static void for_each_cond() {
-		for (int i : INT_ARRAY) {
+		for (int i : new int[5]) {
 			System.out.println("Good job");
 		}
 	}
