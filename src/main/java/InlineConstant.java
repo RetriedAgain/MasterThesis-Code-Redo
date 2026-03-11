@@ -129,7 +129,7 @@ public class InlineConstant {
 		for (int i : INT_ARRAY) {
 			while(INLINE_CONSTANT == 5) {
 				for (int j = 0; j < INLINE_CONSTANT; j++) {
-					if (j == INLINE_CONSTANT) {
+					if (j == 5) {
 						System.out.println("Good job");
 					}
 				}
