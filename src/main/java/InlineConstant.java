@@ -1,6 +1,5 @@
 public class InlineConstant {
 	final static int INLINE_CONSTANT = 5;
-	final static int[] INT_ARRAY = new int[5];
 
 
 	public static void min() {
@@ -114,19 +113,19 @@ public class InlineConstant {
 	}
 
 	public static void for_each_cond() {
-		for (int i : INT_ARRAY) {
+		for (int i : new int[5]) {
 			System.out.println("Good job");
 		}
 	}
 
 	public static void for_each_under() {
-		for (int i : INT_ARRAY) {
+		for (int i : new int[5]) {
 			System.out.println(INLINE_CONSTANT + i);
 		}
 	}
 
 	public static void nested_loop() {
-		for (int i : INT_ARRAY) {
+		for (int i : new int[5]) {
 			while(INLINE_CONSTANT == 5) {
 				for (int j = 0; j < INLINE_CONSTANT; j++) {
 					if (j == INLINE_CONSTANT) {
