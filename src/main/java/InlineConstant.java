@@ -4,7 +4,7 @@ public class InlineConstant {
 
 
 	public static void min() {
-		System.out.println(INLINE_CONSTANT);
+		System.out.println(5);
 	}
 
 	public static void ifCond() {
