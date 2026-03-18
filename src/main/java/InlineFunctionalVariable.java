@@ -156,11 +156,10 @@ public class InlineFunctionalVariable {
 	}
 
 	public static void for_each_under() {
-		IntSupplier importantVariable = () -> 5;
 		int[] intArray = new int[5];
 
 		for (int i : intArray) {
-			System.out.println(importantVariable.getAsInt() + i);
+			System.out.println(((IntSupplier) () -> 5).getAsInt() + i);
 		}
 	}
 
