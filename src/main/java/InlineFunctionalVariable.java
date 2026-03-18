@@ -149,8 +149,7 @@ public class InlineFunctionalVariable {
 	}
 
 	public static void for_each_cond() {
-		Supplier<int[]> intArray = () -> new int[5];
-		for (int i : intArray.get()) {
+		for (int i : ((Supplier<int[]>) () -> new int[5]).get()) {
 			System.out.println("Good job");
 		}
 	}
