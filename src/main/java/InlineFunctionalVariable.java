@@ -124,12 +124,11 @@ public class InlineFunctionalVariable {
 	}
 
 	public static void do_while_cond() {
-		IntSupplier importantVariable = () -> 5;
 
 		do {
 			System.out.println("Good job");
 		}
-		while (importantVariable.getAsInt() == 5);
+		while (((IntSupplier) () -> 5).getAsInt() == 5);
 	}
 
 	public static void for_cond() {
