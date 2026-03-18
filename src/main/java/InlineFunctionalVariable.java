@@ -67,9 +67,8 @@ public class InlineFunctionalVariable {
 	}
 
 	public static void while_cond() {
-		IntSupplier importantVariable = () -> 5;
 
-		while (importantVariable.getAsInt() == 5) {
+		while (((IntSupplier) () -> 5).getAsInt() == 5) {
 			System.out.println("Good job");
 		}
 	}
