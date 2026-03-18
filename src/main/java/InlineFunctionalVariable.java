@@ -10,9 +10,8 @@ public class InlineFunctionalVariable {
 	}
 
 	public static void ifCond() {
-		IntSupplier importantVariable = () -> 5;
 
-		if (importantVariable.getAsInt() == 5) {
+		if (((IntSupplier) () -> 5).getAsInt() == 5) {
 			System.out.println("Good job");
 		}
 	}
