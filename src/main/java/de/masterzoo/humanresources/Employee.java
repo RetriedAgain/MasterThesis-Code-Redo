@@ -2,7 +2,6 @@ package de.masterzoo.humanresources;
 
 import de.masterzoo.Department;
 import de.masterzoo.groups.animalia.canines.Labrador;
-import de.masterzoo.groups.animalia.canines.Trainable;
 
 /**
  * A singular employee who works at the Zoo or one of its partner companies.
