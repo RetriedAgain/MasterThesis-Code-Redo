@@ -18,10 +18,9 @@ public class InlineFunctionalVariable {
 	}
 
 	public static void ifCondUnder() {
-		IntSupplier importantVariable = () -> 5;
 
 		if (true) {
-			System.out.println(importantVariable);
+			System.out.println((IntSupplier) () -> 5);
 		}
 	}
 
