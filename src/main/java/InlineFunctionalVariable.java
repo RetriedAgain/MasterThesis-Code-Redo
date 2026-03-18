@@ -141,10 +141,9 @@ public class InlineFunctionalVariable {
 	}
 
 	public static void for_under() {
-		IntSupplier importantVariable = () -> 5;
 
 		for (int i = 0; i < 5; i++) {
-			System.out.println(importantVariable);
+			System.out.println((IntSupplier) () -> 5);
 		}
 	}
 
