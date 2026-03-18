@@ -114,10 +114,9 @@ public class InlineFunctionalVariable {
 	}
 
 	public static void do_while_do() {
-		IntSupplier importantVariable = () -> 5;
 
 		do {
-			System.out.println(importantVariable);
+			System.out.println((IntSupplier) () -> 5);
 			break;
 		}
 		while (true);
