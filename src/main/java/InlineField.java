@@ -129,7 +129,7 @@ public class InlineField {
 		for (int i : inline_int_array) {
 			while(inline_field == 5) {
 				for (int j = 0; j < inline_field; j++) {
-					if (j == inline_field) {
+					if (j == 5) {
 						System.out.println("Good job");
 					}
 				}
