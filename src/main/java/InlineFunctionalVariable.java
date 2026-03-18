@@ -75,10 +75,9 @@ public class InlineFunctionalVariable {
 	}
 
 	public static void while_under() {
-		IntSupplier importantVariable = () -> 5;
 
 		while (true) {
-			System.out.println(importantVariable);
+			System.out.println((IntSupplier) () -> 5);
 			break;
 		}
 	}
