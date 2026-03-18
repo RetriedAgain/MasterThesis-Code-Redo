@@ -47,9 +47,8 @@ public class InlineFunctionalVariable {
 	}
 
 	public static void if_else_cond(int paramVariable) {
-		IntSupplier importantVariable = () -> 5;
 
-		if (importantVariable.getAsInt() == 5) {
+		if (((IntSupplier) () -> 5).getAsInt() == 5) {
 			System.out.println("Good job");
 		} else {
 			System.out.println("Bad job");
