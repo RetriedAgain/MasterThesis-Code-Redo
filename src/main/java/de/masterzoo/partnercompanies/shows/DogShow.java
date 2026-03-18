@@ -1,6 +1,6 @@
 package de.masterzoo.partnercompanies.shows;
 
-import de.masterzoo.groups.animalia.canines.Trainable;
+import de.masterzoo.groups.animalia.canines.Poodle;
 
 import java.util.List;
 
@@ -9,9 +9,9 @@ import java.util.List;
  */
 public class DogShow {
 
-	List<Trainable> trainables;
+	List<Poodle> trainables;
 
-	DogShow(List<Trainable> trainables) {
+	DogShow(List<Poodle> trainables) {
 		this.trainables = trainables;
 	}
 

@@ -1,16 +1,17 @@
 package de.masterzoo.groups.animalia.canines;
 
 import de.Gender;
-import de.masterzoo.groups.animalia.movement.MovementStrategy;
 import de.masterzoo.groups.animalia.reproduction.ReproductionStrategy;
 import de.masterzoo.humanresources.Employee;
-
-import java.util.ArrayList;
 
 /**
  * It's a labrador. They are very cute.
  */
-public class Labrador extends Canine implements Trainable {
+public class Labrador extends Canine {
+	/**
+	 * Judges if this animal is trained.
+	 */
+	public static final boolean trained = true;
 	/**
 	 * The human companion of the Labrador. This is intended to be the most sociable person for this dog, to which
 	 * this dog connects the most.
@@ -60,7 +61,6 @@ public class Labrador extends Canine implements Trainable {
 		this.humanCompanion = humanCompanion;
 	}
 
-	@Override
 	public void doTrick() {
 		if (trained) {
 			System.out.println("*flips*");
