@@ -1,7 +1,9 @@
 package de.masterzoo.groups.animalia.canines;
 
 import de.Gender;
+import de.masterzoo.groups.animalia.Animal;
 import de.masterzoo.groups.animalia.movement.MovementStrategy;
+import de.masterzoo.groups.animalia.movement.Walk;
 import de.masterzoo.groups.animalia.reproduction.ReproductionStrategy;
 import de.masterzoo.humanresources.Employee;
 
@@ -10,7 +12,7 @@ import java.util.ArrayList;
 /**
  * It's a labrador. They are very cute.
  */
-public class Labrador extends Canine implements Trainable {
+public class Labrador extends Animal implements Trainable {
 	/**
 	 * The human companion of the Labrador. This is intended to be the most sociable person for this dog, to which
 	 * this dog connects the most.
@@ -41,7 +43,9 @@ public class Labrador extends Canine implements Trainable {
 	 * @param humanCompanion Human Companion of the Labrador
 	 */
 	public Labrador(Gender GENDER, String name, int age, int speed, int weight, ReproductionStrategy reproductionStrategy, Employee humanCompanion) {
-		super(GENDER, name, age, speed, weight, reproductionStrategy);
+		ArrayList<MovementStrategy> canineMovementStrategies = new ArrayList<>() {{new Walk();}};
+		int canineNumberOfLegs = 4;
+		super(canineNumberOfLegs, GENDER, name, age, speed, weight, reproductionStrategy, canineMovementStrategies);
 		this.humanCompanion = humanCompanion;
 	}
 
