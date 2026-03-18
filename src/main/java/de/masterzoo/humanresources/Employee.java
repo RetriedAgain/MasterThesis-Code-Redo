@@ -2,6 +2,7 @@ package de.masterzoo.humanresources;
 
 import de.masterzoo.Department;
 import de.masterzoo.groups.animalia.canines.Labrador;
+import de.masterzoo.groups.animalia.canines.Trainable;
 
 /**
  * A singular employee who works at the Zoo or one of its partner companies.
@@ -12,7 +13,7 @@ public class Employee {
 	private int age;
 	private Department department;
 
-	private Labrador companionLabrador;
+	private Labrador companionTrainable;
 
 	// For Extract Parameter Object:
 	// Extract the two parameters name and age to the parameter object PersonalInfo
@@ -35,12 +36,12 @@ public class Employee {
 	}
 
 	public Labrador getCompanionLabrador() {
-		return companionLabrador;
+		return companionTrainable;
 	}
 
 	public void setCompanionLabrador(Labrador companionLabrador) {
 		if (companionLabrador.getHumanCompanion() != null) {
-			this.companionLabrador = companionLabrador;
+			this.companionTrainable = companionLabrador;
 		} else {
 			System.out.println("Labby already has a human companion!");
 		}

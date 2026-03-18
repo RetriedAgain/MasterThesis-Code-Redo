@@ -10,12 +10,7 @@ import java.util.ArrayList;
 /**
  * It's a labrador. They are very cute.
  */
-public class Labrador extends Canine {
-	/**
-	 * Judges if this Labrador can actually be trained.
-	 */
-	final static boolean TRAINABLE = true;
-
+public class Labrador extends Canine implements Trainable {
 	/**
 	 * The human companion of the Labrador. This is intended to be the most sociable person for this dog, to which
 	 * this dog connects the most.
@@ -51,18 +46,6 @@ public class Labrador extends Canine {
 	}
 
 	/**
-	 * If trained, a labrador can even do a trick.
-	 */
-	public void doTrick() {
-		if (TRAINABLE) {
-			System.out.println("Flips thanks to " + humanCompanion.getName() + "!");
-		} else {
-			System.out.println("Sadly, " + this.getName() + " is not trained yet!");
-		}
-
-	}
-
-	/**
 	 * A natural talent of labradors.
 	 */
 	public void doPuppyEyes() {
@@ -75,5 +58,12 @@ public class Labrador extends Canine {
 
 	public void setHumanCompanion(Employee humanCompanion) {
 		this.humanCompanion = humanCompanion;
+	}
+
+	@Override
+	public void doTrick() {
+		if (trained) {
+			System.out.println("*flips*");
+		}
 	}
 }

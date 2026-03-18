@@ -6,7 +6,7 @@ import de.masterzoo.groups.animalia.reproduction.ReproductionStrategy;
 
 import java.util.ArrayList;
 
-public class Poodle extends Canine {
+public class Poodle extends Canine implements Trainable {
 
 
 	public Poodle(Gender GENDER, String name, int age, int speed, int weight, ReproductionStrategy reproductionStrategy) {
@@ -16,5 +16,10 @@ public class Poodle extends Canine {
 	@Override
 	public void makeSound() {
 		System.out.println("I'm a poodle!");
+	}
+
+	@Override
+	public void doTrick() {
+		System.out.println("*struts*");
 	}
 }
