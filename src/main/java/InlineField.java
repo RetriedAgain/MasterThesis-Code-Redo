@@ -4,7 +4,7 @@ public class InlineField {
 
 
 	public void min() {
-		System.out.println(inline_field);
+		System.out.println(5);
 	}
 
 	public  void ifCond() {
