@@ -180,9 +180,9 @@ public class InlineFunctionalVariable {
 	}
 
 	public static void redeclaration() {
-		IntSupplier importantVariable = () -> 5;
+		IntSupplier importantVariable;
 
-		System.out.println(importantVariable);
+		System.out.println((IntSupplier) () -> 5);
 		importantVariable = () -> 10;
 
 		System.out.println(importantVariable);
