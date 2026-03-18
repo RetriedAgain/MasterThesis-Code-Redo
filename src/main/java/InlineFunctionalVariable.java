@@ -84,10 +84,9 @@ public class InlineFunctionalVariable {
 	}
 
 	public static void switch_cond() {
-		IntSupplier importantVariable = () -> 5;
 
 		// switch over the int value provided by the IntSupplier
-		switch (importantVariable.getAsInt()) {
+		switch (((IntSupplier) () -> 5).getAsInt()) {
 			case 5:
 				System.out.println("Good job");
 				break;
