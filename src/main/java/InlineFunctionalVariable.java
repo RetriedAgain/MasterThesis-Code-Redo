@@ -165,13 +165,12 @@ public class InlineFunctionalVariable {
 	}
 
 	public static void nested_loop() {
-		IntSupplier importantVariable = () -> 5;
 		int[] intArray = new int[5];
 
 		for (int i : intArray) {
-			while(importantVariable.getAsInt() == 5) {
-				for (int j = 0; j < importantVariable.getAsInt(); j++) {
-					if (j == importantVariable.getAsInt()) {
+			while(((IntSupplier) () -> 5).getAsInt() == 5) {
+				for (int j = 0; j < ((IntSupplier) () -> 5).getAsInt(); j++) {
+					if (j == ((IntSupplier) () -> 5).getAsInt()) {
 						System.out.println("Good job");
 					}
 				}
