@@ -133,9 +133,8 @@ public class InlineFunctionalVariable {
 	}
 
 	public static void for_cond() {
-		IntSupplier importantVariable = () -> 5;
 
-		for (int i = 0; i < importantVariable.getAsInt(); i++) {
+		for (int i = 0; i < ((IntSupplier) () -> 5).getAsInt(); i++) {
 			System.out.println("Good job");
 		}
 	}
