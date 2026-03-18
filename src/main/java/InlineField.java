@@ -1,6 +1,5 @@
 public class InlineField {
 	int inline_field = 5;
-	int[] inline_int_array = new int[5];
 
 
 	public void min() {
@@ -114,19 +113,19 @@ public class InlineField {
 	}
 
 	public  void for_each_cond() {
-		for (int i : inline_int_array) {
+		for (int i : new int[5]) {
 			System.out.println("Good job");
 		}
 	}
 
 	public  void for_each_under() {
-		for (int i : inline_int_array) {
+		for (int i : new int[5]) {
 			System.out.println(inline_field + i);
 		}
 	}
 
 	public  void nested_loop() {
-		for (int i : inline_int_array) {
+		for (int i : new int[5]) {
 			while(inline_field == 5) {
 				for (int j = 0; j < inline_field; j++) {
 					if (j == inline_field) {
