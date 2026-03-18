@@ -114,7 +114,7 @@ public class InlineField {
 	}
 
 	public  void for_each_cond() {
-		for (int i : inline_int_array) {
+		for (int i : new int[5]) {
 			System.out.println("Good job");
 		}
 	}
