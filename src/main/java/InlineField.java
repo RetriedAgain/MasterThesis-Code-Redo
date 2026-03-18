@@ -126,7 +126,7 @@ public class InlineField {
 	}
 
 	public  void nested_loop() {
-		for (int i : inline_int_array) {
+		for (int i : new int[5]) {
 			while(inline_field == 5) {
 				for (int j = 0; j < inline_field; j++) {
 					if (j == inline_field) {
