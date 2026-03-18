@@ -37,12 +37,11 @@ public class InlineFunctionalVariable {
 	}
 
 	public static void if_else_if_under(int paramVariable) {
-		IntSupplier importantVariable = () -> 5;
 
-		if ((importantVariable.getAsInt() + paramVariable) == 5) {
+		if ((((IntSupplier) () -> 5).getAsInt() + paramVariable) == 5) {
 			System.out.println("Good job");
 		} else if(true) {
-			System.out.println(importantVariable);
+			System.out.println((IntSupplier) () -> 5);
 		}
 	}
 
