@@ -105,11 +105,10 @@ public class InlineFunctionalVariable {
 //	}
 
 	public static void switch_case_under(int paramVariable) {
-		IntSupplier importantVariable = () -> 5;
 
 		switch (paramVariable) {
 			case 5:
-				System.out.println(importantVariable);
+				System.out.println((IntSupplier) () -> 5);
 		}
 	}
 
