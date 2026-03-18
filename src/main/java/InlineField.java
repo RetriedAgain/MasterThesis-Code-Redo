@@ -1,29 +1,28 @@
 public class InlineField {
-	int inline_field = 5;
 	int[] inline_int_array = new int[5];
 
 
 	public void min() {
-		System.out.println(inline_field);
+		System.out.println(5);
 	}
 
 	public  void ifCond() {
-		if (inline_field == 5) {
+		if (5 == 5) {
 			System.out.println("Good job");
 		}
 	}
 
 	public  void ifCondUnder() {
 		if (true) {
-			System.out.println(inline_field);
+			System.out.println(5);
 		}
 	}
 
 
 	public  void if_else_if_cond(int paramVariable) {
-		if ((inline_field + paramVariable) == 5) {
+		if ((5 + paramVariable) == 5) {
 			System.out.println("Good job");
-		} else if(inline_field == 5) {
+		} else if(5 == 5) {
 			System.out.println("Bad job");
 		}
 	}
@@ -32,12 +31,12 @@ public class InlineField {
 		if (false) {
 			System.out.println("Good job");
 		} else if(true) {
-			System.out.println(inline_field);
+			System.out.println(5);
 		}
 	}
 
 	public  void if_else_cond(int paramVariable) {
-		if (inline_field == 5) {
+		if (5 == 5) {
 			System.out.println("Good job");
 		} else {
 			System.out.println("Bad job");
@@ -48,25 +47,25 @@ public class InlineField {
 		if (false) {
 			System.out.println("Good job");
 		} else {
-			System.out.println(inline_field);
+			System.out.println(5);
 		}
 	}
 
 	public  void while_cond() {
-		while (inline_field == 5) {
+		while (5 == 5) {
 			System.out.println("Good job");
 		}
 	}
 
 	public  void while_under() {
 		while (true) {
-			System.out.println(inline_field);
+			System.out.println(5);
 			break;
 		}
 	}
 
 	public  void switch_cond() {
-		switch (inline_field) {
+		switch (5) {
 			case 5:
 				System.out.println("Good job");
 		}
@@ -82,13 +81,13 @@ public class InlineField {
 	public  void switch_case_under(int paramVariable) {
 		switch (paramVariable) {
 			case 5:
-				System.out.println(inline_field);
+				System.out.println(5);
 		}
 	}
 
 	public  void do_while_do() {
 		do {
-			System.out.println(inline_field);
+			System.out.println(5);
 			break;
 		}
 		while (true);
@@ -98,18 +97,18 @@ public class InlineField {
 		do {
 			System.out.println("Good job");
 		}
-		while (inline_field == 5);
+		while (5 == 5);
 	}
 
 	public  void for_cond() {
-		for (int i = 0; i < inline_field; i++) {
+		for (int i = 0; i < 5; i++) {
 			System.out.println("Good job");
 		}
 	}
 
 	public  void for_under() {
 		for (int i = 0; i < 5; i++) {
-			System.out.println(inline_field);
+			System.out.println(5);
 		}
 	}
 
@@ -121,15 +120,15 @@ public class InlineField {
 
 	public  void for_each_under() {
 		for (int i : inline_int_array) {
-			System.out.println(inline_field + i);
+			System.out.println(5 + i);
 		}
 	}
 
 	public  void nested_loop() {
 		for (int i : inline_int_array) {
-			while(inline_field == 5) {
-				for (int j = 0; j < inline_field; j++) {
-					if (j == inline_field) {
+			while(5 == 5) {
+				for (int j = 0; j < 5; j++) {
+					if (j == 5) {
 						System.out.println("Good job");
 					}
 				}
