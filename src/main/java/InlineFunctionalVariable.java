@@ -5,8 +5,7 @@ import java.util.function.Supplier;
 public class InlineFunctionalVariable {
 
 	public static void min() {
-		IntSupplier importantVariable = () -> 5;
-		System.out.println(importantVariable);
+		System.out.println((IntSupplier) () -> 5);
 	}
 
 	public static void ifCond() {
