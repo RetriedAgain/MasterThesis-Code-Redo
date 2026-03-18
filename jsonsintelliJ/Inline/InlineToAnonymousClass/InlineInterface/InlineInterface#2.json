@@ -1,0 +1,42 @@
+{
+"commits": [
+{
+	"repository": "https://github.com/RetriedAgain/MasterThesis-Code-Redo.git",
+	"sha1": "5fd54fbb55e8d0576cd9f1994895151c3a0047c3",
+	"url": "https://github.com/RetriedAgain/MasterThesis-Code-Redo/commit/5fd54fbb55e8d0576cd9f1994895151c3a0047c3",
+	"refactorings": [{
+	"type": "Remove Method Annotation",
+	"description": "Remove Method Annotation @Override in method public doTrick() : void from class de.masterzoo.groups.animalia.canines.Labrador",
+	"leftSideLocations": [{
+		"filePath": "src/main/java/de/masterzoo/groups/animalia/canines/Labrador.java",
+		"startLine": 63,
+		"endLine": 63,
+		"startColumn": 2,
+		"endColumn": 11,
+		"codeElementType": "ANNOTATION",
+		"description": "removed annotation",
+		"codeElement": "@Override"
+}, {
+		"filePath": "src/main/java/de/masterzoo/groups/animalia/canines/Labrador.java",
+		"startLine": 63,
+		"endLine": 68,
+		"startColumn": 2,
+		"endColumn": 3,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "public doTrick() : void"
+}],
+	"rightSideLocations": [{
+		"filePath": "src/main/java/de/masterzoo/groups/animalia/canines/Labrador.java",
+		"startLine": 64,
+		"endLine": 68,
+		"startColumn": 2,
+		"endColumn": 3,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "method declaration with removed annotation",
+		"codeElement": "public doTrick() : void"
+}]
+}
+]
+}]
+}
