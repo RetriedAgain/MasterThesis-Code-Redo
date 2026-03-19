@@ -5,18 +5,18 @@ public class InlineParameter {
 	// Uncomment this for special case
 	// final static String CONSTANT = "CONSTANT_TO_INLINE";
 
-	void inlineHere(String... inlineThis) {
-		System.out.println(inlineThis);
+	void inlineHere() {
+		System.out.println(new String[]{"CONSTANT"});
 	}
 
 	void usageHere() {
 		// inlineHere(CONSTANT);
-		inlineHere("CONSTANT");
+		inlineHere();
 	}
 
 	void usageHere2() {
 		// inlineHere(CONSTANT);
-		inlineHere("CONSTANT");
+		inlineHere();
 	}
 
 }

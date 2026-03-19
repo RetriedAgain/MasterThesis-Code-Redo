@@ -6,6 +6,6 @@ public class UsageOutsideClass {
 		InlineParameter iP = new InlineParameter();
 
 		// inlineHere(CONSTANT);
-		iP.inlineHere("CONSTANT");
+		iP.inlineHere();
 	}
 }
