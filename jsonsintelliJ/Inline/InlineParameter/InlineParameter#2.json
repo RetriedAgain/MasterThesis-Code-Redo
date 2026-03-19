@@ -1,0 +1,42 @@
+{
+"commits": [
+{
+	"repository": "https://github.com/RetriedAgain/MasterThesis-Code-Redo.git",
+	"sha1": "87985a6a4654be03474c3eaf5583d8ac38e0cf6e",
+	"url": "https://github.com/RetriedAgain/MasterThesis-Code-Redo/commit/87985a6a4654be03474c3eaf5583d8ac38e0cf6e",
+	"refactorings": [{
+	"type": "Remove Parameter",
+	"description": "Remove Parameter inlineThis : String in method package inlineHere(inlineThis String) : void from class inlines.inlineparameter.InlineParameter",
+	"leftSideLocations": [{
+		"filePath": "src/main/java/inlines/inlineparameter/InlineParameter.java",
+		"startLine": 8,
+		"endLine": 8,
+		"startColumn": 18,
+		"endColumn": 41,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "removed parameter",
+		"codeElement": "inlineThis : String"
+}, {
+		"filePath": "src/main/java/inlines/inlineparameter/InlineParameter.java",
+		"startLine": 8,
+		"endLine": 10,
+		"startColumn": 2,
+		"endColumn": 3,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "package inlineHere(inlineThis String) : void"
+}],
+	"rightSideLocations": [{
+		"filePath": "src/main/java/inlines/inlineparameter/InlineParameter.java",
+		"startLine": 8,
+		"endLine": 10,
+		"startColumn": 2,
+		"endColumn": 3,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "method declaration with removed parameter",
+		"codeElement": "package inlineHere() : void"
+}]
+}
+]
+}]
+}

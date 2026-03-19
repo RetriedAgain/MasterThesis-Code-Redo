@@ -1,0 +1,84 @@
+{
+"commits": [
+{
+	"repository": "https://github.com/RetriedAgain/MasterThesis-Code-Redo.git",
+	"sha1": "645c895d8e4e3eef401042367fe8548fd602cdae",
+	"url": "https://github.com/RetriedAgain/MasterThesis-Code-Redo/commit/645c895d8e4e3eef401042367fe8548fd602cdae",
+	"refactorings": [{
+	"type": "Remove Parameter",
+	"description": "Remove Parameter inlineThis : String in method package inlineHere(inlineThis String) : void from class inlines.inlineparameter.InlineParameter",
+	"leftSideLocations": [{
+		"filePath": "src/main/java/inlines/inlineparameter/InlineParameter.java",
+		"startLine": 7,
+		"endLine": 7,
+		"startColumn": 25,
+		"endColumn": 42,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "removed parameter",
+		"codeElement": "inlineThis : String"
+}, {
+		"filePath": "src/main/java/inlines/inlineparameter/InlineParameter.java",
+		"startLine": 7,
+		"endLine": 9,
+		"startColumn": 2,
+		"endColumn": 3,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "package inlineHere(inlineThis String) : void"
+}],
+	"rightSideLocations": [{
+		"filePath": "src/main/java/inlines/inlineparameter/InlineParameter.java",
+		"startLine": 7,
+		"endLine": 9,
+		"startColumn": 2,
+		"endColumn": 3,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "method declaration with removed parameter",
+		"codeElement": "package inlineHere() : void"
+}]
+},
+{
+	"type": "Replace Variable With Attribute",
+	"description": "Replace Variable With Attribute inlineThis : String to CONSTANT : String in method package inlineHere() : void from class inlines.inlineparameter.InlineParameter",
+	"leftSideLocations": [{
+		"filePath": "src/main/java/inlines/inlineparameter/InlineParameter.java",
+		"startLine": 7,
+		"endLine": 7,
+		"startColumn": 25,
+		"endColumn": 42,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "original variable declaration",
+		"codeElement": "inlineThis : String"
+}, {
+		"filePath": "src/main/java/inlines/inlineparameter/InlineParameter.java",
+		"startLine": 8,
+		"endLine": 8,
+		"startColumn": 3,
+		"endColumn": 34,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "src/main/java/inlines/inlineparameter/InlineParameter.java",
+		"startLine": 5,
+		"endLine": 5,
+		"startColumn": 22,
+		"endColumn": 53,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "renamed variable declaration",
+		"codeElement": "CONSTANT : String"
+}, {
+		"filePath": "src/main/java/inlines/inlineparameter/InlineParameter.java",
+		"startLine": 8,
+		"endLine": 8,
+		"startColumn": 3,
+		"endColumn": 32,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the renamed variable",
+		"codeElement": null
+}]
+}
+]
+}]
+}

@@ -1,0 +1,135 @@
+{
+"commits": [
+{
+	"repository": "https://github.com/RetriedAgain/MasterThesis-Code-Redo.git",
+	"sha1": "acc25594740bd6faf4d2fe174217d14f951188bd",
+	"url": "https://github.com/RetriedAgain/MasterThesis-Code-Redo/commit/acc25594740bd6faf4d2fe174217d14f951188bd",
+	"refactorings": [{
+	"type": "Move Code",
+	"description": "Move Code from package usageHere() : void to package inlineHere() : void in class inlines.inlineparameter.InlineParameter",
+	"leftSideLocations": [{
+		"filePath": "src/main/java/inlines/inlineparameter/InlineParameter.java",
+		"startLine": 12,
+		"endLine": 15,
+		"startColumn": 2,
+		"endColumn": 3,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "source method declaration",
+		"codeElement": "package usageHere() : void"
+}, {
+		"filePath": "src/main/java/inlines/inlineparameter/InlineParameter.java",
+		"startLine": 14,
+		"endLine": 14,
+		"startColumn": 3,
+		"endColumn": 26,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "moved code from source method declaration",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "src/main/java/inlines/inlineparameter/InlineParameter.java",
+		"startLine": 8,
+		"endLine": 11,
+		"startColumn": 2,
+		"endColumn": 3,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "target method declaration",
+		"codeElement": "package inlineHere() : void"
+}, {
+		"filePath": "src/main/java/inlines/inlineparameter/InlineParameter.java",
+		"startLine": 9,
+		"endLine": 9,
+		"startColumn": 3,
+		"endColumn": 50,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "moved code to target method declaration",
+		"codeElement": null
+}]
+},
+{
+	"type": "Move Code",
+	"description": "Move Code from package usageHere2() : void to package inlineHere() : void in class inlines.inlineparameter.InlineParameter",
+	"leftSideLocations": [{
+		"filePath": "src/main/java/inlines/inlineparameter/InlineParameter.java",
+		"startLine": 17,
+		"endLine": 20,
+		"startColumn": 2,
+		"endColumn": 3,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "source method declaration",
+		"codeElement": "package usageHere2() : void"
+}, {
+		"filePath": "src/main/java/inlines/inlineparameter/InlineParameter.java",
+		"startLine": 19,
+		"endLine": 19,
+		"startColumn": 3,
+		"endColumn": 26,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "moved code from source method declaration",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "src/main/java/inlines/inlineparameter/InlineParameter.java",
+		"startLine": 8,
+		"endLine": 11,
+		"startColumn": 2,
+		"endColumn": 3,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "target method declaration",
+		"codeElement": "package inlineHere() : void"
+}, {
+		"filePath": "src/main/java/inlines/inlineparameter/InlineParameter.java",
+		"startLine": 9,
+		"endLine": 9,
+		"startColumn": 3,
+		"endColumn": 50,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "moved code to target method declaration",
+		"codeElement": null
+}]
+},
+{
+	"type": "Localize Parameter",
+	"description": "Localize Parameter inlineThis : String... to inlineThis : String[] in method package inlineHere() : void from class inlines.inlineparameter.InlineParameter",
+	"leftSideLocations": [{
+		"filePath": "src/main/java/inlines/inlineparameter/InlineParameter.java",
+		"startLine": 8,
+		"endLine": 8,
+		"startColumn": 18,
+		"endColumn": 38,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "original variable declaration",
+		"codeElement": "inlineThis : String..."
+}, {
+		"filePath": "src/main/java/inlines/inlineparameter/InlineParameter.java",
+		"startLine": 9,
+		"endLine": 9,
+		"startColumn": 3,
+		"endColumn": 34,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "src/main/java/inlines/inlineparameter/InlineParameter.java",
+		"startLine": 9,
+		"endLine": 9,
+		"startColumn": 12,
+		"endColumn": 49,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "renamed variable declaration",
+		"codeElement": "inlineThis : String[]"
+}, {
+		"filePath": "src/main/java/inlines/inlineparameter/InlineParameter.java",
+		"startLine": 10,
+		"endLine": 10,
+		"startColumn": 3,
+		"endColumn": 34,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the renamed variable",
+		"codeElement": null
+}]
+}
+]
+}]
+}
