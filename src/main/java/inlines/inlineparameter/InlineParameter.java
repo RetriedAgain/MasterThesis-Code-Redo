@@ -2,21 +2,18 @@ package inlines.inlineparameter;
 
 public class InlineParameter {
 
-	// Uncomment this for special case
-	// final static String CONSTANT = "CONSTANT_TO_INLINE";
+	final static String CONSTANT = "CONSTANT_TO_INLINE";
 
-	void inlineHere(String inlineThis) {
+	static void inlineHere(String inlineThis) {
 		System.out.println(inlineThis);
 	}
 
-	void usageHere() {
-		// inlineHere(CONSTANT);
-		inlineHere("CONSTANT");
+	static void usageHere() {
+		inlineHere(CONSTANT);
 	}
 
-	void usageHere2() {
-		// inlineHere(CONSTANT);
-		inlineHere("CONSTANT");
+	static void usageHere2() {
+		inlineHere(CONSTANT);
 	}
 
 }
