@@ -2,6 +2,6 @@ package inlines.inlinemethod;
 
 public class useToInlineMethod {
 	public static void usage4() {
-		InlineMethod.toInline();
+		System.out.println("This should be inlined.");
 	}
 }

@@ -8,11 +8,11 @@ public class InlineMethod {
 
 	public static void usage1() {
 		System.out.println("Usage1");
-		toInline();
+		System.out.println("This should be inlined.");
 	}
 
 	public static void usage2() {
-		toInline();
+		System.out.println("This should be inlined.");
 	}
 
 	public static void usage3() {
