@@ -4,16 +4,16 @@ public class InlineParameter {
 
 	final static String CONSTANT = "CONSTANT_TO_INLINE";
 
-	static void inlineHere(String inlineThis) {
-		System.out.println(inlineThis);
+	static void inlineHere() {
+		System.out.println(CONSTANT);
 	}
 
 	static void usageHere() {
-		inlineHere(CONSTANT);
+		inlineHere();
 	}
 
 	static void usageHere2() {
-		inlineHere(CONSTANT);
+		inlineHere();
 	}
 
 }
