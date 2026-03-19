@@ -1,0 +1,189 @@
+{
+"commits": [
+{
+	"repository": "https://github.com/RetriedAgain/MasterThesis-Code-Redo.git",
+	"sha1": "55cbf600da2831cf21d7ffa169b61717c761d491",
+	"url": "https://github.com/RetriedAgain/MasterThesis-Code-Redo/commit/55cbf600da2831cf21d7ffa169b61717c761d491",
+	"refactorings": [{
+	"type": "Inline Method",
+	"description": "Inline Method public toInline() : void inlined to public usage1() : void in class inlines.inlinemethod.InlineMethod",
+	"leftSideLocations": [{
+		"filePath": "src/main/java/inlines/inlinemethod/InlineMethod.java",
+		"startLine": 5,
+		"endLine": 7,
+		"startColumn": 2,
+		"endColumn": 3,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "inlined method declaration",
+		"codeElement": "public toInline() : void"
+}, {
+		"filePath": "src/main/java/inlines/inlinemethod/InlineMethod.java",
+		"startLine": 6,
+		"endLine": 6,
+		"startColumn": 3,
+		"endColumn": 49,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "inlined code from inlined method declaration",
+		"codeElement": null
+}, {
+		"filePath": "src/main/java/inlines/inlinemethod/InlineMethod.java",
+		"startLine": 9,
+		"endLine": 12,
+		"startColumn": 2,
+		"endColumn": 3,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "target method declaration before inline",
+		"codeElement": "public usage1() : void"
+}, {
+		"filePath": "src/main/java/inlines/inlinemethod/InlineMethod.java",
+		"startLine": 11,
+		"endLine": 11,
+		"startColumn": 3,
+		"endColumn": 13,
+		"codeElementType": "METHOD_INVOCATION",
+		"description": "inlined method invocation",
+		"codeElement": "toInline()"
+}],
+	"rightSideLocations": [{
+		"filePath": "src/main/java/inlines/inlinemethod/InlineMethod.java",
+		"startLine": 5,
+		"endLine": 8,
+		"startColumn": 2,
+		"endColumn": 3,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "target method declaration after inline",
+		"codeElement": "public usage1() : void"
+}, {
+		"filePath": "src/main/java/inlines/inlinemethod/InlineMethod.java",
+		"startLine": 7,
+		"endLine": 7,
+		"startColumn": 3,
+		"endColumn": 49,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "inlined code in target method declaration",
+		"codeElement": null
+}]
+},
+{
+	"type": "Inline Method",
+	"description": "Inline Method public toInline() : void inlined to public usage2() : void in class inlines.inlinemethod.InlineMethod",
+	"leftSideLocations": [{
+		"filePath": "src/main/java/inlines/inlinemethod/InlineMethod.java",
+		"startLine": 5,
+		"endLine": 7,
+		"startColumn": 2,
+		"endColumn": 3,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "inlined method declaration",
+		"codeElement": "public toInline() : void"
+}, {
+		"filePath": "src/main/java/inlines/inlinemethod/InlineMethod.java",
+		"startLine": 6,
+		"endLine": 6,
+		"startColumn": 3,
+		"endColumn": 49,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "inlined code from inlined method declaration",
+		"codeElement": null
+}, {
+		"filePath": "src/main/java/inlines/inlinemethod/InlineMethod.java",
+		"startLine": 14,
+		"endLine": 16,
+		"startColumn": 2,
+		"endColumn": 3,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "target method declaration before inline",
+		"codeElement": "public usage2() : void"
+}, {
+		"filePath": "src/main/java/inlines/inlinemethod/InlineMethod.java",
+		"startLine": 15,
+		"endLine": 15,
+		"startColumn": 3,
+		"endColumn": 13,
+		"codeElementType": "METHOD_INVOCATION",
+		"description": "inlined method invocation",
+		"codeElement": "toInline()"
+}],
+	"rightSideLocations": [{
+		"filePath": "src/main/java/inlines/inlinemethod/InlineMethod.java",
+		"startLine": 10,
+		"endLine": 12,
+		"startColumn": 2,
+		"endColumn": 3,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "target method declaration after inline",
+		"codeElement": "public usage2() : void"
+}, {
+		"filePath": "src/main/java/inlines/inlinemethod/InlineMethod.java",
+		"startLine": 11,
+		"endLine": 11,
+		"startColumn": 3,
+		"endColumn": 49,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "inlined code in target method declaration",
+		"codeElement": null
+}]
+},
+{
+	"type": "Move And Inline Method",
+	"description": "Move And Inline Method public toInline() : void moved from class inlines.inlinemethod.InlineMethod to class inlines.inlinemethod.useToInlineMethod & inlined to public usage4() : void",
+	"leftSideLocations": [{
+		"filePath": "src/main/java/inlines/inlinemethod/InlineMethod.java",
+		"startLine": 5,
+		"endLine": 7,
+		"startColumn": 2,
+		"endColumn": 3,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "inlined method declaration",
+		"codeElement": "public toInline() : void"
+}, {
+		"filePath": "src/main/java/inlines/inlinemethod/InlineMethod.java",
+		"startLine": 6,
+		"endLine": 6,
+		"startColumn": 3,
+		"endColumn": 49,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "inlined code from inlined method declaration",
+		"codeElement": null
+}, {
+		"filePath": "src/main/java/inlines/inlinemethod/useToInlineMethod.java",
+		"startLine": 4,
+		"endLine": 6,
+		"startColumn": 2,
+		"endColumn": 3,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "target method declaration before inline",
+		"codeElement": "public usage4() : void"
+}, {
+		"filePath": "src/main/java/inlines/inlinemethod/useToInlineMethod.java",
+		"startLine": 5,
+		"endLine": 5,
+		"startColumn": 3,
+		"endColumn": 26,
+		"codeElementType": "METHOD_INVOCATION",
+		"description": "inlined method invocation",
+		"codeElement": "InlineMethod.toInline()"
+}],
+	"rightSideLocations": [{
+		"filePath": "src/main/java/inlines/inlinemethod/useToInlineMethod.java",
+		"startLine": 4,
+		"endLine": 6,
+		"startColumn": 2,
+		"endColumn": 3,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "target method declaration after inline",
+		"codeElement": "public usage4() : void"
+}, {
+		"filePath": "src/main/java/inlines/inlinemethod/useToInlineMethod.java",
+		"startLine": 5,
+		"endLine": 5,
+		"startColumn": 3,
+		"endColumn": 49,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "inlined code in target method declaration",
+		"codeElement": null
+}]
+}
+]
+}]
+}
