@@ -1,3 +1,5 @@
+package inlines;
+
 public class InlineConstant {
 	final static int INLINE_CONSTANT = 5;
 	final static int[] INT_ARRAY = new int[5];

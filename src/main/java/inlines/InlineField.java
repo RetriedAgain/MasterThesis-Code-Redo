@@ -1,3 +1,5 @@
+package inlines;
+
 public class InlineField {
 	int inline_field = 5;
 	int[] inline_int_array = new int[5];
