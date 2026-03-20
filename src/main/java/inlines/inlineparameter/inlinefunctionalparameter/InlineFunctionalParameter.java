@@ -7,18 +7,19 @@ public class InlineFunctionalParameter {
 	// Uncomment this for special case
 	// final static PrivilegedAction<String> CONSTANT_TO_INLINE = () -> "CONSTANT";
 
-	void inlineHere(PrivilegedAction<String> action) {
+	void inlineHere() {
+		PrivilegedAction<String> action = () -> "CONSTANT";
 		System.out.println(action);
 	}
 
 	void usageHere() {
 		// inlineHere(CONSTANT_TO_INLINE);
-		inlineHere(() -> "CONSTANT");
+		inlineHere();
 	}
 
 	void usageHere2() {
 		// inlineHere(CONSTANT_TO_INLINE);
-		inlineHere(() -> "CONSTANT");
+		inlineHere();
 	}
 
 }
