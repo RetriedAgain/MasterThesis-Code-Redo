@@ -1,0 +1,171 @@
+{
+"commits": [
+{
+	"repository": "https://github.com/RetriedAgain/MasterThesis-Code-Redo.git",
+	"sha1": "7f445bc22e14049f9a2f762ec887e68378b1be31",
+	"url": "https://github.com/RetriedAgain/MasterThesis-Code-Redo/commit/7f445bc22e14049f9a2f762ec887e68378b1be31",
+	"refactorings": [{
+	"type": "Move Code",
+	"description": "Move Code from package usageHere() : void to package inlineHere() : void in class inlines.inlineparameter.inlinefunctionalparameter.InlineFunctionalParameter",
+	"leftSideLocations": [{
+		"filePath": "src/main/java/inlines/inlineparameter/inlinefunctionalparameter/InlineFunctionalParameter.java",
+		"startLine": 14,
+		"endLine": 17,
+		"startColumn": 2,
+		"endColumn": 3,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "source method declaration",
+		"codeElement": "package usageHere() : void"
+}, {
+		"filePath": "src/main/java/inlines/inlineparameter/inlinefunctionalparameter/InlineFunctionalParameter.java",
+		"startLine": 16,
+		"endLine": 16,
+		"startColumn": 20,
+		"endColumn": 30,
+		"codeElementType": "LAMBDA_EXPRESSION_BODY",
+		"description": "moved code from source method declaration",
+		"codeElement": null
+}, {
+		"filePath": "src/main/java/inlines/inlineparameter/inlinefunctionalparameter/InlineFunctionalParameter.java",
+		"startLine": 16,
+		"endLine": 16,
+		"startColumn": 3,
+		"endColumn": 32,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "moved code from source method declaration",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "src/main/java/inlines/inlineparameter/inlinefunctionalparameter/InlineFunctionalParameter.java",
+		"startLine": 10,
+		"endLine": 13,
+		"startColumn": 2,
+		"endColumn": 3,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "target method declaration",
+		"codeElement": "package inlineHere() : void"
+}, {
+		"filePath": "src/main/java/inlines/inlineparameter/inlinefunctionalparameter/InlineFunctionalParameter.java",
+		"startLine": 11,
+		"endLine": 11,
+		"startColumn": 43,
+		"endColumn": 53,
+		"codeElementType": "LAMBDA_EXPRESSION_BODY",
+		"description": "moved code to target method declaration",
+		"codeElement": null
+}, {
+		"filePath": "src/main/java/inlines/inlineparameter/inlinefunctionalparameter/InlineFunctionalParameter.java",
+		"startLine": 11,
+		"endLine": 11,
+		"startColumn": 3,
+		"endColumn": 54,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "moved code to target method declaration",
+		"codeElement": null
+}]
+},
+{
+	"type": "Move Code",
+	"description": "Move Code from package usageHere2() : void to package inlineHere() : void in class inlines.inlineparameter.inlinefunctionalparameter.InlineFunctionalParameter",
+	"leftSideLocations": [{
+		"filePath": "src/main/java/inlines/inlineparameter/inlinefunctionalparameter/InlineFunctionalParameter.java",
+		"startLine": 19,
+		"endLine": 22,
+		"startColumn": 2,
+		"endColumn": 3,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "source method declaration",
+		"codeElement": "package usageHere2() : void"
+}, {
+		"filePath": "src/main/java/inlines/inlineparameter/inlinefunctionalparameter/InlineFunctionalParameter.java",
+		"startLine": 21,
+		"endLine": 21,
+		"startColumn": 20,
+		"endColumn": 30,
+		"codeElementType": "LAMBDA_EXPRESSION_BODY",
+		"description": "moved code from source method declaration",
+		"codeElement": null
+}, {
+		"filePath": "src/main/java/inlines/inlineparameter/inlinefunctionalparameter/InlineFunctionalParameter.java",
+		"startLine": 21,
+		"endLine": 21,
+		"startColumn": 3,
+		"endColumn": 32,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "moved code from source method declaration",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "src/main/java/inlines/inlineparameter/inlinefunctionalparameter/InlineFunctionalParameter.java",
+		"startLine": 10,
+		"endLine": 13,
+		"startColumn": 2,
+		"endColumn": 3,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "target method declaration",
+		"codeElement": "package inlineHere() : void"
+}, {
+		"filePath": "src/main/java/inlines/inlineparameter/inlinefunctionalparameter/InlineFunctionalParameter.java",
+		"startLine": 11,
+		"endLine": 11,
+		"startColumn": 43,
+		"endColumn": 53,
+		"codeElementType": "LAMBDA_EXPRESSION_BODY",
+		"description": "moved code to target method declaration",
+		"codeElement": null
+}, {
+		"filePath": "src/main/java/inlines/inlineparameter/inlinefunctionalparameter/InlineFunctionalParameter.java",
+		"startLine": 11,
+		"endLine": 11,
+		"startColumn": 3,
+		"endColumn": 54,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "moved code to target method declaration",
+		"codeElement": null
+}]
+},
+{
+	"type": "Localize Parameter",
+	"description": "Localize Parameter action : PrivilegedAction<String> to action : PrivilegedAction<String> in method package inlineHere() : void from class inlines.inlineparameter.inlinefunctionalparameter.InlineFunctionalParameter",
+	"leftSideLocations": [{
+		"filePath": "src/main/java/inlines/inlineparameter/inlinefunctionalparameter/InlineFunctionalParameter.java",
+		"startLine": 10,
+		"endLine": 10,
+		"startColumn": 18,
+		"endColumn": 49,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "original variable declaration",
+		"codeElement": "action : PrivilegedAction<String>"
+}, {
+		"filePath": "src/main/java/inlines/inlineparameter/inlinefunctionalparameter/InlineFunctionalParameter.java",
+		"startLine": 11,
+		"endLine": 11,
+		"startColumn": 3,
+		"endColumn": 30,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "src/main/java/inlines/inlineparameter/inlinefunctionalparameter/InlineFunctionalParameter.java",
+		"startLine": 11,
+		"endLine": 11,
+		"startColumn": 28,
+		"endColumn": 53,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "renamed variable declaration",
+		"codeElement": "action : PrivilegedAction<String>"
+}, {
+		"filePath": "src/main/java/inlines/inlineparameter/inlinefunctionalparameter/InlineFunctionalParameter.java",
+		"startLine": 12,
+		"endLine": 12,
+		"startColumn": 3,
+		"endColumn": 30,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the renamed variable",
+		"codeElement": null
+}]
+}
+]
+}]
+}

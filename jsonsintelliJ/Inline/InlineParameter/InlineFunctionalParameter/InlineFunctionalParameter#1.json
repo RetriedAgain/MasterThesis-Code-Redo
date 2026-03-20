@@ -1,0 +1,42 @@
+{
+"commits": [
+{
+	"repository": "https://github.com/RetriedAgain/MasterThesis-Code-Redo.git",
+	"sha1": "3e7bf104e485ca3c3c5c7b3b0dbb4502a4cf0939",
+	"url": "https://github.com/RetriedAgain/MasterThesis-Code-Redo/commit/3e7bf104e485ca3c3c5c7b3b0dbb4502a4cf0939",
+	"refactorings": [{
+	"type": "Remove Parameter",
+	"description": "Remove Parameter action : PrivilegedAction<String> in method package inlineHere(action PrivilegedAction<String>) : void from class inlines.inlineparameter.inlinefunctionalparameter.InlineFunctionalParameter",
+	"leftSideLocations": [{
+		"filePath": "src/main/java/inlines/inlineparameter/inlinefunctionalparameter/InlineFunctionalParameter.java",
+		"startLine": 10,
+		"endLine": 10,
+		"startColumn": 18,
+		"endColumn": 49,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "removed parameter",
+		"codeElement": "action : PrivilegedAction<String>"
+}, {
+		"filePath": "src/main/java/inlines/inlineparameter/inlinefunctionalparameter/InlineFunctionalParameter.java",
+		"startLine": 10,
+		"endLine": 12,
+		"startColumn": 2,
+		"endColumn": 3,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "package inlineHere(action PrivilegedAction<String>) : void"
+}],
+	"rightSideLocations": [{
+		"filePath": "src/main/java/inlines/inlineparameter/inlinefunctionalparameter/InlineFunctionalParameter.java",
+		"startLine": 10,
+		"endLine": 12,
+		"startColumn": 2,
+		"endColumn": 3,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "method declaration with removed parameter",
+		"codeElement": "package inlineHere() : void"
+}]
+}
+]
+}]
+}

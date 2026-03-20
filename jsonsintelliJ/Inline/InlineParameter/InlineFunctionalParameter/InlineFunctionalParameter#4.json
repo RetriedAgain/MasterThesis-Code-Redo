@@ -1,0 +1,84 @@
+{
+"commits": [
+{
+	"repository": "https://github.com/RetriedAgain/MasterThesis-Code-Redo.git",
+	"sha1": "423db337bc822911914e859e34553e84345796de",
+	"url": "https://github.com/RetriedAgain/MasterThesis-Code-Redo/commit/423db337bc822911914e859e34553e84345796de",
+	"refactorings": [{
+	"type": "Remove Parameter",
+	"description": "Remove Parameter action : PrivilegedAction<String> in method package inlineHere(action PrivilegedAction<String>) : void from class inlines.inlineparameter.inlinefunctionalparameter.InlineFunctionalParameter",
+	"leftSideLocations": [{
+		"filePath": "src/main/java/inlines/inlineparameter/inlinefunctionalparameter/InlineFunctionalParameter.java",
+		"startLine": 10,
+		"endLine": 10,
+		"startColumn": 18,
+		"endColumn": 49,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "removed parameter",
+		"codeElement": "action : PrivilegedAction<String>"
+}, {
+		"filePath": "src/main/java/inlines/inlineparameter/inlinefunctionalparameter/InlineFunctionalParameter.java",
+		"startLine": 10,
+		"endLine": 12,
+		"startColumn": 2,
+		"endColumn": 3,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "package inlineHere(action PrivilegedAction<String>) : void"
+}],
+	"rightSideLocations": [{
+		"filePath": "src/main/java/inlines/inlineparameter/inlinefunctionalparameter/InlineFunctionalParameter.java",
+		"startLine": 10,
+		"endLine": 12,
+		"startColumn": 2,
+		"endColumn": 3,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "method declaration with removed parameter",
+		"codeElement": "package inlineHere() : void"
+}]
+},
+{
+	"type": "Replace Variable With Attribute",
+	"description": "Replace Variable With Attribute action : PrivilegedAction<String> to CONSTANT_TO_INLINE : PrivilegedAction<String> in method package inlineHere() : void from class inlines.inlineparameter.inlinefunctionalparameter.InlineFunctionalParameter",
+	"leftSideLocations": [{
+		"filePath": "src/main/java/inlines/inlineparameter/inlinefunctionalparameter/InlineFunctionalParameter.java",
+		"startLine": 10,
+		"endLine": 10,
+		"startColumn": 18,
+		"endColumn": 49,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "original variable declaration",
+		"codeElement": "action : PrivilegedAction<String>"
+}, {
+		"filePath": "src/main/java/inlines/inlineparameter/inlinefunctionalparameter/InlineFunctionalParameter.java",
+		"startLine": 11,
+		"endLine": 11,
+		"startColumn": 3,
+		"endColumn": 30,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "src/main/java/inlines/inlineparameter/inlinefunctionalparameter/InlineFunctionalParameter.java",
+		"startLine": 8,
+		"endLine": 8,
+		"startColumn": 40,
+		"endColumn": 77,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "renamed variable declaration",
+		"codeElement": "CONSTANT_TO_INLINE : PrivilegedAction<String>"
+}, {
+		"filePath": "src/main/java/inlines/inlineparameter/inlinefunctionalparameter/InlineFunctionalParameter.java",
+		"startLine": 11,
+		"endLine": 11,
+		"startColumn": 3,
+		"endColumn": 42,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the renamed variable",
+		"codeElement": null
+}]
+}
+]
+}]
+}
