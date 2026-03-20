@@ -1,14 +1,10 @@
 package inlines.inlineparameter.inlinefunctionalparameter;
 
-import inlines.inlineparameter.InlineParameter;
-
-import static inlines.inlineparameter.inlinefunctionalparameter.InlineFunctionalParameter.CONSTANT_TO_INLINE;
-
 public class UsageOutsideClass {
 
 	void usageHere3() {
 		InlineFunctionalParameter iFP = new InlineFunctionalParameter();
 
-		iFP.inlineHere(CONSTANT_TO_INLINE);
+		iFP.inlineHere();
 	}
 }
