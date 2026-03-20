@@ -8,6 +8,6 @@ public class UsageOutsideClass {
 		InlineFunctionalParameter iFP = new InlineFunctionalParameter();
 
 		// inlineHere(CONSTANT_TO_INLINE);
-		iFP.inlineHere(() -> "CONSTANT");
+		iFP.inlineHere();
 	}
 }
