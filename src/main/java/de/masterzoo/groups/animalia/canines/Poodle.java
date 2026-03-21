@@ -3,6 +3,7 @@ package de.masterzoo.groups.animalia.canines;
 import de.Gender;
 import de.masterzoo.groups.animalia.movement.MovementStrategy;
 import de.masterzoo.groups.animalia.reproduction.ReproductionStrategy;
+import de.masterzoo.groups.animalia.reproduction.Viviparity;
 
 import java.util.ArrayList;
 
@@ -10,7 +11,7 @@ public class Poodle extends Canine implements Trainable {
 
 
 	public Poodle(Gender GENDER, String name, int age, int speed, int weight, ReproductionStrategy reproductionStrategy) {
-		super(GENDER, name, age, speed, weight, reproductionStrategy);
+		super(GENDER, name, age, speed, weight, new Viviparity());
 	}
 
 	@Override

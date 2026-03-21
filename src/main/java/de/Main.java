@@ -3,7 +3,9 @@ package de;
 import de.masterzoo.Department;
 import de.masterzoo.Zoo;
 import de.masterzoo.groups.animalia.Animal;
+import de.masterzoo.groups.animalia.birds.Chicken;
 import de.masterzoo.groups.animalia.canines.Labrador;
+import de.masterzoo.groups.animalia.felines.Cat;
 import de.masterzoo.groups.animalia.movement.Fly;
 import de.masterzoo.groups.animalia.movement.MovementStrategy;
 import de.masterzoo.groups.animalia.movement.Walk;
@@ -33,6 +35,12 @@ public class Main {
 		List<Company> partnerCompanies = new ArrayList<>();
 
 		Zoo myZoo = new Zoo(10000, 12000, animalsInZoo, propsInZoo, partnerCompanies);
+
+		Chicken myChicken = new Chicken();
+		myChicken.layEgg();
+
+		Chicken myChicken2 = new Chicken();
+		myChicken2.layEgg();
 
 		// A pup that can also fly
 		Labrador superPup = new Labrador(
