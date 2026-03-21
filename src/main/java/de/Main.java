@@ -7,6 +7,7 @@ import de.masterzoo.groups.animalia.canines.Labrador;
 import de.masterzoo.groups.animalia.movement.Fly;
 import de.masterzoo.groups.animalia.movement.MovementStrategy;
 import de.masterzoo.groups.animalia.movement.Walk;
+import de.masterzoo.groups.animalia.reproduction.Viviparity;
 import de.masterzoo.humanresources.Employee;
 import de.masterzoo.infrastructure.props.Ball;
 import de.masterzoo.infrastructure.props.Prop;
@@ -55,13 +56,7 @@ public class Main {
 
 
 
-		Labrador useLowestLinkConstructor1 = new Labrador(
-			myTempAnimal.getGENDER(),
-			myTempAnimal.getName(),
-			myTempAnimal.getAge(),
-			myTempAnimal.getSpeed(),
-			myTempAnimal.getWeight()
-		);
+		Labrador useLowestLinkConstructor1 = new Labrador(myTempAnimal.getGENDER(), myTempAnimal.getName(), myTempAnimal.getAge(), myTempAnimal.getSpeed(), myTempAnimal.getWeight(), new Viviparity());
 
 		Labrador useLowestLinkConstructor2 = new Labrador(
 			myTempAnimal2.getGENDER(),
