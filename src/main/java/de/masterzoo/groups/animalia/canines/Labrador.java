@@ -1,12 +1,9 @@
 package de.masterzoo.groups.animalia.canines;
 
 import de.Gender;
-import de.masterzoo.groups.animalia.movement.MovementStrategy;
 import de.masterzoo.groups.animalia.reproduction.ReproductionStrategy;
 import de.masterzoo.groups.animalia.reproduction.Viviparity;
 import de.masterzoo.humanresources.Employee;
-
-import java.util.ArrayList;
 
 /**
  * It's a labrador. They are very cute.
@@ -27,7 +24,7 @@ public class Labrador extends Canine implements Trainable {
 	 * @param weight Weight of the Labrador.
 	 */
 	public Labrador(Gender GENDER, String name, int age, int speed, int weight) {
-		this(GENDER, name, age, speed, weight, new Viviparity());
+		this(GENDER, name, age, speed, weight, new Viviparity(), null);
 	}
 
 	/**
