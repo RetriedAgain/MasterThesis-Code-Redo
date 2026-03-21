@@ -3,6 +3,7 @@ package de.masterzoo.groups.animalia.canines;
 import de.Gender;
 import de.masterzoo.groups.animalia.movement.MovementStrategy;
 import de.masterzoo.groups.animalia.reproduction.ReproductionStrategy;
+import de.masterzoo.groups.animalia.reproduction.Viviparity;
 import de.masterzoo.humanresources.Employee;
 
 import java.util.ArrayList;
@@ -16,6 +17,18 @@ public class Labrador extends Canine implements Trainable {
 	 * this dog connects the most.
 	 */
 	Employee humanCompanion;
+
+	/**
+	 * Chained constructor for when there is no human companion.
+	 * @param GENDER Gender of the Labrador
+	 * @param name Name of the Labrador
+	 * @param age Age of the Labrador
+	 * @param speed Max. speed of the Labrador.
+	 * @param weight Weight of the Labrador.
+	 */
+	public Labrador(Gender GENDER, String name, int age, int speed, int weight) {
+		this(GENDER, name, age, speed, weight, new Viviparity());
+	}
 
 	/**
 	 * Chained constructor for when there is no human companion.
