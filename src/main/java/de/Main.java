@@ -71,14 +71,7 @@ public class Main {
 			myTempAnimal2.getWeight()
 		);
 
-		Labrador useMiddleLinkConstructor1 = new Labrador(
-			myTempAnimal.getGENDER(),
-			myTempAnimal.getName(),
-			myTempAnimal.getAge(),
-			myTempAnimal.getSpeed(),
-			myTempAnimal.getWeight(),
-			myTempAnimal.getReproductionStrategy()
-		);
+		Labrador useMiddleLinkConstructor1 = new Labrador(myTempAnimal.getGENDER(), myTempAnimal.getName(), myTempAnimal.getAge(), myTempAnimal.getSpeed(), myTempAnimal.getWeight(), myTempAnimal.getReproductionStrategy(), null);
 
 		Labrador useMiddleLinkConstructor2 = new Labrador(
 			myTempAnimal2.getGENDER(),
