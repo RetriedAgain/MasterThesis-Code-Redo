@@ -3,9 +3,8 @@ package de;
 import de.masterzoo.Department;
 import de.masterzoo.Zoo;
 import de.masterzoo.groups.animalia.Animal;
-import de.masterzoo.groups.animalia.birds.Chicken;
+import de.masterzoo.groups.animalia.birds.Bird;
 import de.masterzoo.groups.animalia.canines.Labrador;
-import de.masterzoo.groups.animalia.felines.Cat;
 import de.masterzoo.groups.animalia.movement.Fly;
 import de.masterzoo.groups.animalia.movement.MovementStrategy;
 import de.masterzoo.groups.animalia.movement.Walk;
@@ -36,10 +35,48 @@ public class Main {
 
 		Zoo myZoo = new Zoo(10000, 12000, animalsInZoo, propsInZoo, partnerCompanies);
 
-		Chicken myChicken = new Chicken();
+		Bird myChicken = new Bird() {
+			{
+				chickenDefaultHatchText();
+				getReproductionStrategy().handleReproduction();
+			}
+
+			static void chickenDefaultHatchText() {
+				System.out.println("Chicken has been created");
+				System.out.println("Chicken is by default Male");
+				System.out.println("Chicken is by default laying 1 egg per week");
+			}
+
+			public static void bockock() {
+				System.out.println("bockooock");
+			}
+
+			public void cackle() {
+				System.out.println("cackle");
+			}
+		};
 		myChicken.layEgg();
 
-		Chicken myChicken2 = new Chicken();
+		Bird myChicken2 = new Bird() {
+			{
+				chickenDefaultHatchText();
+				getReproductionStrategy().handleReproduction();
+			}
+
+			static void chickenDefaultHatchText() {
+				System.out.println("Chicken has been created");
+				System.out.println("Chicken is by default Male");
+				System.out.println("Chicken is by default laying 1 egg per week");
+			}
+
+			public static void bockock() {
+				System.out.println("bockooock");
+			}
+
+			public void cackle() {
+				System.out.println("cackle");
+			}
+		};
 		myChicken2.layEgg();
 
 		// A pup that can also fly
