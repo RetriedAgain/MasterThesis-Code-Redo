@@ -35,13 +35,7 @@ public class Main {
 		Zoo myZoo = new Zoo(10000, 12000, animalsInZoo, propsInZoo, partnerCompanies);
 
 		// A pup that can also fly
-		Labrador superPup = new Labrador(
-			myTempAnimal.getGENDER(),
-			myTempAnimal.getName(),
-			myTempAnimal.getAge(),
-			myTempAnimal.getSpeed(),
-			myTempAnimal2.getWeight(),
-			myTempAnimal.getReproductionStrategy()) {
+		Labrador superPup = new Labrador(myTempAnimal.getGENDER(), myTempAnimal.getName(), myTempAnimal.getAge(), myTempAnimal.getSpeed(), myTempAnimal2.getWeight(), myTempAnimal.getReproductionStrategy(), null) {
 
 			@Override
 			public void setMovementStrategies(List<MovementStrategy> movementStrategies) {
@@ -71,23 +65,9 @@ public class Main {
 			myTempAnimal2.getWeight()
 		);
 
-		Labrador useMiddleLinkConstructor1 = new Labrador(
-			myTempAnimal.getGENDER(),
-			myTempAnimal.getName(),
-			myTempAnimal.getAge(),
-			myTempAnimal.getSpeed(),
-			myTempAnimal.getWeight(),
-			myTempAnimal.getReproductionStrategy()
-		);
+		Labrador useMiddleLinkConstructor1 = new Labrador(myTempAnimal.getGENDER(), myTempAnimal.getName(), myTempAnimal.getAge(), myTempAnimal.getSpeed(), myTempAnimal.getWeight(), myTempAnimal.getReproductionStrategy(), null);
 
-		Labrador useMiddleLinkConstructor2 = new Labrador(
-			myTempAnimal2.getGENDER(),
-			myTempAnimal2.getName(),
-			myTempAnimal2.getAge(),
-			myTempAnimal2.getSpeed(),
-			myTempAnimal2.getWeight(),
-			myTempAnimal2.getReproductionStrategy()
-		);
+		Labrador useMiddleLinkConstructor2 = new Labrador(myTempAnimal2.getGENDER(), myTempAnimal2.getName(), myTempAnimal2.getAge(), myTempAnimal2.getSpeed(), myTempAnimal2.getWeight(), myTempAnimal2.getReproductionStrategy(), null);
 
 		Employee companionForUpperConstructor1 = new Employee("Derek", 25, Department.HUMANRESOURCES);
 		Employee companionForUpperConstructor2 = new Employee("Derek", 25, Department.HUMANRESOURCES);
