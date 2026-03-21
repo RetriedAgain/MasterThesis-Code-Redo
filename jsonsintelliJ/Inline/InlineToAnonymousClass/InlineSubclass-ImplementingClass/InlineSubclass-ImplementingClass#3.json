@@ -1,0 +1,471 @@
+{
+"commits": [
+{
+	"repository": "https://github.com/RetriedAgain/MasterThesis-Code-Redo.git",
+	"sha1": "91c278b5034f60a64bb1d8e2c6ee3ef45323e343",
+	"url": "https://github.com/RetriedAgain/MasterThesis-Code-Redo/commit/91c278b5034f60a64bb1d8e2c6ee3ef45323e343",
+	"refactorings": [{
+	"type": "Change Variable Type",
+	"description": "Change Variable Type myChicken : Chicken to myChicken : Bird in method public main(args String[]) : void from class de.Main",
+	"leftSideLocations": [{
+		"filePath": "src/main/java/de/Main.java",
+		"startLine": 39,
+		"endLine": 39,
+		"startColumn": 11,
+		"endColumn": 36,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "original variable declaration",
+		"codeElement": "myChicken : Chicken"
+}, {
+		"filePath": "src/main/java/de/Main.java",
+		"startLine": 40,
+		"endLine": 40,
+		"startColumn": 3,
+		"endColumn": 22,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "src/main/java/de/Main.java",
+		"startLine": 38,
+		"endLine": 57,
+		"startColumn": 8,
+		"endColumn": 4,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "changed-type variable declaration",
+		"codeElement": "myChicken : Bird"
+}, {
+		"filePath": "src/main/java/de/Main.java",
+		"startLine": 58,
+		"endLine": 58,
+		"startColumn": 3,
+		"endColumn": 22,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the variable with changed type",
+		"codeElement": null
+}]
+},
+{
+	"type": "Change Variable Type",
+	"description": "Change Variable Type myChicken2 : Chicken to myChicken2 : Bird in method public main(args String[]) : void from class de.Main",
+	"leftSideLocations": [{
+		"filePath": "src/main/java/de/Main.java",
+		"startLine": 42,
+		"endLine": 42,
+		"startColumn": 11,
+		"endColumn": 37,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "original variable declaration",
+		"codeElement": "myChicken2 : Chicken"
+}, {
+		"filePath": "src/main/java/de/Main.java",
+		"startLine": 43,
+		"endLine": 43,
+		"startColumn": 3,
+		"endColumn": 23,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "src/main/java/de/Main.java",
+		"startLine": 60,
+		"endLine": 79,
+		"startColumn": 8,
+		"endColumn": 4,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "changed-type variable declaration",
+		"codeElement": "myChicken2 : Bird"
+}, {
+		"filePath": "src/main/java/de/Main.java",
+		"startLine": 80,
+		"endLine": 80,
+		"startColumn": 3,
+		"endColumn": 23,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the variable with changed type",
+		"codeElement": null
+}]
+},
+{
+	"type": "Move And Inline Method",
+	"description": "Move And Inline Method package chickenDefaultHatchText() : void moved from class de.masterzoo.groups.animalia.birds.Chicken to class de.Main & inlined to public main(args String[]) : void",
+	"leftSideLocations": [{
+		"filePath": "src/main/java/de/masterzoo/groups/animalia/birds/Chicken.java",
+		"startLine": 11,
+		"endLine": 15,
+		"startColumn": 2,
+		"endColumn": 3,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "inlined method declaration",
+		"codeElement": "package chickenDefaultHatchText() : void"
+}, {
+		"filePath": "src/main/java/de/masterzoo/groups/animalia/birds/Chicken.java",
+		"startLine": 12,
+		"endLine": 12,
+		"startColumn": 3,
+		"endColumn": 50,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "inlined code from inlined method declaration",
+		"codeElement": null
+}, {
+		"filePath": "src/main/java/de/masterzoo/groups/animalia/birds/Chicken.java",
+		"startLine": 13,
+		"endLine": 13,
+		"startColumn": 3,
+		"endColumn": 52,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "inlined code from inlined method declaration",
+		"codeElement": null
+}, {
+		"filePath": "src/main/java/de/masterzoo/groups/animalia/birds/Chicken.java",
+		"startLine": 14,
+		"endLine": 14,
+		"startColumn": 3,
+		"endColumn": 69,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "inlined code from inlined method declaration",
+		"codeElement": null
+}, {
+		"filePath": "src/main/java/de/Main.java",
+		"startLine": 24,
+		"endLine": 122,
+		"startColumn": 2,
+		"endColumn": 3,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "target method declaration before inline",
+		"codeElement": "public main(args String[]) : void"
+}],
+	"rightSideLocations": [{
+		"filePath": "src/main/java/de/Main.java",
+		"startLine": 23,
+		"endLine": 159,
+		"startColumn": 2,
+		"endColumn": 3,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "target method declaration after inline",
+		"codeElement": "public main(args String[]) : void"
+}, {
+		"filePath": "src/main/java/de/Main.java",
+		"startLine": 45,
+		"endLine": 45,
+		"startColumn": 5,
+		"endColumn": 52,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "inlined code in target method declaration",
+		"codeElement": null
+}, {
+		"filePath": "src/main/java/de/Main.java",
+		"startLine": 46,
+		"endLine": 46,
+		"startColumn": 5,
+		"endColumn": 54,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "inlined code in target method declaration",
+		"codeElement": null
+}, {
+		"filePath": "src/main/java/de/Main.java",
+		"startLine": 47,
+		"endLine": 47,
+		"startColumn": 5,
+		"endColumn": 71,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "inlined code in target method declaration",
+		"codeElement": null
+}]
+},
+{
+	"type": "Move And Inline Method",
+	"description": "Move And Inline Method package chickenDefaultHatchText() : void moved from class de.masterzoo.groups.animalia.birds.Chicken to class de.Main & inlined to public main(args String[]) : void",
+	"leftSideLocations": [{
+		"filePath": "src/main/java/de/masterzoo/groups/animalia/birds/Chicken.java",
+		"startLine": 11,
+		"endLine": 15,
+		"startColumn": 2,
+		"endColumn": 3,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "inlined method declaration",
+		"codeElement": "package chickenDefaultHatchText() : void"
+}, {
+		"filePath": "src/main/java/de/masterzoo/groups/animalia/birds/Chicken.java",
+		"startLine": 12,
+		"endLine": 12,
+		"startColumn": 3,
+		"endColumn": 50,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "inlined code from inlined method declaration",
+		"codeElement": null
+}, {
+		"filePath": "src/main/java/de/masterzoo/groups/animalia/birds/Chicken.java",
+		"startLine": 13,
+		"endLine": 13,
+		"startColumn": 3,
+		"endColumn": 52,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "inlined code from inlined method declaration",
+		"codeElement": null
+}, {
+		"filePath": "src/main/java/de/masterzoo/groups/animalia/birds/Chicken.java",
+		"startLine": 14,
+		"endLine": 14,
+		"startColumn": 3,
+		"endColumn": 69,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "inlined code from inlined method declaration",
+		"codeElement": null
+}, {
+		"filePath": "src/main/java/de/Main.java",
+		"startLine": 24,
+		"endLine": 122,
+		"startColumn": 2,
+		"endColumn": 3,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "target method declaration before inline",
+		"codeElement": "public main(args String[]) : void"
+}],
+	"rightSideLocations": [{
+		"filePath": "src/main/java/de/Main.java",
+		"startLine": 23,
+		"endLine": 159,
+		"startColumn": 2,
+		"endColumn": 3,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "target method declaration after inline",
+		"codeElement": "public main(args String[]) : void"
+}, {
+		"filePath": "src/main/java/de/Main.java",
+		"startLine": 45,
+		"endLine": 45,
+		"startColumn": 5,
+		"endColumn": 52,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "inlined code in target method declaration",
+		"codeElement": null
+}, {
+		"filePath": "src/main/java/de/Main.java",
+		"startLine": 46,
+		"endLine": 46,
+		"startColumn": 5,
+		"endColumn": 54,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "inlined code in target method declaration",
+		"codeElement": null
+}, {
+		"filePath": "src/main/java/de/Main.java",
+		"startLine": 47,
+		"endLine": 47,
+		"startColumn": 5,
+		"endColumn": 71,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "inlined code in target method declaration",
+		"codeElement": null
+}]
+},
+{
+	"type": "Move And Inline Method",
+	"description": "Move And Inline Method public bockock() : void moved from class de.masterzoo.groups.animalia.birds.Chicken to class de.Main & inlined to public main(args String[]) : void",
+	"leftSideLocations": [{
+		"filePath": "src/main/java/de/masterzoo/groups/animalia/birds/Chicken.java",
+		"startLine": 17,
+		"endLine": 19,
+		"startColumn": 2,
+		"endColumn": 3,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "inlined method declaration",
+		"codeElement": "public bockock() : void"
+}, {
+		"filePath": "src/main/java/de/masterzoo/groups/animalia/birds/Chicken.java",
+		"startLine": 18,
+		"endLine": 18,
+		"startColumn": 3,
+		"endColumn": 35,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "inlined code from inlined method declaration",
+		"codeElement": null
+}, {
+		"filePath": "src/main/java/de/Main.java",
+		"startLine": 24,
+		"endLine": 122,
+		"startColumn": 2,
+		"endColumn": 3,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "target method declaration before inline",
+		"codeElement": "public main(args String[]) : void"
+}],
+	"rightSideLocations": [{
+		"filePath": "src/main/java/de/Main.java",
+		"startLine": 23,
+		"endLine": 159,
+		"startColumn": 2,
+		"endColumn": 3,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "target method declaration after inline",
+		"codeElement": "public main(args String[]) : void"
+}, {
+		"filePath": "src/main/java/de/Main.java",
+		"startLine": 51,
+		"endLine": 51,
+		"startColumn": 5,
+		"endColumn": 37,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "inlined code in target method declaration",
+		"codeElement": null
+}]
+},
+{
+	"type": "Move And Inline Method",
+	"description": "Move And Inline Method public bockock() : void moved from class de.masterzoo.groups.animalia.birds.Chicken to class de.Main & inlined to public main(args String[]) : void",
+	"leftSideLocations": [{
+		"filePath": "src/main/java/de/masterzoo/groups/animalia/birds/Chicken.java",
+		"startLine": 17,
+		"endLine": 19,
+		"startColumn": 2,
+		"endColumn": 3,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "inlined method declaration",
+		"codeElement": "public bockock() : void"
+}, {
+		"filePath": "src/main/java/de/masterzoo/groups/animalia/birds/Chicken.java",
+		"startLine": 18,
+		"endLine": 18,
+		"startColumn": 3,
+		"endColumn": 35,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "inlined code from inlined method declaration",
+		"codeElement": null
+}, {
+		"filePath": "src/main/java/de/Main.java",
+		"startLine": 24,
+		"endLine": 122,
+		"startColumn": 2,
+		"endColumn": 3,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "target method declaration before inline",
+		"codeElement": "public main(args String[]) : void"
+}],
+	"rightSideLocations": [{
+		"filePath": "src/main/java/de/Main.java",
+		"startLine": 23,
+		"endLine": 159,
+		"startColumn": 2,
+		"endColumn": 3,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "target method declaration after inline",
+		"codeElement": "public main(args String[]) : void"
+}, {
+		"filePath": "src/main/java/de/Main.java",
+		"startLine": 51,
+		"endLine": 51,
+		"startColumn": 5,
+		"endColumn": 37,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "inlined code in target method declaration",
+		"codeElement": null
+}]
+},
+{
+	"type": "Move And Inline Method",
+	"description": "Move And Inline Method public cackle() : void moved from class de.masterzoo.groups.animalia.birds.Chicken to class de.Main & inlined to public main(args String[]) : void",
+	"leftSideLocations": [{
+		"filePath": "src/main/java/de/masterzoo/groups/animalia/birds/Chicken.java",
+		"startLine": 21,
+		"endLine": 23,
+		"startColumn": 2,
+		"endColumn": 3,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "inlined method declaration",
+		"codeElement": "public cackle() : void"
+}, {
+		"filePath": "src/main/java/de/masterzoo/groups/animalia/birds/Chicken.java",
+		"startLine": 22,
+		"endLine": 22,
+		"startColumn": 3,
+		"endColumn": 32,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "inlined code from inlined method declaration",
+		"codeElement": null
+}, {
+		"filePath": "src/main/java/de/Main.java",
+		"startLine": 24,
+		"endLine": 122,
+		"startColumn": 2,
+		"endColumn": 3,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "target method declaration before inline",
+		"codeElement": "public main(args String[]) : void"
+}],
+	"rightSideLocations": [{
+		"filePath": "src/main/java/de/Main.java",
+		"startLine": 23,
+		"endLine": 159,
+		"startColumn": 2,
+		"endColumn": 3,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "target method declaration after inline",
+		"codeElement": "public main(args String[]) : void"
+}, {
+		"filePath": "src/main/java/de/Main.java",
+		"startLine": 55,
+		"endLine": 55,
+		"startColumn": 5,
+		"endColumn": 34,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "inlined code in target method declaration",
+		"codeElement": null
+}]
+},
+{
+	"type": "Move And Inline Method",
+	"description": "Move And Inline Method public cackle() : void moved from class de.masterzoo.groups.animalia.birds.Chicken to class de.Main & inlined to public main(args String[]) : void",
+	"leftSideLocations": [{
+		"filePath": "src/main/java/de/masterzoo/groups/animalia/birds/Chicken.java",
+		"startLine": 21,
+		"endLine": 23,
+		"startColumn": 2,
+		"endColumn": 3,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "inlined method declaration",
+		"codeElement": "public cackle() : void"
+}, {
+		"filePath": "src/main/java/de/masterzoo/groups/animalia/birds/Chicken.java",
+		"startLine": 22,
+		"endLine": 22,
+		"startColumn": 3,
+		"endColumn": 32,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "inlined code from inlined method declaration",
+		"codeElement": null
+}, {
+		"filePath": "src/main/java/de/Main.java",
+		"startLine": 24,
+		"endLine": 122,
+		"startColumn": 2,
+		"endColumn": 3,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "target method declaration before inline",
+		"codeElement": "public main(args String[]) : void"
+}],
+	"rightSideLocations": [{
+		"filePath": "src/main/java/de/Main.java",
+		"startLine": 23,
+		"endLine": 159,
+		"startColumn": 2,
+		"endColumn": 3,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "target method declaration after inline",
+		"codeElement": "public main(args String[]) : void"
+}, {
+		"filePath": "src/main/java/de/Main.java",
+		"startLine": 55,
+		"endLine": 55,
+		"startColumn": 5,
+		"endColumn": 34,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "inlined code in target method declaration",
+		"codeElement": null
+}]
+}
+]
+}]
+}
