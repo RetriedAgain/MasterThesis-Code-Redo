@@ -16,6 +16,6 @@ class UserClass{
 	void doSmth(){
 		AnInterface a = new AClass();
 		// Put cursor on readValue to inline the abstract method
-		int i = a.readValue();
+		int i = 1;
 	}
 }
