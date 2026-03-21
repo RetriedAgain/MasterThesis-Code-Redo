@@ -13,4 +13,10 @@ public abstract class Reptile extends Animal {
 			new Walk();
 		}});
 	}
+
+	public Reptile() {
+		super();
+	}
+
+	abstract void snapForce();
 }
