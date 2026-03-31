@@ -12,16 +12,18 @@ public class MakeClassStatic {
 		a_upper.method_inner();
 	}
 
-	public class A {
+	public static class A {
+		private final MakeClassStatic secret;
 		private MakeClassStatic outer;
 		boolean field_bool_lower = true;
 
-		public A(MakeClassStatic outer) {
+		public A(MakeClassStatic secret, MakeClassStatic outer) {
 			this.outer = outer;
+			this.secret = secret;
 		}
 
 		// Uncomment this for an extra option
-		A a = new A(outer);
+		A a = secret.new A(outer);
 
 		public void method_inner() {
 			System.out.println("Test");
