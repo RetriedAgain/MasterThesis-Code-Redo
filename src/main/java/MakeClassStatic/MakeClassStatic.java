@@ -9,8 +9,11 @@ public class MakeClassStatic {
 		a_upper.method_inner();
 	}
 
-	public class A {
+	public static class A {
 		boolean field_bool_lower = true;
+
+		public A() {
+		}
 
 		// Uncomment this for an extra option
 //		A a = new A();
