@@ -1,8 +1,8 @@
 public class InvertBoolean {
 
-	boolean boolean_field = true;
+//	boolean boolean_field = true;
 	// Same field but static, comment out in test case together with outside usage.
-	//	static boolean boolean_field = true;
+		static boolean boolean_field = true;
 
 	boolean[] booleans = new boolean[5];
 
