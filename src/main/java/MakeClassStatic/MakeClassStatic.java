@@ -13,7 +13,7 @@ public class MakeClassStatic {
 		boolean field_bool_lower = true;
 
 		// Uncomment this for an extra option
-//		A a = new A();
+		A a = new A();
 
 		public void method_inner() {
 			System.out.println("Test");
