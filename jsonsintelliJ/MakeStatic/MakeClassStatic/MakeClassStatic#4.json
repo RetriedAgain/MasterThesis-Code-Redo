@@ -1,0 +1,66 @@
+{
+"commits": [
+{
+	"repository": "https://github.com/RetriedAgain/MasterThesis-Code-Redo.git",
+	"sha1": "8a734b078f9990845b39dde0a9d95367658596ef",
+	"url": "https://github.com/RetriedAgain/MasterThesis-Code-Redo/commit/8a734b078f9990845b39dde0a9d95367658596ef",
+	"refactorings": [{
+	"type": "Add Class Modifier",
+	"description": "Add Class Modifier static in class MakeClassStatic.MakeClassStatic.A",
+	"leftSideLocations": [{
+		"filePath": "src/main/java/MakeClassStatic/MakeClassStatic.java",
+		"startLine": 15,
+		"endLine": 30,
+		"startColumn": 2,
+		"endColumn": 3,
+		"codeElementType": "TYPE_DECLARATION",
+		"description": "original class declaration",
+		"codeElement": "MakeClassStatic.MakeClassStatic.A"
+}],
+	"rightSideLocations": [{
+		"filePath": "src/main/java/MakeClassStatic/MakeClassStatic.java",
+		"startLine": 15,
+		"endLine": 32,
+		"startColumn": 2,
+		"endColumn": 3,
+		"codeElementType": "TYPE_DECLARATION",
+		"description": "class declaration with added modifier",
+		"codeElement": "MakeClassStatic.MakeClassStatic.A"
+}]
+},
+{
+	"type": "Add Parameter",
+	"description": "Add Parameter secret : MakeClassStatic in method public A(secret MakeClassStatic, outer MakeClassStatic) from class MakeClassStatic.MakeClassStatic.A",
+	"leftSideLocations": [{
+		"filePath": "src/main/java/MakeClassStatic/MakeClassStatic.java",
+		"startLine": 19,
+		"endLine": 21,
+		"startColumn": 3,
+		"endColumn": 4,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "public A(outer MakeClassStatic)"
+}],
+	"rightSideLocations": [{
+		"filePath": "src/main/java/MakeClassStatic/MakeClassStatic.java",
+		"startLine": 20,
+		"endLine": 20,
+		"startColumn": 12,
+		"endColumn": 34,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "added parameter",
+		"codeElement": "secret : MakeClassStatic"
+}, {
+		"filePath": "src/main/java/MakeClassStatic/MakeClassStatic.java",
+		"startLine": 20,
+		"endLine": 23,
+		"startColumn": 3,
+		"endColumn": 4,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "method declaration with added parameter",
+		"codeElement": "public A(secret MakeClassStatic, outer MakeClassStatic)"
+}]
+}
+]
+}]
+}

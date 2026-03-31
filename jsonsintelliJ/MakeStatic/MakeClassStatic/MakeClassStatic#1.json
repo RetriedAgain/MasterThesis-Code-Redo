@@ -1,0 +1,33 @@
+{
+"commits": [
+{
+	"repository": "https://github.com/RetriedAgain/MasterThesis-Code-Redo.git",
+	"sha1": "6090d8790984f09c10b063d7135975fc7d8ae820",
+	"url": "https://github.com/RetriedAgain/MasterThesis-Code-Redo/commit/6090d8790984f09c10b063d7135975fc7d8ae820",
+	"refactorings": [{
+	"type": "Add Class Modifier",
+	"description": "Add Class Modifier static in class MakeClassStatic.MakeClassStatic.A",
+	"leftSideLocations": [{
+		"filePath": "src/main/java/MakeClassStatic/MakeClassStatic.java",
+		"startLine": 12,
+		"endLine": 22,
+		"startColumn": 2,
+		"endColumn": 3,
+		"codeElementType": "TYPE_DECLARATION",
+		"description": "original class declaration",
+		"codeElement": "MakeClassStatic.MakeClassStatic.A"
+}],
+	"rightSideLocations": [{
+		"filePath": "src/main/java/MakeClassStatic/MakeClassStatic.java",
+		"startLine": 12,
+		"endLine": 25,
+		"startColumn": 2,
+		"endColumn": 3,
+		"codeElementType": "TYPE_DECLARATION",
+		"description": "class declaration with added modifier",
+		"codeElement": "MakeClassStatic.MakeClassStatic.A"
+}]
+}
+]
+}]
+}
