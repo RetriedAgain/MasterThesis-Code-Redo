@@ -1,0 +1,51 @@
+{
+"commits": [
+{
+	"repository": "https://github.com/RetriedAgain/MasterThesis-Code-Redo.git",
+	"sha1": "bae717b435edd1e09c95d62485d06df7c74a6203",
+	"url": "https://github.com/RetriedAgain/MasterThesis-Code-Redo/commit/bae717b435edd1e09c95d62485d06df7c74a6203",
+	"refactorings": [{
+	"type": "Invert Condition",
+	"description": "Invert Condition boolean usage1=methodToInvert1(); to boolean usage1=!methodToInvert1(); in method public methodToInvert1Usage() : void from class InvertBoolean",
+	"leftSideLocations": [{
+		"filePath": "src/main/java/InvertBoolean.java",
+		"startLine": 17,
+		"endLine": 17,
+		"startColumn": 3,
+		"endColumn": 38,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "original conditional",
+		"codeElement": "boolean usage1=methodToInvert1();\n"
+}, {
+		"filePath": "src/main/java/InvertBoolean.java",
+		"startLine": 16,
+		"endLine": 18,
+		"startColumn": 3,
+		"endColumn": 3,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "public methodToInvert1Usage() : void"
+}],
+	"rightSideLocations": [{
+		"filePath": "src/main/java/InvertBoolean.java",
+		"startLine": 17,
+		"endLine": 17,
+		"startColumn": 3,
+		"endColumn": 39,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "inverted conditional",
+		"codeElement": "boolean usage1=!methodToInvert1();\n"
+}, {
+		"filePath": "src/main/java/InvertBoolean.java",
+		"startLine": 16,
+		"endLine": 18,
+		"startColumn": 3,
+		"endColumn": 3,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "method declaration with inverted conditional",
+		"codeElement": "public methodToInvert1Usage() : void"
+}]
+}
+]
+}]
+}

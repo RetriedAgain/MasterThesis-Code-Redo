@@ -1,0 +1,261 @@
+{
+"commits": [
+{
+	"repository": "https://github.com/RetriedAgain/MasterThesis-Code-Redo.git",
+	"sha1": "32871eec2d9bbe7759a4d6bdc99ae34d78d439f9",
+	"url": "https://github.com/RetriedAgain/MasterThesis-Code-Redo/commit/32871eec2d9bbe7759a4d6bdc99ae34d78d439f9",
+	"refactorings": [{
+	"type": "Invert Condition",
+	"description": "Invert Condition if(boolean_field) to if(!boolean_field) in method public ifCond() : void from class InvertBoolean",
+	"leftSideLocations": [{
+		"filePath": "src/main/java/InvertBoolean.java",
+		"startLine": 35,
+		"endLine": 37,
+		"startColumn": 3,
+		"endColumn": 4,
+		"codeElementType": "IF_STATEMENT",
+		"description": "original conditional",
+		"codeElement": "if(boolean_field)"
+}, {
+		"filePath": "src/main/java/InvertBoolean.java",
+		"startLine": 34,
+		"endLine": 38,
+		"startColumn": 2,
+		"endColumn": 3,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "public ifCond() : void"
+}],
+	"rightSideLocations": [{
+		"filePath": "src/main/java/InvertBoolean.java",
+		"startLine": 35,
+		"endLine": 37,
+		"startColumn": 3,
+		"endColumn": 4,
+		"codeElementType": "IF_STATEMENT",
+		"description": "inverted conditional",
+		"codeElement": "if(!boolean_field)"
+}, {
+		"filePath": "src/main/java/InvertBoolean.java",
+		"startLine": 34,
+		"endLine": 38,
+		"startColumn": 2,
+		"endColumn": 3,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "method declaration with inverted conditional",
+		"codeElement": "public ifCond() : void"
+}]
+},
+{
+	"type": "Invert Condition",
+	"description": "Invert Condition if(boolean_field) to if(!boolean_field) in method public if_else_cond(paramVariable int) : void from class InvertBoolean",
+	"leftSideLocations": [{
+		"filePath": "src/main/java/InvertBoolean.java",
+		"startLine": 64,
+		"endLine": 68,
+		"startColumn": 3,
+		"endColumn": 4,
+		"codeElementType": "IF_STATEMENT",
+		"description": "original conditional",
+		"codeElement": "if(boolean_field)"
+}, {
+		"filePath": "src/main/java/InvertBoolean.java",
+		"startLine": 63,
+		"endLine": 69,
+		"startColumn": 2,
+		"endColumn": 3,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "public if_else_cond(paramVariable int) : void"
+}],
+	"rightSideLocations": [{
+		"filePath": "src/main/java/InvertBoolean.java",
+		"startLine": 64,
+		"endLine": 68,
+		"startColumn": 3,
+		"endColumn": 4,
+		"codeElementType": "IF_STATEMENT",
+		"description": "inverted conditional",
+		"codeElement": "if(!boolean_field)"
+}, {
+		"filePath": "src/main/java/InvertBoolean.java",
+		"startLine": 63,
+		"endLine": 69,
+		"startColumn": 2,
+		"endColumn": 3,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "method declaration with inverted conditional",
+		"codeElement": "public if_else_cond(paramVariable int) : void"
+}]
+},
+{
+	"type": "Invert Condition",
+	"description": "Invert Condition while(boolean_field) to while(!boolean_field) in method public while_cond() : void from class InvertBoolean",
+	"leftSideLocations": [{
+		"filePath": "src/main/java/InvertBoolean.java",
+		"startLine": 80,
+		"endLine": 82,
+		"startColumn": 3,
+		"endColumn": 4,
+		"codeElementType": "WHILE_STATEMENT",
+		"description": "original conditional",
+		"codeElement": "while(boolean_field)"
+}, {
+		"filePath": "src/main/java/InvertBoolean.java",
+		"startLine": 79,
+		"endLine": 83,
+		"startColumn": 2,
+		"endColumn": 3,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "public while_cond() : void"
+}],
+	"rightSideLocations": [{
+		"filePath": "src/main/java/InvertBoolean.java",
+		"startLine": 80,
+		"endLine": 82,
+		"startColumn": 3,
+		"endColumn": 4,
+		"codeElementType": "WHILE_STATEMENT",
+		"description": "inverted conditional",
+		"codeElement": "while(!boolean_field)"
+}, {
+		"filePath": "src/main/java/InvertBoolean.java",
+		"startLine": 79,
+		"endLine": 83,
+		"startColumn": 2,
+		"endColumn": 3,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "method declaration with inverted conditional",
+		"codeElement": "public while_cond() : void"
+}]
+},
+{
+	"type": "Invert Condition",
+	"description": "Invert Condition do(boolean_field) to do(!boolean_field) in method public do_while_cond() : void from class InvertBoolean",
+	"leftSideLocations": [{
+		"filePath": "src/main/java/InvertBoolean.java",
+		"startLine": 123,
+		"endLine": 126,
+		"startColumn": 3,
+		"endColumn": 25,
+		"codeElementType": "DO_STATEMENT",
+		"description": "original conditional",
+		"codeElement": "do(boolean_field)"
+}, {
+		"filePath": "src/main/java/InvertBoolean.java",
+		"startLine": 122,
+		"endLine": 127,
+		"startColumn": 2,
+		"endColumn": 3,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "public do_while_cond() : void"
+}],
+	"rightSideLocations": [{
+		"filePath": "src/main/java/InvertBoolean.java",
+		"startLine": 123,
+		"endLine": 126,
+		"startColumn": 3,
+		"endColumn": 26,
+		"codeElementType": "DO_STATEMENT",
+		"description": "inverted conditional",
+		"codeElement": "do(!boolean_field)"
+}, {
+		"filePath": "src/main/java/InvertBoolean.java",
+		"startLine": 122,
+		"endLine": 127,
+		"startColumn": 2,
+		"endColumn": 3,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "method declaration with inverted conditional",
+		"codeElement": "public do_while_cond() : void"
+}]
+},
+{
+	"type": "Invert Condition",
+	"description": "Invert Condition if(boolean_field) to if(!boolean_field) in method public nested_loop() : void from class InvertBoolean",
+	"leftSideLocations": [{
+		"filePath": "src/main/java/InvertBoolean.java",
+		"startLine": 157,
+		"endLine": 159,
+		"startColumn": 6,
+		"endColumn": 7,
+		"codeElementType": "IF_STATEMENT",
+		"description": "original conditional",
+		"codeElement": "if(boolean_field)"
+}, {
+		"filePath": "src/main/java/InvertBoolean.java",
+		"startLine": 153,
+		"endLine": 163,
+		"startColumn": 2,
+		"endColumn": 3,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "public nested_loop() : void"
+}],
+	"rightSideLocations": [{
+		"filePath": "src/main/java/InvertBoolean.java",
+		"startLine": 157,
+		"endLine": 159,
+		"startColumn": 6,
+		"endColumn": 7,
+		"codeElementType": "IF_STATEMENT",
+		"description": "inverted conditional",
+		"codeElement": "if(!boolean_field)"
+}, {
+		"filePath": "src/main/java/InvertBoolean.java",
+		"startLine": 153,
+		"endLine": 163,
+		"startColumn": 2,
+		"endColumn": 3,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "method declaration with inverted conditional",
+		"codeElement": "public nested_loop() : void"
+}]
+},
+{
+	"type": "Invert Condition",
+	"description": "Invert Condition while(boolean_field) to while(!boolean_field) in method public nested_loop() : void from class InvertBoolean",
+	"leftSideLocations": [{
+		"filePath": "src/main/java/InvertBoolean.java",
+		"startLine": 155,
+		"endLine": 161,
+		"startColumn": 4,
+		"endColumn": 5,
+		"codeElementType": "WHILE_STATEMENT",
+		"description": "original conditional",
+		"codeElement": "while(boolean_field)"
+}, {
+		"filePath": "src/main/java/InvertBoolean.java",
+		"startLine": 153,
+		"endLine": 163,
+		"startColumn": 2,
+		"endColumn": 3,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "public nested_loop() : void"
+}],
+	"rightSideLocations": [{
+		"filePath": "src/main/java/InvertBoolean.java",
+		"startLine": 155,
+		"endLine": 161,
+		"startColumn": 4,
+		"endColumn": 5,
+		"codeElementType": "WHILE_STATEMENT",
+		"description": "inverted conditional",
+		"codeElement": "while(!boolean_field)"
+}, {
+		"filePath": "src/main/java/InvertBoolean.java",
+		"startLine": 153,
+		"endLine": 163,
+		"startColumn": 2,
+		"endColumn": 3,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "method declaration with inverted conditional",
+		"codeElement": "public nested_loop() : void"
+}]
+}
+]
+}]
+}

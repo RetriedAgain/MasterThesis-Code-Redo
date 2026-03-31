@@ -1,0 +1,33 @@
+{
+"commits": [
+{
+	"repository": "https://github.com/RetriedAgain/MasterThesis-Code-Redo.git",
+	"sha1": "bf7192d14b52d71406a8ec69a0c9a93a0fd835f4",
+	"url": "https://github.com/RetriedAgain/MasterThesis-Code-Redo/commit/bf7192d14b52d71406a8ec69a0c9a93a0fd835f4",
+	"refactorings": [{
+	"type": "Rename Attribute",
+	"description": "Rename Attribute boolean_field : boolean to secret : boolean in class InvertBoolean",
+	"leftSideLocations": [{
+		"filePath": "src/main/java/InvertBoolean.java",
+		"startLine": 5,
+		"endLine": 5,
+		"startColumn": 18,
+		"endColumn": 38,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "original attribute declaration",
+		"codeElement": "boolean_field : boolean"
+}],
+	"rightSideLocations": [{
+		"filePath": "src/main/java/InvertBoolean.java",
+		"startLine": 5,
+		"endLine": 5,
+		"startColumn": 18,
+		"endColumn": 32,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "renamed attribute declaration",
+		"codeElement": "secret : boolean"
+}]
+}
+]
+}]
+}

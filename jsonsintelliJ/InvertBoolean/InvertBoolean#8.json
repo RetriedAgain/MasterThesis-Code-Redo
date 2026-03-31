@@ -1,0 +1,33 @@
+{
+"commits": [
+{
+	"repository": "https://github.com/RetriedAgain/MasterThesis-Code-Redo.git",
+	"sha1": "653eef257a6fd71c102d7ed92118edab98471648",
+	"url": "https://github.com/RetriedAgain/MasterThesis-Code-Redo/commit/653eef257a6fd71c102d7ed92118edab98471648",
+	"refactorings": [{
+	"type": "Rename Method",
+	"description": "Rename Method public methodToInvert2() : boolean renamed to public secret() : boolean in class InvertBoolean",
+	"leftSideLocations": [{
+		"filePath": "src/main/java/InvertBoolean.java",
+		"startLine": 20,
+		"endLine": 23,
+		"startColumn": 2,
+		"endColumn": 3,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "public methodToInvert2() : boolean"
+}],
+	"rightSideLocations": [{
+		"filePath": "src/main/java/InvertBoolean.java",
+		"startLine": 20,
+		"endLine": 23,
+		"startColumn": 2,
+		"endColumn": 3,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "renamed method declaration",
+		"codeElement": "public secret() : boolean"
+}]
+}
+]
+}]
+}
