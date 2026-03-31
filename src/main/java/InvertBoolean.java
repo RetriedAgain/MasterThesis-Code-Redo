@@ -8,13 +8,13 @@ public class InvertBoolean {
 
 
 
-	public boolean methodToInvert1() {
+	public boolean secret() {
 		System.out.println("1");
-		return true;
+		return false;
 	}
 
 	 public void methodToInvert1Usage() {
-		boolean usage1 = methodToInvert1();
+		boolean usage1 = !secret();
 	}
 
 	public static boolean methodToInvert2() {
