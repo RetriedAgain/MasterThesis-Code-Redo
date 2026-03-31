@@ -9,11 +9,14 @@ public class MakeClassStatic {
 		a_upper.method_inner();
 	}
 
-	public class A {
+	public static class A {
 		boolean field_bool_lower = true;
 
 		// Uncomment this for an extra option
 		A a = new A();
+
+		public A() {
+		}
 
 		public void method_inner() {
 			System.out.println("Test");
