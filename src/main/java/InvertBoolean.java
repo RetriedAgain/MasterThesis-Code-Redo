@@ -17,13 +17,13 @@ public class InvertBoolean {
 		boolean usage1 = methodToInvert1();
 	}
 
-	public static boolean methodToInvert2() {
+	public static boolean secret() {
 		System.out.println("2");
-		return true;
+		return false;
 	}
 
 	public void methodToInvert2Usage() {
-		boolean usage2 = methodToInvert2();
+		boolean usage2 = !secret();
 	}
 
 
