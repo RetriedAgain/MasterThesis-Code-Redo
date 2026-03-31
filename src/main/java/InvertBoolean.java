@@ -19,11 +19,11 @@ public class InvertBoolean {
 
 	public static boolean methodToInvert2() {
 		System.out.println("2");
-		return true;
+		return false;
 	}
 
 	public void methodToInvert2Usage() {
-		boolean usage2 = methodToInvert2();
+		boolean usage2 = !methodToInvert2();
 	}
 
 
