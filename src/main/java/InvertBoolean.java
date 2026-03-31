@@ -1,6 +1,6 @@
 public class InvertBoolean {
 
-	boolean boolean_field = true;
+	boolean secret = false;
 	// Same field but static, comment out in test case together with outside usage.
 	//	static boolean boolean_field = true;
 
@@ -28,26 +28,26 @@ public class InvertBoolean {
 
 
 	public void min() {
-		System.out.println(boolean_field);
+		System.out.println(!secret);
 	}
 
 	public void ifCond() {
-		if (boolean_field) {
+		if (!secret) {
 			System.out.println("Good job");
 		}
 	}
 
 	public  void ifCondUnder() {
 		if (true) {
-			System.out.println(boolean_field);
+			System.out.println(!secret);
 		}
 	}
 
 
 	public  void if_else_if_cond(int paramVariable) {
-		if (boolean_field) {
+		if (!secret) {
 			System.out.println("Good job");
-		} else if(!boolean_field) {
+		} else if(secret) {
 			System.out.println("Bad job");
 		}
 	}
@@ -56,12 +56,12 @@ public class InvertBoolean {
 		if (false) {
 			System.out.println("Good job");
 		} else if(true) {
-			System.out.println(boolean_field);
+			System.out.println(!secret);
 		}
 	}
 
 	public  void if_else_cond(int paramVariable) {
-		if (boolean_field) {
+		if (!secret) {
 			System.out.println("Good job");
 		} else {
 			System.out.println("Bad job");
@@ -72,25 +72,25 @@ public class InvertBoolean {
 		if (false) {
 			System.out.println("Good job");
 		} else {
-			System.out.println(boolean_field);
+			System.out.println(!secret);
 		}
 	}
 
 	public  void while_cond() {
-		while (boolean_field) {
+		while (!secret) {
 			System.out.println("Good job");
 		}
 	}
 
 	public  void while_under() {
 		while (true) {
-			System.out.println(boolean_field);
+			System.out.println(!secret);
 			break;
 		}
 	}
 
 	public  void switch_cond() {
-		switch (boolean_field ? 1: 0) {
+		switch (!secret ? 1: 0) {
 			case 1:
 				System.out.println("Good job");
 		}
@@ -107,13 +107,13 @@ public class InvertBoolean {
 	public  void switch_case_under(int paramVariable) {
 		switch (paramVariable) {
 			case 5:
-				System.out.println(boolean_field);
+				System.out.println(!secret);
 		}
 	}
 
 	public  void do_while_do() {
 		do {
-			System.out.println(boolean_field);
+			System.out.println(!secret);
 			break;
 		}
 		while (true);
@@ -123,18 +123,18 @@ public class InvertBoolean {
 		do {
 			System.out.println("Good job");
 		}
-		while (boolean_field);
+		while (!secret);
 	}
 
 	public  void for_cond() {
-		for (int i = 0; boolean_field; i++) {
+		for (int i = 0; !secret; i++) {
 			System.out.println("Good job");
 		}
 	}
 
 	public  void for_under() {
 		for (int i = 0; i < 5; i++) {
-			System.out.println(boolean_field);
+			System.out.println(!secret);
 		}
 	}
 
@@ -146,15 +146,15 @@ public class InvertBoolean {
 
 	public  void for_each_under() {
 		for (boolean b : booleans) {
-			System.out.println(boolean_field);
+			System.out.println(!secret);
 		}
 	}
 
 	public  void nested_loop() {
 		for (boolean b : booleans) {
-			while(boolean_field) {
-				for (int j = 0; boolean_field; j++) {
-					if (boolean_field) {
+			while(!secret) {
+				for (int j = 0; !secret; j++) {
+					if (!secret) {
 						System.out.println("Good job");
 					}
 				}
