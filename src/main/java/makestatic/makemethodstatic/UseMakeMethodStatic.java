@@ -6,6 +6,6 @@ public class UseMakeMethodStatic {
 
 	public void useMethodsOutside() {
 		makeMethodStatic.methodDialog1();
-		makeMethodStatic.methodDialog2("Hi");
+		MakeMethodStatic.methodDialog2(makeMethodStatic.i, makeMethodStatic.j, "Hi");
 	}
 }
