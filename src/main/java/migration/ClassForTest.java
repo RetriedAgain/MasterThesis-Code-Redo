@@ -1,4 +1,4 @@
-package migration;
+package migrationmigrated;
 
 public class ClassForTest {
 
