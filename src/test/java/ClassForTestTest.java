@@ -1,18 +1,15 @@
-package de.masterzoo;
+import static org.junit.Assert.*;
 
+import de.masterzoo.Zoo;
 import org.junit.After;
 import org.junit.Before;
 import org.junit.Test;
 
-import static org.junit.Assert.assertEquals;
-import static org.junit.Assert.assertTrue;
-
-public class ZooTest {
-	Zoo zoo;
+public class ClassForTestTest {
 
 	@Before
 	public void setUp() throws Exception {
-		zoo = new Zoo();
+		System.out.println("Readying!");
 	}
 
 	@After
@@ -21,8 +18,7 @@ public class ZooTest {
 	}
 
 	@Test
-	public void dummyTest() {
-		assertTrue(zoo.dummy());
+	public void toBeTested() {
+		assertEquals(10000, ClassForTest.toBeTested());
 	}
-
 }
