@@ -1,0 +1,33 @@
+{
+"commits": [
+{
+	"repository": "https://github.com/RetriedAgain/MasterThesis-Code-Redo.git",
+	"sha1": "cd0b089ba0047358d6727fc92272bb4baad0c560",
+	"url": "https://github.com/RetriedAgain/MasterThesis-Code-Redo/commit/cd0b089ba0047358d6727fc92272bb4baad0c560",
+	"refactorings": [{
+	"type": "Add Method Modifier",
+	"description": "Add Method Modifier static in method public methodDialog1() : void from class makestatic.makemethodstatic.MakeMethodStatic",
+	"leftSideLocations": [{
+		"filePath": "src/main/java/makestatic/makemethodstatic/MakeMethodStatic.java",
+		"startLine": 7,
+		"endLine": 9,
+		"startColumn": 2,
+		"endColumn": 3,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "public methodDialog1() : void"
+}],
+	"rightSideLocations": [{
+		"filePath": "src/main/java/makestatic/makemethodstatic/MakeMethodStatic.java",
+		"startLine": 7,
+		"endLine": 9,
+		"startColumn": 2,
+		"endColumn": 3,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "method declaration with added modifier",
+		"codeElement": "public methodDialog1() : void"
+}]
+}
+]
+}]
+}

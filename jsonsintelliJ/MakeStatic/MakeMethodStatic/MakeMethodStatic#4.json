@@ -1,0 +1,66 @@
+{
+"commits": [
+{
+	"repository": "https://github.com/RetriedAgain/MasterThesis-Code-Redo.git",
+	"sha1": "54483ec1cda9fc888b7981ec33ca6450add3f043",
+	"url": "https://github.com/RetriedAgain/MasterThesis-Code-Redo/commit/54483ec1cda9fc888b7981ec33ca6450add3f043",
+	"refactorings": [{
+	"type": "Add Parameter",
+	"description": "Add Parameter makeMethodStatic : MakeMethodStatic in method public methodDialog2(makeMethodStatic MakeMethodStatic, string String) : void from class makestatic.makemethodstatic.MakeMethodStatic",
+	"leftSideLocations": [{
+		"filePath": "src/main/java/makestatic/makemethodstatic/MakeMethodStatic.java",
+		"startLine": 11,
+		"endLine": 13,
+		"startColumn": 2,
+		"endColumn": 3,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "public methodDialog2(string String) : void"
+}],
+	"rightSideLocations": [{
+		"filePath": "src/main/java/makestatic/makemethodstatic/MakeMethodStatic.java",
+		"startLine": 11,
+		"endLine": 11,
+		"startColumn": 35,
+		"endColumn": 68,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "added parameter",
+		"codeElement": "makeMethodStatic : MakeMethodStatic"
+}, {
+		"filePath": "src/main/java/makestatic/makemethodstatic/MakeMethodStatic.java",
+		"startLine": 11,
+		"endLine": 13,
+		"startColumn": 2,
+		"endColumn": 3,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "method declaration with added parameter",
+		"codeElement": "public methodDialog2(makeMethodStatic MakeMethodStatic, string String) : void"
+}]
+},
+{
+	"type": "Add Method Modifier",
+	"description": "Add Method Modifier static in method public methodDialog2(makeMethodStatic MakeMethodStatic, string String) : void from class makestatic.makemethodstatic.MakeMethodStatic",
+	"leftSideLocations": [{
+		"filePath": "src/main/java/makestatic/makemethodstatic/MakeMethodStatic.java",
+		"startLine": 11,
+		"endLine": 13,
+		"startColumn": 2,
+		"endColumn": 3,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "public methodDialog2(string String) : void"
+}],
+	"rightSideLocations": [{
+		"filePath": "src/main/java/makestatic/makemethodstatic/MakeMethodStatic.java",
+		"startLine": 11,
+		"endLine": 13,
+		"startColumn": 2,
+		"endColumn": 3,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "method declaration with added modifier",
+		"codeElement": "public methodDialog2(makeMethodStatic MakeMethodStatic, string String) : void"
+}]
+}
+]
+}]
+}
