@@ -9,7 +9,11 @@ public class MakeMethodStatic {
 	}
 
 	public void methodDialog2(String string) {
-		System.out.println("To Be Static or not to be + " + i + j + string);
+		methodDialog2(this, string);
+	}
+
+	public static void methodDialog2(MakeMethodStatic makeMethodStatic, String string) {
+		System.out.println("To Be Static or not to be + " + makeMethodStatic.i + makeMethodStatic.j + string);
 	}
 
 	public void useMethodsInside() {
