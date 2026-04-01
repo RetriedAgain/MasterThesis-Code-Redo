@@ -1,0 +1,33 @@
+{
+"commits": [
+{
+	"repository": "https://github.com/RetriedAgain/MasterThesis-Code-Redo.git",
+	"sha1": "ed8ab24af668dde0700ea94c20647bf495a462e8",
+	"url": "https://github.com/RetriedAgain/MasterThesis-Code-Redo/commit/ed8ab24af668dde0700ea94c20647bf495a462e8",
+	"refactorings": [{
+	"type": "Move Class",
+	"description": "Move Class migration.ClassForTest moved to migrationmigrated.ClassForTest",
+	"leftSideLocations": [{
+		"filePath": "src/main/java/migration/ClassForTest.java",
+		"startLine": 3,
+		"endLine": 8,
+		"startColumn": 0,
+		"endColumn": 2,
+		"codeElementType": "TYPE_DECLARATION",
+		"description": "original type declaration",
+		"codeElement": "migration.ClassForTest"
+}],
+	"rightSideLocations": [{
+		"filePath": "src/main/java/migration/ClassForTest.java",
+		"startLine": 3,
+		"endLine": 8,
+		"startColumn": 0,
+		"endColumn": 2,
+		"codeElementType": "TYPE_DECLARATION",
+		"description": "moved type declaration",
+		"codeElement": "migrationmigrated.ClassForTest"
+}]
+}
+]
+}]
+}

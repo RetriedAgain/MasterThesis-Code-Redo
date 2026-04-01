@@ -1,0 +1,273 @@
+{
+"commits": [
+{
+	"repository": "https://github.com/RetriedAgain/MasterThesis-Code-Redo.git",
+	"sha1": "82b849368ce86a48bf74a4eae8b76b4ccc94d13b",
+	"url": "https://github.com/RetriedAgain/MasterThesis-Code-Redo/commit/82b849368ce86a48bf74a4eae8b76b4ccc94d13b",
+	"refactorings": [{
+	"type": "Add Method Annotation",
+	"description": "Add Method Annotation @BeforeEach in method public setUp() : void from class ClassForTestTest",
+	"leftSideLocations": [{
+		"filePath": "src/test/java/ClassForTestTest.java",
+		"startLine": 10,
+		"endLine": 13,
+		"startColumn": 2,
+		"endColumn": 3,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "public setUp() : void"
+}],
+	"rightSideLocations": [{
+		"filePath": "src/test/java/ClassForTestTest.java",
+		"startLine": 9,
+		"endLine": 9,
+		"startColumn": 2,
+		"endColumn": 13,
+		"codeElementType": "ANNOTATION",
+		"description": "added annotation",
+		"codeElement": "@BeforeEach"
+}, {
+		"filePath": "src/test/java/ClassForTestTest.java",
+		"startLine": 9,
+		"endLine": 12,
+		"startColumn": 2,
+		"endColumn": 3,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "method declaration with added annotation",
+		"codeElement": "public setUp() : void"
+}]
+},
+{
+	"type": "Remove Method Annotation",
+	"description": "Remove Method Annotation @Before in method public setUp() : void from class ClassForTestTest",
+	"leftSideLocations": [{
+		"filePath": "src/test/java/ClassForTestTest.java",
+		"startLine": 10,
+		"endLine": 10,
+		"startColumn": 2,
+		"endColumn": 9,
+		"codeElementType": "ANNOTATION",
+		"description": "removed annotation",
+		"codeElement": "@Before"
+}, {
+		"filePath": "src/test/java/ClassForTestTest.java",
+		"startLine": 10,
+		"endLine": 13,
+		"startColumn": 2,
+		"endColumn": 3,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "public setUp() : void"
+}],
+	"rightSideLocations": [{
+		"filePath": "src/test/java/ClassForTestTest.java",
+		"startLine": 9,
+		"endLine": 12,
+		"startColumn": 2,
+		"endColumn": 3,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "method declaration with removed annotation",
+		"codeElement": "public setUp() : void"
+}]
+},
+{
+	"type": "Add Method Annotation",
+	"description": "Add Method Annotation @AfterEach in method public tearDown() : void from class ClassForTestTest",
+	"leftSideLocations": [{
+		"filePath": "src/test/java/ClassForTestTest.java",
+		"startLine": 15,
+		"endLine": 18,
+		"startColumn": 2,
+		"endColumn": 3,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "public tearDown() : void"
+}],
+	"rightSideLocations": [{
+		"filePath": "src/test/java/ClassForTestTest.java",
+		"startLine": 14,
+		"endLine": 14,
+		"startColumn": 2,
+		"endColumn": 12,
+		"codeElementType": "ANNOTATION",
+		"description": "added annotation",
+		"codeElement": "@AfterEach"
+}, {
+		"filePath": "src/test/java/ClassForTestTest.java",
+		"startLine": 14,
+		"endLine": 17,
+		"startColumn": 2,
+		"endColumn": 3,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "method declaration with added annotation",
+		"codeElement": "public tearDown() : void"
+}]
+},
+{
+	"type": "Remove Method Annotation",
+	"description": "Remove Method Annotation @After in method public tearDown() : void from class ClassForTestTest",
+	"leftSideLocations": [{
+		"filePath": "src/test/java/ClassForTestTest.java",
+		"startLine": 15,
+		"endLine": 15,
+		"startColumn": 2,
+		"endColumn": 8,
+		"codeElementType": "ANNOTATION",
+		"description": "removed annotation",
+		"codeElement": "@After"
+}, {
+		"filePath": "src/test/java/ClassForTestTest.java",
+		"startLine": 15,
+		"endLine": 18,
+		"startColumn": 2,
+		"endColumn": 3,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "public tearDown() : void"
+}],
+	"rightSideLocations": [{
+		"filePath": "src/test/java/ClassForTestTest.java",
+		"startLine": 14,
+		"endLine": 17,
+		"startColumn": 2,
+		"endColumn": 3,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "method declaration with removed annotation",
+		"codeElement": "public tearDown() : void"
+}]
+},
+{
+	"type": "Add Method Annotation",
+	"description": "Add Method Annotation @BeforeEach in method public setUp() : void from class de.masterzoo.ZooTest",
+	"leftSideLocations": [{
+		"filePath": "src/test/java/de/masterzoo/ZooTest.java",
+		"startLine": 13,
+		"endLine": 16,
+		"startColumn": 2,
+		"endColumn": 3,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "public setUp() : void"
+}],
+	"rightSideLocations": [{
+		"filePath": "src/test/java/de/masterzoo/ZooTest.java",
+		"startLine": 13,
+		"endLine": 13,
+		"startColumn": 2,
+		"endColumn": 13,
+		"codeElementType": "ANNOTATION",
+		"description": "added annotation",
+		"codeElement": "@BeforeEach"
+}, {
+		"filePath": "src/test/java/de/masterzoo/ZooTest.java",
+		"startLine": 13,
+		"endLine": 16,
+		"startColumn": 2,
+		"endColumn": 3,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "method declaration with added annotation",
+		"codeElement": "public setUp() : void"
+}]
+},
+{
+	"type": "Remove Method Annotation",
+	"description": "Remove Method Annotation @Before in method public setUp() : void from class de.masterzoo.ZooTest",
+	"leftSideLocations": [{
+		"filePath": "src/test/java/de/masterzoo/ZooTest.java",
+		"startLine": 13,
+		"endLine": 13,
+		"startColumn": 2,
+		"endColumn": 9,
+		"codeElementType": "ANNOTATION",
+		"description": "removed annotation",
+		"codeElement": "@Before"
+}, {
+		"filePath": "src/test/java/de/masterzoo/ZooTest.java",
+		"startLine": 13,
+		"endLine": 16,
+		"startColumn": 2,
+		"endColumn": 3,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "public setUp() : void"
+}],
+	"rightSideLocations": [{
+		"filePath": "src/test/java/de/masterzoo/ZooTest.java",
+		"startLine": 13,
+		"endLine": 16,
+		"startColumn": 2,
+		"endColumn": 3,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "method declaration with removed annotation",
+		"codeElement": "public setUp() : void"
+}]
+},
+{
+	"type": "Add Method Annotation",
+	"description": "Add Method Annotation @AfterEach in method public tearDown() : void from class de.masterzoo.ZooTest",
+	"leftSideLocations": [{
+		"filePath": "src/test/java/de/masterzoo/ZooTest.java",
+		"startLine": 18,
+		"endLine": 21,
+		"startColumn": 2,
+		"endColumn": 3,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "public tearDown() : void"
+}],
+	"rightSideLocations": [{
+		"filePath": "src/test/java/de/masterzoo/ZooTest.java",
+		"startLine": 18,
+		"endLine": 18,
+		"startColumn": 2,
+		"endColumn": 12,
+		"codeElementType": "ANNOTATION",
+		"description": "added annotation",
+		"codeElement": "@AfterEach"
+}, {
+		"filePath": "src/test/java/de/masterzoo/ZooTest.java",
+		"startLine": 18,
+		"endLine": 21,
+		"startColumn": 2,
+		"endColumn": 3,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "method declaration with added annotation",
+		"codeElement": "public tearDown() : void"
+}]
+},
+{
+	"type": "Remove Method Annotation",
+	"description": "Remove Method Annotation @After in method public tearDown() : void from class de.masterzoo.ZooTest",
+	"leftSideLocations": [{
+		"filePath": "src/test/java/de/masterzoo/ZooTest.java",
+		"startLine": 18,
+		"endLine": 18,
+		"startColumn": 2,
+		"endColumn": 8,
+		"codeElementType": "ANNOTATION",
+		"description": "removed annotation",
+		"codeElement": "@After"
+}, {
+		"filePath": "src/test/java/de/masterzoo/ZooTest.java",
+		"startLine": 18,
+		"endLine": 21,
+		"startColumn": 2,
+		"endColumn": 3,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "public tearDown() : void"
+}],
+	"rightSideLocations": [{
+		"filePath": "src/test/java/de/masterzoo/ZooTest.java",
+		"startLine": 18,
+		"endLine": 21,
+		"startColumn": 2,
+		"endColumn": 3,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "method declaration with removed annotation",
+		"codeElement": "public tearDown() : void"
+}]
+}
+]
+}]
+}
