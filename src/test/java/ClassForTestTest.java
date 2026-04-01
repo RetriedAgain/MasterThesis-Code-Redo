@@ -1,6 +1,6 @@
 import static org.junit.Assert.*;
 
-import de.masterzoo.Zoo;
+import migration.ClassForTest;
 import org.junit.After;
 import org.junit.Before;
 import org.junit.Test;

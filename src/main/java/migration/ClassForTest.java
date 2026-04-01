@@ -1,3 +1,5 @@
+package migration;
+
 public class ClassForTest {
 
 	public static int toBeTested() {
