@@ -1,4 +1,4 @@
-package MakeClassStatic;
+package makestatic.makeclassstatic;
 
 public class MakeClassStatic {
 	boolean field_bool_Upper = true;

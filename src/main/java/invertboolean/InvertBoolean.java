@@ -1,3 +1,5 @@
+package invertboolean;
+
 public class InvertBoolean {
 
 	boolean boolean_field = true;
