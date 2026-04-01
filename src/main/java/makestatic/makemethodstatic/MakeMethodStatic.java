@@ -4,7 +4,7 @@ public class MakeMethodStatic {
 	public int i;
 	public int j;
 
-	public void methodDialog1() {
+	public static void methodDialog1() {
 		System.out.println("To Be Static or not to be.");
 	}
 
