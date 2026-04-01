@@ -1,18 +1,17 @@
 import static org.junit.Assert.*;
 
-import de.masterzoo.Zoo;
-import org.junit.After;
-import org.junit.Before;
-import org.junit.Test;
+import org.junit.jupiter.api.AfterEach;
+import org.junit.jupiter.api.BeforeEach;
+import org.junit.jupiter.api.Test;
 
 public class ClassForTestTest {
 
-	@Before
+	@BeforeEach
 	public void setUp() throws Exception {
 		System.out.println("Readying!");
 	}
 
-	@After
+	@AfterEach
 	public void tearDown() throws Exception {
 		System.out.println("Nothing!");
 	}
