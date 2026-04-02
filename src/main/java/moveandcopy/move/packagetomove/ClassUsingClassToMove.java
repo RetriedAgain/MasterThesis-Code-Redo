@@ -17,6 +17,6 @@ public class ClassUsingClassToMove {
 	}
 
 	public static void useStaticMethod() {
-		ClassToMove.staticMethodToMove();
+		EnumToMoveConstantTo.staticMethodToMove();
 	}
 }

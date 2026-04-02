@@ -24,13 +24,8 @@ public class ClassToMove {
 		instanceMethodToMove(new TypeExclusiveToProject(), new TypeExclusiveToProject2());
 	}
 
-	public static void staticMethodToMove() {
-		System.out.println("Move this");
-		System.out.println("Add the constant in here for good measure + " + CONSTANT_TO_MOVE);
-	}
-
 	public void useStaticMethodToMove() {
-		staticMethodToMove();
+		EnumToMoveConstantTo.staticMethodToMove();
 	}
 
 	class InnerClassToMove {
