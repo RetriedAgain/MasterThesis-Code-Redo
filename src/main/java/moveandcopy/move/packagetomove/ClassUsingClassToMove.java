@@ -9,11 +9,11 @@ public class ClassUsingClassToMove {
 	}
 
 	public void useInstanceMethod() {
-		classToMove.instanceMethodToMove(new TypeExclusiveToProject(), new TypeExclusiveToProject2());
+		new TypeExclusiveToProject().instanceMethodToMove(new TypeExclusiveToProject2(), classToMove);
 	}
 
 	public void useInstanceMethod2() {
-		classToMove.instanceMethodToMove(new TypeExclusiveToProject(), new TypeExclusiveToProject2());
+		new TypeExclusiveToProject().instanceMethodToMove(new TypeExclusiveToProject2(), classToMove);
 	}
 
 	public static void useStaticMethod() {
