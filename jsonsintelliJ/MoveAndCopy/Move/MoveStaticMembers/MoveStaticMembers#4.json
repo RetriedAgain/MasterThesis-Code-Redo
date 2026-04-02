@@ -1,0 +1,33 @@
+{
+"commits": [
+{
+	"repository": "https://github.com/RetriedAgain/MasterThesis-Code-Redo.git",
+	"sha1": "15c75ed6500aa2e740559417362484ffb8b63224",
+	"url": "https://github.com/RetriedAgain/MasterThesis-Code-Redo/commit/15c75ed6500aa2e740559417362484ffb8b63224",
+	"refactorings": [{
+	"type": "Move Method",
+	"description": "Move Method public staticMethodToMove() : void from class moveandcopy.move.packagetomove.ClassToMove to public staticMethodToMove() : void from class moveandcopy.move.packagetomove.EnumToMoveConstantTo",
+	"leftSideLocations": [{
+		"filePath": "src/main/java/moveandcopy/move/packagetomove/ClassToMove.java",
+		"startLine": 27,
+		"endLine": 30,
+		"startColumn": 2,
+		"endColumn": 3,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "public staticMethodToMove() : void"
+}],
+	"rightSideLocations": [{
+		"filePath": "src/main/java/moveandcopy/move/packagetomove/EnumToMoveConstantTo.java",
+		"startLine": 11,
+		"endLine": 14,
+		"startColumn": 2,
+		"endColumn": 3,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "moved method declaration",
+		"codeElement": "public staticMethodToMove() : void"
+}]
+}
+]
+}]
+}

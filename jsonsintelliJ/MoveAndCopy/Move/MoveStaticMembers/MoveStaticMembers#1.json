@@ -1,0 +1,33 @@
+{
+"commits": [
+{
+	"repository": "https://github.com/RetriedAgain/MasterThesis-Code-Redo.git",
+	"sha1": "52ea13d5adb642d27898b2062b0c9a14500fa3be",
+	"url": "https://github.com/RetriedAgain/MasterThesis-Code-Redo/commit/52ea13d5adb642d27898b2062b0c9a14500fa3be",
+	"refactorings": [{
+	"type": "Move Attribute",
+	"description": "Move Attribute public CONSTANT_TO_MOVE : int from class moveandcopy.move.packagetomove.ClassToMove to public CONSTANT_TO_MOVE : int from class moveandcopy.move.packagetomove.EnumToMoveConstantTo",
+	"leftSideLocations": [{
+		"filePath": "src/main/java/moveandcopy/move/packagetomove/ClassToMove.java",
+		"startLine": 10,
+		"endLine": 10,
+		"startColumn": 26,
+		"endColumn": 46,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "original attribute declaration",
+		"codeElement": "public CONSTANT_TO_MOVE : int"
+}],
+	"rightSideLocations": [{
+		"filePath": "src/main/java/moveandcopy/move/packagetomove/EnumToMoveConstantTo.java",
+		"startLine": 8,
+		"endLine": 8,
+		"startColumn": 26,
+		"endColumn": 46,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "moved attribute declaration",
+		"codeElement": "public CONSTANT_TO_MOVE : int"
+}]
+}
+]
+}]
+}

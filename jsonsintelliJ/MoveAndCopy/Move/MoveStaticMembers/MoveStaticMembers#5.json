@@ -1,0 +1,57 @@
+{
+"commits": [
+{
+	"repository": "https://github.com/RetriedAgain/MasterThesis-Code-Redo.git",
+	"sha1": "f8d255b802d311dce047637bfdd9bf80f369fe52",
+	"url": "https://github.com/RetriedAgain/MasterThesis-Code-Redo/commit/f8d255b802d311dce047637bfdd9bf80f369fe52",
+	"refactorings": [{
+	"type": "Change Method Access Modifier",
+	"description": "Change Method Access Modifier public to package in method package staticMethodToMove() : void from class moveandcopy.move.packagetomove.EnumToMoveConstantTo",
+	"leftSideLocations": [{
+		"filePath": "src/main/java/moveandcopy/move/packagetomove/ClassToMove.java",
+		"startLine": 27,
+		"endLine": 30,
+		"startColumn": 2,
+		"endColumn": 3,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "public staticMethodToMove() : void"
+}],
+	"rightSideLocations": [{
+		"filePath": "src/main/java/moveandcopy/move/packagetomove/EnumToMoveConstantTo.java",
+		"startLine": 11,
+		"endLine": 14,
+		"startColumn": 2,
+		"endColumn": 3,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "method declaration with changed access modifier",
+		"codeElement": "package staticMethodToMove() : void"
+}]
+},
+{
+	"type": "Move Method",
+	"description": "Move Method public staticMethodToMove() : void from class moveandcopy.move.packagetomove.ClassToMove to package staticMethodToMove() : void from class moveandcopy.move.packagetomove.EnumToMoveConstantTo",
+	"leftSideLocations": [{
+		"filePath": "src/main/java/moveandcopy/move/packagetomove/ClassToMove.java",
+		"startLine": 27,
+		"endLine": 30,
+		"startColumn": 2,
+		"endColumn": 3,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "public staticMethodToMove() : void"
+}],
+	"rightSideLocations": [{
+		"filePath": "src/main/java/moveandcopy/move/packagetomove/EnumToMoveConstantTo.java",
+		"startLine": 11,
+		"endLine": 14,
+		"startColumn": 2,
+		"endColumn": 3,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "moved method declaration",
+		"codeElement": "package staticMethodToMove() : void"
+}]
+}
+]
+}]
+}

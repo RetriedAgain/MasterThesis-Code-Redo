@@ -1,0 +1,57 @@
+{
+"commits": [
+{
+	"repository": "https://github.com/RetriedAgain/MasterThesis-Code-Redo.git",
+	"sha1": "82fa331e98ec8eedd0b2a50505065b1b19e9d514",
+	"url": "https://github.com/RetriedAgain/MasterThesis-Code-Redo/commit/82fa331e98ec8eedd0b2a50505065b1b19e9d514",
+	"refactorings": [{
+	"type": "Change Attribute Access Modifier",
+	"description": "Change Attribute Access Modifier public to package in attribute package CONSTANT_TO_MOVE : int from class moveandcopy.move.packagetomove.EnumToMoveConstantTo",
+	"leftSideLocations": [{
+		"filePath": "src/main/java/moveandcopy/move/packagetomove/ClassToMove.java",
+		"startLine": 10,
+		"endLine": 10,
+		"startColumn": 26,
+		"endColumn": 46,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "original attribute declaration",
+		"codeElement": "public CONSTANT_TO_MOVE : int"
+}],
+	"rightSideLocations": [{
+		"filePath": "src/main/java/moveandcopy/move/packagetomove/EnumToMoveConstantTo.java",
+		"startLine": 8,
+		"endLine": 8,
+		"startColumn": 19,
+		"endColumn": 39,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "attribute declaration with changed access modifier",
+		"codeElement": "package CONSTANT_TO_MOVE : int"
+}]
+},
+{
+	"type": "Move Attribute",
+	"description": "Move Attribute public CONSTANT_TO_MOVE : int from class moveandcopy.move.packagetomove.ClassToMove to package CONSTANT_TO_MOVE : int from class moveandcopy.move.packagetomove.EnumToMoveConstantTo",
+	"leftSideLocations": [{
+		"filePath": "src/main/java/moveandcopy/move/packagetomove/ClassToMove.java",
+		"startLine": 10,
+		"endLine": 10,
+		"startColumn": 26,
+		"endColumn": 46,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "original attribute declaration",
+		"codeElement": "public CONSTANT_TO_MOVE : int"
+}],
+	"rightSideLocations": [{
+		"filePath": "src/main/java/moveandcopy/move/packagetomove/EnumToMoveConstantTo.java",
+		"startLine": 8,
+		"endLine": 8,
+		"startColumn": 19,
+		"endColumn": 39,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "moved attribute declaration",
+		"codeElement": "package CONSTANT_TO_MOVE : int"
+}]
+}
+]
+}]
+}
