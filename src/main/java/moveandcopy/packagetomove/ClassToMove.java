@@ -1,4 +1,4 @@
-package moveandcopy.move.packagetomove;
+package moveandcopy.packagetomove;
 
 public class ClassToMove {
 
