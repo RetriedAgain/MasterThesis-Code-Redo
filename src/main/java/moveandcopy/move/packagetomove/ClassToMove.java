@@ -5,10 +5,6 @@ public class ClassToMove {
 	// Semingly unmovable.
 	public int fieldToMove;
 
-	// Movable through menu Move Static Members
-	// Can be moved to Enum as Enum Constant, too, because the Enum EnumToMoveConstantTo has a fitting constructor
-	public final static int CONSTANT_TO_MOVE = 1;
-
 	public void instanceMethodToMove(TypeExclusiveToProject typeExclusiveToProject, TypeExclusiveToProject2 typeExclusiveToProject2) {
 		System.out.println("Move this");
 		System.out.println("fieldToMove = " + fieldToMove);
@@ -26,7 +22,7 @@ public class ClassToMove {
 
 	public static void staticMethodToMove() {
 		System.out.println("Move this");
-		System.out.println("Add the constant in here for good measure + " + CONSTANT_TO_MOVE);
+		System.out.println("Add the constant in here for good measure + " + EnumToMoveConstantTo.CONSTANT_TO_MOVE);
 	}
 
 	public void useStaticMethodToMove() {
