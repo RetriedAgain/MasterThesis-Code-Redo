@@ -1,0 +1,57 @@
+{
+"commits": [
+{
+	"repository": "https://github.com/RetriedAgain/MasterThesis-Code-Redo.git",
+	"sha1": "d2020c83d8fe26818729d23b4d7294899d588d5f",
+	"url": "https://github.com/RetriedAgain/MasterThesis-Code-Redo/commit/d2020c83d8fe26818729d23b4d7294899d588d5f",
+	"refactorings": [{
+	"type": "Move Class",
+	"description": "Move Class moveandcopy.move.packagetomove.ClassToMove moved to moveandcopy.move.packagetomove.packagetomove.ClassToMove",
+	"leftSideLocations": [{
+		"filePath": "src/main/java/moveandcopy/move/packagetomove/ClassToMove.java",
+		"startLine": 3,
+		"endLine": 37,
+		"startColumn": 0,
+		"endColumn": 2,
+		"codeElementType": "TYPE_DECLARATION",
+		"description": "original type declaration",
+		"codeElement": "moveandcopy.move.packagetomove.ClassToMove"
+}],
+	"rightSideLocations": [{
+		"filePath": "src/main/java/moveandcopy/move/packagetomove/packagetomove/ClassToMove.java",
+		"startLine": 3,
+		"endLine": 37,
+		"startColumn": 0,
+		"endColumn": 2,
+		"codeElementType": "TYPE_DECLARATION",
+		"description": "moved type declaration",
+		"codeElement": "moveandcopy.move.packagetomove.packagetomove.ClassToMove"
+}]
+},
+{
+	"type": "Move Class",
+	"description": "Move Class moveandcopy.move.packagetomove.UnimportantClass moved to moveandcopy.move.packagetomove.packagetomove.UnimportantClass",
+	"leftSideLocations": [{
+		"filePath": "src/main/java/moveandcopy/move/packagetomove/UnimportantClass.java",
+		"startLine": 3,
+		"endLine": 4,
+		"startColumn": 0,
+		"endColumn": 2,
+		"codeElementType": "TYPE_DECLARATION",
+		"description": "original type declaration",
+		"codeElement": "moveandcopy.move.packagetomove.UnimportantClass"
+}],
+	"rightSideLocations": [{
+		"filePath": "src/main/java/moveandcopy/move/packagetomove/packagetomove/UnimportantClass.java",
+		"startLine": 3,
+		"endLine": 4,
+		"startColumn": 0,
+		"endColumn": 2,
+		"codeElementType": "TYPE_DECLARATION",
+		"description": "moved type declaration",
+		"codeElement": "moveandcopy.move.packagetomove.packagetomove.UnimportantClass"
+}]
+}
+]
+}]
+}

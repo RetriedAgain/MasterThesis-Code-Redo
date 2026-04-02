@@ -1,0 +1,15 @@
+{
+"commits": [
+{
+	"repository": "https://github.com/RetriedAgain/MasterThesis-Code-Redo.git",
+	"sha1": "2a41fde064f4189aacee9be3e5bc44997319b076",
+	"url": "https://github.com/RetriedAgain/MasterThesis-Code-Redo/commit/2a41fde064f4189aacee9be3e5bc44997319b076",
+	"refactorings": [{
+	"type": "Move Source Folder",
+	"description": "Move Source Folder src/main/java to src/main/another-src",
+	"leftSideLocations": [],
+	"rightSideLocations": []
+}
+]
+}]
+}

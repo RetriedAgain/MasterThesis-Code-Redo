@@ -1,0 +1,57 @@
+{
+"commits": [
+{
+	"repository": "https://github.com/RetriedAgain/MasterThesis-Code-Redo.git",
+	"sha1": "313aa9fc9643bb5929483c68b3d13bc56fd445ea",
+	"url": "https://github.com/RetriedAgain/MasterThesis-Code-Redo/commit/313aa9fc9643bb5929483c68b3d13bc56fd445ea",
+	"refactorings": [{
+	"type": "Move Class",
+	"description": "Move Class moveandcopy.move.packagetomove.ClassToMove moved to moveandcopy.packagetomove.ClassToMove",
+	"leftSideLocations": [{
+		"filePath": "src/main/java/moveandcopy/move/packagetomove/ClassToMove.java",
+		"startLine": 3,
+		"endLine": 37,
+		"startColumn": 0,
+		"endColumn": 2,
+		"codeElementType": "TYPE_DECLARATION",
+		"description": "original type declaration",
+		"codeElement": "moveandcopy.move.packagetomove.ClassToMove"
+}],
+	"rightSideLocations": [{
+		"filePath": "src/main/java/moveandcopy/packagetomove/ClassToMove.java",
+		"startLine": 3,
+		"endLine": 37,
+		"startColumn": 0,
+		"endColumn": 2,
+		"codeElementType": "TYPE_DECLARATION",
+		"description": "moved type declaration",
+		"codeElement": "moveandcopy.packagetomove.ClassToMove"
+}]
+},
+{
+	"type": "Move Class",
+	"description": "Move Class moveandcopy.move.packagetomove.UnimportantClass moved to moveandcopy.packagetomove.UnimportantClass",
+	"leftSideLocations": [{
+		"filePath": "src/main/java/moveandcopy/move/packagetomove/UnimportantClass.java",
+		"startLine": 3,
+		"endLine": 4,
+		"startColumn": 0,
+		"endColumn": 2,
+		"codeElementType": "TYPE_DECLARATION",
+		"description": "original type declaration",
+		"codeElement": "moveandcopy.move.packagetomove.UnimportantClass"
+}],
+	"rightSideLocations": [{
+		"filePath": "src/main/java/moveandcopy/packagetomove/UnimportantClass.java",
+		"startLine": 3,
+		"endLine": 4,
+		"startColumn": 0,
+		"endColumn": 2,
+		"codeElementType": "TYPE_DECLARATION",
+		"description": "moved type declaration",
+		"codeElement": "moveandcopy.packagetomove.UnimportantClass"
+}]
+}
+]
+}]
+}
