@@ -1,0 +1,99 @@
+{
+"commits": [
+{
+	"repository": "https://github.com/RetriedAgain/MasterThesis-Code-Redo.git",
+	"sha1": "2c32c67302ee8b1fdd6884949b62de91ab703151",
+	"url": "https://github.com/RetriedAgain/MasterThesis-Code-Redo/commit/2c32c67302ee8b1fdd6884949b62de91ab703151",
+	"refactorings": [{
+	"type": "Add Parameter",
+	"description": "Add Parameter secret : ClassToMove in method public instanceMethodToMove(typeExclusiveToProject2 TypeExclusiveToProject2, secret ClassToMove) : void from class moveandcopy.move.packagetomove.TypeExclusiveToProject",
+	"leftSideLocations": [{
+		"filePath": "src/main/java/moveandcopy/move/packagetomove/ClassToMove.java",
+		"startLine": 11,
+		"endLine": 16,
+		"startColumn": 2,
+		"endColumn": 3,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "public instanceMethodToMove(typeExclusiveToProject TypeExclusiveToProject, typeExclusiveToProject2 TypeExclusiveToProject2) : void"
+}],
+	"rightSideLocations": [{
+		"filePath": "src/main/java/moveandcopy/move/packagetomove/TypeExclusiveToProject.java",
+		"startLine": 4,
+		"endLine": 4,
+		"startColumn": 84,
+		"endColumn": 102,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "added parameter",
+		"codeElement": "secret : ClassToMove"
+}, {
+		"filePath": "src/main/java/moveandcopy/move/packagetomove/TypeExclusiveToProject.java",
+		"startLine": 4,
+		"endLine": 9,
+		"startColumn": 2,
+		"endColumn": 3,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "method declaration with added parameter",
+		"codeElement": "public instanceMethodToMove(typeExclusiveToProject2 TypeExclusiveToProject2, secret ClassToMove) : void"
+}]
+},
+{
+	"type": "Remove Parameter",
+	"description": "Remove Parameter typeExclusiveToProject : TypeExclusiveToProject in method public instanceMethodToMove(typeExclusiveToProject TypeExclusiveToProject, typeExclusiveToProject2 TypeExclusiveToProject2) : void from class moveandcopy.move.packagetomove.ClassToMove",
+	"leftSideLocations": [{
+		"filePath": "src/main/java/moveandcopy/move/packagetomove/ClassToMove.java",
+		"startLine": 11,
+		"endLine": 11,
+		"startColumn": 35,
+		"endColumn": 80,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "removed parameter",
+		"codeElement": "typeExclusiveToProject : TypeExclusiveToProject"
+}, {
+		"filePath": "src/main/java/moveandcopy/move/packagetomove/ClassToMove.java",
+		"startLine": 11,
+		"endLine": 16,
+		"startColumn": 2,
+		"endColumn": 3,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "public instanceMethodToMove(typeExclusiveToProject TypeExclusiveToProject, typeExclusiveToProject2 TypeExclusiveToProject2) : void"
+}],
+	"rightSideLocations": [{
+		"filePath": "src/main/java/moveandcopy/move/packagetomove/TypeExclusiveToProject.java",
+		"startLine": 4,
+		"endLine": 9,
+		"startColumn": 2,
+		"endColumn": 3,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "method declaration with removed parameter",
+		"codeElement": "public instanceMethodToMove(typeExclusiveToProject2 TypeExclusiveToProject2, secret ClassToMove) : void"
+}]
+},
+{
+	"type": "Move Method",
+	"description": "Move Method public instanceMethodToMove(typeExclusiveToProject TypeExclusiveToProject, typeExclusiveToProject2 TypeExclusiveToProject2) : void from class moveandcopy.move.packagetomove.ClassToMove to public instanceMethodToMove(typeExclusiveToProject2 TypeExclusiveToProject2, secret ClassToMove) : void from class moveandcopy.move.packagetomove.TypeExclusiveToProject",
+	"leftSideLocations": [{
+		"filePath": "src/main/java/moveandcopy/move/packagetomove/ClassToMove.java",
+		"startLine": 11,
+		"endLine": 16,
+		"startColumn": 2,
+		"endColumn": 3,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "public instanceMethodToMove(typeExclusiveToProject TypeExclusiveToProject, typeExclusiveToProject2 TypeExclusiveToProject2) : void"
+}],
+	"rightSideLocations": [{
+		"filePath": "src/main/java/moveandcopy/move/packagetomove/TypeExclusiveToProject.java",
+		"startLine": 4,
+		"endLine": 9,
+		"startColumn": 2,
+		"endColumn": 3,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "moved method declaration",
+		"codeElement": "public instanceMethodToMove(typeExclusiveToProject2 TypeExclusiveToProject2, secret ClassToMove) : void"
+}]
+}
+]
+}]
+}
