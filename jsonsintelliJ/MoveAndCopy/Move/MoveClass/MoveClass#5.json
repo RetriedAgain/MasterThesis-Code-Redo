@@ -1,0 +1,33 @@
+{
+"commits": [
+{
+	"repository": "https://github.com/RetriedAgain/MasterThesis-Code-Redo.git",
+	"sha1": "bc52aec2be2a34c35901f68923db14bef51ac8f3",
+	"url": "https://github.com/RetriedAgain/MasterThesis-Code-Redo/commit/bc52aec2be2a34c35901f68923db14bef51ac8f3",
+	"refactorings": [{
+	"type": "Move Class",
+	"description": "Move Class moveandcopy.move.packagetomove.EnumToMove moved to moveandcopy.move.packagenexttoother.EnumToMove",
+	"leftSideLocations": [{
+		"filePath": "src/main/java/moveandcopy/move/packagetomove/EnumToMove.java",
+		"startLine": 3,
+		"endLine": 6,
+		"startColumn": 0,
+		"endColumn": 2,
+		"codeElementType": "ENUM_DECLARATION",
+		"description": "original type declaration",
+		"codeElement": "moveandcopy.move.packagetomove.EnumToMove"
+}],
+	"rightSideLocations": [{
+		"filePath": "src/main/java/moveandcopy/move/packagenexttoother/EnumToMove.java",
+		"startLine": 3,
+		"endLine": 6,
+		"startColumn": 0,
+		"endColumn": 2,
+		"codeElementType": "ENUM_DECLARATION",
+		"description": "moved type declaration",
+		"codeElement": "moveandcopy.move.packagenexttoother.EnumToMove"
+}]
+}
+]
+}]
+}

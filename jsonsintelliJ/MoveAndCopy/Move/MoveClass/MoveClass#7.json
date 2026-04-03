@@ -1,0 +1,33 @@
+{
+"commits": [
+{
+	"repository": "https://github.com/RetriedAgain/MasterThesis-Code-Redo.git",
+	"sha1": "53f7be484bc9c787a123f25191b75dad2e3d73b2",
+	"url": "https://github.com/RetriedAgain/MasterThesis-Code-Redo/commit/53f7be484bc9c787a123f25191b75dad2e3d73b2",
+	"refactorings": [{
+	"type": "Move Class",
+	"description": "Move Class moveandcopy.move.packagetomove.AnnotationToMove moved to moveandcopy.move.packagenexttoother.AnnotationToMove",
+	"leftSideLocations": [{
+		"filePath": "src/main/java/moveandcopy/move/packagetomove/AnnotationToMove.java",
+		"startLine": 9,
+		"endLine": 15,
+		"startColumn": 0,
+		"endColumn": 2,
+		"codeElementType": "ANNOTATION_TYPE_DECLARATION",
+		"description": "original type declaration",
+		"codeElement": "moveandcopy.move.packagetomove.AnnotationToMove"
+}],
+	"rightSideLocations": [{
+		"filePath": "src/main/java/moveandcopy/move/packagenexttoother/AnnotationToMove.java",
+		"startLine": 9,
+		"endLine": 15,
+		"startColumn": 0,
+		"endColumn": 2,
+		"codeElementType": "ANNOTATION_TYPE_DECLARATION",
+		"description": "moved type declaration",
+		"codeElement": "moveandcopy.move.packagenexttoother.AnnotationToMove"
+}]
+}
+]
+}]
+}

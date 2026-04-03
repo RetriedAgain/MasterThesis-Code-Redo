@@ -1,0 +1,33 @@
+{
+"commits": [
+{
+	"repository": "https://github.com/RetriedAgain/MasterThesis-Code-Redo.git",
+	"sha1": "c835482253982b18fc5180228105438a3d9ba194",
+	"url": "https://github.com/RetriedAgain/MasterThesis-Code-Redo/commit/c835482253982b18fc5180228105438a3d9ba194",
+	"refactorings": [{
+	"type": "Move Class",
+	"description": "Move Class moveandcopy.move.packagetomove.RecordToMove moved to moveandcopy.move.packagenexttoother.RecordToMove",
+	"leftSideLocations": [{
+		"filePath": "src/main/java/moveandcopy/move/packagetomove/RecordToMove.java",
+		"startLine": 3,
+		"endLine": 14,
+		"startColumn": 0,
+		"endColumn": 2,
+		"codeElementType": "RECORD_DECLARATION",
+		"description": "original type declaration",
+		"codeElement": "moveandcopy.move.packagetomove.RecordToMove"
+}],
+	"rightSideLocations": [{
+		"filePath": "src/main/java/moveandcopy/move/packagenexttoother/RecordToMove.java",
+		"startLine": 3,
+		"endLine": 14,
+		"startColumn": 0,
+		"endColumn": 2,
+		"codeElementType": "RECORD_DECLARATION",
+		"description": "moved type declaration",
+		"codeElement": "moveandcopy.move.packagenexttoother.RecordToMove"
+}]
+}
+]
+}]
+}
