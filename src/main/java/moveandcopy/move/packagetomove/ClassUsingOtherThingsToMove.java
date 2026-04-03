@@ -1,5 +1,7 @@
 package moveandcopy.move.packagetomove;
 
+import moveandcopy.move.packagenexttoother.EnumToMove;
+
 public class ClassUsingOtherThingsToMove {
 
 	ClassToMove classToMove;
