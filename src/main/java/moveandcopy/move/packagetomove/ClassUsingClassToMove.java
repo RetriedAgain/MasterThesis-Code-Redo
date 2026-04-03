@@ -33,6 +33,10 @@ public class ClassUsingClassToMove {
 		System.out.println(ClassToMove.InnerClassToMove.InnerInnerClassToMove.INNER_INNER_CONSTANT_TO_MOVE);
 	}
 
+	public void useinnerInnerMethodUsingInstanceOfUpperInnerClass() {
+		innerInnerClassToMove.innerInnerMethodUsingInstanceOfUpperInnerClass(innerClassToMove);
+	}
+
 
 
 	public void useInstanceMethod() {

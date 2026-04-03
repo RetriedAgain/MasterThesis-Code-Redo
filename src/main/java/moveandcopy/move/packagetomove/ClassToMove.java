@@ -50,6 +50,7 @@ public class ClassToMove {
 		public class InnerInnerClassToMove {
 			public int innerInnerFieldToMove;
 			public static int INNER_INNER_CONSTANT_TO_MOVE;
+			public InnerClassToMove innerClassToMove = new InnerClassToMove();
 
 			public void innerInnerMethodToMove() {
 				System.out.println("Inner-inner Method here.");
@@ -59,6 +60,10 @@ public class ClassToMove {
 			public static void innerInnerStaticMethodToMove() {
 				System.out.println("Inner-inner Method here.");
 				System.out.println(INNER_INNER_CONSTANT_TO_MOVE);
+			}
+
+			public void innerInnerMethodUsingInstanceOfUpperInnerClass(InnerClassToMove innerClassToMove) {
+				this.innerClassToMove = innerClassToMove;
 			}
 		}
 
