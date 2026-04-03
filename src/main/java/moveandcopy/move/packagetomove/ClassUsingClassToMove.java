@@ -4,10 +4,10 @@ public class ClassUsingClassToMove {
 
 	ClassToMove classToMove;
 	ClassToMove.InnerClassToMove innerClassToMove;
-	ClassToMove.InnerClassToMove.InnerInnerClassToMove innerInnerClassToMove;
+	ClassToMove.Secret innerInnerClassToMove;
 
 	public ClassUsingClassToMove(ClassToMove classToMove, ClassToMove.InnerClassToMove innerClassToMove,
-								 ClassToMove.InnerClassToMove.InnerInnerClassToMove innerInnerClassToMove) {
+								 ClassToMove.Secret innerInnerClassToMove) {
 		this.classToMove = classToMove;
 		this.innerClassToMove = innerClassToMove;
 		this.innerInnerClassToMove = innerInnerClassToMove;
@@ -25,12 +25,12 @@ public class ClassUsingClassToMove {
 
 	public void useMethodsOfInnerInnerClassToMove() {
 		innerInnerClassToMove.innerInnerMethodToMove();
-		ClassToMove.InnerClassToMove.InnerInnerClassToMove.innerInnerStaticMethodToMove();
+		ClassToMove.Secret.innerInnerStaticMethodToMove();
 	}
 
-	public void useFieldsOfInnerInnerClassToMove(ClassToMove.InnerClassToMove.InnerInnerClassToMove innerInnerClassToMove) {
+	public void useFieldsOfInnerInnerClassToMove(ClassToMove.Secret innerInnerClassToMove) {
 		System.out.println(innerInnerClassToMove.innerInnerFieldToMove);
-		System.out.println(ClassToMove.InnerClassToMove.InnerInnerClassToMove.INNER_INNER_CONSTANT_TO_MOVE);
+		System.out.println(ClassToMove.Secret.INNER_INNER_CONSTANT_TO_MOVE);
 	}
 
 
