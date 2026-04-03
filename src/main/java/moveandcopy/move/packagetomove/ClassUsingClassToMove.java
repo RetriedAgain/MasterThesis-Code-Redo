@@ -3,34 +3,34 @@ package moveandcopy.move.packagetomove;
 public class ClassUsingClassToMove {
 
 	ClassToMove classToMove;
-	ClassToMove.InnerClassToMove innerClassToMove;
-	ClassToMove.InnerClassToMove.InnerInnerClassToMove innerInnerClassToMove;
+	Secret innerClassToMove;
+	Secret.InnerInnerClassToMove innerInnerClassToMove;
 
-	public ClassUsingClassToMove(ClassToMove classToMove, ClassToMove.InnerClassToMove innerClassToMove,
-								 ClassToMove.InnerClassToMove.InnerInnerClassToMove innerInnerClassToMove) {
+	public ClassUsingClassToMove(ClassToMove classToMove, Secret innerClassToMove,
+								 Secret.InnerInnerClassToMove innerInnerClassToMove) {
 		this.classToMove = classToMove;
 		this.innerClassToMove = innerClassToMove;
 		this.innerInnerClassToMove = innerInnerClassToMove;
 	}
 
-	public void useFieldsOfInnerClassToMove(ClassToMove.InnerClassToMove innerClassToMove) {
+	public void useFieldsOfInnerClassToMove(Secret innerClassToMove) {
 		System.out.println(innerClassToMove.innerFieldToMove);
-		System.out.println(ClassToMove.InnerClassToMove.INNER_CONSTANT_TO_MOVE);
+		System.out.println(Secret.INNER_CONSTANT_TO_MOVE);
 	}
 
 	public void useMethodsOfInnerClassToMove() {
 		innerClassToMove.innerMethodToMove();
-		ClassToMove.InnerClassToMove.innerStaticMethodToMove();
+		Secret.innerStaticMethodToMove();
 	}
 
 	public void useMethodsOfInnerInnerClassToMove() {
 		innerInnerClassToMove.innerInnerMethodToMove();
-		ClassToMove.InnerClassToMove.InnerInnerClassToMove.innerInnerStaticMethodToMove();
+		Secret.InnerInnerClassToMove.innerInnerStaticMethodToMove();
 	}
 
-	public void useFieldsOfInnerInnerClassToMove(ClassToMove.InnerClassToMove.InnerInnerClassToMove innerInnerClassToMove) {
+	public void useFieldsOfInnerInnerClassToMove(Secret.InnerInnerClassToMove innerInnerClassToMove) {
 		System.out.println(innerInnerClassToMove.innerInnerFieldToMove);
-		System.out.println(ClassToMove.InnerClassToMove.InnerInnerClassToMove.INNER_INNER_CONSTANT_TO_MOVE);
+		System.out.println(Secret.InnerInnerClassToMove.INNER_INNER_CONSTANT_TO_MOVE);
 	}
 
 
