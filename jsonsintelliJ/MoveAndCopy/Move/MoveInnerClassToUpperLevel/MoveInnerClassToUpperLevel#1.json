@@ -1,0 +1,249 @@
+{
+"commits": [
+{
+	"repository": "https://github.com/RetriedAgain/MasterThesis-Code-Redo.git",
+	"sha1": "de759b375f013465a30125b79e69e4eac047f846",
+	"url": "https://github.com/RetriedAgain/MasterThesis-Code-Redo/commit/de759b375f013465a30125b79e69e4eac047f846",
+	"refactorings": [{
+	"type": "Move Class",
+	"description": "Move Class moveandcopy.move.packagetomove.ClassToMove.InnerClassToMove moved to moveandcopy.move.packagetomove.InnerClassToMove",
+	"leftSideLocations": [{
+		"filePath": "src/main/java/moveandcopy/move/packagetomove/ClassToMove.java",
+		"startLine": 36,
+		"endLine": 65,
+		"startColumn": 2,
+		"endColumn": 3,
+		"codeElementType": "TYPE_DECLARATION",
+		"description": "original type declaration",
+		"codeElement": "moveandcopy.move.packagetomove.ClassToMove.InnerClassToMove"
+}],
+	"rightSideLocations": [{
+		"filePath": "src/main/java/moveandcopy/move/packagetomove/InnerClassToMove.java",
+		"startLine": 3,
+		"endLine": 32,
+		"startColumn": 0,
+		"endColumn": 2,
+		"codeElementType": "TYPE_DECLARATION",
+		"description": "moved type declaration",
+		"codeElement": "moveandcopy.move.packagetomove.InnerClassToMove"
+}]
+},
+{
+	"type": "Change Attribute Type",
+	"description": "Change Attribute Type innerClassToMove : ClassToMove.InnerClassToMove to innerClassToMove : InnerClassToMove in class moveandcopy.move.packagetomove.ClassUsingClassToMove",
+	"leftSideLocations": [{
+		"filePath": "src/main/java/moveandcopy/move/packagetomove/ClassUsingClassToMove.java",
+		"startLine": 6,
+		"endLine": 6,
+		"startColumn": 31,
+		"endColumn": 47,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "original attribute declaration",
+		"codeElement": "innerClassToMove : ClassToMove.InnerClassToMove"
+}],
+	"rightSideLocations": [{
+		"filePath": "src/main/java/moveandcopy/move/packagetomove/ClassUsingClassToMove.java",
+		"startLine": 6,
+		"endLine": 6,
+		"startColumn": 19,
+		"endColumn": 35,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "changed-type attribute declaration",
+		"codeElement": "innerClassToMove : InnerClassToMove"
+}]
+},
+{
+	"type": "Change Attribute Type",
+	"description": "Change Attribute Type innerInnerClassToMove : ClassToMove.InnerClassToMove.InnerInnerClassToMove to innerInnerClassToMove : InnerClassToMove.InnerInnerClassToMove in class moveandcopy.move.packagetomove.ClassUsingClassToMove",
+	"leftSideLocations": [{
+		"filePath": "src/main/java/moveandcopy/move/packagetomove/ClassUsingClassToMove.java",
+		"startLine": 7,
+		"endLine": 7,
+		"startColumn": 53,
+		"endColumn": 74,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "original attribute declaration",
+		"codeElement": "innerInnerClassToMove : ClassToMove.InnerClassToMove.InnerInnerClassToMove"
+}],
+	"rightSideLocations": [{
+		"filePath": "src/main/java/moveandcopy/move/packagetomove/ClassUsingClassToMove.java",
+		"startLine": 7,
+		"endLine": 7,
+		"startColumn": 41,
+		"endColumn": 62,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "changed-type attribute declaration",
+		"codeElement": "innerInnerClassToMove : InnerClassToMove.InnerInnerClassToMove"
+}]
+},
+{
+	"type": "Change Parameter Type",
+	"description": "Change Parameter Type innerClassToMove : ClassToMove.InnerClassToMove to innerClassToMove : InnerClassToMove in method public ClassUsingClassToMove(classToMove ClassToMove, innerClassToMove InnerClassToMove, innerInnerClassToMove InnerClassToMove.InnerInnerClassToMove) from class moveandcopy.move.packagetomove.ClassUsingClassToMove",
+	"leftSideLocations": [{
+		"filePath": "src/main/java/moveandcopy/move/packagetomove/ClassUsingClassToMove.java",
+		"startLine": 9,
+		"endLine": 9,
+		"startColumn": 56,
+		"endColumn": 101,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "original variable declaration",
+		"codeElement": "innerClassToMove : ClassToMove.InnerClassToMove"
+}, {
+		"filePath": "src/main/java/moveandcopy/move/packagetomove/ClassUsingClassToMove.java",
+		"startLine": 12,
+		"endLine": 12,
+		"startColumn": 3,
+		"endColumn": 44,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "src/main/java/moveandcopy/move/packagetomove/ClassUsingClassToMove.java",
+		"startLine": 9,
+		"endLine": 9,
+		"startColumn": 56,
+		"endColumn": 89,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "changed-type variable declaration",
+		"codeElement": "innerClassToMove : InnerClassToMove"
+}, {
+		"filePath": "src/main/java/moveandcopy/move/packagetomove/ClassUsingClassToMove.java",
+		"startLine": 12,
+		"endLine": 12,
+		"startColumn": 3,
+		"endColumn": 44,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the variable with changed type",
+		"codeElement": null
+}]
+},
+{
+	"type": "Change Parameter Type",
+	"description": "Change Parameter Type innerInnerClassToMove : ClassToMove.InnerClassToMove.InnerInnerClassToMove to innerInnerClassToMove : InnerClassToMove.InnerInnerClassToMove in method public ClassUsingClassToMove(classToMove ClassToMove, innerClassToMove InnerClassToMove, innerInnerClassToMove InnerClassToMove.InnerInnerClassToMove) from class moveandcopy.move.packagetomove.ClassUsingClassToMove",
+	"leftSideLocations": [{
+		"filePath": "src/main/java/moveandcopy/move/packagetomove/ClassUsingClassToMove.java",
+		"startLine": 10,
+		"endLine": 10,
+		"startColumn": 10,
+		"endColumn": 82,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "original variable declaration",
+		"codeElement": "innerInnerClassToMove : ClassToMove.InnerClassToMove.InnerInnerClassToMove"
+}, {
+		"filePath": "src/main/java/moveandcopy/move/packagetomove/ClassUsingClassToMove.java",
+		"startLine": 13,
+		"endLine": 13,
+		"startColumn": 3,
+		"endColumn": 54,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "src/main/java/moveandcopy/move/packagetomove/ClassUsingClassToMove.java",
+		"startLine": 10,
+		"endLine": 10,
+		"startColumn": 10,
+		"endColumn": 70,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "changed-type variable declaration",
+		"codeElement": "innerInnerClassToMove : InnerClassToMove.InnerInnerClassToMove"
+}, {
+		"filePath": "src/main/java/moveandcopy/move/packagetomove/ClassUsingClassToMove.java",
+		"startLine": 13,
+		"endLine": 13,
+		"startColumn": 3,
+		"endColumn": 54,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the variable with changed type",
+		"codeElement": null
+}]
+},
+{
+	"type": "Change Parameter Type",
+	"description": "Change Parameter Type innerClassToMove : ClassToMove.InnerClassToMove to innerClassToMove : InnerClassToMove in method public useFieldsOfInnerClassToMove(innerClassToMove InnerClassToMove) : void from class moveandcopy.move.packagetomove.ClassUsingClassToMove",
+	"leftSideLocations": [{
+		"filePath": "src/main/java/moveandcopy/move/packagetomove/ClassUsingClassToMove.java",
+		"startLine": 16,
+		"endLine": 16,
+		"startColumn": 42,
+		"endColumn": 87,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "original variable declaration",
+		"codeElement": "innerClassToMove : ClassToMove.InnerClassToMove"
+}, {
+		"filePath": "src/main/java/moveandcopy/move/packagetomove/ClassUsingClassToMove.java",
+		"startLine": 17,
+		"endLine": 17,
+		"startColumn": 3,
+		"endColumn": 57,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "src/main/java/moveandcopy/move/packagetomove/ClassUsingClassToMove.java",
+		"startLine": 16,
+		"endLine": 16,
+		"startColumn": 42,
+		"endColumn": 75,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "changed-type variable declaration",
+		"codeElement": "innerClassToMove : InnerClassToMove"
+}, {
+		"filePath": "src/main/java/moveandcopy/move/packagetomove/ClassUsingClassToMove.java",
+		"startLine": 17,
+		"endLine": 17,
+		"startColumn": 3,
+		"endColumn": 57,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the variable with changed type",
+		"codeElement": null
+}]
+},
+{
+	"type": "Change Parameter Type",
+	"description": "Change Parameter Type innerInnerClassToMove : ClassToMove.InnerClassToMove.InnerInnerClassToMove to innerInnerClassToMove : InnerClassToMove.InnerInnerClassToMove in method public useFieldsOfInnerInnerClassToMove(innerInnerClassToMove InnerClassToMove.InnerInnerClassToMove) : void from class moveandcopy.move.packagetomove.ClassUsingClassToMove",
+	"leftSideLocations": [{
+		"filePath": "src/main/java/moveandcopy/move/packagetomove/ClassUsingClassToMove.java",
+		"startLine": 31,
+		"endLine": 31,
+		"startColumn": 47,
+		"endColumn": 119,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "original variable declaration",
+		"codeElement": "innerInnerClassToMove : ClassToMove.InnerClassToMove.InnerInnerClassToMove"
+}, {
+		"filePath": "src/main/java/moveandcopy/move/packagetomove/ClassUsingClassToMove.java",
+		"startLine": 32,
+		"endLine": 32,
+		"startColumn": 3,
+		"endColumn": 67,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "src/main/java/moveandcopy/move/packagetomove/ClassUsingClassToMove.java",
+		"startLine": 31,
+		"endLine": 31,
+		"startColumn": 47,
+		"endColumn": 107,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "changed-type variable declaration",
+		"codeElement": "innerInnerClassToMove : InnerClassToMove.InnerInnerClassToMove"
+}, {
+		"filePath": "src/main/java/moveandcopy/move/packagetomove/ClassUsingClassToMove.java",
+		"startLine": 32,
+		"endLine": 32,
+		"startColumn": 3,
+		"endColumn": 67,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the variable with changed type",
+		"codeElement": null
+}]
+}
+]
+}]
+}
