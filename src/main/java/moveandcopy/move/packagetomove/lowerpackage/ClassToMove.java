@@ -1,4 +1,7 @@
-package moveandcopy.move.packagetomove;
+package moveandcopy.move.packagetomove.lowerpackage;
+
+import moveandcopy.move.packagetomove.TypeExclusiveToProject;
+import moveandcopy.move.packagetomove.TypeExclusiveToProject2;
 
 public class ClassToMove {
 
