@@ -47,27 +47,31 @@ public class ClassToMove {
 			System.out.println("innerConstantToMove = " + INNER_CONSTANT_TO_MOVE);
 		}
 
-		public class InnerInnerClassToMove {
-			public int innerInnerFieldToMove;
-			public static int INNER_INNER_CONSTANT_TO_MOVE;
-			public InnerClassToMove innerClassToMove = new InnerClassToMove();
-
-			public void innerInnerMethodToMove() {
-				System.out.println("Inner-inner Method here.");
-				System.out.println("innerInnerFieldToMove = " + innerInnerFieldToMove);
-			}
-
-			public static void innerInnerStaticMethodToMove() {
-				System.out.println("Inner-inner Method here.");
-				System.out.println(INNER_INNER_CONSTANT_TO_MOVE);
-			}
-
-			public void innerInnerMethodUsingInstanceOfUpperInnerClass(InnerClassToMove innerClassToMove) {
-				this.innerClassToMove = innerClassToMove;
-			}
-		}
-
 	}
 
 
+	public class SecretClass {
+		private final InnerClassToMove secretParam;
+		public int innerInnerFieldToMove;
+		public static int INNER_INNER_CONSTANT_TO_MOVE;
+		public InnerClassToMove innerClassToMove = new InnerClassToMove();
+
+		public SecretClass(InnerClassToMove secretParam) {
+			this.secretParam = secretParam;
+		}
+
+		public void innerInnerMethodToMove() {
+			System.out.println("Inner-inner Method here.");
+			System.out.println("innerInnerFieldToMove = " + innerInnerFieldToMove);
+		}
+
+		public static void innerInnerStaticMethodToMove() {
+			System.out.println("Inner-inner Method here.");
+			System.out.println(INNER_INNER_CONSTANT_TO_MOVE);
+		}
+
+		public void innerInnerMethodUsingInstanceOfUpperInnerClass(InnerClassToMove innerClassToMove) {
+			this.innerClassToMove = innerClassToMove;
+		}
+	}
 }
