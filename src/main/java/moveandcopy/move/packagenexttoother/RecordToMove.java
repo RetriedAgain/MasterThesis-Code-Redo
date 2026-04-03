@@ -1,4 +1,4 @@
-package moveandcopy.move.packagetomove;
+package moveandcopy.move.packagenexttoother;
 
 public record RecordToMove() {
     // Very small example instance method
