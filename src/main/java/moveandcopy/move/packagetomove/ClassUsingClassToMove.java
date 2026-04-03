@@ -3,34 +3,34 @@ package moveandcopy.move.packagetomove;
 public class ClassUsingClassToMove {
 
 	ClassToMove classToMove;
-	ClassToMove.InnerClassToMove innerClassToMove;
-	ClassToMove.InnerClassToMove.InnerInnerClassToMove innerInnerClassToMove;
+	InnerClassToMove innerClassToMove;
+	InnerClassToMove.InnerInnerClassToMove innerInnerClassToMove;
 
-	public ClassUsingClassToMove(ClassToMove classToMove, ClassToMove.InnerClassToMove innerClassToMove,
-								 ClassToMove.InnerClassToMove.InnerInnerClassToMove innerInnerClassToMove) {
+	public ClassUsingClassToMove(ClassToMove classToMove, InnerClassToMove innerClassToMove,
+								 InnerClassToMove.InnerInnerClassToMove innerInnerClassToMove) {
 		this.classToMove = classToMove;
 		this.innerClassToMove = innerClassToMove;
 		this.innerInnerClassToMove = innerInnerClassToMove;
 	}
 
-	public void useFieldsOfInnerClassToMove(ClassToMove.InnerClassToMove innerClassToMove) {
+	public void useFieldsOfInnerClassToMove(InnerClassToMove innerClassToMove) {
 		System.out.println(innerClassToMove.innerFieldToMove);
-		System.out.println(ClassToMove.InnerClassToMove.INNER_CONSTANT_TO_MOVE);
+		System.out.println(InnerClassToMove.INNER_CONSTANT_TO_MOVE);
 	}
 
 	public void useMethodsOfInnerClassToMove() {
 		innerClassToMove.innerMethodToMove();
-		ClassToMove.InnerClassToMove.innerStaticMethodToMove();
+		InnerClassToMove.innerStaticMethodToMove();
 	}
 
 	public void useMethodsOfInnerInnerClassToMove() {
 		innerInnerClassToMove.innerInnerMethodToMove();
-		ClassToMove.InnerClassToMove.InnerInnerClassToMove.innerInnerStaticMethodToMove();
+		InnerClassToMove.InnerInnerClassToMove.innerInnerStaticMethodToMove();
 	}
 
-	public void useFieldsOfInnerInnerClassToMove(ClassToMove.InnerClassToMove.InnerInnerClassToMove innerInnerClassToMove) {
+	public void useFieldsOfInnerInnerClassToMove(InnerClassToMove.InnerInnerClassToMove innerInnerClassToMove) {
 		System.out.println(innerInnerClassToMove.innerInnerFieldToMove);
-		System.out.println(ClassToMove.InnerClassToMove.InnerInnerClassToMove.INNER_INNER_CONSTANT_TO_MOVE);
+		System.out.println(InnerClassToMove.InnerInnerClassToMove.INNER_INNER_CONSTANT_TO_MOVE);
 	}
 
 
