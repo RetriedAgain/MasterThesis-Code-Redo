@@ -2,35 +2,35 @@ package moveandcopy.move.packagetomove;
 
 public class ClassUsingOtherThingsToMove {
 
-	ClassToMove classToMove;
-	ClassToMove.InnerClassToMove innerClassToMove;
-	ClassToMove.InnerClassToMove.InnerInnerClassToMove innerInnerClassToMove;
+	TypeExclusiveToProject.ClassToMove classToMove;
+	TypeExclusiveToProject.ClassToMove.InnerClassToMove innerClassToMove;
+	TypeExclusiveToProject.ClassToMove.InnerClassToMove.InnerInnerClassToMove innerInnerClassToMove;
 
-	public ClassUsingOtherThingsToMove(ClassToMove classToMove, ClassToMove.InnerClassToMove innerClassToMove,
-						   ClassToMove.InnerClassToMove.InnerInnerClassToMove innerInnerClassToMove) {
+	public ClassUsingOtherThingsToMove(TypeExclusiveToProject.ClassToMove classToMove, TypeExclusiveToProject.ClassToMove.InnerClassToMove innerClassToMove,
+									   TypeExclusiveToProject.ClassToMove.InnerClassToMove.InnerInnerClassToMove innerInnerClassToMove) {
 		this.classToMove = classToMove;
 		this.innerClassToMove = innerClassToMove;
 		this.innerInnerClassToMove = innerInnerClassToMove;
 	}
 
-	public void useFieldsOfInnerClassToMove(ClassToMove.InnerClassToMove innerClassToMove) {
+	public void useFieldsOfInnerClassToMove(TypeExclusiveToProject.ClassToMove.InnerClassToMove innerClassToMove) {
 		System.out.println(innerClassToMove.innerFieldToMove);
-		System.out.println(ClassToMove.InnerClassToMove.INNER_CONSTANT_TO_MOVE);
+		System.out.println(TypeExclusiveToProject.ClassToMove.InnerClassToMove.INNER_CONSTANT_TO_MOVE);
 	}
 
 	public void useMethodsOfInnerClassToMove() {
 		innerClassToMove.innerMethodToMove();
-		ClassToMove.InnerClassToMove.innerStaticMethodToMove();
+		TypeExclusiveToProject.ClassToMove.InnerClassToMove.innerStaticMethodToMove();
 	}
 
 	public void useMethodsOfInnerInnerClassToMove() {
 		innerInnerClassToMove.innerInnerMethodToMove();
-		ClassToMove.InnerClassToMove.InnerInnerClassToMove.innerInnerStaticMethodToMove();
+		TypeExclusiveToProject.ClassToMove.InnerClassToMove.InnerInnerClassToMove.innerInnerStaticMethodToMove();
 	}
 
-	public void useFieldsOfInnerInnerClassToMove(ClassToMove.InnerClassToMove.InnerInnerClassToMove innerInnerClassToMove) {
+	public void useFieldsOfInnerInnerClassToMove(TypeExclusiveToProject.ClassToMove.InnerClassToMove.InnerInnerClassToMove innerInnerClassToMove) {
 		System.out.println(innerInnerClassToMove.innerInnerFieldToMove);
-		System.out.println(ClassToMove.InnerClassToMove.InnerInnerClassToMove.INNER_INNER_CONSTANT_TO_MOVE);
+		System.out.println(TypeExclusiveToProject.ClassToMove.InnerClassToMove.InnerInnerClassToMove.INNER_INNER_CONSTANT_TO_MOVE);
 	}
 
 
@@ -44,7 +44,7 @@ public class ClassUsingOtherThingsToMove {
 	}
 
 	public static void useStaticMethod() {
-		ClassToMove.staticMethodToMove();
+		TypeExclusiveToProject.ClassToMove.staticMethodToMove();
 	}
 
 	// --- Simple examples showing usage of the annotation, enum and record ---
