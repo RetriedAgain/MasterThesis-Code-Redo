@@ -1,4 +1,4 @@
-package moveandcopy.move.packagetomove;
+package moveandcopy.move.packagenexttoother;
 
 import java.lang.annotation.Documented;
 import java.lang.annotation.ElementType;
