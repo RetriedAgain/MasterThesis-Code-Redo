@@ -1,13 +1,13 @@
 package moveandcopy.move.packagetomove;
 
-public class ClassUsingClassToMove {
+public class ClassUsingOtherThingsToMove {
 
 	ClassToMove classToMove;
 	ClassToMove.InnerClassToMove innerClassToMove;
 	ClassToMove.InnerClassToMove.InnerInnerClassToMove innerInnerClassToMove;
 
-	public ClassUsingClassToMove(ClassToMove classToMove, ClassToMove.InnerClassToMove innerClassToMove,
-								 ClassToMove.InnerClassToMove.InnerInnerClassToMove innerInnerClassToMove) {
+	public ClassUsingOtherThingsToMove(ClassToMove classToMove, ClassToMove.InnerClassToMove innerClassToMove,
+						   ClassToMove.InnerClassToMove.InnerInnerClassToMove innerInnerClassToMove) {
 		this.classToMove = classToMove;
 		this.innerClassToMove = innerClassToMove;
 		this.innerInnerClassToMove = innerInnerClassToMove;
@@ -45,5 +45,24 @@ public class ClassUsingClassToMove {
 
 	public static void useStaticMethod() {
 		ClassToMove.staticMethodToMove();
+	}
+
+	// --- Simple examples showing usage of the annotation, enum and record ---
+
+	// 1) Annotated method example
+	@AnnotationToMove("example")
+	public void annotatedExample() {
+		System.out.println("Annotated method executed");
+	}
+
+	// 2) Return an enum constant
+	public EnumToMove enumExample() {
+		return EnumToMove.HELLO;
+	}
+
+	// 3) Create and use the record example
+	public String recordExample() {
+		RecordToMove r = RecordToMove.example();
+		return r.info();
 	}
 }
