@@ -35,7 +35,7 @@ public class ClassUsingOtherClassAndInterface implements InterfaceToPullMembersU
 		System.out.println(CONSTANT);
 
 		// Use InnerInterface
-		System.out.println(InnerInterfaceToPullIntoSuperInterface.INNER_CONSTANT);
+		System.out.println(SuperInterfaceToPullInterfaceInto.InnerInterfaceToPullIntoSuperInterface.INNER_CONSTANT);
 		innerInterfaceToPullIntoSuperInterface.innerInterfaceMethodToPullUp();
 
 		// Use SuperInterfaceToPullInterfaceInto

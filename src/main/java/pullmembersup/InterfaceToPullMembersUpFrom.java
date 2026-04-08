@@ -5,10 +5,5 @@ public interface InterfaceToPullMembersUpFrom extends SuperInterfaceToPullInterf
 
 	void interfaceMethodToPullUp();
 
-	interface InnerInterfaceToPullIntoSuperInterface {
-		int INNER_CONSTANT = 6;
-
-		void innerInterfaceMethodToPullUp();
-	}
 }
 
