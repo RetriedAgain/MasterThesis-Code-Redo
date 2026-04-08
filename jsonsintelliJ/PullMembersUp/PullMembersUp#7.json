@@ -1,0 +1,33 @@
+{
+"commits": [
+{
+	"repository": "https://github.com/RetriedAgain/MasterThesis-Code-Redo.git",
+	"sha1": "ebacc36bd18dd6774c975fc9e62cbe9870f19bf6",
+	"url": "https://github.com/RetriedAgain/MasterThesis-Code-Redo/commit/ebacc36bd18dd6774c975fc9e62cbe9870f19bf6",
+	"refactorings": [{
+	"type": "Move Class",
+	"description": "Move Class pullmembersup.InterfaceToPullMembersUpFrom.InnerInterfaceToPullIntoSuperInterface moved to pullmembersup.SuperInterfaceToPullInterfaceInto.InnerInterfaceToPullIntoSuperInterface",
+	"leftSideLocations": [{
+		"filePath": "src/main/java/pullmembersup/InterfaceToPullMembersUpFrom.java",
+		"startLine": 8,
+		"endLine": 12,
+		"startColumn": 2,
+		"endColumn": 3,
+		"codeElementType": "TYPE_DECLARATION",
+		"description": "original type declaration",
+		"codeElement": "pullmembersup.InterfaceToPullMembersUpFrom.InnerInterfaceToPullIntoSuperInterface"
+}],
+	"rightSideLocations": [{
+		"filePath": "src/main/java/pullmembersup/SuperInterfaceToPullInterfaceInto.java",
+		"startLine": 8,
+		"endLine": 12,
+		"startColumn": 2,
+		"endColumn": 3,
+		"codeElementType": "TYPE_DECLARATION",
+		"description": "moved type declaration",
+		"codeElement": "pullmembersup.SuperInterfaceToPullInterfaceInto.InnerInterfaceToPullIntoSuperInterface"
+}]
+}
+]
+}]
+}

@@ -1,0 +1,33 @@
+{
+"commits": [
+{
+	"repository": "https://github.com/RetriedAgain/MasterThesis-Code-Redo.git",
+	"sha1": "d015b6752684ecd4ff9f8d40cfb31bad4af848cf",
+	"url": "https://github.com/RetriedAgain/MasterThesis-Code-Redo/commit/d015b6752684ecd4ff9f8d40cfb31bad4af848cf",
+	"refactorings": [{
+	"type": "Move Class",
+	"description": "Move Class pullmembersup.ClassToPullMembersUpFrom.InnerClassToPullMembersUpFrom moved to pullmembersup.SuperclassToPullMembersInto.InnerClassToPullMembersUpFrom",
+	"leftSideLocations": [{
+		"filePath": "src/main/java/pullmembersup/ClassToPullMembersUpFrom.java",
+		"startLine": 16,
+		"endLine": 26,
+		"startColumn": 2,
+		"endColumn": 3,
+		"codeElementType": "TYPE_DECLARATION",
+		"description": "original type declaration",
+		"codeElement": "pullmembersup.ClassToPullMembersUpFrom.InnerClassToPullMembersUpFrom"
+}],
+	"rightSideLocations": [{
+		"filePath": "src/main/java/pullmembersup/SuperclassToPullMembersInto.java",
+		"startLine": 10,
+		"endLine": 20,
+		"startColumn": 2,
+		"endColumn": 3,
+		"codeElementType": "TYPE_DECLARATION",
+		"description": "moved type declaration",
+		"codeElement": "pullmembersup.SuperclassToPullMembersInto.InnerClassToPullMembersUpFrom"
+}]
+}
+]
+}]
+}

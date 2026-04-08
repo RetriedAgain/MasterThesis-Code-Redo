@@ -1,0 +1,138 @@
+{
+"commits": [
+{
+	"repository": "https://github.com/RetriedAgain/MasterThesis-Code-Redo.git",
+	"sha1": "c6d9d9fe8f2a586310352818b8e6715c493b020a",
+	"url": "https://github.com/RetriedAgain/MasterThesis-Code-Redo/commit/c6d9d9fe8f2a586310352818b8e6715c493b020a",
+	"refactorings": [{
+	"type": "Move Class",
+	"description": "Move Class pullmembersup.ClassToPullMembersUpFrom.InnerClassToPullMembersUpFrom moved to pullmembersup.SuperclassToPullMembersInto.InnerClassToPullMembersUpFrom",
+	"leftSideLocations": [{
+		"filePath": "src/main/java/pullmembersup/ClassToPullMembersUpFrom.java",
+		"startLine": 16,
+		"endLine": 26,
+		"startColumn": 2,
+		"endColumn": 3,
+		"codeElementType": "TYPE_DECLARATION",
+		"description": "original type declaration",
+		"codeElement": "pullmembersup.ClassToPullMembersUpFrom.InnerClassToPullMembersUpFrom"
+}],
+	"rightSideLocations": [{
+		"filePath": "src/main/java/pullmembersup/SuperclassToPullMembersInto.java",
+		"startLine": 17,
+		"endLine": 27,
+		"startColumn": 2,
+		"endColumn": 3,
+		"codeElementType": "TYPE_DECLARATION",
+		"description": "moved type declaration",
+		"codeElement": "pullmembersup.SuperclassToPullMembersInto.InnerClassToPullMembersUpFrom"
+}]
+},
+{
+	"type": "Add Method Annotation",
+	"description": "Add Method Annotation @Override in method public methodToPullUp() : void from class pullmembersup.ClassToPullMembersUpFrom",
+	"leftSideLocations": [{
+		"filePath": "src/main/java/pullmembersup/ClassToPullMembersUpFrom.java",
+		"startLine": 7,
+		"endLine": 9,
+		"startColumn": 2,
+		"endColumn": 3,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "public methodToPullUp() : void"
+}],
+	"rightSideLocations": [{
+		"filePath": "src/main/java/pullmembersup/ClassToPullMembersUpFrom.java",
+		"startLine": 5,
+		"endLine": 5,
+		"startColumn": 2,
+		"endColumn": 11,
+		"codeElementType": "ANNOTATION",
+		"description": "added annotation",
+		"codeElement": "@Override"
+}, {
+		"filePath": "src/main/java/pullmembersup/ClassToPullMembersUpFrom.java",
+		"startLine": 5,
+		"endLine": 8,
+		"startColumn": 2,
+		"endColumn": 3,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "method declaration with added annotation",
+		"codeElement": "public methodToPullUp() : void"
+}]
+},
+{
+	"type": "Add Class Modifier",
+	"description": "Add Class Modifier abstract in class pullmembersup.SuperclassToPullMembersInto",
+	"leftSideLocations": [{
+		"filePath": "src/main/java/pullmembersup/SuperclassToPullMembersInto.java",
+		"startLine": 3,
+		"endLine": 10,
+		"startColumn": 0,
+		"endColumn": 2,
+		"codeElementType": "TYPE_DECLARATION",
+		"description": "original class declaration",
+		"codeElement": "pullmembersup.SuperclassToPullMembersInto"
+}],
+	"rightSideLocations": [{
+		"filePath": "src/main/java/pullmembersup/SuperclassToPullMembersInto.java",
+		"startLine": 3,
+		"endLine": 28,
+		"startColumn": 0,
+		"endColumn": 2,
+		"codeElementType": "TYPE_DECLARATION",
+		"description": "class declaration with added modifier",
+		"codeElement": "pullmembersup.SuperclassToPullMembersInto"
+}]
+},
+{
+	"type": "Pull Up Method",
+	"description": "Pull Up Method public staticMethodToPullUp() : void from class pullmembersup.ClassToPullMembersUpFrom to public staticMethodToPullUp() : void from class pullmembersup.SuperclassToPullMembersInto",
+	"leftSideLocations": [{
+		"filePath": "src/main/java/pullmembersup/ClassToPullMembersUpFrom.java",
+		"startLine": 11,
+		"endLine": 13,
+		"startColumn": 2,
+		"endColumn": 3,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "public staticMethodToPullUp() : void"
+}],
+	"rightSideLocations": [{
+		"filePath": "src/main/java/pullmembersup/SuperclassToPullMembersInto.java",
+		"startLine": 7,
+		"endLine": 9,
+		"startColumn": 2,
+		"endColumn": 3,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "pulled up method declaration",
+		"codeElement": "public staticMethodToPullUp() : void"
+}]
+},
+{
+	"type": "Pull Up Attribute",
+	"description": "Pull Up Attribute package fieldToPullUp : int from class pullmembersup.ClassToPullMembersUpFrom to package fieldToPullUp : int from class pullmembersup.SuperclassToPullMembersInto",
+	"leftSideLocations": [{
+		"filePath": "src/main/java/pullmembersup/ClassToPullMembersUpFrom.java",
+		"startLine": 5,
+		"endLine": 5,
+		"startColumn": 6,
+		"endColumn": 19,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "original attribute declaration",
+		"codeElement": "package fieldToPullUp : int"
+}],
+	"rightSideLocations": [{
+		"filePath": "src/main/java/pullmembersup/SuperclassToPullMembersInto.java",
+		"startLine": 5,
+		"endLine": 5,
+		"startColumn": 6,
+		"endColumn": 19,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "pulled up attribute declaration",
+		"codeElement": "package fieldToPullUp : int"
+}]
+}
+]
+}]
+}

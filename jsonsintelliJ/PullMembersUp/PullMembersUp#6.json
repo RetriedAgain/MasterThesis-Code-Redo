@@ -1,0 +1,33 @@
+{
+"commits": [
+{
+	"repository": "https://github.com/RetriedAgain/MasterThesis-Code-Redo.git",
+	"sha1": "2cb936b62ae5ba09b7d5876ff54e81218742f956",
+	"url": "https://github.com/RetriedAgain/MasterThesis-Code-Redo/commit/2cb936b62ae5ba09b7d5876ff54e81218742f956",
+	"refactorings": [{
+	"type": "Pull Up Method",
+	"description": "Pull Up Method public staticMethodToPullUp() : void from class pullmembersup.ClassToPullMembersUpFrom to public staticMethodToPullUp() : void from class pullmembersup.SuperclassToPullMembersInto",
+	"leftSideLocations": [{
+		"filePath": "src/main/java/pullmembersup/ClassToPullMembersUpFrom.java",
+		"startLine": 11,
+		"endLine": 13,
+		"startColumn": 2,
+		"endColumn": 3,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "public staticMethodToPullUp() : void"
+}],
+	"rightSideLocations": [{
+		"filePath": "src/main/java/pullmembersup/SuperclassToPullMembersInto.java",
+		"startLine": 6,
+		"endLine": 8,
+		"startColumn": 2,
+		"endColumn": 3,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "pulled up method declaration",
+		"codeElement": "public staticMethodToPullUp() : void"
+}]
+}
+]
+}]
+}

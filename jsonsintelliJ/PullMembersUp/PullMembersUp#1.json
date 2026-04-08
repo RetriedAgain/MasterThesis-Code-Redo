@@ -1,0 +1,57 @@
+{
+"commits": [
+{
+	"repository": "https://github.com/RetriedAgain/MasterThesis-Code-Redo.git",
+	"sha1": "a8a197e5d03f99b2e9b24931f95e7288c3edfac0",
+	"url": "https://github.com/RetriedAgain/MasterThesis-Code-Redo/commit/a8a197e5d03f99b2e9b24931f95e7288c3edfac0",
+	"refactorings": [{
+	"type": "Pull Up Method",
+	"description": "Pull Up Method public methodToPullUp() : void from class pullmembersup.ClassToPullMembersUpFrom to public methodToPullUp() : void from class pullmembersup.SuperclassToPullMembersInto",
+	"leftSideLocations": [{
+		"filePath": "src/main/java/pullmembersup/ClassToPullMembersUpFrom.java",
+		"startLine": 7,
+		"endLine": 9,
+		"startColumn": 2,
+		"endColumn": 3,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "public methodToPullUp() : void"
+}],
+	"rightSideLocations": [{
+		"filePath": "src/main/java/pullmembersup/SuperclassToPullMembersInto.java",
+		"startLine": 11,
+		"endLine": 13,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "pulled up method declaration",
+		"codeElement": "public methodToPullUp() : void"
+}]
+},
+{
+	"type": "Pull Up Attribute",
+	"description": "Pull Up Attribute package fieldToPullUp : int from class pullmembersup.ClassToPullMembersUpFrom to package fieldToPullUp : int from class pullmembersup.SuperclassToPullMembersInto",
+	"leftSideLocations": [{
+		"filePath": "src/main/java/pullmembersup/ClassToPullMembersUpFrom.java",
+		"startLine": 5,
+		"endLine": 5,
+		"startColumn": 6,
+		"endColumn": 19,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "original attribute declaration",
+		"codeElement": "package fieldToPullUp : int"
+}],
+	"rightSideLocations": [{
+		"filePath": "src/main/java/pullmembersup/SuperclassToPullMembersInto.java",
+		"startLine": 5,
+		"endLine": 5,
+		"startColumn": 9,
+		"endColumn": 22,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "pulled up attribute declaration",
+		"codeElement": "package fieldToPullUp : int"
+}]
+}
+]
+}]
+}

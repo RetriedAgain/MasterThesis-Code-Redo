@@ -1,0 +1,57 @@
+{
+"commits": [
+{
+	"repository": "https://github.com/RetriedAgain/MasterThesis-Code-Redo.git",
+	"sha1": "34f889957db19dc220db61df088a8bdeb20f8260",
+	"url": "https://github.com/RetriedAgain/MasterThesis-Code-Redo/commit/34f889957db19dc220db61df088a8bdeb20f8260",
+	"refactorings": [{
+	"type": "Pull Up Method",
+	"description": "Pull Up Method public interfaceMethodToPullUp() : void from class pullmembersup.InterfaceToPullMembersUpFrom to public interfaceMethodToPullUp() : void from class pullmembersup.SuperInterfaceToPullInterfaceInto",
+	"leftSideLocations": [{
+		"filePath": "src/main/java/pullmembersup/InterfaceToPullMembersUpFrom.java",
+		"startLine": 6,
+		"endLine": 6,
+		"startColumn": 2,
+		"endColumn": 33,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "public interfaceMethodToPullUp() : void"
+}],
+	"rightSideLocations": [{
+		"filePath": "src/main/java/pullmembersup/SuperInterfaceToPullInterfaceInto.java",
+		"startLine": 9,
+		"endLine": 9,
+		"startColumn": 5,
+		"endColumn": 36,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "pulled up method declaration",
+		"codeElement": "public interfaceMethodToPullUp() : void"
+}]
+},
+{
+	"type": "Pull Up Attribute",
+	"description": "Pull Up Attribute public CONSTANT : int from class pullmembersup.InterfaceToPullMembersUpFrom to public CONSTANT : int from class pullmembersup.SuperInterfaceToPullInterfaceInto",
+	"leftSideLocations": [{
+		"filePath": "src/main/java/pullmembersup/InterfaceToPullMembersUpFrom.java",
+		"startLine": 4,
+		"endLine": 4,
+		"startColumn": 6,
+		"endColumn": 18,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "original attribute declaration",
+		"codeElement": "public CONSTANT : int"
+}],
+	"rightSideLocations": [{
+		"filePath": "src/main/java/pullmembersup/SuperInterfaceToPullInterfaceInto.java",
+		"startLine": 5,
+		"endLine": 5,
+		"startColumn": 9,
+		"endColumn": 21,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "pulled up attribute declaration",
+		"codeElement": "public CONSTANT : int"
+}]
+}
+]
+}]
+}

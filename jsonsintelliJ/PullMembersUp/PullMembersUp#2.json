@@ -1,0 +1,57 @@
+{
+"commits": [
+{
+	"repository": "https://github.com/RetriedAgain/MasterThesis-Code-Redo.git",
+	"sha1": "55cddd73d4045e2062121470fabba332ad67bcde",
+	"url": "https://github.com/RetriedAgain/MasterThesis-Code-Redo/commit/55cddd73d4045e2062121470fabba332ad67bcde",
+	"refactorings": [{
+	"type": "Pull Up Method",
+	"description": "Pull Up Method public innerMethodToPullUp() : void from class pullmembersup.ClassToPullMembersUpFrom.InnerClassToPullMembersUpFrom to public innerMethodToPullUp() : void from class pullmembersup.ClassToPullMembersUpFrom",
+	"leftSideLocations": [{
+		"filePath": "src/main/java/pullmembersup/ClassToPullMembersUpFrom.java",
+		"startLine": 19,
+		"endLine": 21,
+		"startColumn": 3,
+		"endColumn": 4,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "public innerMethodToPullUp() : void"
+}],
+	"rightSideLocations": [{
+		"filePath": "src/main/java/pullmembersup/ClassToPullMembersUpFrom.java",
+		"startLine": 16,
+		"endLine": 18,
+		"startColumn": 2,
+		"endColumn": 3,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "pulled up method declaration",
+		"codeElement": "public innerMethodToPullUp() : void"
+}]
+},
+{
+	"type": "Pull Up Attribute",
+	"description": "Pull Up Attribute package innerFieldToPullUp : int from class pullmembersup.ClassToPullMembersUpFrom.InnerClassToPullMembersUpFrom to package innerFieldToPullUp : int from class pullmembersup.ClassToPullMembersUpFrom",
+	"leftSideLocations": [{
+		"filePath": "src/main/java/pullmembersup/ClassToPullMembersUpFrom.java",
+		"startLine": 17,
+		"endLine": 17,
+		"startColumn": 7,
+		"endColumn": 25,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "original attribute declaration",
+		"codeElement": "package innerFieldToPullUp : int"
+}],
+	"rightSideLocations": [{
+		"filePath": "src/main/java/pullmembersup/ClassToPullMembersUpFrom.java",
+		"startLine": 6,
+		"endLine": 6,
+		"startColumn": 6,
+		"endColumn": 24,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "pulled up attribute declaration",
+		"codeElement": "package innerFieldToPullUp : int"
+}]
+}
+]
+}]
+}
