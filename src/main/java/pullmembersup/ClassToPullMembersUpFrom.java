@@ -8,10 +8,6 @@ public class ClassToPullMembersUpFrom extends SuperclassToPullMembersInto {
 		System.out.println("ClassToPullMembersUpFrom.methodToPullUp");
 	}
 
-	public static void staticMethodToPullUp() {
-		System.out.println("ClassToPullMembersUpFrom.staticMethodToPullUp");
-	}
-
 
 	public class InnerClassToPullMembersUpFrom extends ClassToPullMembersUpFrom {
 		int innerFieldToPullUp;
