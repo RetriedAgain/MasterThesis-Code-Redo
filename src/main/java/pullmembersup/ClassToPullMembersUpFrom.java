@@ -4,6 +4,7 @@ public class ClassToPullMembersUpFrom extends SuperclassToPullMembersInto {
 
 	int fieldToPullUp;
 
+	@Override
 	public void methodToPullUp() {
 		System.out.println("ClassToPullMembersUpFrom.methodToPullUp");
 	}
