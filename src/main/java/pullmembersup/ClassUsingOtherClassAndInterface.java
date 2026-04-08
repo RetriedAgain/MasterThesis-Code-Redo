@@ -18,7 +18,7 @@ public class ClassUsingOtherClassAndInterface implements InterfaceToPullMembersU
 		// Use outer class
 		System.out.println(classToPullMembersUpFrom.fieldToPullUp);
 		classToPullMembersUpFrom.methodToPullUp();
-		ClassToPullMembersUpFrom.staticMethodToPullUp();
+		SuperclassToPullMembersInto.staticMethodToPullUp();
 
 		// Use inner class
 		System.out.println(innerClassToPullMembersUpFrom.innerFieldToPullUp);
