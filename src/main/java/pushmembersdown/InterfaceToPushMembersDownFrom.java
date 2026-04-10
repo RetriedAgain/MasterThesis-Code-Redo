@@ -5,12 +5,12 @@ public interface InterfaceToPushMembersDownFrom {
 
 	void interfaceMethodToPushDown();
 
-	static void interfaceStaticMethodToPushDown() {
-		System.out.println("interfaceStaticMethodToPushDown");
-	}
-
 	interface InnerInterfaceToPushIntoLowerInterface extends InterfaceToPushMembersDownFrom{
 		int INNER_CONSTANT = 6;
+
+		static void interfaceStaticMethodToPushDown() {
+			System.out.println("interfaceStaticMethodToPushDown");
+		}
 
 		void innerInterfaceMethodToPushDown();
 
