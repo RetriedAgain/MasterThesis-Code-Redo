@@ -42,7 +42,7 @@ public class ClassUsingOtherClassAndInterface implements LowerInterfaceToPushInt
 		InterfaceToPushMembersDownFrom.interfaceStaticMethodToPushDown();
 
 		// Use InnerInterface
-		System.out.println(InnerInterfaceToPushIntoLowerInterface.INNER_CONSTANT);
+		// System.out.println(InnerInterfaceToPushIntoLowerInterface.INNER_CONSTANT); // Breaks code when pushed down
 		// innerInterfaceToPushIntoLowerInterface.innerInterfaceMethodToPushDown(); // Breaks code when pushed down
 		InnerInterfaceToPushIntoLowerInterface.innerInterfaceStaticMethodToPushDown();
 
