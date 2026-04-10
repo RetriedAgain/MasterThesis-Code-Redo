@@ -10,9 +10,6 @@ public interface InterfaceToPushMembersDownFrom {
 	}
 
 	interface InnerInterfaceToPushIntoLowerInterface extends InterfaceToPushMembersDownFrom{
-		int INNER_CONSTANT = 6;
-
-		void innerInterfaceMethodToPushDown();
 
 		static void innerInterfaceStaticMethodToPushDown() {
 			System.out.println("innerInterfaceStaticMethodToPushDown");
