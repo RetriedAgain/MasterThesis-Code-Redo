@@ -1,0 +1,57 @@
+{
+"commits": [
+{
+	"repository": "https://github.com/RetriedAgain/MasterThesis-Code-Redo.git",
+	"sha1": "5e85964ae44ef4bad2c24577be8536c83cf2c69a",
+	"url": "https://github.com/RetriedAgain/MasterThesis-Code-Redo/commit/5e85964ae44ef4bad2c24577be8536c83cf2c69a",
+	"refactorings": [{
+	"type": "Push Down Method",
+	"description": "Push Down Method public innerInterfaceMethodToPushDown() : void from class pushmembersdown.InterfaceToPushMembersDownFrom.InnerInterfaceToPushIntoLowerInterface to public innerInterfaceMethodToPushDown() : void from class pushmembersdown.LowerInterfaceToPushInterfaceInto",
+	"leftSideLocations": [{
+		"filePath": "src/main/java/pushmembersdown/InterfaceToPushMembersDownFrom.java",
+		"startLine": 15,
+		"endLine": 15,
+		"startColumn": 3,
+		"endColumn": 41,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "public innerInterfaceMethodToPushDown() : void"
+}],
+	"rightSideLocations": [{
+		"filePath": "src/main/java/pushmembersdown/LowerInterfaceToPushInterfaceInto.java",
+		"startLine": 9,
+		"endLine": 9,
+		"startColumn": 2,
+		"endColumn": 40,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "pushed down method declaration",
+		"codeElement": "public innerInterfaceMethodToPushDown() : void"
+}]
+},
+{
+	"type": "Push Down Attribute",
+	"description": "Push Down Attribute public INNER_CONSTANT : int from class pushmembersdown.InterfaceToPushMembersDownFrom.InnerInterfaceToPushIntoLowerInterface to public INNER_CONSTANT : int from class pushmembersdown.LowerInterfaceToPushInterfaceInto",
+	"leftSideLocations": [{
+		"filePath": "src/main/java/pushmembersdown/InterfaceToPushMembersDownFrom.java",
+		"startLine": 13,
+		"endLine": 13,
+		"startColumn": 7,
+		"endColumn": 25,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "original attribute declaration",
+		"codeElement": "public INNER_CONSTANT : int"
+}],
+	"rightSideLocations": [{
+		"filePath": "src/main/java/pushmembersdown/LowerInterfaceToPushInterfaceInto.java",
+		"startLine": 5,
+		"endLine": 5,
+		"startColumn": 6,
+		"endColumn": 24,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "pushed down attribute declaration",
+		"codeElement": "public INNER_CONSTANT : int"
+}]
+}
+]
+}]
+}

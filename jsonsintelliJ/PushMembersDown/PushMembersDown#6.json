@@ -1,0 +1,33 @@
+{
+"commits": [
+{
+	"repository": "https://github.com/RetriedAgain/MasterThesis-Code-Redo.git",
+	"sha1": "c2fd1e5d922aac9bf872422277286187e87efbe2",
+	"url": "https://github.com/RetriedAgain/MasterThesis-Code-Redo/commit/c2fd1e5d922aac9bf872422277286187e87efbe2",
+	"refactorings": [{
+	"type": "Push Down Method",
+	"description": "Push Down Method public staticMethodToPushDown() : void from class pushmembersdown.ClassToPushMembersDownFrom to public staticMethodToPushDown() : void from class pushmembersdown.ClassToPushMembersDownFrom.InnerClassToPushMembersDownFrom",
+	"leftSideLocations": [{
+		"filePath": "src/main/java/pushmembersdown/ClassToPushMembersDownFrom.java",
+		"startLine": 11,
+		"endLine": 13,
+		"startColumn": 2,
+		"endColumn": 3,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "public staticMethodToPushDown() : void"
+}],
+	"rightSideLocations": [{
+		"filePath": "src/main/java/pushmembersdown/ClassToPushMembersDownFrom.java",
+		"startLine": 15,
+		"endLine": 17,
+		"startColumn": 3,
+		"endColumn": 4,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "pushed down method declaration",
+		"codeElement": "public staticMethodToPushDown() : void"
+}]
+}
+]
+}]
+}

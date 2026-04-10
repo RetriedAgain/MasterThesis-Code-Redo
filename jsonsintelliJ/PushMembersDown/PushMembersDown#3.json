@@ -1,0 +1,57 @@
+{
+"commits": [
+{
+	"repository": "https://github.com/RetriedAgain/MasterThesis-Code-Redo.git",
+	"sha1": "69590f065ba9b6d464a23f724108a2ca0d8c71bf",
+	"url": "https://github.com/RetriedAgain/MasterThesis-Code-Redo/commit/69590f065ba9b6d464a23f724108a2ca0d8c71bf",
+	"refactorings": [{
+	"type": "Push Down Method",
+	"description": "Push Down Method public interfaceMethodToPushDown() : void from class pushmembersdown.InterfaceToPushMembersDownFrom to public interfaceMethodToPushDown() : void from class pushmembersdown.InterfaceToPushMembersDownFrom.InnerInterfaceToPushIntoLowerInterface",
+	"leftSideLocations": [{
+		"filePath": "src/main/java/pushmembersdown/InterfaceToPushMembersDownFrom.java",
+		"startLine": 6,
+		"endLine": 6,
+		"startColumn": 2,
+		"endColumn": 35,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "public interfaceMethodToPushDown() : void"
+}],
+	"rightSideLocations": [{
+		"filePath": "src/main/java/pushmembersdown/InterfaceToPushMembersDownFrom.java",
+		"startLine": 19,
+		"endLine": 19,
+		"startColumn": 3,
+		"endColumn": 36,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "pushed down method declaration",
+		"codeElement": "public interfaceMethodToPushDown() : void"
+}]
+},
+{
+	"type": "Push Down Attribute",
+	"description": "Push Down Attribute public CONSTANT : int from class pushmembersdown.InterfaceToPushMembersDownFrom to public CONSTANT : int from class pushmembersdown.InterfaceToPushMembersDownFrom.InnerInterfaceToPushIntoLowerInterface",
+	"leftSideLocations": [{
+		"filePath": "src/main/java/pushmembersdown/InterfaceToPushMembersDownFrom.java",
+		"startLine": 4,
+		"endLine": 4,
+		"startColumn": 6,
+		"endColumn": 18,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "original attribute declaration",
+		"codeElement": "public CONSTANT : int"
+}],
+	"rightSideLocations": [{
+		"filePath": "src/main/java/pushmembersdown/InterfaceToPushMembersDownFrom.java",
+		"startLine": 11,
+		"endLine": 11,
+		"startColumn": 7,
+		"endColumn": 19,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "pushed down attribute declaration",
+		"codeElement": "public CONSTANT : int"
+}]
+}
+]
+}]
+}

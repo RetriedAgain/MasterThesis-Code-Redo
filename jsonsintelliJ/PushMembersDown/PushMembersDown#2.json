@@ -1,0 +1,57 @@
+{
+"commits": [
+{
+	"repository": "https://github.com/RetriedAgain/MasterThesis-Code-Redo.git",
+	"sha1": "1861bc5093b4e91c68096cb339af11272024f1f7",
+	"url": "https://github.com/RetriedAgain/MasterThesis-Code-Redo/commit/1861bc5093b4e91c68096cb339af11272024f1f7",
+	"refactorings": [{
+	"type": "Push Down Method",
+	"description": "Push Down Method public innerMethodToPushDown() : void from class pushmembersdown.ClassToPushMembersDownFrom.InnerClassToPushMembersDownFrom to public innerMethodToPushDown() : void from class pushmembersdown.SubclassToPushMembersInto",
+	"leftSideLocations": [{
+		"filePath": "src/main/java/pushmembersdown/ClassToPushMembersDownFrom.java",
+		"startLine": 19,
+		"endLine": 21,
+		"startColumn": 3,
+		"endColumn": 4,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "public innerMethodToPushDown() : void"
+}],
+	"rightSideLocations": [{
+		"filePath": "src/main/java/pushmembersdown/SubclassToPushMembersInto.java",
+		"startLine": 15,
+		"endLine": 17,
+		"startColumn": 2,
+		"endColumn": 3,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "pushed down method declaration",
+		"codeElement": "public innerMethodToPushDown() : void"
+}]
+},
+{
+	"type": "Push Down Attribute",
+	"description": "Push Down Attribute package innerFieldToPushDown : int from class pushmembersdown.ClassToPushMembersDownFrom.InnerClassToPushMembersDownFrom to package innerFieldToPushDown : int from class pushmembersdown.SubclassToPushMembersInto",
+	"leftSideLocations": [{
+		"filePath": "src/main/java/pushmembersdown/ClassToPushMembersDownFrom.java",
+		"startLine": 17,
+		"endLine": 17,
+		"startColumn": 7,
+		"endColumn": 27,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "original attribute declaration",
+		"codeElement": "package innerFieldToPushDown : int"
+}],
+	"rightSideLocations": [{
+		"filePath": "src/main/java/pushmembersdown/SubclassToPushMembersInto.java",
+		"startLine": 5,
+		"endLine": 5,
+		"startColumn": 6,
+		"endColumn": 26,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "pushed down attribute declaration",
+		"codeElement": "package innerFieldToPushDown : int"
+}]
+}
+]
+}]
+}

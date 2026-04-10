@@ -1,0 +1,219 @@
+{
+"commits": [
+{
+	"repository": "https://github.com/RetriedAgain/MasterThesis-Code-Redo.git",
+	"sha1": "cf640069c834139b646b49fb781baab9891be475",
+	"url": "https://github.com/RetriedAgain/MasterThesis-Code-Redo/commit/cf640069c834139b646b49fb781baab9891be475",
+	"refactorings": [{
+	"type": "Add Class Modifier",
+	"description": "Add Class Modifier abstract in class pushmembersdown.ClassToPushMembersDownFrom",
+	"leftSideLocations": [{
+		"filePath": "src/main/java/pushmembersdown/ClassToPushMembersDownFrom.java",
+		"startLine": 3,
+		"endLine": 27,
+		"startColumn": 0,
+		"endColumn": 2,
+		"codeElementType": "TYPE_DECLARATION",
+		"description": "original class declaration",
+		"codeElement": "pushmembersdown.ClassToPushMembersDownFrom"
+}],
+	"rightSideLocations": [{
+		"filePath": "src/main/java/pushmembersdown/ClassToPushMembersDownFrom.java",
+		"startLine": 3,
+		"endLine": 29,
+		"startColumn": 0,
+		"endColumn": 2,
+		"codeElementType": "TYPE_DECLARATION",
+		"description": "class declaration with added modifier",
+		"codeElement": "pushmembersdown.ClassToPushMembersDownFrom"
+}]
+},
+{
+	"type": "Add Method Modifier",
+	"description": "Add Method Modifier abstract in method public abstract methodToPushDown() : void from class pushmembersdown.ClassToPushMembersDownFrom",
+	"leftSideLocations": [{
+		"filePath": "src/main/java/pushmembersdown/ClassToPushMembersDownFrom.java",
+		"startLine": 7,
+		"endLine": 9,
+		"startColumn": 2,
+		"endColumn": 3,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "public methodToPushDown() : void"
+}],
+	"rightSideLocations": [{
+		"filePath": "src/main/java/pushmembersdown/ClassToPushMembersDownFrom.java",
+		"startLine": 5,
+		"endLine": 5,
+		"startColumn": 2,
+		"endColumn": 42,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "method declaration with added modifier",
+		"codeElement": "public abstract methodToPushDown() : void"
+}]
+},
+{
+	"type": "Add Method Annotation",
+	"description": "Add Method Annotation @Override in method public methodToPushDown() : void from class pushmembersdown.ClassToPushMembersDownFrom.InnerClassToPushMembersDownFrom",
+	"leftSideLocations": [{
+		"filePath": "src/main/java/pushmembersdown/ClassToPushMembersDownFrom.java",
+		"startLine": 7,
+		"endLine": 9,
+		"startColumn": 2,
+		"endColumn": 3,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "public methodToPushDown() : void"
+}],
+	"rightSideLocations": [{
+		"filePath": "src/main/java/pushmembersdown/ClassToPushMembersDownFrom.java",
+		"startLine": 24,
+		"endLine": 24,
+		"startColumn": 3,
+		"endColumn": 12,
+		"codeElementType": "ANNOTATION",
+		"description": "added annotation",
+		"codeElement": "@Override"
+}, {
+		"filePath": "src/main/java/pushmembersdown/ClassToPushMembersDownFrom.java",
+		"startLine": 24,
+		"endLine": 27,
+		"startColumn": 3,
+		"endColumn": 4,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "method declaration with added annotation",
+		"codeElement": "public methodToPushDown() : void"
+}]
+},
+{
+	"type": "Push Down Method",
+	"description": "Push Down Method public methodToPushDown() : void from class pushmembersdown.ClassToPushMembersDownFrom to public methodToPushDown() : void from class pushmembersdown.ClassToPushMembersDownFrom.InnerClassToPushMembersDownFrom",
+	"leftSideLocations": [{
+		"filePath": "src/main/java/pushmembersdown/ClassToPushMembersDownFrom.java",
+		"startLine": 7,
+		"endLine": 9,
+		"startColumn": 2,
+		"endColumn": 3,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "public methodToPushDown() : void"
+}],
+	"rightSideLocations": [{
+		"filePath": "src/main/java/pushmembersdown/ClassToPushMembersDownFrom.java",
+		"startLine": 24,
+		"endLine": 27,
+		"startColumn": 3,
+		"endColumn": 4,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "pushed down method declaration",
+		"codeElement": "public methodToPushDown() : void"
+}]
+},
+{
+	"type": "Add Method Annotation",
+	"description": "Add Method Annotation @Override in method public methodToPushDown() : void from class pushmembersdown.SubclassToPushMembersInto",
+	"leftSideLocations": [{
+		"filePath": "src/main/java/pushmembersdown/ClassToPushMembersDownFrom.java",
+		"startLine": 7,
+		"endLine": 9,
+		"startColumn": 2,
+		"endColumn": 3,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "public methodToPushDown() : void"
+}],
+	"rightSideLocations": [{
+		"filePath": "src/main/java/pushmembersdown/SubclassToPushMembersInto.java",
+		"startLine": 16,
+		"endLine": 16,
+		"startColumn": 2,
+		"endColumn": 11,
+		"codeElementType": "ANNOTATION",
+		"description": "added annotation",
+		"codeElement": "@Override"
+}, {
+		"filePath": "src/main/java/pushmembersdown/SubclassToPushMembersInto.java",
+		"startLine": 16,
+		"endLine": 19,
+		"startColumn": 2,
+		"endColumn": 3,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "method declaration with added annotation",
+		"codeElement": "public methodToPushDown() : void"
+}]
+},
+{
+	"type": "Push Down Method",
+	"description": "Push Down Method public methodToPushDown() : void from class pushmembersdown.ClassToPushMembersDownFrom to public methodToPushDown() : void from class pushmembersdown.SubclassToPushMembersInto",
+	"leftSideLocations": [{
+		"filePath": "src/main/java/pushmembersdown/ClassToPushMembersDownFrom.java",
+		"startLine": 7,
+		"endLine": 9,
+		"startColumn": 2,
+		"endColumn": 3,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "public methodToPushDown() : void"
+}],
+	"rightSideLocations": [{
+		"filePath": "src/main/java/pushmembersdown/SubclassToPushMembersInto.java",
+		"startLine": 16,
+		"endLine": 19,
+		"startColumn": 2,
+		"endColumn": 3,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "pushed down method declaration",
+		"codeElement": "public methodToPushDown() : void"
+}]
+},
+{
+	"type": "Push Down Method",
+	"description": "Push Down Method public staticMethodToPushDown() : void from class pushmembersdown.ClassToPushMembersDownFrom to public staticMethodToPushDown() : void from class pushmembersdown.SubclassToPushMembersInto",
+	"leftSideLocations": [{
+		"filePath": "src/main/java/pushmembersdown/ClassToPushMembersDownFrom.java",
+		"startLine": 11,
+		"endLine": 13,
+		"startColumn": 2,
+		"endColumn": 3,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "public staticMethodToPushDown() : void"
+}],
+	"rightSideLocations": [{
+		"filePath": "src/main/java/pushmembersdown/SubclassToPushMembersInto.java",
+		"startLine": 7,
+		"endLine": 9,
+		"startColumn": 2,
+		"endColumn": 3,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "pushed down method declaration",
+		"codeElement": "public staticMethodToPushDown() : void"
+}]
+},
+{
+	"type": "Push Down Method",
+	"description": "Push Down Method public staticMethodToPushDown() : void from class pushmembersdown.ClassToPushMembersDownFrom to public staticMethodToPushDown() : void from class pushmembersdown.ClassToPushMembersDownFrom.InnerClassToPushMembersDownFrom",
+	"leftSideLocations": [{
+		"filePath": "src/main/java/pushmembersdown/ClassToPushMembersDownFrom.java",
+		"startLine": 11,
+		"endLine": 13,
+		"startColumn": 2,
+		"endColumn": 3,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "public staticMethodToPushDown() : void"
+}],
+	"rightSideLocations": [{
+		"filePath": "src/main/java/pushmembersdown/ClassToPushMembersDownFrom.java",
+		"startLine": 12,
+		"endLine": 14,
+		"startColumn": 3,
+		"endColumn": 4,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "pushed down method declaration",
+		"codeElement": "public staticMethodToPushDown() : void"
+}]
+}
+]
+}]
+}
