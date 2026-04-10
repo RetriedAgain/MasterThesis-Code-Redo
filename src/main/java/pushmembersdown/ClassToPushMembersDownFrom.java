@@ -8,13 +8,13 @@ public class ClassToPushMembersDownFrom {
 		System.out.println("ClassToPushMembersDownFrom.methodToPushDown");
 	}
 
-	public static void staticMethodToPushDown() {
-		System.out.println("ClassToPushMembersDownFrom.staticMethodToPushDown");
-	}
-
 
 	public class InnerClassToPushMembersDownFrom extends ClassToPushMembersDownFrom {
 		int innerFieldToPushDown;
+
+		public static void staticMethodToPushDown() {
+			System.out.println("ClassToPushMembersDownFrom.staticMethodToPushDown");
+		}
 
 		public void innerMethodToPushDown() {
 			System.out.println("ClassToPushMembersDownFrom.innerMethodToPushDown");
