@@ -27,8 +27,8 @@ public class ClassUsingOtherClassAndInterface implements LowerInterfaceToPushInt
 		ClassToPushMembersDownFrom.staticMethodToPushDown();
 
 		// 2. Inner Class
-		System.out.println(subclassToPushMembersInto.innerFieldToPushDown);
-		subclassToPushMembersInto.innerMethodToPushDown();
+		System.out.println(subclassToPushMembersInto.fieldToPushDown);
+		subclassToPushMembersInto.methodToPushDown();
 		ClassToPushMembersDownFrom.InnerClassToPushMembersDownFrom.innerStaticMethodToPushDown();
 
 		// 3. Subclass itself
