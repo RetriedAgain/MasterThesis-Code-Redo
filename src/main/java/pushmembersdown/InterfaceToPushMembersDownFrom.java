@@ -1,9 +1,6 @@
 package pushmembersdown;
 
 public interface InterfaceToPushMembersDownFrom {
-	int CONSTANT = 5;
-
-	void interfaceMethodToPushDown();
 
 	static void interfaceStaticMethodToPushDown() {
 		System.out.println("interfaceStaticMethodToPushDown");
@@ -11,6 +8,7 @@ public interface InterfaceToPushMembersDownFrom {
 
 	interface InnerInterfaceToPushIntoLowerInterface extends InterfaceToPushMembersDownFrom{
 		int INNER_CONSTANT = 6;
+		int CONSTANT = 5;
 
 		void innerInterfaceMethodToPushDown();
 
@@ -18,6 +16,7 @@ public interface InterfaceToPushMembersDownFrom {
 			System.out.println("innerInterfaceStaticMethodToPushDown");
 		}
 
+		void interfaceMethodToPushDown();
 	}
 }
 
