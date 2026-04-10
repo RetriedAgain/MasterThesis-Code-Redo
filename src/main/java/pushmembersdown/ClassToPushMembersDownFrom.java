@@ -1,12 +1,10 @@
 package pushmembersdown;
 
-public class ClassToPushMembersDownFrom {
+public abstract class ClassToPushMembersDownFrom {
 
 	int fieldToPushDown;
 
-	public void methodToPushDown() {
-		System.out.println("ClassToPushMembersDownFrom.methodToPushDown");
-	}
+	public abstract void methodToPushDown();
 
 	public static void staticMethodToPushDown() {
 		System.out.println("ClassToPushMembersDownFrom.staticMethodToPushDown");
@@ -22,6 +20,11 @@ public class ClassToPushMembersDownFrom {
 
 		public static void innerStaticMethodToPushDown() {
 			System.out.println("ClassToPushMembersDownFrom.innerStaticMethodToPushDown");
+		}
+
+		@Override
+		public void methodToPushDown() {
+			System.out.println("ClassToPushMembersDownFrom.methodToPushDown");
 		}
 	}
 }
