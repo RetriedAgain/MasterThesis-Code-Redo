@@ -13,15 +13,4 @@ public class ClassToPushMembersDownFrom {
 	}
 
 
-	public class InnerClassToPushMembersDownFrom extends ClassToPushMembersDownFrom {
-		int innerFieldToPushDown;
-
-		public void innerMethodToPushDown() {
-			System.out.println("ClassToPushMembersDownFrom.innerMethodToPushDown");
-		}
-
-		public static void innerStaticMethodToPushDown() {
-			System.out.println("ClassToPushMembersDownFrom.innerStaticMethodToPushDown");
-		}
-	}
 }
