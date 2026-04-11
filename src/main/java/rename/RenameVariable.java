@@ -65,9 +65,9 @@ public class RenameVariable {
 	}
 
 	public static void while_cond() {
-		int importantVariable = 5;
+		int secret = 5;
 
-		while (importantVariable == 5) {
+		while (secret == 5) {
 			System.out.println("Good job");
 		}
 	}
