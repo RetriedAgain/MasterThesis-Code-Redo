@@ -1,0 +1,69 @@
+{
+"commits": [
+{
+	"repository": "https://github.com/RetriedAgain/MasterThesis-Code-Redo.git",
+	"sha1": "f831650eaa73f7779a31bda2b22dbccd32745eae",
+	"url": "https://github.com/RetriedAgain/MasterThesis-Code-Redo/commit/f831650eaa73f7779a31bda2b22dbccd32745eae",
+	"refactorings": [{
+	"type": "Rename Variable",
+	"description": "Rename Variable importantVariable : int to secret : int in method public switch_case_cond(paramVariable int) : void from class rename.RenameVariable",
+	"leftSideLocations": [{
+		"filePath": "src/main/java/rename/RenameVariable.java",
+		"startLine": 94,
+		"endLine": 94,
+		"startColumn": 13,
+		"endColumn": 34,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "original variable declaration",
+		"codeElement": "importantVariable : int"
+}, {
+		"filePath": "src/main/java/rename/RenameVariable.java",
+		"startLine": 94,
+		"endLine": 94,
+		"startColumn": 3,
+		"endColumn": 35,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}, {
+		"filePath": "src/main/java/rename/RenameVariable.java",
+		"startLine": 97,
+		"endLine": 97,
+		"startColumn": 4,
+		"endColumn": 27,
+		"codeElementType": "SWITCH_CASE",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "src/main/java/rename/RenameVariable.java",
+		"startLine": 94,
+		"endLine": 94,
+		"startColumn": 13,
+		"endColumn": 23,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "renamed variable declaration",
+		"codeElement": "secret : int"
+}, {
+		"filePath": "src/main/java/rename/RenameVariable.java",
+		"startLine": 94,
+		"endLine": 94,
+		"startColumn": 3,
+		"endColumn": 24,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "statement referencing the renamed variable",
+		"codeElement": null
+}, {
+		"filePath": "src/main/java/rename/RenameVariable.java",
+		"startLine": 97,
+		"endLine": 97,
+		"startColumn": 4,
+		"endColumn": 16,
+		"codeElementType": "SWITCH_CASE",
+		"description": "statement referencing the renamed variable",
+		"codeElement": null
+}]
+}
+]
+}]
+}

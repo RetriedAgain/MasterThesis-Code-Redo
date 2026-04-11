@@ -1,0 +1,105 @@
+{
+"commits": [
+{
+	"repository": "https://github.com/RetriedAgain/MasterThesis-Code-Redo.git",
+	"sha1": "ae27f5dec8672ddf873897da1d08e19b062b08b8",
+	"url": "https://github.com/RetriedAgain/MasterThesis-Code-Redo/commit/ae27f5dec8672ddf873897da1d08e19b062b08b8",
+	"refactorings": [{
+	"type": "Rename Variable",
+	"description": "Rename Variable importantVariable : int to secret : int in method public redeclaration() : void from class rename.RenameVariable",
+	"leftSideLocations": [{
+		"filePath": "src/main/java/rename/RenameVariable.java",
+		"startLine": 179,
+		"endLine": 179,
+		"startColumn": 7,
+		"endColumn": 28,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "original variable declaration",
+		"codeElement": "importantVariable : int"
+}, {
+		"filePath": "src/main/java/rename/RenameVariable.java",
+		"startLine": 179,
+		"endLine": 179,
+		"startColumn": 3,
+		"endColumn": 29,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}, {
+		"filePath": "src/main/java/rename/RenameVariable.java",
+		"startLine": 181,
+		"endLine": 181,
+		"startColumn": 3,
+		"endColumn": 41,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}, {
+		"filePath": "src/main/java/rename/RenameVariable.java",
+		"startLine": 182,
+		"endLine": 182,
+		"startColumn": 3,
+		"endColumn": 46,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}, {
+		"filePath": "src/main/java/rename/RenameVariable.java",
+		"startLine": 184,
+		"endLine": 184,
+		"startColumn": 3,
+		"endColumn": 41,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "src/main/java/rename/RenameVariable.java",
+		"startLine": 179,
+		"endLine": 179,
+		"startColumn": 7,
+		"endColumn": 17,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "renamed variable declaration",
+		"codeElement": "secret : int"
+}, {
+		"filePath": "src/main/java/rename/RenameVariable.java",
+		"startLine": 179,
+		"endLine": 179,
+		"startColumn": 3,
+		"endColumn": 18,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "statement referencing the renamed variable",
+		"codeElement": null
+}, {
+		"filePath": "src/main/java/rename/RenameVariable.java",
+		"startLine": 181,
+		"endLine": 181,
+		"startColumn": 3,
+		"endColumn": 30,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the renamed variable",
+		"codeElement": null
+}, {
+		"filePath": "src/main/java/rename/RenameVariable.java",
+		"startLine": 182,
+		"endLine": 182,
+		"startColumn": 3,
+		"endColumn": 24,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the renamed variable",
+		"codeElement": null
+}, {
+		"filePath": "src/main/java/rename/RenameVariable.java",
+		"startLine": 184,
+		"endLine": 184,
+		"startColumn": 3,
+		"endColumn": 30,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the renamed variable",
+		"codeElement": null
+}]
+}
+]
+}]
+}

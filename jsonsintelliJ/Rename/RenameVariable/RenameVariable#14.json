@@ -1,0 +1,69 @@
+{
+"commits": [
+{
+	"repository": "https://github.com/RetriedAgain/MasterThesis-Code-Redo.git",
+	"sha1": "377f706c7034ae7db35d500c37e7a61db5080c21",
+	"url": "https://github.com/RetriedAgain/MasterThesis-Code-Redo/commit/377f706c7034ae7db35d500c37e7a61db5080c21",
+	"refactorings": [{
+	"type": "Rename Variable",
+	"description": "Rename Variable importantVariable : int to secret : int in method public do_while_cond() : void from class rename.RenameVariable",
+	"leftSideLocations": [{
+		"filePath": "src/main/java/rename/RenameVariable.java",
+		"startLine": 123,
+		"endLine": 123,
+		"startColumn": 7,
+		"endColumn": 28,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "original variable declaration",
+		"codeElement": "importantVariable : int"
+}, {
+		"filePath": "src/main/java/rename/RenameVariable.java",
+		"startLine": 123,
+		"endLine": 123,
+		"startColumn": 3,
+		"endColumn": 29,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}, {
+		"filePath": "src/main/java/rename/RenameVariable.java",
+		"startLine": 125,
+		"endLine": 128,
+		"startColumn": 3,
+		"endColumn": 34,
+		"codeElementType": "DO_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "src/main/java/rename/RenameVariable.java",
+		"startLine": 123,
+		"endLine": 123,
+		"startColumn": 7,
+		"endColumn": 17,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "renamed variable declaration",
+		"codeElement": "secret : int"
+}, {
+		"filePath": "src/main/java/rename/RenameVariable.java",
+		"startLine": 123,
+		"endLine": 123,
+		"startColumn": 3,
+		"endColumn": 18,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "statement referencing the renamed variable",
+		"codeElement": null
+}, {
+		"filePath": "src/main/java/rename/RenameVariable.java",
+		"startLine": 125,
+		"endLine": 128,
+		"startColumn": 3,
+		"endColumn": 23,
+		"codeElementType": "DO_STATEMENT",
+		"description": "statement referencing the renamed variable",
+		"codeElement": null
+}]
+}
+]
+}]
+}
