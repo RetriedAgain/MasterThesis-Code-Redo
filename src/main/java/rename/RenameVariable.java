@@ -137,10 +137,10 @@ public class RenameVariable {
 	}
 
 	public static void for_under() {
-		int importantVariable = 5;
+		int secret = 5;
 
 		for (int i = 0; i < 5; i++) {
-			System.out.println(importantVariable);
+			System.out.println(secret);
 		}
 	}
 
