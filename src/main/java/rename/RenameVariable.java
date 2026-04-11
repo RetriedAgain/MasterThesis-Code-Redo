@@ -82,9 +82,9 @@ public class RenameVariable {
 	}
 
 	public static void switch_cond() {
-		int importantVariable = 5;
+		int secret = 5;
 
-		switch (importantVariable) {
+		switch (secret) {
 			case 5:
 				System.out.println("Good job");
 		}
