@@ -129,9 +129,9 @@ public class RenameVariable {
 	}
 
 	public static void for_cond() {
-		int importantVariable = 5;
+		int secret = 5;
 
-		for (int i = 0; i < importantVariable; i++) {
+		for (int i = 0; i < secret; i++) {
 			System.out.println("Good job");
 		}
 	}
