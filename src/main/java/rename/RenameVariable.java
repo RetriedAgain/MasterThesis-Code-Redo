@@ -109,11 +109,11 @@ public class RenameVariable {
 	}
 
 	public static void do_while_do() {
-		int importantVariable = 5;
+		int secret = 5;
 
 		do {
-			System.out.println(importantVariable);
-			importantVariable++;
+			System.out.println(secret);
+			secret++;
 			break;
 		}
 		while (true);
