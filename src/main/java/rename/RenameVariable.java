@@ -161,13 +161,13 @@ public class RenameVariable {
 	}
 
 	public static void nested_loop() {
-		int importantVariable = 5;
+		int secret = 5;
 		int[] intArray = new int[5];
 
 		for (int i : intArray) {
-			while(importantVariable == 5) {
-				for (int j = 0; j < importantVariable; j++) {
-					if (j == importantVariable) {
+			while(secret == 5) {
+				for (int j = 0; j < secret; j++) {
+					if (j == secret) {
 						System.out.println("Good job");
 					}
 				}
