@@ -145,8 +145,8 @@ public class RenameVariable {
 	}
 
 	public static void for_each_cond() {
-		int[] intArray = new int[5];
-		for (int i : intArray) {
+		int[] secret = new int[5];
+		for (int i : secret) {
 			System.out.println("Good job");
 		}
 	}
