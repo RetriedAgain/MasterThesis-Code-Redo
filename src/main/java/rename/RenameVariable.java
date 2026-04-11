@@ -73,10 +73,10 @@ public class RenameVariable {
 	}
 
 	public static void while_under() {
-		int importantVariable = 5;
+		int secret = 5;
 
 		while (true) {
-			System.out.println(importantVariable);
+			System.out.println(secret);
 			break;
 		}
 	}
