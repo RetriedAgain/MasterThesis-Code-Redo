@@ -91,10 +91,10 @@ public class RenameVariable {
 	}
 
 	public static void switch_case_cond(int paramVariable) {
-		final int importantVariable = 5;
+		final int secret = 5;
 
 		switch (paramVariable) {
-			case importantVariable:
+			case secret:
 				System.out.println("Good job");
 		}
 	}
