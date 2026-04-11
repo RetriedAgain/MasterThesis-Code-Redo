@@ -3,8 +3,8 @@ package rename;
 public class RenameVariable {
 
 	public static void min() {
-		int importantVariable = 5;
-		System.out.println(importantVariable);
+		int secret = 5;
+		System.out.println(secret);
 	}
 
 	public static void ifCond() {
