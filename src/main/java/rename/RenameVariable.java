@@ -120,12 +120,12 @@ public class RenameVariable {
 	}
 
 	public static void do_while_cond() {
-		int importantVariable = 5;
+		int secret = 5;
 
 		do {
 			System.out.println("Good job");
 		}
-		while (importantVariable == 5);
+		while (secret == 5);
 	}
 
 	public static void for_cond() {
