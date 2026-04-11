@@ -45,9 +45,9 @@ public class RenameVariable {
 	}
 
 	public static void if_else_cond(int paramVariable) {
-		int importantVariable = 5;
+		int secret = 5;
 
-		if (importantVariable == 5) {
+		if (secret == 5) {
 			System.out.println("Good job");
 		} else {
 			System.out.println("Bad job");
