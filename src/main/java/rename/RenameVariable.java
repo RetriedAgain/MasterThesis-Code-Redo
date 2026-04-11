@@ -152,11 +152,11 @@ public class RenameVariable {
 	}
 
 	public static void for_each_under() {
-		int importantVariable = 5;
+		int secret = 5;
 		int[] intArray = new int[5];
 
 		for (int i : intArray) {
-			System.out.println(importantVariable + i);
+			System.out.println(secret + i);
 		}
 	}
 
