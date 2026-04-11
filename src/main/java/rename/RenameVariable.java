@@ -25,11 +25,11 @@ public class RenameVariable {
 
 
 	public static void if_else_if_cond(int paramVariable) {
-		int importantVariable = 5;
+		int secret = 5;
 
-		if ((importantVariable + paramVariable) == 5) {
+		if ((secret + paramVariable) == 5) {
 			System.out.println("Good job");
-		} else if(importantVariable == 5) {
+		} else if(secret == 5) {
 			System.out.println("Bad job");
 		}
 	}
