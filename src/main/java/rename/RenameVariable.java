@@ -8,9 +8,9 @@ public class RenameVariable {
 	}
 
 	public static void ifCond() {
-		int importantVariable = 5;
+		int secret = 5;
 
-		if (importantVariable == 5) {
+		if (secret == 5) {
 			System.out.println("Good job");
 		}
 	}
