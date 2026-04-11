@@ -176,12 +176,12 @@ public class RenameVariable {
 	}
 
 	public static void redeclaration() {
-		int importantVariable = 5;
+		int secret = 5;
 
-		System.out.println(importantVariable);
-		importantVariable = importantVariable + 10;
+		System.out.println(secret);
+		secret = secret + 10;
 
-		System.out.println(importantVariable);
+		System.out.println(secret);
 	}
 
 }
