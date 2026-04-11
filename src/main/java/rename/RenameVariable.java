@@ -16,10 +16,10 @@ public class RenameVariable {
 	}
 
 	public static void ifCondUnder() {
-		int importantVariable = 5;
+		int secret = 5;
 
 		if (true) {
-			System.out.println(importantVariable);
+			System.out.println(secret);
 		}
 	}
 
