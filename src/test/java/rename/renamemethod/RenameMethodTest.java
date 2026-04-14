@@ -13,9 +13,11 @@ class RenameMethodTest {
 	void toRenameTest() {
 		PrintStream originalOut = System.out;
 		ByteArrayOutputStream baos = new ByteArrayOutputStream();
+		RenameMethod renameMethod = new RenameMethod();
 		try {
 			System.setOut(new PrintStream(baos));
-			RenameMethod.toRename();
+
+			renameMethod.toRename();
 		} finally {
 			System.setOut(originalOut);
 		}

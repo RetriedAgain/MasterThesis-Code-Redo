@@ -1,23 +1,22 @@
 package rename.renamemethod;
 
 public class RenameMethod {
-
-	public static void toRename() {
+	public void toRename() {
 		System.out.println("This should be renamed.");
 	}
 
-	public static void usage1() {
+	public void usage1() {
 		System.out.println("Usage1");
-		toRename();
+		this.toRename();
 	}
 
-	public static void usage2() {
-		toRename();
+	public void usage2() {
+		this.toRename();
 	}
 
-	public static void usage3() {
-		usage1();
-		usage2();
+	public void usage3() {
+		this.usage1();
+		this.usage2();
 	}
 
 
