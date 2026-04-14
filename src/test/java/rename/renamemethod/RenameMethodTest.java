@@ -2,15 +2,12 @@ package rename.renamemethod;
 
 import org.junit.jupiter.api.Test;
 
-import java.io.ByteArrayOutputStream;
-import java.io.PrintStream;
-
 import static org.junit.jupiter.api.Assertions.*;
 
 class RenameMethodTest {
 
 	@Test
-	void abstractMethodToRenameTest() {
-		assertEquals(0, new RenameMethod().abstractMethodToRename());
+	void secretTest() {
+		assertEquals(0, new RenameMethod().secret());
 	}
 }

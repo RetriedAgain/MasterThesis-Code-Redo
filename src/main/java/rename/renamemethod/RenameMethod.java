@@ -3,17 +3,17 @@ package rename.renamemethod;
 public class RenameMethod extends Abstract {
 
 	@Override
-	int abstractMethodToRename() {
+	int secret() {
 		return 0;
 	}
 
 	public void usage1() {
 		System.out.println("Usage1");
-		this.abstractMethodToRename();
+		this.secret();
 	}
 
 	public void usage2() {
-		this.abstractMethodToRename();
+		this.secret();
 	}
 
 	public void usage3() {
