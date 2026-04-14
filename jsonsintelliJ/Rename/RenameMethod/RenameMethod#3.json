@@ -1,0 +1,81 @@
+{
+"commits": [
+{
+	"repository": "https://github.com/RetriedAgain/MasterThesis-Code-Redo.git",
+	"sha1": "ca14dd13495230dadd0e1743444b1b29eb55b6e2",
+	"url": "https://github.com/RetriedAgain/MasterThesis-Code-Redo/commit/ca14dd13495230dadd0e1743444b1b29eb55b6e2",
+	"refactorings": [{
+	"type": "Rename Method",
+	"description": "Rename Method package abstractMethodToRenameTest() : void renamed to package secretTest() : void in class rename.renamemethod.RenameMethodTest",
+	"leftSideLocations": [{
+		"filePath": "src/test/java/rename/renamemethod/RenameMethodTest.java",
+		"startLine": 12,
+		"endLine": 15,
+		"startColumn": 2,
+		"endColumn": 3,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "package abstractMethodToRenameTest() : void"
+}],
+	"rightSideLocations": [{
+		"filePath": "src/test/java/rename/renamemethod/RenameMethodTest.java",
+		"startLine": 9,
+		"endLine": 12,
+		"startColumn": 2,
+		"endColumn": 3,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "renamed method declaration",
+		"codeElement": "package secretTest() : void"
+}]
+},
+{
+	"type": "Rename Method",
+	"description": "Rename Method package abstractMethodToRename() : int renamed to package secret() : int in class rename.renamemethod.RenameMethod",
+	"leftSideLocations": [{
+		"filePath": "src/main/java/rename/renamemethod/RenameMethod.java",
+		"startLine": 5,
+		"endLine": 8,
+		"startColumn": 2,
+		"endColumn": 3,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "package abstractMethodToRename() : int"
+}],
+	"rightSideLocations": [{
+		"filePath": "src/main/java/rename/renamemethod/RenameMethod.java",
+		"startLine": 5,
+		"endLine": 8,
+		"startColumn": 2,
+		"endColumn": 3,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "renamed method declaration",
+		"codeElement": "package secret() : int"
+}]
+},
+{
+	"type": "Rename Method",
+	"description": "Rename Method package abstract abstractMethodToRename() : int renamed to package abstract secret() : int in class rename.renamemethod.Abstract",
+	"leftSideLocations": [{
+		"filePath": "src/main/java/rename/renamemethod/Abstract.java",
+		"startLine": 4,
+		"endLine": 4,
+		"startColumn": 2,
+		"endColumn": 40,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "package abstract abstractMethodToRename() : int"
+}],
+	"rightSideLocations": [{
+		"filePath": "src/main/java/rename/renamemethod/Abstract.java",
+		"startLine": 4,
+		"endLine": 4,
+		"startColumn": 2,
+		"endColumn": 24,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "renamed method declaration",
+		"codeElement": "package abstract secret() : int"
+}]
+}
+]
+}]
+}
