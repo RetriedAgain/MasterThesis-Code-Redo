@@ -1,0 +1,57 @@
+{
+"commits": [
+{
+	"repository": "https://github.com/RetriedAgain/MasterThesis-Code-Redo.git",
+	"sha1": "66e190bfac33a3702d0da89dabc20c740bdefe2d",
+	"url": "https://github.com/RetriedAgain/MasterThesis-Code-Redo/commit/66e190bfac33a3702d0da89dabc20c740bdefe2d",
+	"refactorings": [{
+	"type": "Rename Method",
+	"description": "Rename Method package toRenameTest() : void renamed to package secretTest() : void in class rename.renamemethod.RenameMethodTest",
+	"leftSideLocations": [{
+		"filePath": "src/test/java/rename/renamemethod/RenameMethodTest.java",
+		"startLine": 12,
+		"endLine": 27,
+		"startColumn": 2,
+		"endColumn": 3,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "package toRenameTest() : void"
+}],
+	"rightSideLocations": [{
+		"filePath": "src/test/java/rename/renamemethod/RenameMethodTest.java",
+		"startLine": 12,
+		"endLine": 27,
+		"startColumn": 2,
+		"endColumn": 3,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "renamed method declaration",
+		"codeElement": "package secretTest() : void"
+}]
+},
+{
+	"type": "Rename Method",
+	"description": "Rename Method public toRename() : void renamed to public secret() : void in class rename.renamemethod.RenameMethod",
+	"leftSideLocations": [{
+		"filePath": "src/main/java/rename/renamemethod/RenameMethod.java",
+		"startLine": 4,
+		"endLine": 6,
+		"startColumn": 2,
+		"endColumn": 3,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "public toRename() : void"
+}],
+	"rightSideLocations": [{
+		"filePath": "src/main/java/rename/renamemethod/RenameMethod.java",
+		"startLine": 4,
+		"endLine": 6,
+		"startColumn": 2,
+		"endColumn": 3,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "renamed method declaration",
+		"codeElement": "public secret() : void"
+}]
+}
+]
+}]
+}
