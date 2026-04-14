@@ -1,17 +1,17 @@
 package rename.renamemethod;
 
 public class RenameMethod {
-	public void toRename() {
+	public void secret() {
 		System.out.println("This should be renamed.");
 	}
 
 	public void usage1() {
 		System.out.println("Usage1");
-		this.toRename();
+		this.secret();
 	}
 
 	public void usage2() {
-		this.toRename();
+		this.secret();
 	}
 
 	public void usage3() {

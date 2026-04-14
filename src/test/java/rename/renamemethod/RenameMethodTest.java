@@ -10,14 +10,14 @@ import static org.junit.jupiter.api.Assertions.*;
 class RenameMethodTest {
 
 	@Test
-	void toRenameTest() {
+	void secretTest() {
 		PrintStream originalOut = System.out;
 		ByteArrayOutputStream baos = new ByteArrayOutputStream();
 		RenameMethod renameMethod = new RenameMethod();
 		try {
 			System.setOut(new PrintStream(baos));
 
-			renameMethod.toRename();
+			renameMethod.secret();
 		} finally {
 			System.setOut(originalOut);
 		}
