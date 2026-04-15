@@ -1,31 +1,31 @@
 package rename.renamefield;
 
 public class RenameField {
-	int toRenameField = 5;
+	int secret = 5;
 	int[] arrayToRename = new int[5];
 
 
 	public void min() {
-		System.out.println(toRenameField);
+		System.out.println(secret);
 	}
 
 	public  void ifCond() {
-		if (toRenameField == 5) {
+		if (secret == 5) {
 			System.out.println("Good job");
 		}
 	}
 
 	public  void ifCondUnder() {
 		if (true) {
-			System.out.println(toRenameField);
+			System.out.println(secret);
 		}
 	}
 
 
 	public  void if_else_if_cond(int paramVariable) {
-		if ((toRenameField + paramVariable) == 5) {
+		if ((secret + paramVariable) == 5) {
 			System.out.println("Good job");
-		} else if(toRenameField == 5) {
+		} else if(secret == 5) {
 			System.out.println("Bad job");
 		}
 	}
@@ -34,12 +34,12 @@ public class RenameField {
 		if (false) {
 			System.out.println("Good job");
 		} else if(true) {
-			System.out.println(toRenameField);
+			System.out.println(secret);
 		}
 	}
 
 	public  void if_else_cond(int paramVariable) {
-		if (toRenameField == 5) {
+		if (secret == 5) {
 			System.out.println("Good job");
 		} else {
 			System.out.println("Bad job");
@@ -50,25 +50,25 @@ public class RenameField {
 		if (false) {
 			System.out.println("Good job");
 		} else {
-			System.out.println(toRenameField);
+			System.out.println(secret);
 		}
 	}
 
 	public  void while_cond() {
-		while (toRenameField == 5) {
+		while (secret == 5) {
 			System.out.println("Good job");
 		}
 	}
 
 	public  void while_under() {
 		while (true) {
-			System.out.println(toRenameField);
+			System.out.println(secret);
 			break;
 		}
 	}
 
 	public  void switch_cond() {
-		switch (toRenameField) {
+		switch (secret) {
 			case 5:
 				System.out.println("Good job");
 		}
@@ -76,7 +76,7 @@ public class RenameField {
 
 //	public  void switch_case_cond(int paramVariable) {
 //		switch (paramVariable) {
-//			case toRenameField: // Constant required
+//			case secret: // Constant required
 //				System.out.println("Good job");
 //		}
 //	}
@@ -84,13 +84,13 @@ public class RenameField {
 	public  void switch_case_under(int paramVariable) {
 		switch (paramVariable) {
 			case 5:
-				System.out.println(toRenameField);
+				System.out.println(secret);
 		}
 	}
 
 	public  void do_while_do() {
 		do {
-			System.out.println(toRenameField);
+			System.out.println(secret);
 			break;
 		}
 		while (true);
@@ -100,18 +100,18 @@ public class RenameField {
 		do {
 			System.out.println("Good job");
 		}
-		while (toRenameField == 5);
+		while (secret == 5);
 	}
 
 	public  void for_cond() {
-		for (int i = 0; i < toRenameField; i++) {
+		for (int i = 0; i < secret; i++) {
 			System.out.println("Good job");
 		}
 	}
 
 	public  void for_under() {
 		for (int i = 0; i < 5; i++) {
-			System.out.println(toRenameField);
+			System.out.println(secret);
 		}
 	}
 
@@ -123,15 +123,15 @@ public class RenameField {
 
 	public  void for_each_under() {
 		for (int i : arrayToRename) {
-			System.out.println(toRenameField + i);
+			System.out.println(secret + i);
 		}
 	}
 
 	public  void nested_loop() {
 		for (int i : arrayToRename) {
-			while(toRenameField == 5) {
-				for (int j = 0; j < toRenameField; j++) {
-					if (j == toRenameField) {
+			while(secret == 5) {
+				for (int j = 0; j < secret; j++) {
+					if (j == secret) {
 						System.out.println("Good job");
 					}
 				}
@@ -139,12 +139,12 @@ public class RenameField {
 		}
 	}
 
-	public int getToRenameField() {
-		return toRenameField;
+	public int getSecret() {
+		return secret;
 	}
 
-	public void setToRenameField(int toRenameField) {
-		this.toRenameField = toRenameField;
+	public void setSecret(int secret) {
+		this.secret = secret;
 	}
 
 	public int[] getArrayToRename() {
