@@ -3,8 +3,8 @@ package rename.renameparameter;
 public class RenameParameter implements AbstractClass {
 
 	@Override
-	public void renameParamOfThisMethod(String renameThis) {
-		System.out.println(renameThis);
+	public void renameParamOfThisMethod(String secret) {
+		System.out.println(secret);
 	}
 
 	void usageHere() {
