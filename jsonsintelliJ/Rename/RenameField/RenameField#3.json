@@ -1,0 +1,33 @@
+{
+"commits": [
+{
+	"repository": "https://github.com/RetriedAgain/MasterThesis-Code-Redo.git",
+	"sha1": "5d0e42578d3d59487e61899890be4cd0f6d8dd7a",
+	"url": "https://github.com/RetriedAgain/MasterThesis-Code-Redo/commit/5d0e42578d3d59487e61899890be4cd0f6d8dd7a",
+	"refactorings": [{
+	"type": "Rename Attribute",
+	"description": "Rename Attribute toRenameField : int to secret : int in class rename.renamefield.RenameField",
+	"leftSideLocations": [{
+		"filePath": "src/main/java/rename/renamefield/RenameField.java",
+		"startLine": 4,
+		"endLine": 4,
+		"startColumn": 6,
+		"endColumn": 23,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "original attribute declaration",
+		"codeElement": "toRenameField : int"
+}],
+	"rightSideLocations": [{
+		"filePath": "src/main/java/rename/renamefield/RenameField.java",
+		"startLine": 4,
+		"endLine": 4,
+		"startColumn": 6,
+		"endColumn": 16,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "renamed attribute declaration",
+		"codeElement": "secret : int"
+}]
+}
+]
+}]
+}

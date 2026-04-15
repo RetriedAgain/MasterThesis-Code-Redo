@@ -1,0 +1,123 @@
+{
+"commits": [
+{
+	"repository": "https://github.com/RetriedAgain/MasterThesis-Code-Redo.git",
+	"sha1": "349894b4572ea8ea3c78fed064e9913a652224ba",
+	"url": "https://github.com/RetriedAgain/MasterThesis-Code-Redo/commit/349894b4572ea8ea3c78fed064e9913a652224ba",
+	"refactorings": [{
+	"type": "Rename Method",
+	"description": "Rename Method public getToRenameField() : int renamed to public getSecret() : int in class rename.renamefield.RenameField",
+	"leftSideLocations": [{
+		"filePath": "src/main/java/rename/renamefield/RenameField.java",
+		"startLine": 142,
+		"endLine": 144,
+		"startColumn": 2,
+		"endColumn": 3,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "public getToRenameField() : int"
+}],
+	"rightSideLocations": [{
+		"filePath": "src/main/java/rename/renamefield/RenameField.java",
+		"startLine": 142,
+		"endLine": 144,
+		"startColumn": 2,
+		"endColumn": 3,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "renamed method declaration",
+		"codeElement": "public getSecret() : int"
+}]
+},
+{
+	"type": "Rename Method",
+	"description": "Rename Method public setToRenameField(toRenameField int) : void renamed to public setSecret(secret int) : void in class rename.renamefield.RenameField",
+	"leftSideLocations": [{
+		"filePath": "src/main/java/rename/renamefield/RenameField.java",
+		"startLine": 146,
+		"endLine": 148,
+		"startColumn": 2,
+		"endColumn": 3,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "public setToRenameField(toRenameField int) : void"
+}],
+	"rightSideLocations": [{
+		"filePath": "src/main/java/rename/renamefield/RenameField.java",
+		"startLine": 146,
+		"endLine": 148,
+		"startColumn": 2,
+		"endColumn": 3,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "renamed method declaration",
+		"codeElement": "public setSecret(secret int) : void"
+}]
+},
+{
+	"type": "Rename Attribute",
+	"description": "Rename Attribute toRenameField : int to secret : int in class rename.renamefield.RenameField",
+	"leftSideLocations": [{
+		"filePath": "src/main/java/rename/renamefield/RenameField.java",
+		"startLine": 4,
+		"endLine": 4,
+		"startColumn": 6,
+		"endColumn": 23,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "original attribute declaration",
+		"codeElement": "toRenameField : int"
+}],
+	"rightSideLocations": [{
+		"filePath": "src/main/java/rename/renamefield/RenameField.java",
+		"startLine": 4,
+		"endLine": 4,
+		"startColumn": 6,
+		"endColumn": 16,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "renamed attribute declaration",
+		"codeElement": "secret : int"
+}]
+},
+{
+	"type": "Rename Parameter",
+	"description": "Rename Parameter toRenameField : int to secret : int in method public setSecret(secret int) : void from class rename.renamefield.RenameField",
+	"leftSideLocations": [{
+		"filePath": "src/main/java/rename/renamefield/RenameField.java",
+		"startLine": 146,
+		"endLine": 146,
+		"startColumn": 31,
+		"endColumn": 48,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "original variable declaration",
+		"codeElement": "toRenameField : int"
+}, {
+		"filePath": "src/main/java/rename/renamefield/RenameField.java",
+		"startLine": 147,
+		"endLine": 147,
+		"startColumn": 3,
+		"endColumn": 38,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "src/main/java/rename/renamefield/RenameField.java",
+		"startLine": 146,
+		"endLine": 146,
+		"startColumn": 24,
+		"endColumn": 34,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "renamed variable declaration",
+		"codeElement": "secret : int"
+}, {
+		"filePath": "src/main/java/rename/renamefield/RenameField.java",
+		"startLine": 147,
+		"endLine": 147,
+		"startColumn": 3,
+		"endColumn": 24,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the renamed variable",
+		"codeElement": null
+}]
+}
+]
+}]
+}
