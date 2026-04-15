@@ -1,0 +1,75 @@
+{
+"commits": [
+{
+	"repository": "https://github.com/RetriedAgain/MasterThesis-Code-Redo.git",
+	"sha1": "51867501d7a19edcff2f278272a79ce59e2f8f36",
+	"url": "https://github.com/RetriedAgain/MasterThesis-Code-Redo/commit/51867501d7a19edcff2f278272a79ce59e2f8f36",
+	"refactorings": [{
+	"type": "Rename Parameter",
+	"description": "Rename Parameter renameThis : String to secret : String in method public renameParamOfThisMethod(secret String) : void from class rename.renameparameter.AbstractClass",
+	"leftSideLocations": [{
+		"filePath": "src/main/java/rename/renameparameter/AbstractClass.java",
+		"startLine": 4,
+		"endLine": 4,
+		"startColumn": 31,
+		"endColumn": 48,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "original variable declaration",
+		"codeElement": "renameThis : String"
+}],
+	"rightSideLocations": [{
+		"filePath": "src/main/java/rename/renameparameter/AbstractClass.java",
+		"startLine": 4,
+		"endLine": 4,
+		"startColumn": 31,
+		"endColumn": 44,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "renamed variable declaration",
+		"codeElement": "secret : String"
+}]
+},
+{
+	"type": "Rename Parameter",
+	"description": "Rename Parameter renameThis : String to secret : String in method public renameParamOfThisMethod(secret String) : void from class rename.renameparameter.RenameParameter",
+	"leftSideLocations": [{
+		"filePath": "src/main/java/rename/renameparameter/RenameParameter.java",
+		"startLine": 6,
+		"endLine": 6,
+		"startColumn": 38,
+		"endColumn": 55,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "original variable declaration",
+		"codeElement": "renameThis : String"
+}, {
+		"filePath": "src/main/java/rename/renameparameter/RenameParameter.java",
+		"startLine": 7,
+		"endLine": 7,
+		"startColumn": 3,
+		"endColumn": 34,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "src/main/java/rename/renameparameter/RenameParameter.java",
+		"startLine": 6,
+		"endLine": 6,
+		"startColumn": 38,
+		"endColumn": 51,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "renamed variable declaration",
+		"codeElement": "secret : String"
+}, {
+		"filePath": "src/main/java/rename/renameparameter/RenameParameter.java",
+		"startLine": 7,
+		"endLine": 7,
+		"startColumn": 3,
+		"endColumn": 30,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the renamed variable",
+		"codeElement": null
+}]
+}
+]
+}]
+}

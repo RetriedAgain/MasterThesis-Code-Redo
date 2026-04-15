@@ -1,0 +1,33 @@
+{
+"commits": [
+{
+	"repository": "https://github.com/RetriedAgain/MasterThesis-Code-Redo.git",
+	"sha1": "10f7cf99182d9812607d61d4baaec64fcc183ba0",
+	"url": "https://github.com/RetriedAgain/MasterThesis-Code-Redo/commit/10f7cf99182d9812607d61d4baaec64fcc183ba0",
+	"refactorings": [{
+	"type": "Rename Parameter",
+	"description": "Rename Parameter renameThis : String to secret : String in method public renameParamOfThisMethod(secret String) : void from class rename.renameparameter.AbstractClass",
+	"leftSideLocations": [{
+		"filePath": "src/main/java/rename/renameparameter/AbstractClass.java",
+		"startLine": 4,
+		"endLine": 4,
+		"startColumn": 31,
+		"endColumn": 48,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "original variable declaration",
+		"codeElement": "renameThis : String"
+}],
+	"rightSideLocations": [{
+		"filePath": "src/main/java/rename/renameparameter/AbstractClass.java",
+		"startLine": 4,
+		"endLine": 4,
+		"startColumn": 31,
+		"endColumn": 44,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "renamed variable declaration",
+		"codeElement": "secret : String"
+}]
+}
+]
+}]
+}
