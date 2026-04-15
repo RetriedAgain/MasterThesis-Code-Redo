@@ -2,7 +2,7 @@ package rename.renamefield;
 
 public class RenameField {
 	int toRenameField = 5;
-	int[] arrayToRename = new int[5];
+	int[] secret = new int[5];
 
 
 	public void min() {
@@ -116,19 +116,19 @@ public class RenameField {
 	}
 
 	public  void for_each_cond() {
-		for (int i : arrayToRename) {
+		for (int i : secret) {
 			System.out.println("Good job");
 		}
 	}
 
 	public  void for_each_under() {
-		for (int i : arrayToRename) {
+		for (int i : secret) {
 			System.out.println(toRenameField + i);
 		}
 	}
 
 	public  void nested_loop() {
-		for (int i : arrayToRename) {
+		for (int i : secret) {
 			while(toRenameField == 5) {
 				for (int j = 0; j < toRenameField; j++) {
 					if (j == toRenameField) {
@@ -147,11 +147,11 @@ public class RenameField {
 		this.toRenameField = toRenameField;
 	}
 
-	public int[] getArrayToRename() {
-		return arrayToRename;
+	public int[] getSecret() {
+		return secret;
 	}
 
-	public void setArrayToRename(int[] arrayToRename) {
-		this.arrayToRename = arrayToRename;
+	public void setSecret(int[] secret) {
+		this.secret = secret;
 	}
 }

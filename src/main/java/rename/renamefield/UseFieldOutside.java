@@ -7,6 +7,6 @@ public class UseFieldOutside {
 
 	void useFieldOutside() {
 		System.out.println(renameFieldObj.toRenameField);
-		System.out.println(Arrays.toString(renameFieldObj.arrayToRename));
+		System.out.println(Arrays.toString(renameFieldObj.secret));
 	}
 }
