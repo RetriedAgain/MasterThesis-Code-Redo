@@ -1,0 +1,147 @@
+{
+"commits": [
+{
+	"repository": "https://github.com/RetriedAgain/MasterThesis-Code-Redo.git",
+	"sha1": "1017add8170f44ba25bed859761a3885edb9fea3",
+	"url": "https://github.com/RetriedAgain/MasterThesis-Code-Redo/commit/1017add8170f44ba25bed859761a3885edb9fea3",
+	"refactorings": [{
+	"type": "Rename Class",
+	"description": "Rename Class rename.renametypedeclaration.RenameInterface renamed to rename.renametypedeclaration.Secret",
+	"leftSideLocations": [{
+		"filePath": "src/main/java/rename/renametypedeclaration/RenameInterface.java",
+		"startLine": 3,
+		"endLine": 6,
+		"startColumn": 0,
+		"endColumn": 2,
+		"codeElementType": "TYPE_DECLARATION",
+		"description": "original type declaration",
+		"codeElement": "rename.renametypedeclaration.RenameInterface"
+}],
+	"rightSideLocations": [{
+		"filePath": "src/main/java/rename/renametypedeclaration/Secret.java",
+		"startLine": 3,
+		"endLine": 6,
+		"startColumn": 0,
+		"endColumn": 2,
+		"codeElementType": "TYPE_DECLARATION",
+		"description": "renamed type declaration",
+		"codeElement": "rename.renametypedeclaration.Secret"
+}]
+},
+{
+	"type": "Rename Class",
+	"description": "Rename Class rename.renametypedeclaration.RenameInterfaceLower renamed to rename.renametypedeclaration.SecretLower",
+	"leftSideLocations": [{
+		"filePath": "src/main/java/rename/renametypedeclaration/RenameInterfaceLower.java",
+		"startLine": 3,
+		"endLine": 8,
+		"startColumn": 0,
+		"endColumn": 2,
+		"codeElementType": "TYPE_DECLARATION",
+		"description": "original type declaration",
+		"codeElement": "rename.renametypedeclaration.RenameInterfaceLower"
+}],
+	"rightSideLocations": [{
+		"filePath": "src/main/java/rename/renametypedeclaration/SecretLower.java",
+		"startLine": 3,
+		"endLine": 8,
+		"startColumn": 0,
+		"endColumn": 2,
+		"codeElementType": "TYPE_DECLARATION",
+		"description": "renamed type declaration",
+		"codeElement": "rename.renametypedeclaration.SecretLower"
+}]
+},
+{
+	"type": "Rename Class",
+	"description": "Rename Class rename.renametypedeclaration.RenameInterfaceTest renamed to rename.renametypedeclaration.SecretTest",
+	"leftSideLocations": [{
+		"filePath": "src/test/java/rename/renametypedeclaration/RenameInterfaceTest.java",
+		"startLine": 5,
+		"endLine": 10,
+		"startColumn": 0,
+		"endColumn": 2,
+		"codeElementType": "TYPE_DECLARATION",
+		"description": "original type declaration",
+		"codeElement": "rename.renametypedeclaration.RenameInterfaceTest"
+}],
+	"rightSideLocations": [{
+		"filePath": "src/test/java/rename/renametypedeclaration/SecretTest.java",
+		"startLine": 5,
+		"endLine": 10,
+		"startColumn": 0,
+		"endColumn": 2,
+		"codeElementType": "TYPE_DECLARATION",
+		"description": "renamed type declaration",
+		"codeElement": "rename.renametypedeclaration.SecretTest"
+}]
+},
+{
+	"type": "Extract Variable",
+	"description": "Extract Variable secret : Secret in method public usage() : void from class rename.renametypedeclaration.UsageOutside",
+	"leftSideLocations": [{
+		"filePath": "src/main/java/rename/renametypedeclaration/UsageOutside.java",
+		"startLine": 30,
+		"endLine": 30,
+		"startColumn": 3,
+		"endColumn": 39,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement with the initializer of the extracted variable",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "src/main/java/rename/renametypedeclaration/UsageOutside.java",
+		"startLine": 24,
+		"endLine": 29,
+		"startColumn": 10,
+		"endColumn": 4,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "extracted variable declaration",
+		"codeElement": "secret : Secret"
+}, {
+		"filePath": "src/main/java/rename/renametypedeclaration/UsageOutside.java",
+		"startLine": 30,
+		"endLine": 30,
+		"startColumn": 3,
+		"endColumn": 30,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement with the name of the extracted variable",
+		"codeElement": null
+}]
+},
+{
+	"type": "Inline Variable",
+	"description": "Inline Variable renameInterface : RenameInterface in method public usage() : void from class rename.renametypedeclaration.UsageOutside",
+	"leftSideLocations": [{
+		"filePath": "src/main/java/rename/renametypedeclaration/UsageOutside.java",
+		"startLine": 24,
+		"endLine": 29,
+		"startColumn": 19,
+		"endColumn": 4,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "inlined variable declaration",
+		"codeElement": "renameInterface : RenameInterface"
+}, {
+		"filePath": "src/main/java/rename/renametypedeclaration/UsageOutside.java",
+		"startLine": 30,
+		"endLine": 30,
+		"startColumn": 3,
+		"endColumn": 39,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement with the name of the inlined variable",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "src/main/java/rename/renametypedeclaration/UsageOutside.java",
+		"startLine": 30,
+		"endLine": 30,
+		"startColumn": 3,
+		"endColumn": 30,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement with the initializer of the inlined variable",
+		"codeElement": null
+}]
+}
+]
+}]
+}

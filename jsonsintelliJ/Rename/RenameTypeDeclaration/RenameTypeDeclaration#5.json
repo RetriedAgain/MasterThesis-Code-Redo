@@ -1,0 +1,57 @@
+{
+"commits": [
+{
+	"repository": "https://github.com/RetriedAgain/MasterThesis-Code-Redo.git",
+	"sha1": "ebc9846fed3e87f9238d2cb78afd53cdb798a9b9",
+	"url": "https://github.com/RetriedAgain/MasterThesis-Code-Redo/commit/ebc9846fed3e87f9238d2cb78afd53cdb798a9b9",
+	"refactorings": [{
+	"type": "Rename Class",
+	"description": "Rename Class rename.renametypedeclaration.RenameClass renamed to rename.renametypedeclaration.Secret",
+	"leftSideLocations": [{
+		"filePath": "src/main/java/rename/renametypedeclaration/RenameClass.java",
+		"startLine": 3,
+		"endLine": 5,
+		"startColumn": 0,
+		"endColumn": 2,
+		"codeElementType": "TYPE_DECLARATION",
+		"description": "original type declaration",
+		"codeElement": "rename.renametypedeclaration.RenameClass"
+}],
+	"rightSideLocations": [{
+		"filePath": "src/main/java/rename/renametypedeclaration/Secret.java",
+		"startLine": 3,
+		"endLine": 5,
+		"startColumn": 0,
+		"endColumn": 2,
+		"codeElementType": "TYPE_DECLARATION",
+		"description": "renamed type declaration",
+		"codeElement": "rename.renametypedeclaration.Secret"
+}]
+},
+{
+	"type": "Rename Class",
+	"description": "Rename Class rename.renametypedeclaration.RenameClassTest renamed to rename.renametypedeclaration.SecretTest",
+	"leftSideLocations": [{
+		"filePath": "src/test/java/rename/renametypedeclaration/RenameClassTest.java",
+		"startLine": 7,
+		"endLine": 12,
+		"startColumn": 0,
+		"endColumn": 2,
+		"codeElementType": "TYPE_DECLARATION",
+		"description": "original type declaration",
+		"codeElement": "rename.renametypedeclaration.RenameClassTest"
+}],
+	"rightSideLocations": [{
+		"filePath": "src/test/java/rename/renametypedeclaration/SecretTest.java",
+		"startLine": 7,
+		"endLine": 12,
+		"startColumn": 0,
+		"endColumn": 2,
+		"codeElementType": "TYPE_DECLARATION",
+		"description": "renamed type declaration",
+		"codeElement": "rename.renametypedeclaration.SecretTest"
+}]
+}
+]
+}]
+}

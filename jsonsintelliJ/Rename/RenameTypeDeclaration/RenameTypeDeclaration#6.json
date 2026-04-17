@@ -1,0 +1,141 @@
+{
+"commits": [
+{
+	"repository": "https://github.com/RetriedAgain/MasterThesis-Code-Redo.git",
+	"sha1": "9b23070f479c9a5f784c075b770e7f5928d19231",
+	"url": "https://github.com/RetriedAgain/MasterThesis-Code-Redo/commit/9b23070f479c9a5f784c075b770e7f5928d19231",
+	"refactorings": [{
+	"type": "Rename Class",
+	"description": "Rename Class rename.renametypedeclaration.RenameEnum renamed to rename.renametypedeclaration.Secret",
+	"leftSideLocations": [{
+		"filePath": "src/main/java/rename/renametypedeclaration/RenameEnum.java",
+		"startLine": 3,
+		"endLine": 7,
+		"startColumn": 0,
+		"endColumn": 2,
+		"codeElementType": "ENUM_DECLARATION",
+		"description": "original type declaration",
+		"codeElement": "rename.renametypedeclaration.RenameEnum"
+}],
+	"rightSideLocations": [{
+		"filePath": "src/main/java/rename/renametypedeclaration/Secret.java",
+		"startLine": 3,
+		"endLine": 7,
+		"startColumn": 0,
+		"endColumn": 2,
+		"codeElementType": "ENUM_DECLARATION",
+		"description": "renamed type declaration",
+		"codeElement": "rename.renametypedeclaration.Secret"
+}]
+},
+{
+	"type": "Rename Class",
+	"description": "Rename Class rename.renametypedeclaration.RenameEnumTest renamed to rename.renametypedeclaration.SecretTest",
+	"leftSideLocations": [{
+		"filePath": "src/test/java/rename/renametypedeclaration/RenameEnumTest.java",
+		"startLine": 5,
+		"endLine": 14,
+		"startColumn": 0,
+		"endColumn": 2,
+		"codeElementType": "TYPE_DECLARATION",
+		"description": "original type declaration",
+		"codeElement": "rename.renametypedeclaration.RenameEnumTest"
+}],
+	"rightSideLocations": [{
+		"filePath": "src/test/java/rename/renametypedeclaration/SecretTest.java",
+		"startLine": 5,
+		"endLine": 14,
+		"startColumn": 0,
+		"endColumn": 2,
+		"codeElementType": "TYPE_DECLARATION",
+		"description": "renamed type declaration",
+		"codeElement": "rename.renametypedeclaration.SecretTest"
+}]
+},
+{
+	"type": "Change Variable Type",
+	"description": "Change Variable Type renameEnum : RenameEnum to secret : Secret in method public usage() : void from class rename.renametypedeclaration.UsageOutside",
+	"leftSideLocations": [{
+		"filePath": "src/main/java/rename/renametypedeclaration/UsageOutside.java",
+		"startLine": 6,
+		"endLine": 6,
+		"startColumn": 14,
+		"endColumn": 45,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "original variable declaration",
+		"codeElement": "renameEnum : RenameEnum"
+}, {
+		"filePath": "src/main/java/rename/renametypedeclaration/UsageOutside.java",
+		"startLine": 6,
+		"endLine": 6,
+		"startColumn": 3,
+		"endColumn": 46,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "src/main/java/rename/renametypedeclaration/UsageOutside.java",
+		"startLine": 6,
+		"endLine": 6,
+		"startColumn": 10,
+		"endColumn": 33,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "changed-type variable declaration",
+		"codeElement": "secret : Secret"
+}, {
+		"filePath": "src/main/java/rename/renametypedeclaration/UsageOutside.java",
+		"startLine": 6,
+		"endLine": 6,
+		"startColumn": 3,
+		"endColumn": 34,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "statement referencing the variable with changed type",
+		"codeElement": null
+}]
+},
+{
+	"type": "Rename Variable",
+	"description": "Rename Variable renameEnum : RenameEnum to secret : Secret in method public usage() : void from class rename.renametypedeclaration.UsageOutside",
+	"leftSideLocations": [{
+		"filePath": "src/main/java/rename/renametypedeclaration/UsageOutside.java",
+		"startLine": 6,
+		"endLine": 6,
+		"startColumn": 14,
+		"endColumn": 45,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "original variable declaration",
+		"codeElement": "renameEnum : RenameEnum"
+}, {
+		"filePath": "src/main/java/rename/renametypedeclaration/UsageOutside.java",
+		"startLine": 6,
+		"endLine": 6,
+		"startColumn": 3,
+		"endColumn": 46,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "src/main/java/rename/renametypedeclaration/UsageOutside.java",
+		"startLine": 6,
+		"endLine": 6,
+		"startColumn": 10,
+		"endColumn": 33,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "renamed variable declaration",
+		"codeElement": "secret : Secret"
+}, {
+		"filePath": "src/main/java/rename/renametypedeclaration/UsageOutside.java",
+		"startLine": 6,
+		"endLine": 6,
+		"startColumn": 3,
+		"endColumn": 34,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "statement referencing the renamed variable",
+		"codeElement": null
+}]
+}
+]
+}]
+}
