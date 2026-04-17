@@ -1,6 +1,6 @@
 package rename.renametypedeclaration;
 
-public record RenameRecord() {
+public record Secret() {
 	public record num1 (int num) {
 
 	}

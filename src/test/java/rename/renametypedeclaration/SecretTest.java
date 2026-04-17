@@ -2,7 +2,7 @@ package rename.renametypedeclaration;
 
 import org.junit.jupiter.api.Test;
 
-class RenameRecordTest {
+class SecretTest {
 
 	@Test
     void RenameRecordTest() {

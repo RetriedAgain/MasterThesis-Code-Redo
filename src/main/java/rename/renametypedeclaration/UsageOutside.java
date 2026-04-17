@@ -9,9 +9,9 @@ public class UsageOutside extends RenameClass implements RenameInterface {
 		System.out.println(RenameEnum.RENAME2);
 
 		// Use Record
-		RenameRecord renameRecord = new RenameRecord();
-		System.out.println(renameRecord);
-		System.out.println(new RenameRecord.num1(5));
+		Secret secret = new Secret();
+		System.out.println(secret);
+		System.out.println(new Secret.num1(5));
 
 		// Use Class
 		RenameClass renameClass = new RenameClass();
