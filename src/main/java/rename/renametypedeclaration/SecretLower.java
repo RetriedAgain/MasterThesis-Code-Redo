@@ -1,6 +1,6 @@
 package rename.renametypedeclaration;
 
-public class RenameClassLower extends RenameClass {
+public class SecretLower extends Secret {
 	void test() {
 		System.out.println(field1);
 	}
