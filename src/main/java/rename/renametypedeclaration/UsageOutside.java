@@ -3,8 +3,8 @@ package rename.renametypedeclaration;
 public class UsageOutside extends RenameClass implements RenameInterface {
 	public void usage() {
 		// Use Enum
-		RenameEnum renameEnumRename1 = RenameEnum.RENAME1;
-		System.out.println(renameEnumRename1);
+		RenameEnum renameEnum = RenameEnum.RENAME1;
+		System.out.println(renameEnum);
 		System.out.println(RenameEnum.RENAME1);
 		System.out.println(RenameEnum.RENAME2);
 
