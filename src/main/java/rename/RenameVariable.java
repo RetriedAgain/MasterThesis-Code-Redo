@@ -2,7 +2,7 @@ package rename;
 
 public class RenameVariable {
 
-	public static void min() {
+	public static void min(int toEnableCommit) {
 		int importantVariable = 5;
 		System.out.println(importantVariable);
 	}
