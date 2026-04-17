@@ -1,4 +1,4 @@
-package rename.renamepackage;
+package rename.secret;
 
 public class PackageUsed {
 }

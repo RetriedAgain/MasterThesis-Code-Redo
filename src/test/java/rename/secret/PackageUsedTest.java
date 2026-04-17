@@ -1,4 +1,4 @@
-package rename.renamepackage;
+package rename.secret;
 
 import org.junit.jupiter.api.Test;
 
