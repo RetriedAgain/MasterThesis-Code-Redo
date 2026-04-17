@@ -1,6 +1,6 @@
 package rename.renametypedeclaration;
 
-public class RenameInterfaceLower implements RenameInterface{
+public class SecretLower implements Secret {
 	@Override
 	public void run() {
 

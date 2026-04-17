@@ -1,6 +1,6 @@
 package rename.renametypedeclaration;
 
-public interface RenameInterface {
+public interface Secret {
 	int INTERFACE_CONSTANT = 0;
 	void run();
 }
