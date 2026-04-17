@@ -1,6 +1,6 @@
 package rename.renametypedeclaration;
 
-public enum RenameEnum {
+public enum Secret {
 
 	RENAME1,
 	RENAME2
