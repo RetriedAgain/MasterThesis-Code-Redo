@@ -4,7 +4,6 @@ public class UsageOutside extends RenameClass implements RenameInterface {
 	public void usage() {
 		// Use Enum
 		RenameEnum renameEnum = RenameEnum.RENAME1;
-		System.out.println(renameEnum);
 		System.out.println(RenameEnum.RENAME1);
 		System.out.println(RenameEnum.RENAME2);
 
