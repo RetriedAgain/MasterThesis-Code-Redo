@@ -1,6 +1,6 @@
 package rename.renametypedeclaration;
 
-public class UsageOutside extends RenameClass implements RenameInterface {
+public class UsageOutside extends Secret implements RenameInterface {
 	public void usage() {
 		// Use Enum
 		RenameEnum renameEnumRename1 = RenameEnum.RENAME1;
@@ -14,8 +14,8 @@ public class UsageOutside extends RenameClass implements RenameInterface {
 		System.out.println(new RenameRecord.num1(5));
 
 		// Use Class
-		RenameClass renameClass = new RenameClass();
-		System.out.println(renameClass.field1);
+		Secret secret = new Secret();
+		System.out.println(secret.field1);
 		System.out.println(field1);
 
 		// Use interface

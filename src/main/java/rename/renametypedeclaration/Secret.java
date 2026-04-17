@@ -1,5 +1,5 @@
 package rename.renametypedeclaration;
 
-public class RenameClass {
+public class Secret {
 	int field1 = 0;
 }
