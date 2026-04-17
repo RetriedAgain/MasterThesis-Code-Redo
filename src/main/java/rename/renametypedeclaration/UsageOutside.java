@@ -3,10 +3,10 @@ package rename.renametypedeclaration;
 public class UsageOutside extends RenameClass implements RenameInterface {
 	public void usage() {
 		// Use Enum
-		RenameEnum renameEnum = RenameEnum.RENAME1;
-		System.out.println(renameEnum);
-		System.out.println(RenameEnum.RENAME1);
-		System.out.println(RenameEnum.RENAME2);
+		Secret secret = Secret.RENAME1;
+		System.out.println(secret);
+		System.out.println(Secret.RENAME1);
+		System.out.println(Secret.RENAME2);
 
 		// Use Record
 		RenameRecord renameRecord = new RenameRecord();

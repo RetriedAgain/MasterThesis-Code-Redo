@@ -2,7 +2,7 @@ package rename.renametypedeclaration;
 
 import org.junit.jupiter.api.Test;
 
-class RenameEnumTest {
+class SecretTest {
 
 	@Test
 	void values() {
