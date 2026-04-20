@@ -14,7 +14,7 @@ public class UsageClass implements InterfaceToImplement {
 		lowerClass.useUpperAttributes();
 
 		System.out.println(lowerClass.middleField);
-		System.out.println(lowerClass.upperField);
+		System.out.println(lowerClass.getSecret().upperField);
 		System.out.println(LowerClass.MIDDLE_CONSTANT);
 //		System.out.println(LowerClass.UPPER_CONSTANT); // Breaks
 
@@ -24,7 +24,7 @@ public class UsageClass implements InterfaceToImplement {
 		middleClass.useUpperAttributes();
 
 		// These will break
-		System.out.println(middleClass.upperField);
+		System.out.println(middleClass.getSecret().upperField);
 //		System.out.println(MiddleClass.UPPER_CONSTANT); // Breaks
 
 		// Upper Class
