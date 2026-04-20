@@ -4,7 +4,7 @@ public class UsageClass implements InterfaceToImplement {
 	LowerClass lowerClass = new LowerClass();
 	MiddleClass middleClass = new MiddleClass();
 	UpperClass upperClass = new UpperClass();
-	InterfaceToImplement interfaceToImplement = new ClassImplementingInterface();
+	InterfaceToImplement interfaceToImplement = new ClassImplementingInterface().getSecretField();
 	ClassImplementingInterface classImplementingInterface = new ClassImplementingInterface();
 
 	public void use() {
