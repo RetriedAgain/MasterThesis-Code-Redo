@@ -1,0 +1,126 @@
+{
+"commits": [
+{
+	"repository": "https://github.com/RetriedAgain/MasterThesis-Code-Redo.git",
+	"sha1": "e4d6d52acaff45cd68716112ba49320b03c66141",
+	"url": "https://github.com/RetriedAgain/MasterThesis-Code-Redo/commit/e4d6d52acaff45cd68716112ba49320b03c66141",
+	"refactorings": [{
+	"type": "Move Method",
+	"description": "Move Method public run() : void from class replaceinheritancewithdelegation.ClassImplementingInterface to public run() : void from class replaceinheritancewithdelegation.ClassImplementingInterface.MyInterfaceToImplement",
+	"leftSideLocations": [{
+		"filePath": "src/main/java/replaceinheritancewithdelegation/ClassImplementingInterface.java",
+		"startLine": 7,
+		"endLine": 10,
+		"startColumn": 2,
+		"endColumn": 3,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "public run() : void"
+}],
+	"rightSideLocations": [{
+		"filePath": "src/main/java/replaceinheritancewithdelegation/ClassImplementingInterface.java",
+		"startLine": 13,
+		"endLine": 16,
+		"startColumn": 3,
+		"endColumn": 4,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "moved method declaration",
+		"codeElement": "public run() : void"
+}]
+},
+{
+	"type": "Move Method",
+	"description": "Move Method public run2() : void from class replaceinheritancewithdelegation.ClassImplementingInterface to public run2() : void from class replaceinheritancewithdelegation.ClassImplementingInterface.MyInterfaceToImplement",
+	"leftSideLocations": [{
+		"filePath": "src/main/java/replaceinheritancewithdelegation/ClassImplementingInterface.java",
+		"startLine": 12,
+		"endLine": 15,
+		"startColumn": 2,
+		"endColumn": 3,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "public run2() : void"
+}],
+	"rightSideLocations": [{
+		"filePath": "src/main/java/replaceinheritancewithdelegation/ClassImplementingInterface.java",
+		"startLine": 18,
+		"endLine": 21,
+		"startColumn": 3,
+		"endColumn": 4,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "moved method declaration",
+		"codeElement": "public run2() : void"
+}]
+},
+{
+	"type": "Extract Class",
+	"description": "Extract Class replaceinheritancewithdelegation.ClassImplementingInterface.MyInterfaceToImplement from class replaceinheritancewithdelegation.ClassImplementingInterface",
+	"leftSideLocations": [{
+		"filePath": "src/main/java/replaceinheritancewithdelegation/ClassImplementingInterface.java",
+		"startLine": 3,
+		"endLine": 16,
+		"startColumn": 0,
+		"endColumn": 2,
+		"codeElementType": "TYPE_DECLARATION",
+		"description": "original type declaration",
+		"codeElement": "replaceinheritancewithdelegation.ClassImplementingInterface"
+}, {
+		"filePath": "src/main/java/replaceinheritancewithdelegation/ClassImplementingInterface.java",
+		"startLine": 7,
+		"endLine": 10,
+		"startColumn": 2,
+		"endColumn": 3,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "public run() : void"
+}, {
+		"filePath": "src/main/java/replaceinheritancewithdelegation/ClassImplementingInterface.java",
+		"startLine": 12,
+		"endLine": 15,
+		"startColumn": 2,
+		"endColumn": 3,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "public run2() : void"
+}],
+	"rightSideLocations": [{
+		"filePath": "src/main/java/replaceinheritancewithdelegation/ClassImplementingInterface.java",
+		"startLine": 3,
+		"endLine": 23,
+		"startColumn": 0,
+		"endColumn": 2,
+		"codeElementType": "TYPE_DECLARATION",
+		"description": "type declaration after extraction",
+		"codeElement": "replaceinheritancewithdelegation.ClassImplementingInterface"
+}, {
+		"filePath": "src/main/java/replaceinheritancewithdelegation/ClassImplementingInterface.java",
+		"startLine": 12,
+		"endLine": 22,
+		"startColumn": 2,
+		"endColumn": 3,
+		"codeElementType": "TYPE_DECLARATION",
+		"description": "extracted type declaration",
+		"codeElement": "replaceinheritancewithdelegation.ClassImplementingInterface.MyInterfaceToImplement"
+}, {
+		"filePath": "src/main/java/replaceinheritancewithdelegation/ClassImplementingInterface.java",
+		"startLine": 13,
+		"endLine": 16,
+		"startColumn": 3,
+		"endColumn": 4,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "extracted method declaration",
+		"codeElement": "public run() : void"
+}, {
+		"filePath": "src/main/java/replaceinheritancewithdelegation/ClassImplementingInterface.java",
+		"startLine": 18,
+		"endLine": 21,
+		"startColumn": 3,
+		"endColumn": 4,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "extracted method declaration",
+		"codeElement": "public run2() : void"
+}]
+}
+]
+}]
+}

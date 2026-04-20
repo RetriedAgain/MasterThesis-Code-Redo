@@ -1,0 +1,177 @@
+{
+"commits": [
+{
+	"repository": "https://github.com/RetriedAgain/MasterThesis-Code-Redo.git",
+	"sha1": "65b757fafff79d132e9f1be9f3a43f94bf2222c6",
+	"url": "https://github.com/RetriedAgain/MasterThesis-Code-Redo/commit/65b757fafff79d132e9f1be9f3a43f94bf2222c6",
+	"refactorings": [{
+	"type": "Remove Method Annotation",
+	"description": "Remove Method Annotation @Override in method public run() : void from class replaceinheritancewithdelegation.ClassImplementingInterface",
+	"leftSideLocations": [{
+		"filePath": "src/main/java/replaceinheritancewithdelegation/ClassImplementingInterface.java",
+		"startLine": 7,
+		"endLine": 7,
+		"startColumn": 2,
+		"endColumn": 11,
+		"codeElementType": "ANNOTATION",
+		"description": "removed annotation",
+		"codeElement": "@Override"
+}, {
+		"filePath": "src/main/java/replaceinheritancewithdelegation/ClassImplementingInterface.java",
+		"startLine": 7,
+		"endLine": 10,
+		"startColumn": 2,
+		"endColumn": 3,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "public run() : void"
+}],
+	"rightSideLocations": [{
+		"filePath": "src/main/java/replaceinheritancewithdelegation/ClassImplementingInterface.java",
+		"startLine": 12,
+		"endLine": 14,
+		"startColumn": 2,
+		"endColumn": 3,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "method declaration with removed annotation",
+		"codeElement": "public run() : void"
+}]
+},
+{
+	"type": "Extract And Move Method",
+	"description": "Extract And Move Method public run() : void extracted from public run() : void in class replaceinheritancewithdelegation.ClassImplementingInterface & moved to class replaceinheritancewithdelegation.ClassImplementingInterface.Secret",
+	"leftSideLocations": [{
+		"filePath": "src/main/java/replaceinheritancewithdelegation/ClassImplementingInterface.java",
+		"startLine": 7,
+		"endLine": 10,
+		"startColumn": 2,
+		"endColumn": 3,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "source method declaration before extraction",
+		"codeElement": "public run() : void"
+}, {
+		"filePath": "src/main/java/replaceinheritancewithdelegation/ClassImplementingInterface.java",
+		"startLine": 9,
+		"endLine": 9,
+		"startColumn": 3,
+		"endColumn": 84,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "extracted code from source method declaration",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "src/main/java/replaceinheritancewithdelegation/ClassImplementingInterface.java",
+		"startLine": 17,
+		"endLine": 20,
+		"startColumn": 3,
+		"endColumn": 4,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "extracted method declaration",
+		"codeElement": "public run() : void"
+}, {
+		"filePath": "src/main/java/replaceinheritancewithdelegation/ClassImplementingInterface.java",
+		"startLine": 19,
+		"endLine": 19,
+		"startColumn": 4,
+		"endColumn": 85,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "extracted code to extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "src/main/java/replaceinheritancewithdelegation/ClassImplementingInterface.java",
+		"startLine": 12,
+		"endLine": 14,
+		"startColumn": 2,
+		"endColumn": 3,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "source method declaration after extraction",
+		"codeElement": "public run() : void"
+}, {
+		"filePath": "src/main/java/replaceinheritancewithdelegation/ClassImplementingInterface.java",
+		"startLine": 13,
+		"endLine": 13,
+		"startColumn": 3,
+		"endColumn": 29,
+		"codeElementType": "METHOD_INVOCATION",
+		"description": "extracted method invocation",
+		"codeElement": "interfaceToImplement.run()"
+}]
+},
+{
+	"type": "Move Method",
+	"description": "Move Method public run2() : void from class replaceinheritancewithdelegation.ClassImplementingInterface to public run2() : void from class replaceinheritancewithdelegation.ClassImplementingInterface.Secret",
+	"leftSideLocations": [{
+		"filePath": "src/main/java/replaceinheritancewithdelegation/ClassImplementingInterface.java",
+		"startLine": 12,
+		"endLine": 15,
+		"startColumn": 2,
+		"endColumn": 3,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "public run2() : void"
+}],
+	"rightSideLocations": [{
+		"filePath": "src/main/java/replaceinheritancewithdelegation/ClassImplementingInterface.java",
+		"startLine": 22,
+		"endLine": 25,
+		"startColumn": 3,
+		"endColumn": 4,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "moved method declaration",
+		"codeElement": "public run2() : void"
+}]
+},
+{
+	"type": "Extract Class",
+	"description": "Extract Class replaceinheritancewithdelegation.ClassImplementingInterface.Secret from class replaceinheritancewithdelegation.ClassImplementingInterface",
+	"leftSideLocations": [{
+		"filePath": "src/main/java/replaceinheritancewithdelegation/ClassImplementingInterface.java",
+		"startLine": 3,
+		"endLine": 16,
+		"startColumn": 0,
+		"endColumn": 2,
+		"codeElementType": "TYPE_DECLARATION",
+		"description": "original type declaration",
+		"codeElement": "replaceinheritancewithdelegation.ClassImplementingInterface"
+}, {
+		"filePath": "src/main/java/replaceinheritancewithdelegation/ClassImplementingInterface.java",
+		"startLine": 12,
+		"endLine": 15,
+		"startColumn": 2,
+		"endColumn": 3,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "public run2() : void"
+}],
+	"rightSideLocations": [{
+		"filePath": "src/main/java/replaceinheritancewithdelegation/ClassImplementingInterface.java",
+		"startLine": 3,
+		"endLine": 27,
+		"startColumn": 0,
+		"endColumn": 2,
+		"codeElementType": "TYPE_DECLARATION",
+		"description": "type declaration after extraction",
+		"codeElement": "replaceinheritancewithdelegation.ClassImplementingInterface"
+}, {
+		"filePath": "src/main/java/replaceinheritancewithdelegation/ClassImplementingInterface.java",
+		"startLine": 16,
+		"endLine": 26,
+		"startColumn": 2,
+		"endColumn": 3,
+		"codeElementType": "TYPE_DECLARATION",
+		"description": "extracted type declaration",
+		"codeElement": "replaceinheritancewithdelegation.ClassImplementingInterface.Secret"
+}, {
+		"filePath": "src/main/java/replaceinheritancewithdelegation/ClassImplementingInterface.java",
+		"startLine": 22,
+		"endLine": 25,
+		"startColumn": 3,
+		"endColumn": 4,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "extracted method declaration",
+		"codeElement": "public run2() : void"
+}]
+}
+]
+}]
+}
