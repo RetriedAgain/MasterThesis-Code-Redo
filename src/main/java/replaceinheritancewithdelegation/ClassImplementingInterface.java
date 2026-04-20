@@ -1,16 +1,23 @@
 package replaceinheritancewithdelegation;
 
-public class ClassImplementingInterface implements InterfaceToImplement {
+public class ClassImplementingInterface {
 
+	private final MyInterfaceToImplement interfaceToImplement = new MyInterfaceToImplement();
 	int classImplIntField = 55;
 
-	@Override
-	public void run() {
-		System.out.println("Hey there Interface from within ClassImplementingInterface");
+	public InterfaceToImplement getInterfaceToImplement() {
+		return interfaceToImplement;
 	}
 
-	@Override
-	public void run2() {
-		System.out.println("ClassImplInterface Impl of run2");
+	private class MyInterfaceToImplement implements InterfaceToImplement {
+		@Override
+		public void run() {
+			System.out.println("Hey there Interface from within ClassImplementingInterface");
+		}
+
+		@Override
+		public void run2() {
+			System.out.println("ClassImplInterface Impl of run2");
+		}
 	}
 }
