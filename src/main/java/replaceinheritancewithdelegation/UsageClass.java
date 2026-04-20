@@ -11,20 +11,20 @@ public class UsageClass implements InterfaceToImplement {
 		// Lower Class
 		System.out.println(lowerClass.lowerField);
 		System.out.println(LowerClass.LOWER_CONSTANT);
-		lowerClass.useUpperAttributes();
+		lowerClass.getUpperClass().useUpperAttributes();
 
 		System.out.println(lowerClass.middleField);
-		System.out.println(lowerClass.upperField);
+		System.out.println(lowerClass.getUpperClass().upperField);
 		System.out.println(LowerClass.MIDDLE_CONSTANT);
 //		System.out.println(LowerClass.UPPER_CONSTANT); // Breaks
 
 		// Middle class
 		System.out.println(middleClass.middleField);
 		System.out.println(MiddleClass.MIDDLE_CONSTANT);
-		middleClass.useUpperAttributes();
+		middleClass.getUpperClass().useUpperAttributes();
 
 		// These will break
-		System.out.println(middleClass.upperField);
+		System.out.println(middleClass.getUpperClass().upperField);
 //		System.out.println(MiddleClass.UPPER_CONSTANT); // Breaks
 
 		// Upper Class
