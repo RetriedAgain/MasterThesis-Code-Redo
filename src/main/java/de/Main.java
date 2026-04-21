@@ -5,7 +5,6 @@ import de.masterzoo.Zoo;
 import de.masterzoo.groups.animalia.Animal;
 import de.masterzoo.groups.animalia.birds.Chicken;
 import de.masterzoo.groups.animalia.canines.Labrador;
-import de.masterzoo.groups.animalia.felines.Cat;
 import de.masterzoo.groups.animalia.movement.Fly;
 import de.masterzoo.groups.animalia.movement.MovementStrategy;
 import de.masterzoo.groups.animalia.movement.Walk;
@@ -20,7 +19,7 @@ import java.util.List;
 /**
  * The Main class creating the zoo in the first place. Primarily for testing purposes.
  */
-public class Main {
+class Main {
 	public static void main(String[] args) {
 		Animal myTempAnimal = Animal.createTempAnimal();
 		Animal myTempAnimal2 = Animal.createTempAnimal();

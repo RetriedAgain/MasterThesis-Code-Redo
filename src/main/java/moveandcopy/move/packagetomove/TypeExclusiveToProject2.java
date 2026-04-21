@@ -1,4 +1,4 @@
 package moveandcopy.move.packagetomove;
 
-public class TypeExclusiveToProject2 {
+class TypeExclusiveToProject2 {
 }

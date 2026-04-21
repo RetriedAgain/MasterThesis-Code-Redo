@@ -1,8 +1,8 @@
 package de.masterzoo.groups.animalia.reptile;
 
-public class SeaAnimals {
+class SeaAnimals {
 
-	protected int spead;
+	private int spead;
 	public SeaAnimals() {
 		super();
 	}

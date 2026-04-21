@@ -1,17 +1,17 @@
 package rename.renamemethod;
 
-public class RenameMethod {
+class RenameMethod {
 
 	public static void toRename() {
 		System.out.println("This should be renamed.");
 	}
 
-	public static void usage1() {
+	private static void usage1() {
 		System.out.println("Usage1");
 		toRename();
 	}
 
-	public static void usage2() {
+	private static void usage2() {
 		toRename();
 	}
 

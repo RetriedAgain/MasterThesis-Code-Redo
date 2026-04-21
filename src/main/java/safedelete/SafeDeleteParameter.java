@@ -1,6 +1,6 @@
 package safedelete;
 
-public class SafeDeleteParameter {
+class SafeDeleteParameter {
 
 
 }

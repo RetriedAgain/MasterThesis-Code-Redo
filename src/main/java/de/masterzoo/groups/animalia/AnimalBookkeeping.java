@@ -10,7 +10,7 @@ import java.util.Map;
  * Class is made final so no extension could modify these collections in any way.
  *
  */
-public final class AnimalBookkeeping {
+final class AnimalBookkeeping {
 
 	// These fields are basically Singletons
 	private static List<Animal> allAnimals =  new ArrayList<>();

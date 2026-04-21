@@ -3,7 +3,7 @@ import java.util.List;
 /**
  * An old class for the initial refactoring-type tests.
  */
-public class Mayor {
+class Mayor {
 
 	private String name;
 	private int age;

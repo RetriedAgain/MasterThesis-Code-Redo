@@ -10,13 +10,13 @@ import java.util.List;
 /**
  * An AnimalEnclosure is the whole area counted in which a specific type of animal lives.
  */
-public abstract class AnimalEnclosure {
+abstract class AnimalEnclosure {
 	List<Prop> propsInEnclosure = new ArrayList<>();
 	List<Animal> suitedForWhichAnimals = new ArrayList<>();
-	List<Animal> animalsInEnclosure = new ArrayList<>();
+	private List<Animal> animalsInEnclosure = new ArrayList<>();
 	ColorTheme colorTheme;
-	int entertainmentValue;
-	int costPerMonth;
+	private int entertainmentValue;
+	private int costPerMonth;
 
 	public int calculateEntertainmentValue() {
 		entertainmentValue = 0;

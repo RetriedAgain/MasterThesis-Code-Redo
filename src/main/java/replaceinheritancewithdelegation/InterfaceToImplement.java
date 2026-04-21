@@ -1,6 +1,6 @@
 package replaceinheritancewithdelegation;
 
-public interface InterfaceToImplement {
+interface InterfaceToImplement {
 	int INTERFACE_CONSTANT = 0;
 
 	void run();

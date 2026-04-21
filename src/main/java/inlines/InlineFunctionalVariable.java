@@ -3,7 +3,7 @@ package inlines;
 import java.util.function.IntSupplier;
 import java.util.function.Supplier;
 
-public class InlineFunctionalVariable {
+class InlineFunctionalVariable {
 
 	public static void min() {
 		IntSupplier importantVariable = () -> 5;

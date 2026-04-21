@@ -1,5 +1,5 @@
 package rename.renametypedeclaration;
 
-public class RenameClass {
+class RenameClass {
 	int field1 = 0;
 }

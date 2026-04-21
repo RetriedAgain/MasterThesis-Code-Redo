@@ -1,6 +1,6 @@
 package de.masterzoo.webpage;
 
-public class webpage {
+class webpage {
 	private String domainName;
 	private int totalViewersAllTime;
 

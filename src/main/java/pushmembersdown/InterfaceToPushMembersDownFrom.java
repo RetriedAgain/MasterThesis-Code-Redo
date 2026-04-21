@@ -1,6 +1,6 @@
 package pushmembersdown;
 
-public interface InterfaceToPushMembersDownFrom {
+interface InterfaceToPushMembersDownFrom {
 	int CONSTANT = 5;
 
 	void interfaceMethodToPushDown();

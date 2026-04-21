@@ -1,8 +1,8 @@
 package makestatic.makemethodstatic;
 
-public class MakeMethodStatic {
-	public int i;
-	public int j;
+class MakeMethodStatic {
+	private int i;
+	private int j;
 
 	public void methodDialog1() {
 		System.out.println("To Be Static or not to be.");

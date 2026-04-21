@@ -2,8 +2,8 @@ package rename.renamefield;
 
 import java.util.Arrays;
 
-public class UseFieldOutside {
-	RenameField renameFieldObj = new RenameField();
+class UseFieldOutside {
+	private RenameField renameFieldObj = new RenameField();
 
 	void useFieldOutside() {
 		System.out.println(renameFieldObj.toRenameField);

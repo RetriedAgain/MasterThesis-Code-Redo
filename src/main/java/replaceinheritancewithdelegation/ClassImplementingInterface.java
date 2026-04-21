@@ -1,6 +1,6 @@
 package replaceinheritancewithdelegation;
 
-public class ClassImplementingInterface implements InterfaceToImplement {
+class ClassImplementingInterface implements InterfaceToImplement {
 
 	int classImplIntField = 55;
 

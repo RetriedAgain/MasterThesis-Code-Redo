@@ -1,4 +1,4 @@
 package safedelete;
 
-public class SafeDeleteClass {
+class SafeDeleteClass {
 }

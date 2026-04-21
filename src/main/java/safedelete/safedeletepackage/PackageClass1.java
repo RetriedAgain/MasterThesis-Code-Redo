@@ -1,4 +1,4 @@
 package safedelete.safedeletepackage;
 
-public class PackageClass1 {
+class PackageClass1 {
 }

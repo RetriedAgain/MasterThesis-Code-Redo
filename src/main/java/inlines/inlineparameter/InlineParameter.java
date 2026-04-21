@@ -1,6 +1,6 @@
 package inlines.inlineparameter;
 
-public class InlineParameter {
+class InlineParameter {
 
 	// Uncomment this for special case
 	// final static String CONSTANT = "CONSTANT_TO_INLINE";

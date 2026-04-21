@@ -1,6 +1,6 @@
 package inlines.inlineparameter;
 
-public class UsageOutsideClass {
+class UsageOutsideClass {
 
 	void usageHere3() {
 		InlineParameter iP = new InlineParameter();

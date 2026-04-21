@@ -5,9 +5,9 @@ import org.jetbrains.annotations.Nullable;
 import java.util.HashMap;
 import java.util.Random;
 
-public class DummyCalculationForExtractRefactorings {
+class DummyCalculationForExtractRefactorings {
 
-	String prefixString;
+	private String prefixString;
 
 	public DummyCalculationForExtractRefactorings(String prefixString, Integer someValue, String[] args, int f, double anotherValue,
 												  int[] someArray,
@@ -134,7 +134,7 @@ public class DummyCalculationForExtractRefactorings {
 	}
 
 	// Extract up here with caret on method-name
-	public int extractParameterObject(int i, int j) {
+    private int extractParameterObject(int i, int j) {
 		while (i < 10) {
 			i++;
 			i *= 10;

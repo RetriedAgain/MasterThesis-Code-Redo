@@ -4,7 +4,7 @@ import de.masterzoo.groups.animalia.movement.Walk;
 
 import java.util.ArrayList;
 
-public class Ostrich extends Bird {
+class Ostrich extends Bird {
 
 	public Ostrich() {
 		super();

@@ -1,6 +1,6 @@
 package typemigration;
 
-public class SomeClass {
+class SomeClass {
 	int fieldToMigrate;
 
 	SomeClass(int fieldToMigrate) {

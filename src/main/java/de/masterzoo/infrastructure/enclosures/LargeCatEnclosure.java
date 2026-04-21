@@ -1,4 +1,4 @@
 package de.masterzoo.infrastructure.enclosures;
 
-public class LargeCatEnclosure extends AnimalEnclosure {
+class LargeCatEnclosure extends AnimalEnclosure {
 }

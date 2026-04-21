@@ -1,5 +1,5 @@
 package useinterfacewherepossible;
 
-public interface NormalInterface {
+interface NormalInterface {
 	void run();
 }

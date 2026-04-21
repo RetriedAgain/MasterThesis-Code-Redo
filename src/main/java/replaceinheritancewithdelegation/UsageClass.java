@@ -1,11 +1,11 @@
 package replaceinheritancewithdelegation;
 
-public class UsageClass implements InterfaceToImplement {
-	LowerClass lowerClass = new LowerClass();
-	MiddleClass middleClass = new MiddleClass();
-	UpperClass upperClass = new UpperClass();
-	InterfaceToImplement interfaceToImplement = new ClassImplementingInterface();
-	ClassImplementingInterface classImplementingInterface = new ClassImplementingInterface();
+class UsageClass implements InterfaceToImplement {
+	private LowerClass lowerClass = new LowerClass();
+	private MiddleClass middleClass = new MiddleClass();
+	private UpperClass upperClass = new UpperClass();
+	private InterfaceToImplement interfaceToImplement = new ClassImplementingInterface();
+	private ClassImplementingInterface classImplementingInterface = new ClassImplementingInterface();
 
 	public void use() {
 		// Lower Class

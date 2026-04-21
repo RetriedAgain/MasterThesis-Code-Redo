@@ -1,7 +1,7 @@
 package useinterfacewherepossible;
 
 class UsageClass {
-	NormalClass nc;
+	private NormalClass nc;
 
 	UsageClass() {
 		nc = new NormalClass();

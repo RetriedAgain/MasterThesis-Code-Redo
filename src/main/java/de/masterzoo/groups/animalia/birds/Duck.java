@@ -1,6 +1,6 @@
 package de.masterzoo.groups.animalia.birds;
 
-public class Duck extends Bird {
+class Duck extends Bird {
 
 
 	static void duckDefaultHatchText() {

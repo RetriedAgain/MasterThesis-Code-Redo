@@ -1,6 +1,6 @@
 package rename.renametypedeclaration;
 
-public class UsageOutside extends RenameClass implements RenameInterface {
+class UsageOutside extends RenameClass implements RenameInterface {
 	public void usage() {
 		// Use Enum
 		RenameEnum renameEnumRename1 = RenameEnum.RENAME1;

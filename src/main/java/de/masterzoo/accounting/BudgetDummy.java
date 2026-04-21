@@ -4,7 +4,7 @@ import de.masterzoo.Zoo;
 
 import java.time.YearMonth;
 
-public class BudgetDummy {
+class BudgetDummy {
 
 	public BudgetDummy(String name, YearMonth yearMonth, double moneyAllocated) {
 		Zoo zoo = new Zoo();

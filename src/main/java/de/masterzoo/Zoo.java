@@ -6,7 +6,6 @@ import de.masterzoo.partnercompanies.Circus;
 import de.masterzoo.partnercompanies.Company;
 import org.jetbrains.annotations.NonNls;
 
-import java.security.PrivilegedAction;
 import java.time.LocalDate;
 import java.time.Month;
 import java.time.Year;
@@ -106,7 +105,7 @@ public class Zoo {
 	 * @param yearMonth The yearmonth in which the rentcollection is to be done.
 	 * @return The total amount of collectedRent.
 	 */
-	public double collectRentInYearMonth(List<Company> partnerCompanies, YearMonth yearMonth) {
+	private double collectRentInYearMonth(List<Company> partnerCompanies, YearMonth yearMonth) {
 		HashMap<YearMonth, Double> collectedRentInYearMonth = new HashMap<>();
 		double collectedRent = 0;
 		for (Company partnerCompany : partnerCompanies) {
@@ -246,11 +245,11 @@ public class Zoo {
 		this.collectedRentInYearMonth = collectedRentInYearMonth;
 	}
 
-	public double getHrBudget() {
+	private double getHrBudget() {
 		return hrBudget;
 	}
 
-	public void setHrBudget(double hrBudget) {
+	private void setHrBudget(double hrBudget) {
 		this.hrBudget = hrBudget;
 	}
 }

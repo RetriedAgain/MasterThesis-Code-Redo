@@ -1,6 +1,6 @@
 package pullmembersup;
 
-public class ClassToPullMembersUpFrom extends SuperclassToPullMembersInto {
+class ClassToPullMembersUpFrom extends SuperclassToPullMembersInto {
 
 	int fieldToPullUp;
 

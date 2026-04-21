@@ -1,6 +1,6 @@
 package pushmembersdown;
 
-public class SubclassToPushMembersInto extends ClassToPushMembersDownFrom.InnerClassToPushMembersDownFrom {
+class SubclassToPushMembersInto extends ClassToPushMembersDownFrom.InnerClassToPushMembersDownFrom {
 	public static final int SUBCLASS_CONSTANT = 99;
 
 	public SubclassToPushMembersInto(ClassToPushMembersDownFrom outerClassBindingToAvoidCompilerError) {

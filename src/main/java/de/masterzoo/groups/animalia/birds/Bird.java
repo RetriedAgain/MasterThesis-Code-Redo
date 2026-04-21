@@ -11,7 +11,7 @@ public abstract class Bird extends Animal {
 
 	int beakLengthCm;
 
-	public Bird() {
+	Bird() {
 		super();
 
 		this.setMovementStrategies(new ArrayList<>() {{new Walk(); new Fly();}});

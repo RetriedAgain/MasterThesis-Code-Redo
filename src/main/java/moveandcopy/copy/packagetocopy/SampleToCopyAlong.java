@@ -1,4 +1,4 @@
 package moveandcopy.copy.packagetocopy;
 
-public class SampleToCopyAlong {
+class SampleToCopyAlong {
 }

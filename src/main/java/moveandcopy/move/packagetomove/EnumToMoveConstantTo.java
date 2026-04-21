@@ -1,9 +1,9 @@
 package moveandcopy.move.packagetomove;
 
-public enum EnumToMoveConstantTo {
+enum EnumToMoveConstantTo {
 	;
 
-	int value;
+	private int value;
 	EnumToMoveConstantTo(int value) {
 		this.value = value;
 	}

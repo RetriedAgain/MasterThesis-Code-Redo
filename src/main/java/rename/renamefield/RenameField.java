@@ -1,6 +1,6 @@
 package rename.renamefield;
 
-public class RenameField {
+class RenameField {
 	int toRenameField = 5;
 	int[] arrayToRename = new int[5];
 

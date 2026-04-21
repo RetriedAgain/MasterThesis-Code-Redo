@@ -1,6 +1,6 @@
 package safedelete.safedeleteparameter;
 
-public class UsageOutsideClass {
+class UsageOutsideClass {
 
 	void usageHere3() {
 		InlineParameter iP = new InlineParameter();

@@ -1,6 +1,6 @@
 package inlines;
 
-public class InlineVariable {
+class InlineVariable {
 
 	public static void min() {
 		int importantVariable = 5;

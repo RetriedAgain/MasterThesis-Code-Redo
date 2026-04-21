@@ -1,6 +1,6 @@
 package rename.renametypedeclaration;
 
-public enum RenameEnum {
+enum RenameEnum {
 
 	RENAME1,
 	RENAME2

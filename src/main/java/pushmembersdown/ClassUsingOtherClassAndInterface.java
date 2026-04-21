@@ -1,15 +1,12 @@
 package pushmembersdown;
 
-import java.util.ArrayList;
-import java.util.List;
-
 import static pushmembersdown.LowerInterfaceToPushInterfaceInto.LOWER_INTERFACE_CONSTANT;
 
 public class ClassUsingOtherClassAndInterface implements LowerInterfaceToPushInterfaceInto {
-	ClassToPushMembersDownFrom classToPushMembersDownFrom;
-	ClassToPushMembersDownFrom.InnerClassToPushMembersDownFrom innerClassToPullMembersUpFrom;
+	private ClassToPushMembersDownFrom classToPushMembersDownFrom;
+	private ClassToPushMembersDownFrom.InnerClassToPushMembersDownFrom innerClassToPullMembersUpFrom;
 	InnerInterfaceToPushIntoLowerInterface innerInterfaceToPushIntoLowerInterface;
-	SubclassToPushMembersInto subclassToPushMembersInto;
+	private SubclassToPushMembersInto subclassToPushMembersInto;
 
 	public ClassUsingOtherClassAndInterface(ClassToPushMembersDownFrom classToPushMembersDownFrom,
 											ClassToPushMembersDownFrom.InnerClassToPushMembersDownFrom innerClassToPullMembersUpFrom,

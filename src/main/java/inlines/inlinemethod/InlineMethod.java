@@ -1,17 +1,17 @@
 package inlines.inlinemethod;
 
-public class InlineMethod {
+class InlineMethod {
 
 	public static void toInline() {
 		System.out.println("This should be inlined.");
 	}
 
-	public static void usage1() {
+	private static void usage1() {
 		System.out.println("Usage1");
 		toInline();
 	}
 
-	public static void usage2() {
+	private static void usage2() {
 		toInline();
 	}
 

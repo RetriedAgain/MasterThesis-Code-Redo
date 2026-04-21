@@ -1,4 +1,4 @@
 package moveandcopy.copy;
 
-public class ClassToCopy {
+class ClassToCopy {
 }

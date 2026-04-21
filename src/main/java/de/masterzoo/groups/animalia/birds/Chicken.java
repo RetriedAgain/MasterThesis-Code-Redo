@@ -8,7 +8,7 @@ public class Chicken extends Bird {
 		getReproductionStrategy().handleReproduction();
 	}
 
-	static void chickenDefaultHatchText() {
+	private static void chickenDefaultHatchText() {
 		System.out.println("Chicken has been created");
 		System.out.println("Chicken is by default Male");
 		System.out.println("Chicken is by default laying 1 egg per week");

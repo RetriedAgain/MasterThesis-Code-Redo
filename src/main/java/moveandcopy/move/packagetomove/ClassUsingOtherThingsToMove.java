@@ -1,10 +1,10 @@
 package moveandcopy.move.packagetomove;
 
-public class ClassUsingOtherThingsToMove {
+class ClassUsingOtherThingsToMove {
 
-	ClassToMove classToMove;
-	ClassToMove.InnerClassToMove innerClassToMove;
-	ClassToMove.InnerClassToMove.InnerInnerClassToMove innerInnerClassToMove;
+	private ClassToMove classToMove;
+	private ClassToMove.InnerClassToMove innerClassToMove;
+	private ClassToMove.InnerClassToMove.InnerInnerClassToMove innerInnerClassToMove;
 
 	public ClassUsingOtherThingsToMove(ClassToMove classToMove, ClassToMove.InnerClassToMove innerClassToMove,
 						   ClassToMove.InnerClassToMove.InnerInnerClassToMove innerInnerClassToMove) {

@@ -1,8 +1,8 @@
 package makestatic.makemethodstatic;
 
-public class UseMakeMethodStatic {
+class UseMakeMethodStatic {
 
-	MakeMethodStatic makeMethodStatic = new MakeMethodStatic();
+	private MakeMethodStatic makeMethodStatic = new MakeMethodStatic();
 
 	public void useMethodsOutside() {
 		makeMethodStatic.methodDialog1();

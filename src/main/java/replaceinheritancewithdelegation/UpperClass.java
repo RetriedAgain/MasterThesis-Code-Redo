@@ -1,6 +1,6 @@
 package replaceinheritancewithdelegation;
 
-public class UpperClass {
+class UpperClass {
 	public int upperField = 1;
 	public final static int UPPER_CONSTANT = 0;
 

@@ -1,12 +1,9 @@
 package de.masterzoo.groups.animalia.canines;
 
 import de.Gender;
-import de.masterzoo.groups.animalia.movement.MovementStrategy;
 import de.masterzoo.groups.animalia.reproduction.ReproductionStrategy;
 import de.masterzoo.groups.animalia.reproduction.Viviparity;
 import de.masterzoo.humanresources.Employee;
-
-import java.util.ArrayList;
 
 /**
  * It's a labrador. They are very cute.
@@ -16,7 +13,7 @@ public class Labrador extends Canine implements Trainable {
 	 * The human companion of the Labrador. This is intended to be the most sociable person for this dog, to which
 	 * this dog connects the most.
 	 */
-	Employee humanCompanion;
+    private Employee humanCompanion;
 
 	/**
 	 * Chained constructor for when there is no human companion.

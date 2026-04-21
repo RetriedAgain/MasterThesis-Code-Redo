@@ -1,11 +1,8 @@
 package de.masterzoo.groups.animalia.canines;
 
 import de.Gender;
-import de.masterzoo.groups.animalia.movement.MovementStrategy;
 import de.masterzoo.groups.animalia.reproduction.ReproductionStrategy;
 import de.masterzoo.groups.animalia.reproduction.Viviparity;
-
-import java.util.ArrayList;
 
 public class Poodle extends Canine implements Trainable {
 

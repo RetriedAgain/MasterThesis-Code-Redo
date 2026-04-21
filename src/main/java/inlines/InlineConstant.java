@@ -1,8 +1,8 @@
 package inlines;
 
-public class InlineConstant {
-	final static int INLINE_CONSTANT = 5;
-	final static int[] INT_ARRAY = new int[5];
+class InlineConstant {
+	private final static int INLINE_CONSTANT = 5;
+	private final static int[] INT_ARRAY = new int[5];
 
 
 	public static void min() {

@@ -1,6 +1,6 @@
 package replaceinheritancewithdelegation;
 
-public class MiddleClass extends UpperClass {
+class MiddleClass extends UpperClass {
 	public int middleField = 1;
 	public final static int MIDDLE_CONSTANT = 0;
 

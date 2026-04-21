@@ -1,7 +1,6 @@
 package de.masterzoo;
 
 import java.util.Objects;
-import java.util.function.Function;
 
 /**
  * Created by mimicking the BiConsumer functional interface

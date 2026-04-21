@@ -1,7 +1,7 @@
 package de.masterzoo.groups.animalia.felines;
 
 
-public class Cat {
+class Cat {
 
 
 	public void sleep() {

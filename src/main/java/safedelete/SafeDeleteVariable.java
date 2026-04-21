@@ -1,6 +1,6 @@
 package safedelete;
 
-public class SafeDeleteVariable {
+class SafeDeleteVariable {
 
 
 }

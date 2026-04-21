@@ -18,8 +18,8 @@ public class Animal {
 	private int weight;
 	private int costPerMonth;
 
-	public int numOfLegs;
-	protected Gender GENDER;
+	private int numOfLegs;
+	private Gender GENDER;
 	private List<MovementStrategy> movementStrategies;
 	private ReproductionStrategy reproductionStrategy;
 
@@ -76,7 +76,7 @@ public class Animal {
 		return speed;
 	}
 
-	public void setSpeed(int speed) {
+	private void setSpeed(int speed) {
 		this.speed = speed;
 	}
 
@@ -84,7 +84,7 @@ public class Animal {
 		return this.age;
 	}
 
-	public void setAge(int age) {
+	private void setAge(int age) {
 		this.age = age;
 	}
 
@@ -92,7 +92,7 @@ public class Animal {
 		return numOfLegs;
 	}
 
-	public void setNumOfLegs(int numOfLegs) {
+	private void setNumOfLegs(int numOfLegs) {
 		this.numOfLegs = numOfLegs;
 	}
 
@@ -100,7 +100,7 @@ public class Animal {
 		return GENDER;
 	}
 
-	public void setGENDER(Gender GENDER) {
+	private void setGENDER(Gender GENDER) {
 		this.GENDER = GENDER;
 	}
 
@@ -108,7 +108,7 @@ public class Animal {
 		return name;
 	}
 
-	public void setName(String name) {
+	private void setName(String name) {
 		this.name = name;
 	}
 
@@ -116,7 +116,7 @@ public class Animal {
 		return weight;
 	}
 
-	public void setWeight(int weight) {
+	private void setWeight(int weight) {
 		this.weight = weight;
 	}
 

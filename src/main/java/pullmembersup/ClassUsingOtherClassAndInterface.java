@@ -1,10 +1,10 @@
 package pullmembersup;
 
 public class ClassUsingOtherClassAndInterface implements InterfaceToPullMembersUpFrom {
-	ClassToPullMembersUpFrom classToPullMembersUpFrom;
-	ClassToPullMembersUpFrom.InnerClassToPullMembersUpFrom innerClassToPullMembersUpFrom;
-	InnerInterfaceToPullIntoSuperInterface innerInterfaceToPullIntoSuperInterface;
-	SuperclassToPullMembersInto superclassToPullMembersInto;
+	private ClassToPullMembersUpFrom classToPullMembersUpFrom;
+	private ClassToPullMembersUpFrom.InnerClassToPullMembersUpFrom innerClassToPullMembersUpFrom;
+	private InnerInterfaceToPullIntoSuperInterface innerInterfaceToPullIntoSuperInterface;
+	private SuperclassToPullMembersInto superclassToPullMembersInto;
 
 	public ClassUsingOtherClassAndInterface(ClassToPullMembersUpFrom classToPullMembersUpFrom,
 											ClassToPullMembersUpFrom.InnerClassToPullMembersUpFrom innerClassToPullMembersUpFrom,

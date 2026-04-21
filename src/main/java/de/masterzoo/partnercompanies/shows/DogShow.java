@@ -7,9 +7,9 @@ import java.util.List;
 /**
  * The dogshow is one of the highlights of the circus.
  */
-public class DogShow {
+class DogShow {
 
-	List<Trainable> trainables;
+	private List<Trainable> trainables;
 
 	DogShow(List<Trainable> trainables) {
 		this.trainables = trainables;

@@ -1,6 +1,6 @@
 package rename.renameparameter;
 
-public class UsageOutsideClass {
+class UsageOutsideClass {
 
 	void usageHere3() {
 		RenameParameter rP = new RenameParameter();

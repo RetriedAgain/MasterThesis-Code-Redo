@@ -1,4 +1,4 @@
 package rename.renamepackage;
 
-public class PackageUsed {
+class PackageUsed {
 }

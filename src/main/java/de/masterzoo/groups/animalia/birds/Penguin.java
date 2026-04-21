@@ -5,7 +5,7 @@ import de.masterzoo.groups.animalia.movement.Walk;
 
 import java.util.ArrayList;
 
-public class Penguin extends Bird {
+class Penguin extends Bird {
 
 	public Penguin() {
 		super();

@@ -1,7 +1,7 @@
 package typemigration;
 
-public class UsageClass {
-	SomeClass someClass;
+class UsageClass {
+	private SomeClass someClass;
 
 	UsageClass(SomeClass someClass) {
 		this.someClass = someClass;

@@ -1,6 +1,6 @@
 package rename.renameparameter;
 
-public class RenameParameter implements AbstractClass {
+class RenameParameter implements AbstractClass {
 
 	@Override
 	public void renameParamOfThisMethod(String renameThis) {

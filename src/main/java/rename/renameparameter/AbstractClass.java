@@ -1,5 +1,5 @@
 package rename.renameparameter;
 
-public interface AbstractClass {
+interface AbstractClass {
 	void renameParamOfThisMethod(String renameThis);
 }

@@ -1,6 +1,6 @@
 package rename;
 
-public class RenameVariable {
+class RenameVariable {
 
 	public static void min() {
 		int importantVariable = 5;

@@ -1,6 +1,6 @@
 package pushmembersdown;
 
-public class ClassToPushMembersDownFrom {
+class ClassToPushMembersDownFrom {
 
 	int fieldToPushDown;
 
