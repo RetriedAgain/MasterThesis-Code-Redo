@@ -1,13 +1,13 @@
 package typemigration;
 
 public class SomeClass {
-	int fieldToMigrate;
+	Integer fieldToMigrate;
 
 	SomeClass(int fieldToMigrate) {
 		this.fieldToMigrate = fieldToMigrate;
 	}
 
-	int getFieldToMigrate() {
+	Integer getFieldToMigrate() {
 		return fieldToMigrate;
 	}
 
