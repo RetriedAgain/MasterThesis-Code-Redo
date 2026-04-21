@@ -12,7 +12,7 @@ public class SomeClass {
 	}
 
 	void localVariableToMigrate() {
-		int localVar = 1;
+		Integer localVar = 1;
 		System.out.println(localVar + localVar);
 	}
 }
