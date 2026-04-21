@@ -1,0 +1,51 @@
+{
+"commits": [
+{
+	"repository": "https://github.com/RetriedAgain/MasterThesis-Code-Redo.git",
+	"sha1": "73cfbd250b35ff948b21420dc4e49ad0017849d9",
+	"url": "https://github.com/RetriedAgain/MasterThesis-Code-Redo/commit/73cfbd250b35ff948b21420dc4e49ad0017849d9",
+	"refactorings": [{
+	"type": "Change Parameter Type",
+	"description": "Change Parameter Type fieldToMigrate : int to fieldToMigrate : Integer in method package SomeClass(fieldToMigrate Integer) from class typemigration.SomeClass",
+	"leftSideLocations": [{
+		"filePath": "src/main/java/typemigration/SomeClass.java",
+		"startLine": 6,
+		"endLine": 6,
+		"startColumn": 12,
+		"endColumn": 30,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "original variable declaration",
+		"codeElement": "fieldToMigrate : int"
+}, {
+		"filePath": "src/main/java/typemigration/SomeClass.java",
+		"startLine": 7,
+		"endLine": 7,
+		"startColumn": 3,
+		"endColumn": 40,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "src/main/java/typemigration/SomeClass.java",
+		"startLine": 6,
+		"endLine": 6,
+		"startColumn": 12,
+		"endColumn": 34,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "changed-type variable declaration",
+		"codeElement": "fieldToMigrate : Integer"
+}, {
+		"filePath": "src/main/java/typemigration/SomeClass.java",
+		"startLine": 7,
+		"endLine": 7,
+		"startColumn": 3,
+		"endColumn": 40,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the variable with changed type",
+		"codeElement": null
+}]
+}
+]
+}]
+}

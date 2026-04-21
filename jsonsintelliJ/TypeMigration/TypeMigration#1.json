@@ -1,0 +1,51 @@
+{
+"commits": [
+{
+	"repository": "https://github.com/RetriedAgain/MasterThesis-Code-Redo.git",
+	"sha1": "63c0e8040055cbe3192adb4e969b76834c43575e",
+	"url": "https://github.com/RetriedAgain/MasterThesis-Code-Redo/commit/63c0e8040055cbe3192adb4e969b76834c43575e",
+	"refactorings": [{
+	"type": "Change Variable Type",
+	"description": "Change Variable Type localVar : int to localVar : Integer in method package localVariableToMigrate() : void from class typemigration.SomeClass",
+	"leftSideLocations": [{
+		"filePath": "src/main/java/typemigration/SomeClass.java",
+		"startLine": 15,
+		"endLine": 15,
+		"startColumn": 7,
+		"endColumn": 19,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "original variable declaration",
+		"codeElement": "localVar : int"
+}, {
+		"filePath": "src/main/java/typemigration/SomeClass.java",
+		"startLine": 16,
+		"endLine": 16,
+		"startColumn": 3,
+		"endColumn": 43,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "src/main/java/typemigration/SomeClass.java",
+		"startLine": 15,
+		"endLine": 15,
+		"startColumn": 11,
+		"endColumn": 23,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "changed-type variable declaration",
+		"codeElement": "localVar : Integer"
+}, {
+		"filePath": "src/main/java/typemigration/SomeClass.java",
+		"startLine": 16,
+		"endLine": 16,
+		"startColumn": 3,
+		"endColumn": 43,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the variable with changed type",
+		"codeElement": null
+}]
+}
+]
+}]
+}

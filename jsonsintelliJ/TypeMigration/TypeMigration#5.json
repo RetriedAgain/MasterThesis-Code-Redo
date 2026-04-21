@@ -1,0 +1,111 @@
+{
+"commits": [
+{
+	"repository": "https://github.com/RetriedAgain/MasterThesis-Code-Redo.git",
+	"sha1": "a9e007986f1a58ef021ff48cff0120c9967399c2",
+	"url": "https://github.com/RetriedAgain/MasterThesis-Code-Redo/commit/a9e007986f1a58ef021ff48cff0120c9967399c2",
+	"refactorings": [{
+	"type": "Change Variable Type",
+	"description": "Change Variable Type localVar : int to localVar : String in method package localVariableToMigrate(localVarParam String) : void from class typemigration.SomeClass",
+	"leftSideLocations": [{
+		"filePath": "src/main/java/typemigration/SomeClass.java",
+		"startLine": 15,
+		"endLine": 15,
+		"startColumn": 7,
+		"endColumn": 31,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "original variable declaration",
+		"codeElement": "localVar : int"
+}, {
+		"filePath": "src/main/java/typemigration/SomeClass.java",
+		"startLine": 16,
+		"endLine": 16,
+		"startColumn": 3,
+		"endColumn": 24,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}, {
+		"filePath": "src/main/java/typemigration/SomeClass.java",
+		"startLine": 17,
+		"endLine": 17,
+		"startColumn": 3,
+		"endColumn": 32,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "src/main/java/typemigration/SomeClass.java",
+		"startLine": 15,
+		"endLine": 15,
+		"startColumn": 10,
+		"endColumn": 34,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "changed-type variable declaration",
+		"codeElement": "localVar : String"
+}, {
+		"filePath": "src/main/java/typemigration/SomeClass.java",
+		"startLine": 16,
+		"endLine": 16,
+		"startColumn": 3,
+		"endColumn": 24,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the variable with changed type",
+		"codeElement": null
+}, {
+		"filePath": "src/main/java/typemigration/SomeClass.java",
+		"startLine": 17,
+		"endLine": 17,
+		"startColumn": 3,
+		"endColumn": 32,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the variable with changed type",
+		"codeElement": null
+}]
+},
+{
+	"type": "Change Parameter Type",
+	"description": "Change Parameter Type localVarParam : int to localVarParam : String in method package localVariableToMigrate(localVarParam String) : void from class typemigration.SomeClass",
+	"leftSideLocations": [{
+		"filePath": "src/main/java/typemigration/SomeClass.java",
+		"startLine": 14,
+		"endLine": 14,
+		"startColumn": 30,
+		"endColumn": 47,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "original variable declaration",
+		"codeElement": "localVarParam : int"
+}, {
+		"filePath": "src/main/java/typemigration/SomeClass.java",
+		"startLine": 15,
+		"endLine": 15,
+		"startColumn": 3,
+		"endColumn": 32,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "src/main/java/typemigration/SomeClass.java",
+		"startLine": 14,
+		"endLine": 14,
+		"startColumn": 30,
+		"endColumn": 50,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "changed-type variable declaration",
+		"codeElement": "localVarParam : String"
+}, {
+		"filePath": "src/main/java/typemigration/SomeClass.java",
+		"startLine": 15,
+		"endLine": 15,
+		"startColumn": 3,
+		"endColumn": 35,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "statement referencing the variable with changed type",
+		"codeElement": null
+}]
+}
+]
+}]
+}
