@@ -3,7 +3,7 @@ package typemigration;
 public class SomeClass {
 	int fieldToMigrate;
 
-	SomeClass(int fieldToMigrate) {
+	SomeClass(Integer fieldToMigrate) {
 		this.fieldToMigrate = fieldToMigrate;
 	}
 
