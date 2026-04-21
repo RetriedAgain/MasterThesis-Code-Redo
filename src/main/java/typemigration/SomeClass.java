@@ -11,8 +11,9 @@ public class SomeClass {
 		return fieldToMigrate;
 	}
 
-	void localVariableToMigrate() {
-		int localVar = 1;
-		System.out.println(localVar + localVar);
+	void localVariableToMigrate(int localVarParam) {
+		int localVar = localVarParam;
+		localVar += localVar;
+		System.out.println(localVar);
 	}
 }
