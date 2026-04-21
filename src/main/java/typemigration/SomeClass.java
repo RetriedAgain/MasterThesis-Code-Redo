@@ -7,7 +7,7 @@ public class SomeClass {
 		this.fieldToMigrate = fieldToMigrate;
 	}
 
-	int getFieldToMigrate() {
+	Integer getFieldToMigrate() {
 		return fieldToMigrate;
 	}
 
