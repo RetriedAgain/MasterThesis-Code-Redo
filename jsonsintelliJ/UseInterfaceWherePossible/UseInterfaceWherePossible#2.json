@@ -1,0 +1,165 @@
+{
+"commits": [
+{
+	"repository": "https://github.com/RetriedAgain/MasterThesis-Code-Redo.git",
+	"sha1": "5cf0a291d10f4fc8614abedd69145e3a16b0f3c9",
+	"url": "https://github.com/RetriedAgain/MasterThesis-Code-Redo/commit/5cf0a291d10f4fc8614abedd69145e3a16b0f3c9",
+	"refactorings": [{
+	"type": "Change Variable Type",
+	"description": "Change Variable Type nc : NormalClass to nc : NormalInterface in method package run2() : void from class useinterfacewherepossible.NormalClass",
+	"leftSideLocations": [{
+		"filePath": "src/main/java/useinterfacewherepossible/NormalClass.java",
+		"startLine": 18,
+		"endLine": 18,
+		"startColumn": 15,
+		"endColumn": 37,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "original variable declaration",
+		"codeElement": "nc : NormalClass"
+}, {
+		"filePath": "src/main/java/useinterfacewherepossible/NormalClass.java",
+		"startLine": 19,
+		"endLine": 19,
+		"startColumn": 3,
+		"endColumn": 53,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}, {
+		"filePath": "src/main/java/useinterfacewherepossible/NormalClass.java",
+		"startLine": 21,
+		"endLine": 21,
+		"startColumn": 3,
+		"endColumn": 48,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}, {
+		"filePath": "src/main/java/useinterfacewherepossible/NormalClass.java",
+		"startLine": 20,
+		"endLine": 20,
+		"startColumn": 3,
+		"endColumn": 49,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "src/main/java/useinterfacewherepossible/NormalClass.java",
+		"startLine": 18,
+		"endLine": 18,
+		"startColumn": 19,
+		"endColumn": 41,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "changed-type variable declaration",
+		"codeElement": "nc : NormalInterface"
+}, {
+		"filePath": "src/main/java/useinterfacewherepossible/NormalClass.java",
+		"startLine": 19,
+		"endLine": 19,
+		"startColumn": 3,
+		"endColumn": 53,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the variable with changed type",
+		"codeElement": null
+}, {
+		"filePath": "src/main/java/useinterfacewherepossible/NormalClass.java",
+		"startLine": 21,
+		"endLine": 21,
+		"startColumn": 3,
+		"endColumn": 48,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the variable with changed type",
+		"codeElement": null
+}, {
+		"filePath": "src/main/java/useinterfacewherepossible/NormalClass.java",
+		"startLine": 20,
+		"endLine": 20,
+		"startColumn": 3,
+		"endColumn": 53,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the variable with changed type",
+		"codeElement": null
+}]
+},
+{
+	"type": "Change Variable Type",
+	"description": "Change Variable Type nc : NormalClass to nc : NormalInterface in method package run2Duplicate() : void from class useinterfacewherepossible.UsageClass",
+	"leftSideLocations": [{
+		"filePath": "src/main/java/useinterfacewherepossible/UsageClass.java",
+		"startLine": 35,
+		"endLine": 35,
+		"startColumn": 15,
+		"endColumn": 37,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "original variable declaration",
+		"codeElement": "nc : NormalClass"
+}, {
+		"filePath": "src/main/java/useinterfacewherepossible/UsageClass.java",
+		"startLine": 36,
+		"endLine": 36,
+		"startColumn": 3,
+		"endColumn": 53,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}, {
+		"filePath": "src/main/java/useinterfacewherepossible/UsageClass.java",
+		"startLine": 38,
+		"endLine": 38,
+		"startColumn": 3,
+		"endColumn": 48,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}, {
+		"filePath": "src/main/java/useinterfacewherepossible/UsageClass.java",
+		"startLine": 37,
+		"endLine": 37,
+		"startColumn": 3,
+		"endColumn": 49,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "src/main/java/useinterfacewherepossible/UsageClass.java",
+		"startLine": 35,
+		"endLine": 35,
+		"startColumn": 19,
+		"endColumn": 41,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "changed-type variable declaration",
+		"codeElement": "nc : NormalInterface"
+}, {
+		"filePath": "src/main/java/useinterfacewherepossible/UsageClass.java",
+		"startLine": 36,
+		"endLine": 36,
+		"startColumn": 3,
+		"endColumn": 53,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the variable with changed type",
+		"codeElement": null
+}, {
+		"filePath": "src/main/java/useinterfacewherepossible/UsageClass.java",
+		"startLine": 38,
+		"endLine": 38,
+		"startColumn": 3,
+		"endColumn": 48,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the variable with changed type",
+		"codeElement": null
+}, {
+		"filePath": "src/main/java/useinterfacewherepossible/UsageClass.java",
+		"startLine": 37,
+		"endLine": 37,
+		"startColumn": 3,
+		"endColumn": 53,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the variable with changed type",
+		"codeElement": null
+}]
+}
+]
+}]
+}

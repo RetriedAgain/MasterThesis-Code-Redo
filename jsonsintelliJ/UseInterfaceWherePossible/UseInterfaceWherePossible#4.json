@@ -1,0 +1,51 @@
+{
+"commits": [
+{
+	"repository": "https://github.com/RetriedAgain/MasterThesis-Code-Redo.git",
+	"sha1": "0045c765bc3eb0cb8cc37ae1bd18664036e921df",
+	"url": "https://github.com/RetriedAgain/MasterThesis-Code-Redo/commit/0045c765bc3eb0cb8cc37ae1bd18664036e921df",
+	"refactorings": [{
+	"type": "Change Parameter Type",
+	"description": "Change Parameter Type ni : NormalInterface to ni : SuperInterface in method package useNormalInterface(ni SuperInterface) : void from class useinterfacewherepossible.UsageClass",
+	"leftSideLocations": [{
+		"filePath": "src/main/java/useinterfacewherepossible/UsageClass.java",
+		"startLine": 49,
+		"endLine": 49,
+		"startColumn": 26,
+		"endColumn": 44,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "original variable declaration",
+		"codeElement": "ni : NormalInterface"
+}, {
+		"filePath": "src/main/java/useinterfacewherepossible/UsageClass.java",
+		"startLine": 50,
+		"endLine": 50,
+		"startColumn": 3,
+		"endColumn": 26,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "src/main/java/useinterfacewherepossible/UsageClass.java",
+		"startLine": 49,
+		"endLine": 49,
+		"startColumn": 26,
+		"endColumn": 43,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "changed-type variable declaration",
+		"codeElement": "ni : SuperInterface"
+}, {
+		"filePath": "src/main/java/useinterfacewherepossible/UsageClass.java",
+		"startLine": 50,
+		"endLine": 50,
+		"startColumn": 3,
+		"endColumn": 26,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the variable with changed type",
+		"codeElement": null
+}]
+}
+]
+}]
+}
