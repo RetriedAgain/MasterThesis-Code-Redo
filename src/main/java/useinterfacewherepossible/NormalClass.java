@@ -15,7 +15,7 @@ class NormalClass extends SuperClass implements NormalInterface {
 	}
 
 	void run2() {
-		NormalClass nc = new NormalClass();
+		SuperClass nc = new NormalClass();
 		System.out.println(nc instanceof NormalInterface);
 		System.out.println(nc instanceof NormalClass);
 		System.out.println(nc instanceof SuperClass);
