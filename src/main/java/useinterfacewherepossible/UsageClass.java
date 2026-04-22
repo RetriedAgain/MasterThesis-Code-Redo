@@ -46,7 +46,7 @@ class UsageClass {
 		System.out.println(superClass.fieldSuperClass);
 	}
 
-	void useNormalInterface(NormalInterface ni) {
+	void useNormalInterface(SuperInterface ni) {
 		ni.superInterfaceRun(); // only uses SuperInterface API
 	}
 
