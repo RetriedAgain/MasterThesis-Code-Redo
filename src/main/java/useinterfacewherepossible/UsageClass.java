@@ -33,12 +33,12 @@ class UsageClass {
 
 	void run2Duplicate() {
 		NormalClass nc = new NormalClass();
-		System.out.println(nc instanceof NormalInterface);
+		System.out.println(nc instanceof SuperInterface);
 		System.out.println(nc instanceof NormalClass);
 		System.out.println(nc instanceof SuperClass);
 
 		SuperClass superClass = new SuperClass();
-		System.out.println(superClass instanceof NormalInterface);
+		System.out.println(superClass instanceof SuperInterface);
 		System.out.println(superClass instanceof NormalClass);
 		System.out.println(superClass instanceof SuperClass);
 		System.out.println("no");
@@ -46,7 +46,7 @@ class UsageClass {
 		System.out.println(superClass.fieldSuperClass);
 	}
 
-	void useNormalInterface(NormalInterface ni) {
+	void useNormalInterface(SuperInterface ni) {
 		ni.superInterfaceRun(); // only uses SuperInterface API
 	}
 
