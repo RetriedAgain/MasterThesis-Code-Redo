@@ -4,6 +4,6 @@ class UsageClass {
 	UsageClass() {
 		NewClass nc = new NewClass();
 
-		int returnValue = nc.methodOfReturnValueToBeWrapped();
+		int returnValue = nc.methodOfReturnValueToBeWrapped().getWrapperField();
 	}
 }
