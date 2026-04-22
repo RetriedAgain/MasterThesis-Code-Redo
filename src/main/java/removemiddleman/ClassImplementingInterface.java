@@ -9,14 +9,6 @@ class ClassImplementingInterface {
 		return interfaceToImplement;
 	}
 
-	public void run() {
-		interfaceToImplement.run();
-	}
-
-	public void run2() {
-		interfaceToImplement.run2();
-	}
-
 	private class MyInterfaceToImplement implements InterfaceToImplement {
 		@Override
 		public void run() {
