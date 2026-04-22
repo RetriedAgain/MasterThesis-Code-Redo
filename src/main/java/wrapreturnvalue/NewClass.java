@@ -2,13 +2,13 @@ package wrapreturnvalue;
 
 class NewClass {
 
-	int methodOfReturnValueToBeWrapped() {
+	NewWrapper methodOfReturnValueToBeWrapped() {
 		int wrapperField = 1;
 
 		if (wrapperField == 2) {
-			return wrapperField;
+			return new NewWrapper(wrapperField);
  		} else {
-			return wrapperField * 2;
+			return new NewWrapper(wrapperField * 2);
 		}
 	}
 
