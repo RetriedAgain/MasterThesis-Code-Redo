@@ -2,15 +2,26 @@ package wrapreturnvalue;
 
 class NewClass {
 
-	int methodOfReturnValueToBeWrapped() {
+	NewWrapperInnerClass methodOfReturnValueToBeWrapped() {
 		int wrapperField = 1;
 
 		if (wrapperField == 2) {
-			return wrapperField;
+			return new NewWrapperInnerClass(wrapperField);
  		} else {
-			return wrapperField * 2;
+			return new NewWrapperInnerClass(wrapperField * 2);
 		}
 	}
 
 
+	public class NewWrapperInnerClass {
+		private final int value;
+
+		public NewWrapperInnerClass(int value) {
+			this.value = value;
+		}
+
+		public int getValue() {
+			return value;
+		}
+	}
 }
