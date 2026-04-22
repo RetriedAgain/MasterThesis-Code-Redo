@@ -9,10 +9,6 @@ class ClassImplementingInterface {
 		return interfaceToImplement;
 	}
 
-	public void run() {
-		interfaceToImplement.run();
-	}
-
 	public void run2() {
 		interfaceToImplement.run2();
 	}

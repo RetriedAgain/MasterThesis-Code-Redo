@@ -38,7 +38,7 @@ class UsageClass implements InterfaceToImplement {
 
 		// Class implementing Interface
 		interfaceToImplement.run();
-		classImplementingInterface.run();
+		classImplementingInterface.getInterfaceToImplement().run();
 		System.out.println(classImplementingInterface.classImplIntField);
 
 	}
