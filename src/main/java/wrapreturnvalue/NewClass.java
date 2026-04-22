@@ -2,9 +2,9 @@ package wrapreturnvalue;
 
 class NewClass {
 
-	int methodOfReturnValueToBeWrapped() {
+	NewWrapperClass methodOfReturnValueToBeWrapped() {
 		int wrapperField = 1;
-		return wrapperField;
+		return new NewWrapperClass(wrapperField);
 	}
 
 
