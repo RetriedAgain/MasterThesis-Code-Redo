@@ -1,0 +1,51 @@
+{
+"commits": [
+{
+	"repository": "https://github.com/RetriedAgain/MasterThesis-Code-Redo.git",
+	"sha1": "d783844da4017c5379a34d0ddffb1cb2e51516cc",
+	"url": "https://github.com/RetriedAgain/MasterThesis-Code-Redo/commit/d783844da4017c5379a34d0ddffb1cb2e51516cc",
+	"refactorings": [{
+	"type": "Change Return Type",
+	"description": "Change Return Type int to NewWrapper in method package methodOfReturnValueToBeWrapped() : NewWrapper from class wrapreturnvalue.NewClass",
+	"leftSideLocations": [{
+		"filePath": "src/main/java/wrapreturnvalue/NewClass.java",
+		"startLine": 5,
+		"endLine": 5,
+		"startColumn": 2,
+		"endColumn": 5,
+		"codeElementType": "TYPE",
+		"description": "original return type",
+		"codeElement": "int"
+}, {
+		"filePath": "src/main/java/wrapreturnvalue/NewClass.java",
+		"startLine": 5,
+		"endLine": 13,
+		"startColumn": 2,
+		"endColumn": 3,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "package methodOfReturnValueToBeWrapped() : int"
+}],
+	"rightSideLocations": [{
+		"filePath": "src/main/java/wrapreturnvalue/NewClass.java",
+		"startLine": 5,
+		"endLine": 5,
+		"startColumn": 2,
+		"endColumn": 12,
+		"codeElementType": "TYPE",
+		"description": "changed return type",
+		"codeElement": "NewWrapper"
+}, {
+		"filePath": "src/main/java/wrapreturnvalue/NewClass.java",
+		"startLine": 5,
+		"endLine": 13,
+		"startColumn": 2,
+		"endColumn": 3,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "method declaration with changed return type",
+		"codeElement": "package methodOfReturnValueToBeWrapped() : NewWrapper"
+}]
+}
+]
+}]
+}
