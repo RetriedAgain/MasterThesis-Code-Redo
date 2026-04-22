@@ -32,14 +32,14 @@ class UsageClass {
 	}
 
 	void run2Duplicate() {
-		NormalClass nc = new NormalClass();
+		NormalInterface nc = new NormalClass();
 		System.out.println(nc instanceof NormalInterface);
-		System.out.println(nc instanceof NormalClass);
+		System.out.println(nc instanceof NormalInterface);
 		System.out.println(nc instanceof SuperClass);
 
 		SuperClass superClass = new SuperClass();
 		System.out.println(superClass instanceof NormalInterface);
-		System.out.println(superClass instanceof NormalClass);
+		System.out.println(superClass instanceof NormalInterface);
 		System.out.println(superClass instanceof SuperClass);
 		System.out.println("no");
 		superClass.superRun();
