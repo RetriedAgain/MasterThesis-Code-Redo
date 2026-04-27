@@ -1,0 +1,411 @@
+{
+"commits": [
+{
+	"repository": "https://github.com/RetriedAgain/MasterThesis-Code-Redo.git",
+	"sha1": "de73a78b80e1551c9e9cedb2b09a479ffe998cac",
+	"url": "https://github.com/RetriedAgain/MasterThesis-Code-Redo/commit/de73a78b80e1551c9e9cedb2b09a479ffe998cac",
+	"refactorings": [{
+	"type": "Change Variable Type",
+	"description": "Change Variable Type nc : NormalClass to nc : NormalClass<Integer> in method package run2() : void from class convertrawtypestogenerics.NormalClass",
+	"leftSideLocations": [{
+		"filePath": "src/main/java/convertrawtypestogenerics/NormalClass.java",
+		"startLine": 21,
+		"endLine": 21,
+		"startColumn": 15,
+		"endColumn": 46,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "original variable declaration",
+		"codeElement": "nc : NormalClass"
+}, {
+		"filePath": "src/main/java/convertrawtypestogenerics/NormalClass.java",
+		"startLine": 27,
+		"endLine": 27,
+		"startColumn": 3,
+		"endColumn": 53,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}, {
+		"filePath": "src/main/java/convertrawtypestogenerics/NormalClass.java",
+		"startLine": 28,
+		"endLine": 28,
+		"startColumn": 3,
+		"endColumn": 49,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}, {
+		"filePath": "src/main/java/convertrawtypestogenerics/NormalClass.java",
+		"startLine": 29,
+		"endLine": 29,
+		"startColumn": 3,
+		"endColumn": 48,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}, {
+		"filePath": "src/main/java/convertrawtypestogenerics/NormalClass.java",
+		"startLine": 49,
+		"endLine": 49,
+		"startColumn": 3,
+		"endColumn": 19,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}, {
+		"filePath": "src/main/java/convertrawtypestogenerics/NormalClass.java",
+		"startLine": 50,
+		"endLine": 50,
+		"startColumn": 3,
+		"endColumn": 19,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}, {
+		"filePath": "src/main/java/convertrawtypestogenerics/NormalClass.java",
+		"startLine": 51,
+		"endLine": 51,
+		"startColumn": 3,
+		"endColumn": 19,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}, {
+		"filePath": "src/main/java/convertrawtypestogenerics/NormalClass.java",
+		"startLine": 52,
+		"endLine": 52,
+		"startColumn": 3,
+		"endColumn": 19,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}, {
+		"filePath": "src/main/java/convertrawtypestogenerics/NormalClass.java",
+		"startLine": 53,
+		"endLine": 53,
+		"startColumn": 3,
+		"endColumn": 19,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}, {
+		"filePath": "src/main/java/convertrawtypestogenerics/NormalClass.java",
+		"startLine": 22,
+		"endLine": 22,
+		"startColumn": 3,
+		"endColumn": 34,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "src/main/java/convertrawtypestogenerics/NormalClass.java",
+		"startLine": 18,
+		"endLine": 18,
+		"startColumn": 24,
+		"endColumn": 55,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "changed-type variable declaration",
+		"codeElement": "nc : NormalClass<Integer>"
+}, {
+		"filePath": "src/main/java/convertrawtypestogenerics/NormalClass.java",
+		"startLine": 24,
+		"endLine": 24,
+		"startColumn": 3,
+		"endColumn": 53,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the variable with changed type",
+		"codeElement": null
+}, {
+		"filePath": "src/main/java/convertrawtypestogenerics/NormalClass.java",
+		"startLine": 25,
+		"endLine": 25,
+		"startColumn": 3,
+		"endColumn": 49,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the variable with changed type",
+		"codeElement": null
+}, {
+		"filePath": "src/main/java/convertrawtypestogenerics/NormalClass.java",
+		"startLine": 26,
+		"endLine": 26,
+		"startColumn": 3,
+		"endColumn": 48,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the variable with changed type",
+		"codeElement": null
+}, {
+		"filePath": "src/main/java/convertrawtypestogenerics/NormalClass.java",
+		"startLine": 46,
+		"endLine": 46,
+		"startColumn": 3,
+		"endColumn": 19,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the variable with changed type",
+		"codeElement": null
+}, {
+		"filePath": "src/main/java/convertrawtypestogenerics/NormalClass.java",
+		"startLine": 47,
+		"endLine": 47,
+		"startColumn": 3,
+		"endColumn": 19,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the variable with changed type",
+		"codeElement": null
+}, {
+		"filePath": "src/main/java/convertrawtypestogenerics/NormalClass.java",
+		"startLine": 48,
+		"endLine": 48,
+		"startColumn": 3,
+		"endColumn": 19,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the variable with changed type",
+		"codeElement": null
+}, {
+		"filePath": "src/main/java/convertrawtypestogenerics/NormalClass.java",
+		"startLine": 49,
+		"endLine": 49,
+		"startColumn": 3,
+		"endColumn": 19,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the variable with changed type",
+		"codeElement": null
+}, {
+		"filePath": "src/main/java/convertrawtypestogenerics/NormalClass.java",
+		"startLine": 50,
+		"endLine": 50,
+		"startColumn": 3,
+		"endColumn": 19,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the variable with changed type",
+		"codeElement": null
+}, {
+		"filePath": "src/main/java/convertrawtypestogenerics/NormalClass.java",
+		"startLine": 19,
+		"endLine": 19,
+		"startColumn": 3,
+		"endColumn": 11,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the variable with changed type",
+		"codeElement": null
+}]
+},
+{
+	"type": "Change Variable Type",
+	"description": "Change Variable Type nc2 : NormalClass to nc2 : NormalClass<? extends Object> in method package run2() : void from class convertrawtypestogenerics.NormalClass",
+	"leftSideLocations": [{
+		"filePath": "src/main/java/convertrawtypestogenerics/NormalClass.java",
+		"startLine": 25,
+		"endLine": 25,
+		"startColumn": 15,
+		"endColumn": 40,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "original variable declaration",
+		"codeElement": "nc2 : NormalClass"
+}, {
+		"filePath": "src/main/java/convertrawtypestogenerics/NormalClass.java",
+		"startLine": 26,
+		"endLine": 26,
+		"startColumn": 3,
+		"endColumn": 27,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "src/main/java/convertrawtypestogenerics/NormalClass.java",
+		"startLine": 22,
+		"endLine": 22,
+		"startColumn": 33,
+		"endColumn": 58,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "changed-type variable declaration",
+		"codeElement": "nc2 : NormalClass<? extends Object>"
+}, {
+		"filePath": "src/main/java/convertrawtypestogenerics/NormalClass.java",
+		"startLine": 23,
+		"endLine": 23,
+		"startColumn": 3,
+		"endColumn": 13,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the variable with changed type",
+		"codeElement": null
+}]
+},
+{
+	"type": "Change Variable Type",
+	"description": "Change Variable Type superClass : SuperClass to superClass : SuperClass<Integer> in method package run2() : void from class convertrawtypestogenerics.NormalClass",
+	"leftSideLocations": [{
+		"filePath": "src/main/java/convertrawtypestogenerics/NormalClass.java",
+		"startLine": 31,
+		"endLine": 31,
+		"startColumn": 14,
+		"endColumn": 52,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "original variable declaration",
+		"codeElement": "superClass : SuperClass"
+}, {
+		"filePath": "src/main/java/convertrawtypestogenerics/NormalClass.java",
+		"startLine": 34,
+		"endLine": 34,
+		"startColumn": 3,
+		"endColumn": 61,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}, {
+		"filePath": "src/main/java/convertrawtypestogenerics/NormalClass.java",
+		"startLine": 35,
+		"endLine": 35,
+		"startColumn": 3,
+		"endColumn": 57,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}, {
+		"filePath": "src/main/java/convertrawtypestogenerics/NormalClass.java",
+		"startLine": 36,
+		"endLine": 36,
+		"startColumn": 3,
+		"endColumn": 56,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}, {
+		"filePath": "src/main/java/convertrawtypestogenerics/NormalClass.java",
+		"startLine": 38,
+		"endLine": 38,
+		"startColumn": 3,
+		"endColumn": 25,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}, {
+		"filePath": "src/main/java/convertrawtypestogenerics/NormalClass.java",
+		"startLine": 39,
+		"endLine": 39,
+		"startColumn": 3,
+		"endColumn": 50,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}, {
+		"filePath": "src/main/java/convertrawtypestogenerics/NormalClass.java",
+		"startLine": 33,
+		"endLine": 33,
+		"startColumn": 3,
+		"endColumn": 49,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "src/main/java/convertrawtypestogenerics/NormalClass.java",
+		"startLine": 28,
+		"endLine": 28,
+		"startColumn": 23,
+		"endColumn": 61,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "changed-type variable declaration",
+		"codeElement": "superClass : SuperClass<Integer>"
+}, {
+		"filePath": "src/main/java/convertrawtypestogenerics/NormalClass.java",
+		"startLine": 31,
+		"endLine": 31,
+		"startColumn": 3,
+		"endColumn": 61,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the variable with changed type",
+		"codeElement": null
+}, {
+		"filePath": "src/main/java/convertrawtypestogenerics/NormalClass.java",
+		"startLine": 32,
+		"endLine": 32,
+		"startColumn": 3,
+		"endColumn": 57,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the variable with changed type",
+		"codeElement": null
+}, {
+		"filePath": "src/main/java/convertrawtypestogenerics/NormalClass.java",
+		"startLine": 33,
+		"endLine": 33,
+		"startColumn": 3,
+		"endColumn": 56,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the variable with changed type",
+		"codeElement": null
+}, {
+		"filePath": "src/main/java/convertrawtypestogenerics/NormalClass.java",
+		"startLine": 35,
+		"endLine": 35,
+		"startColumn": 3,
+		"endColumn": 25,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the variable with changed type",
+		"codeElement": null
+}, {
+		"filePath": "src/main/java/convertrawtypestogenerics/NormalClass.java",
+		"startLine": 36,
+		"endLine": 36,
+		"startColumn": 3,
+		"endColumn": 50,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the variable with changed type",
+		"codeElement": null
+}, {
+		"filePath": "src/main/java/convertrawtypestogenerics/NormalClass.java",
+		"startLine": 30,
+		"endLine": 30,
+		"startColumn": 3,
+		"endColumn": 27,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the variable with changed type",
+		"codeElement": null
+}]
+},
+{
+	"type": "Change Variable Type",
+	"description": "Change Variable Type ncObject2 : Object to ncObject2 : NormalClass<Object> in method package run2() : void from class convertrawtypestogenerics.NormalClass",
+	"leftSideLocations": [{
+		"filePath": "src/main/java/convertrawtypestogenerics/NormalClass.java",
+		"startLine": 62,
+		"endLine": 62,
+		"startColumn": 10,
+		"endColumn": 47,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "original variable declaration",
+		"codeElement": "ncObject2 : Object"
+}, {
+		"filePath": "src/main/java/convertrawtypestogenerics/NormalClass.java",
+		"startLine": 63,
+		"endLine": 63,
+		"startColumn": 3,
+		"endColumn": 47,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "src/main/java/convertrawtypestogenerics/NormalClass.java",
+		"startLine": 59,
+		"endLine": 59,
+		"startColumn": 23,
+		"endColumn": 60,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "changed-type variable declaration",
+		"codeElement": "ncObject2 : NormalClass<Object>"
+}, {
+		"filePath": "src/main/java/convertrawtypestogenerics/NormalClass.java",
+		"startLine": 60,
+		"endLine": 60,
+		"startColumn": 3,
+		"endColumn": 25,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the variable with changed type",
+		"codeElement": null
+}]
+}
+]
+}]
+}
