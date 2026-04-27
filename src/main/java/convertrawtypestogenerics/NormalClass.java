@@ -1,8 +1,5 @@
 package convertrawtypestogenerics;
 
-import java.util.ArrayList;
-import java.util.List;
-
 class NormalClass<NC> extends SuperClass<Integer> implements NormalInterface<Integer> {
 
 	@Override
@@ -18,17 +15,17 @@ class NormalClass<NC> extends SuperClass<Integer> implements NormalInterface<Int
 	}
 
 	void run2() {
-		NormalClass nc = new NormalClass<Integer>();
+		NormalClass<Integer> nc = new NormalClass<Integer>();
 		nc = (NormalClass<Integer>) nc;
 
 		// Wildcard ready
-		NormalClass nc2 = new NormalClass<>();
-		nc2 = (NormalClass) nc2;
+		NormalClass<Object> nc2 = new NormalClass<>();
+		nc2 = nc2;
 		System.out.println(nc instanceof NormalInterface);
 		System.out.println(nc instanceof NormalClass);
 		System.out.println(nc instanceof SuperClass);
 
-		SuperClass superClass = new SuperClass<Integer>();
+		SuperClass<Integer> superClass = new SuperClass<Integer>();
 		// Obsolete cast
 		superClass = (SuperClass<Integer>) superClass;
 		System.out.println(superClass instanceof NormalInterface);
@@ -59,7 +56,7 @@ class NormalClass<NC> extends SuperClass<Integer> implements NormalInterface<Int
 		ncObject = (NormalClass<Object>) ncObject;
 
 		// Object-parameterized types
-		Object ncObject2 = new NormalClass<Object>();
+		NormalClass<Object> ncObject2 = new NormalClass<Object>();
 		ncObject2 = (NormalClass<Object>) ncObject2;
 
 	}
