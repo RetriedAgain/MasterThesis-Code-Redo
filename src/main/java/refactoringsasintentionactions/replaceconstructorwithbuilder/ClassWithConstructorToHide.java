@@ -4,13 +4,10 @@ public class ClassWithConstructorToHide {
 
 	int a;
 	String b;
-	int c;
-	int d;
 
-	ClassWithConstructorToHide(int a, String b, int ... varArgC) {
+
+	ClassWithConstructorToHide(int a, String b) {
 		this.a = a;
 		this.b = b;
-		this.c = varArgC[0];
-		this.d = varArgC[1];
 	}
 }
