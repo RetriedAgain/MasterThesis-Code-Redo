@@ -1,0 +1,69 @@
+{
+"commits": [
+{
+	"repository": "https://github.com/RetriedAgain/MasterThesis-Code-Redo.git",
+	"sha1": "b01ec436cef6e0e5153a6173ff8efa56ef11e935",
+	"url": "https://github.com/RetriedAgain/MasterThesis-Code-Redo/commit/b01ec436cef6e0e5153a6173ff8efa56ef11e935",
+	"refactorings": [{
+	"type": "Extract And Move Method",
+	"description": "Extract And Move Method public createClassWithConstructorToHide() : ClassWithConstructorToHide extracted from public main(args String[]) : void in class refactoringsasintentionactions.replaceconstructorwithbuilder.UsageClass & moved to class refactoringsasintentionactions.replaceconstructorwithbuilder.ClassWithConstructorToHideBuilder",
+	"leftSideLocations": [{
+		"filePath": "src/main/java/refactoringsasintentionactions/replaceconstructorwithbuilder/UsageClass.java",
+		"startLine": 4,
+		"endLine": 7,
+		"startColumn": 2,
+		"endColumn": 3,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "source method declaration before extraction",
+		"codeElement": "public main(args String[]) : void"
+}, {
+		"filePath": "src/main/java/refactoringsasintentionactions/replaceconstructorwithbuilder/UsageClass.java",
+		"startLine": 5,
+		"endLine": 5,
+		"startColumn": 3,
+		"endColumn": 68,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "extracted code from source method declaration",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "src/main/java/refactoringsasintentionactions/replaceconstructorwithbuilder/ClassWithConstructorToHideBuilder.java",
+		"startLine": 11,
+		"endLine": 13,
+		"startColumn": 2,
+		"endColumn": 3,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "extracted method declaration",
+		"codeElement": "public createClassWithConstructorToHide() : ClassWithConstructorToHide"
+}, {
+		"filePath": "src/main/java/refactoringsasintentionactions/replaceconstructorwithbuilder/ClassWithConstructorToHideBuilder.java",
+		"startLine": 12,
+		"endLine": 12,
+		"startColumn": 3,
+		"endColumn": 44,
+		"codeElementType": "RETURN_STATEMENT",
+		"description": "extracted code to extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "src/main/java/refactoringsasintentionactions/replaceconstructorwithbuilder/UsageClass.java",
+		"startLine": 4,
+		"endLine": 7,
+		"startColumn": 2,
+		"endColumn": 3,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "source method declaration after extraction",
+		"codeElement": "public main(args String[]) : void"
+}, {
+		"filePath": "src/main/java/refactoringsasintentionactions/replaceconstructorwithbuilder/UsageClass.java",
+		"startLine": 5,
+		"endLine": 5,
+		"startColumn": 34,
+		"endColumn": 116,
+		"codeElementType": "METHOD_INVOCATION",
+		"description": "extracted method invocation",
+		"codeElement": "new ClassWithConstructorToHideBuilder().setA(5).createClassWithConstructorToHide()"
+}]
+}
+]
+}]
+}
